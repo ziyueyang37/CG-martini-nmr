@@ -1,0 +1,1099 @@
+data_6939
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a CB chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 29   C    CB      26.84        34.10
+#
+#After reference correction, the following residues still 
+#have a N chemical shift difference (obs*-pred) greater than 10.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#104   W    N      114.98       129.65
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#N/A     -0.27   -0.29     N/A   0.01    0.04    
+#
+#R117_bmr6939.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R117_bmr6939.str file):
+#HA       CA       CB      CO       N      HN
+#N/A    -0.28   -0.28    N/A   +0.01     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#    N/A  +/-0.13  +/-0.15      N/A  +/-0.28  +/-0.05  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#N/A     0.964   0.994     N/A   0.871   0.748   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#N/A     0.708   0.826     N/A   1.512   0.295   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Backbone 1H, 13C, and 15N Chemical Shift Assignments for Ubiquitin Specific 
+Protease 7
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Sheng      Yi     .  . 
+      2 Saridakis  Vivian .  . 
+      3 Liao       Jack   .  . 
+      4 Frappier   Lori   .  . 
+      5 Arrowsmith Cheryl H. . 
+
+   stop_
+
+   _BMRB_accession_number   6939
+   _BMRB_flat_file_name     bmr6939.str
+   _Entry_type              new
+   _Submission_date         2006-01-13
+   _Accession_date          2006-01-13
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+   _Details                
+;
+backbone assignment for the USP7 N-terminal domain in complex with an EBNA1
+peptide
+;
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      "1H chemical shifts"  123 
+      "13C chemical shifts" 252 
+      "15N chemical shifts" 123 
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_citation_1
+   _Saveframe_category     entry_citation
+
+   _Citation_full         
+;
+Saridakis V, Sheng Y, Sarkari F, Holowaty MN, Shire K, Nguyen T, Zhang RG, Liao
+J, Lee W, Edwards AM, Arrowsmith CH, Frappier L. Structure of the p53 binding
+domain of HAUSP/USP7 bound to Epstein-Barr nuclear antigen 1 implications for
+EBV-mediated immortalization.  Mol Cell. 2005 Apr 1;18(1):25-36.
+;
+   _Citation_title        
+;
+'1H,15N and 13C Assigned Chemical Shifts for USP7 in a complex with an EBNA1
+peptide
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _PubMed_ID              15808506
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+       1 Saridakis  V.     . . 
+       2 Sheng      Yi     . . 
+       3 Sarkari    F.     . . 
+       4 Holowaty   M.N.   . . 
+       5 Shire      F.     . . 
+       6 Nguyen     T.     . . 
+       7 Zhang      R.G.   . . 
+       8 Liao       F.     . . 
+       9 Lee        W.     . . 
+      10 Edwards    A.M.   . . 
+      11 Arrowsmith Cheryl . . 
+      12 Frappier   L.     . . 
+
+   stop_
+
+   _Journal_abbreviation  "Mol. Cell"
+   _Journal_volume         18
+   _Journal_issue          1
+   _Page_first             25
+   _Page_last              36
+   _Year                   2005
+   _Details               "The first and second authors contributed equally to this publication"
+
+   loop_
+      _Keyword
+
+      USP7  
+      EBNA1 
+
+   stop_
+
+save_
+
+
+save_citation_2
+   _Saveframe_category     entry_citation
+
+   _Citation_full         
+;
+Sheng Y, Saridakis V, Sarkari F, Duan S, Wu T, Arrowsmith CH, Frappier L.
+Molecular Recognition of p53 and Mdm2 by USP7/ HAUSP.
+;
+   _Citation_title        
+;
+Molecular recognition of p53 and MDM2 by USP7/HAUSP
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _PubMed_ID              16474402
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Sheng      Yi     . . 
+      2 Saridakis  Vivian . . 
+      3 Sarkari    Feroz  . . 
+      4 Duan       Shili  . . 
+      5 Wu         Tianne . . 
+      6 Arrowsmith Cheryl H . 
+      7 Frappier   Lori   . . 
+
+   stop_
+
+   _Journal_abbreviation  "Nat. Struct. Biol."
+   _Journal_volume         13
+   _Journal_issue          3
+   _Page_first             285
+   _Page_last              291
+   _Year                   2006
+
+   loop_
+      _Keyword
+
+      USP7 
+
+   stop_
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_assembly
+   _Saveframe_category        molecular_system
+
+   _Mol_system_name          "USP7 N-terminal domain in complex with an EBNA1 peptide"
+   _Abbreviation_common      "USP7 N-terminal domain in complex with an EBNA1 peptide"
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      USP7  $ubiquitin_specific_protease_7 
+      EBNA1 $EBNA1                         
+
+   stop_
+
+   _System_molecular_weight   16908
+   _System_physical_state     native
+   _System_oligomer_state     monomer
+   _System_paramagnetic       no
+   _System_thiol_state       "all free"
+
+   loop_
+      _Biological_function
+
+       deubiquitylation             
+      "protein-protein interaction" 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_ubiquitin_specific_protease_7
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                 USP7
+   _Name_variant                               "USP7 62-205"
+   _Abbreviation_common                        "USP7 62-205"
+   _Mol_thiol_state                            "all free"
+
+   loop_
+      _Biological_function
+
+       deubiquitylation             
+      "protein-protein interaction" 
+
+   stop_
+
+   loop_
+      _Synonym
+
+      "USP7 62-205" 
+
+   stop_
+
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               144
+   _Mol_residue_sequence                       
+;
+DTSWRSEATFQFTVERFSRL
+SESVLSPPCFVRNLPWKIMV
+MPRFYPDRPHQKSVGFFLQC
+NAESDSTSWSCHAQAVLKII
+NYRDDEKSFSRRISHLFFHK
+ENDWGFSNFMAWSEVTDPEK
+GFIDDDKVTFEVFVQADAPH
+GVAW
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_author_seq_code
+      _Residue_label
+
+        1  62 ASP    2  63 THR    3  64 SER    4  65 TRP    5  66 ARG 
+        6  67 SER    7  68 GLU    8  69 ALA    9  70 THR   10  71 PHE 
+       11  72 GLN   12  73 PHE   13  74 THR   14  75 VAL   15  76 GLU 
+       16  77 ARG   17  78 PHE   18  79 SER   19  80 ARG   20  81 LEU 
+       21  82 SER   22  83 GLU   23  84 SER   24  85 VAL   25  86 LEU 
+       26  87 SER   27  88 PRO   28  89 PRO   29  90 CYS   30  91 PHE 
+       31  92 VAL   32  93 ARG   33  94 ASN   34  95 LEU   35  96 PRO 
+       36  97 TRP   37  98 LYS   38  99 ILE   39 100 MET   40 101 VAL 
+       41 102 MET   42 103 PRO   43 104 ARG   44 105 PHE   45 106 TYR 
+       46 107 PRO   47 108 ASP   48 109 ARG   49 110 PRO   50 111 HIS 
+       51 112 GLN   52 113 LYS   53 114 SER   54 115 VAL   55 116 GLY 
+       56 117 PHE   57 118 PHE   58 119 LEU   59 120 GLN   60 121 CYS 
+       61 122 ASN   62 123 ALA   63 124 GLU   64 125 SER   65 126 ASP 
+       66 127 SER   67 128 THR   68 129 SER   69 130 TRP   70 131 SER 
+       71 132 CYS   72 133 HIS   73 134 ALA   74 135 GLN   75 136 ALA 
+       76 137 VAL   77 138 LEU   78 139 LYS   79 140 ILE   80 141 ILE 
+       81 142 ASN   82 143 TYR   83 144 ARG   84 145 ASP   85 146 ASP 
+       86 147 GLU   87 148 LYS   88 149 SER   89 150 PHE   90 151 SER 
+       91 152 ARG   92 153 ARG   93 154 ILE   94 155 SER   95 156 HIS 
+       96 157 LEU   97 158 PHE   98 159 PHE   99 160 HIS  100 161 LYS 
+      101 162 GLU  102 163 ASN  103 164 ASP  104 165 TRP  105 166 GLY 
+      106 167 PHE  107 168 SER  108 169 ASN  109 170 PHE  110 171 MET 
+      111 172 ALA  112 173 TRP  113 174 SER  114 175 GLU  115 176 VAL 
+      116 177 THR  117 178 ASP  118 179 PRO  119 180 GLU  120 181 LYS 
+      121 182 GLY  122 183 PHE  123 184 ILE  124 185 ASP  125 186 ASP 
+      126 187 ASP  127 188 LYS  128 189 VAL  129 190 THR  130 191 PHE 
+      131 192 GLU  132 193 VAL  133 194 PHE  134 195 VAL  135 196 GLN 
+      136 197 ALA  137 198 ASP  138 199 ALA  139 200 PRO  140 201 HIS 
+      141 202 GLY  142 203 VAL  143 204 ALA  144 205 TRP 
+
+   stop_
+
+   _Sequence_homology_query_date                2009-06-13
+   _Sequence_homology_query_revised_last_date   2009-04-27
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      PDB        1YY6         "The Crystal Strucure Of The N-Terminal Domain Of HauspUSP7 Complexed With An Ebna1 Peptide"                                                                                                                                                                                     100.00  155 100.00 100.00 3.84e-80 
+      PDB        1YZE         "Crystal Structure Of The N-Terminal Domain Of Usp7HAUSP."                                                                                                                                                                                                                       100.00  155 100.00 100.00 3.84e-80 
+      PDB        2F1W         "Crystal Structure Of The Traf-Like Domain Of HauspUSP7"                                                                                                                                                                                                                         100.00  158 100.00 100.00 3.25e-80 
+      PDB        2F1X         "Crystal Structure Of The Traf-Like Domain Of HauspUSP7 Bound To A P53 Peptide"                                                                                                                                                                                                   97.92  161  99.29  99.29 1.64e-77 
+      PDB        2F1Z         "Crystal Structure Of Hausp"                                                                                                                                                                                                                                                     100.00  522 100.00 100.00 1.28e-82 
+      PDB        2FOJ         "The Crystal Strucure Of The N-Terminal Domain Of HauspUSP7 Complexed With P53 Peptide 364-367"                                                                                                                                                                                  100.00  155 100.00 100.00 3.84e-80 
+      PDB        2FOO         "The Crystal Strucure Of The N-Terminal Domain Of HauspUSP7 Complexed With P53 Peptide 359-362"                                                                                                                                                                                  100.00  155 100.00 100.00 3.84e-80 
+      PDB        2FOP         "The Crystal Strucure Of The N-Terminal Domain Of HauspUSP7 Complexed With Mdm2 Peptide 147-150"                                                                                                                                                                                 100.00  155 100.00 100.00 3.84e-80 
+      DBJ        BAE22671     "unnamed protein product [Mus musculus]"                                                                                                                                                                                                                                         100.00  585  99.31 100.00 1.12e-81 
+      DBJ        BAH13721     "unnamed protein product [Homo sapiens]"                                                                                                                                                                                                                                          73.61  799 100.00 100.00 2.61e-59 
+      DBJ        BAH13801     "unnamed protein product [Homo sapiens]"                                                                                                                                                                                                                                         100.00 1086 100.00 100.00 5.63e-83 
+      DBJ        BAH13828     "unnamed protein product [Homo sapiens]"                                                                                                                                                                                                                                         100.00  509 100.00 100.00 4.35e-82 
+      DBJ        BAH13841     "unnamed protein product [Homo sapiens]"                                                                                                                                                                                                                                          73.61 1003 100.00 100.00 3.08e-59 
+      EMBL       CAA96580     "herpesvirus associated ubiquitin-specific protease (HAUSP) [Homo sapiens]"                                                                                                                                                                                                      100.00 1102 100.00 100.00 4.10e-83 
+      GenBank    AAI66012     "Ubiquitin specific peptidase 7 [synthetic construct]"                                                                                                                                                                                                                           100.00 1103  99.31 100.00 1.23e-82 
+      GenBank    AAI66690     "Ubiquitin specific peptidase 7 (herpes virus-associated) [synthetic construct]"                                                                                                                                                                                                 100.00 1102 100.00 100.00 4.61e-83 
+      GenBank    AAQ12339     "herpesvirus-associated ubiquitin-specific protease [Mus musculus]"                                                                                                                                                                                                              100.00 1103  98.61 100.00 3.90e-82 
+      GenBank    AAQ82908     "ubiquitin-specific protease 7 isoform [Homo sapiens]"                                                                                                                                                                                                                           100.00 1112 100.00 100.00 5.92e-83 
+      GenBank    AAT68666     "HAUSP [Rattus norvegicus]"                                                                                                                                                                                                                                                      100.00 1103  99.31 100.00 1.45e-82 
+      REF        NP_001003918 "ubiquitin specific peptidase 7 [Mus musculus]"                                                                                                                                                                                                                                  100.00 1103  99.31 100.00 1.23e-82 
+      REF        NP_001019961 "ubiquitin specific peptidase 7 [Rattus norvegicus]"                                                                                                                                                                                                                             100.00 1103  99.31 100.00 1.45e-82 
+      REF        NP_001129152 "ubiquitin specific peptidase 7 [Sus scrofa]"                                                                                                                                                                                                                                    100.00 1103  98.61  98.61 2.82e-81 
+      REF        NP_003461    "ubiquitin specific peptidase 7 [Homo sapiens]"                                                                                                                                                                                                                                  100.00 1102 100.00 100.00 4.61e-83 
+      REF        XP_001490868 "PREDICTED: similar to ubiquitin-specific protease 7 [Equus caballus]"                                                                                                                                                                                                           100.00 1117 100.00 100.00 7.79e-83 
+      SWISS-PROT Q4VSI4       "RecName: Full=Ubiquitin carboxyl-terminal hydrolase 7; AltName: Full=Ubiquitin thioesterase 7; AltName: Full=Ubiquitin-specific-processing protease 7; AltName: Full=Deubiquitinating enzyme 7; AltName: Full=Herpesvirus-associated ubiquitin-specific protease; Short=rHAUSP" 100.00 1103  99.31 100.00 1.45e-82 
+      SWISS-PROT Q6A4J8       "RecName: Full=Ubiquitin carboxyl-terminal hydrolase 7; AltName: Full=Ubiquitin thioesterase 7; AltName: Full=Ubiquitin-specific-processing protease 7; AltName: Full=Deubiquitinating enzyme 7; AltName: Full=Herpesvirus-associated ubiquitin-specific protease; Short=mHAUSP" 100.00 1103  98.61 100.00 3.90e-82 
+      SWISS-PROT Q93009       "RecName: Full=Ubiquitin carboxyl-terminal hydrolase 7; AltName: Full=Ubiquitin thioesterase 7; AltName: Full=Ubiquitin-specific-processing protease 7; AltName: Full=Deubiquitinating enzyme 7; AltName: Full=Herpesvirus-associated ubiquitin-specific protease"               100.00 1102 100.00 100.00 4.61e-83 
+
+   stop_
+
+save_
+
+
+save_EBNA1
+   _Saveframe_category     monomeric_polymer
+
+   _Mol_type               polymer
+   _Mol_polymer_class      protein
+   _Name_common            EBNA1
+   _Name_variant           EBNA1
+   _Abbreviation_common    EBNA1
+   _Mol_thiol_state        ?
+
+   loop_
+      _Synonym
+
+      EBNA1 
+
+   stop_
+
+   _Residue_count          ?
+   _Mol_residue_sequence   ?
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $ubiquitin_specific_protease_7 Human 9606 Eukaryota Metazoa Homo sapien 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_name
+
+      $ubiquitin_specific_protease_7 "recombinant technology" "E. coli" ? ? ? ? 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_1
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $ubiquitin_specific_protease_7   0.7 mM "[U-95% 13C; U-90% 15N]" 
+      $EBNA1                           3   mM  ?                       
+      "sodium phosphate"              20   mM  ?                       
+      "sodium chloride"              250   mM  ?                       
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_spectrometer1
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Varian
+   _Model                Inova
+   _Field_strength       500
+
+save_
+
+
+save_spectrometer2
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Varian
+   _Model                Inova
+   _Field_strength       600
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_conditions_1
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH            7.4 0.2 pH 
+      temperature 303   0.2 K  
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_referencing
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+
+      DSS H  1  protons         ppm 0   indirect external ? ? ? 1.0         
+      DSS C 13 "methyl protons" ppm 0.0 .        indirect ? ? ? 0.251449530 
+      DSS N 15 "methyl protons" ppm 0.0 .        indirect ? ? ? 0.101329118 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (geminal atoms and geminal methyl     #
+#                         groups with identical chemical shifts   #
+#                         are assumed to be assigned to           #
+#                         stereospecific atoms)                   #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups                           #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. Tyr HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. Lys HG and    #
+#                         HD protons or Trp HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (Lys 12 vs. Lys 27) #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_chem_shift_list_1
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Sample_label
+
+      $sample_1 
+
+   stop_
+
+   _Sample_conditions_label         $conditions_1
+   _Chem_shift_reference_set_label  $chemical_shift_referencing
+   _Mol_system_component_name        USP7
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1   63    2 THR H     H   8.320 0.03 0
+         2   63    2 THR CA    C  61.970 0.19 0
+         3   63    2 THR CB    C  69.790 0.08 0
+         4   63    2 THR N     N 114.390 0.01 0
+         5   64    3 SER H     H   8.480 0.03 0
+         6   64    3 SER CA    C  60.840 0.08 0
+         7   64    3 SER CB    C  63.120 0.09 0
+         8   64    3 SER N     N 116.930 0.01 0
+         9   65    4 TRP H     H   7.500 0.03 0
+        10   65    4 TRP CA    C  56.740 0.03 0
+        11   65    4 TRP CB    C  29.020 0.13 0
+        12   65    4 TRP N     N 118.380 0.01 0
+        13   66    5 ARG H     H   7.560 0.03 0
+        14   66    5 ARG CA    C  55.840 0.03 0
+        15   66    5 ARG CB    C  30.910 0.03 0
+        16   66    5 ARG N     N 120.920 0.01 0
+        17   67    6 SER H     H   8.870 0.03 0
+        18   67    6 SER CA    C  59.410 0.06 0
+        19   67    6 SER CB    C  64.320 0.03 0
+        20   67    6 SER N     N 116.000 0.01 0
+        21   68    7 GLU H     H   7.490 0.03 0
+        22   68    7 GLU CA    C  53.520 0.14 0
+        23   68    7 GLU CB    C  33.450 0.03 0
+        24   68    7 GLU N     N 116.090 0.01 0
+        25   69    8 ALA H     H   8.350 0.03 0
+        26   69    8 ALA CA    C  52.500 0.03 0
+        27   69    8 ALA CB    C  23.310 0.02 0
+        28   69    8 ALA N     N 119.000 0.01 0
+        29   70    9 THR H     H   8.330 0.03 0
+        30   70    9 THR CA    C  61.360 0.11 0
+        31   70    9 THR CB    C  69.850 0.12 0
+        32   70    9 THR N     N 115.700 0.01 0
+        33   71   10 PHE H     H   9.470 0.03 0
+        34   71   10 PHE CA    C  55.650 0.08 0
+        35   71   10 PHE CB    C  41.120 0.05 0
+        36   71   10 PHE N     N 124.700 0.01 0
+        37   72   11 GLN H     H   8.610 0.03 0
+        38   72   11 GLN CA    C  53.650 0.05 0
+        39   72   11 GLN CB    C  33.100 0.05 0
+        40   72   11 GLN N     N 116.820 0.01 0
+        41   73   12 PHE H     H   9.540 0.03 0
+        42   73   12 PHE CA    C  55.500 0.16 0
+        43   73   12 PHE CB    C  43.570 0.04 0
+        44   73   12 PHE N     N 121.660 0.01 0
+        45   74   13 THR H     H   8.820 0.03 0
+        46   74   13 THR CA    C  62.080 0.07 0
+        47   74   13 THR CB    C  69.710 0.03 0
+        48   74   13 THR N     N 126.920 0.01 0
+        49   75   14 VAL H     H   9.140 0.03 0
+        50   75   14 VAL CA    C  61.880 0.03 0
+        51   75   14 VAL CB    C  32.870 0.03 0
+        52   75   14 VAL N     N 129.560 0.01 0
+        53   76   15 GLU H     H   8.140 0.03 0
+        54   76   15 GLU CA    C  55.170 0.08 0
+        55   76   15 GLU CB    C  30.690 0.14 0
+        56   76   15 GLU N     N 125.170 0.01 0
+        57   77   16 ARG H     H   8.920 0.03 0
+        58   77   16 ARG CA    C  56.040 0.08 0
+        59   77   16 ARG CB    C  27.570 0.05 0
+        60   77   16 ARG N     N 118.990 0.01 0
+        61   78   17 PHE H     H   9.280 0.03 0
+        62   78   17 PHE CA    C  63.140 0.08 0
+        64   78   17 PHE N     N 121.760 0.01 0
+        65   79   18 SER H     H   9.540 0.03 0
+        68   82   21 SER H     H   8.980 0.03 0
+        69   82   21 SER CA    C  57.650 0.16 0
+        70   82   21 SER CB    C  64.710 0.07 0
+        71   82   21 SER N     N 119.580 0.01 0
+        72   83   22 GLU H     H   7.720 0.03 0
+        73   83   22 GLU CA    C  54.280 0.11 0
+        74   83   22 GLU CB    C  31.870 0.09 0
+        75   83   22 GLU N     N 120.090 0.01 0
+        76   84   23 SER H     H   8.140 0.03 0
+        77   84   23 SER CA    C  57.730 0.03 0
+        78   84   23 SER CB    C  64.420 0.09 0
+        79   84   23 SER N     N 111.720 0.01 0
+        80   85   24 VAL H     H   9.210 0.03 0
+        81   85   24 VAL CA    C  60.100 0.09 0
+        82   85   24 VAL CB    C  35.540 0.08 0
+        83   85   24 VAL N     N 120.070 0.01 0
+        84   86   25 LEU H     H   8.120 0.03 0
+        85   86   25 LEU CA    C  52.650 0.04 0
+        86   86   25 LEU CB    C  46.220 0.19 0
+        87   86   25 LEU N     N 123.350 0.01 0
+        88   87   26 SER H     H   8.610 0.03 0
+        92   89   28 PRO CA    C  61.990 0.07 0
+        93   89   28 PRO CB    C  32.360 0.10 0
+        94   90   29 CYS H     H   8.990 0.03 0
+        95   90   29 CYS CA    C  56.640 0.01 0
+        96   90   29 CYS CB    C  26.850 0.13 0
+        97   90   29 CYS N     N 123.140 0.01 0
+        98   91   30 PHE H     H   9.050 0.03 0
+        99   91   30 PHE CA    C  58.280 0.05 0
+       100   91   30 PHE CB    C  39.860 0.07 0
+       101   91   30 PHE N     N 128.590 0.01 0
+       102   92   31 VAL H     H   8.590 0.03 0
+       103   92   31 VAL CA    C  62.950 0.17 0
+       104   92   31 VAL CB    C  34.860 0.09 0
+       105   92   31 VAL N     N 123.160 0.01 0
+       106   93   32 ARG H     H   9.420 0.03 0
+       107   93   32 ARG CA    C  56.520 0.05 0
+       108   93   32 ARG CB    C  27.350 0.04 0
+       109   93   32 ARG N     N 124.350 0.01 0
+       110   94   33 ASN H     H   8.880 0.03 0
+       111   94   33 ASN CA    C  54.110 0.05 0
+       112   94   33 ASN CB    C  38.140 0.16 0
+       113   94   33 ASN N     N 109.960 0.01 0
+       114   95   34 LEU H     H   7.770 0.03 0
+       115   95   34 LEU CA    C  50.910 0.00 0
+       116   95   34 LEU CB    C  43.930 0.00 0
+       118   96   35 PRO CA    C  61.270 0.13 0
+       119   96   35 PRO CB    C  31.250 0.04 0
+       120   97   36 TRP H     H   8.550 0.03 0
+       121   97   36 TRP CA    C  54.820 0.06 0
+       122   97   36 TRP CB    C  29.260 0.05 0
+       123   97   36 TRP N     N 126.750 0.01 0
+       124   98   37 LYS H     H   9.230 0.03 0
+       125   98   37 LYS CA    C  54.610 0.03 0
+       126   98   37 LYS CB    C  38.580 0.11 0
+       127   98   37 LYS N     N 117.280 0.01 0
+       128   99   38 ILE H     H   8.580 0.03 0
+       129   99   38 ILE CA    C  61.560 0.09 0
+       130   99   38 ILE CB    C  41.180 0.01 0
+       131   99   38 ILE N     N 122.510 0.01 0
+       132  100   39 MET H     H   9.220 0.03 0
+       133  100   39 MET CA    C  53.850 0.05 0
+       134  100   39 MET CB    C  37.250 0.06 0
+       135  100   39 MET N     N 128.340 0.01 0
+       136  101   40 VAL H     H   8.720 0.03 0
+       137  101   40 VAL CA    C  59.840 0.06 0
+       138  101   40 VAL CB    C  34.950 0.08 0
+       139  101   40 VAL N     N 126.000 0.01 0
+       140  102   41 MET H     H   8.840 0.03 0
+       141  102   41 MET CA    C  53.190 0.00 0
+       144  103   42 PRO CA    C  61.660 0.00 0
+       145  104   43 ARG H     H   7.830 0.03 0
+       146  104   43 ARG CA    C  54.450 0.03 0
+       147  104   43 ARG CB    C  30.260 0.06 0
+       148  104   43 ARG N     N 120.640 0.01 0
+       149  105   44 PHE H     H   7.950 0.03 0
+       153  107   46 PRO CA    C  64.590 0.06 0
+       154  107   46 PRO CB    C  31.640 0.10 0
+       155  108   47 ASP H     H   8.630 0.03 0
+       156  108   47 ASP CA    C  53.840 0.08 0
+       157  108   47 ASP CB    C  40.360 0.08 0
+       158  108   47 ASP N     N 113.630 0.01 0
+       159  109   48 ARG H     H   7.570 0.03 0
+       163  114   53 SER H     H   9.550 0.03 0
+       164  114   53 SER CA    C  57.410 0.13 0
+       165  114   53 SER CB    C  67.590 0.06 0
+       166  114   53 SER N     N 122.240 0.01 0
+       167  115   54 VAL H     H   8.880 0.03 0
+       168  115   54 VAL CA    C  62.010 0.03 0
+       170  115   54 VAL N     N 119.580 0.01 0
+       171  116   55 GLY H     H   9.290 0.03 0
+       172  116   55 GLY CA    C  44.920 0.07 0
+       173  116   55 GLY N     N 117.470 0.01 0
+       174  117   56 PHE H     H   7.900 0.03 0
+       175  117   56 PHE CA    C  52.850 0.02 0
+       176  117   56 PHE CB    C  41.420 0.04 0
+       177  117   56 PHE N     N 127.620 0.01 0
+       178  118   57 PHE H     H   9.770 0.03 0
+       179  118   57 PHE CA    C  55.500 0.03 0
+       180  118   57 PHE CB    C  43.200 0.04 0
+       181  118   57 PHE N     N 123.720 0.01 0
+       182  119   58 LEU H     H   9.280 0.03 0
+       183  119   58 LEU CA    C  53.000 0.05 0
+       184  119   58 LEU CB    C  45.770 0.14 0
+       185  119   58 LEU N     N 123.450 0.01 0
+       186  120   59 GLN H     H   9.810 0.03 0
+       187  120   59 GLN CA    C  53.690 0.11 0
+       188  120   59 GLN CB    C  34.080 0.11 0
+       189  120   59 GLN N     N 127.140 0.01 0
+       190  121   60 CYS H     H   9.590 0.03 0
+       191  121   60 CYS CA    C  56.190 0.00 0
+       192  121   60 CYS CB    C  32.210 0.03 0
+       193  121   60 CYS N     N 128.670 0.01 0
+       194  122   61 ASN H     H   8.070 0.03 0
+       195  122   61 ASN CA    C  52.800 0.05 0
+       196  122   61 ASN CB    C  39.030 0.05 0
+       197  122   61 ASN N     N 121.630 0.01 0
+       198  123   62 ALA H     H   7.420 0.03 0
+       199  123   62 ALA CA    C  54.350 0.03 0
+       200  123   62 ALA CB    C  19.230 0.07 0
+       201  123   62 ALA N     N 117.900 0.01 0
+       202  124   63 GLU H     H   8.180 0.03 0
+       203  124   63 GLU CA    C  56.110 0.06 0
+       204  124   63 GLU CB    C  29.300 0.09 0
+       205  124   63 GLU N     N 115.140 0.01 0
+       206  125   64 SER H     H   6.820 0.03 0
+       207  125   64 SER CA    C  57.280 0.06 0
+       208  125   64 SER CB    C  63.470 0.04 0
+       209  125   64 SER N     N 112.480 0.01 0
+       210  126   65 ASP H     H   8.710 0.03 0
+       211  126   65 ASP CA    C  53.850 0.01 0
+       212  126   65 ASP CB    C  40.490 0.02 0
+       213  126   65 ASP N     N 126.890 0.01 0
+       214  127   66 SER H     H   8.270 0.03 0
+       215  127   66 SER CA    C  57.280 0.08 0
+       216  127   66 SER CB    C  63.160 0.05 0
+       217  127   66 SER N     N 114.870 0.01 0
+       218  128   67 THR H     H   8.650 0.03 0
+       219  128   67 THR CA    C  60.600 0.03 0
+       220  128   67 THR CB    C  68.590 0.02 0
+       221  128   67 THR N     N 115.360 0.01 0
+       222  129   68 SER H     H   8.450 0.03 0
+       223  129   68 SER CA    C  58.360 0.11 0
+       224  129   68 SER CB    C  64.770 0.03 0
+       225  129   68 SER N     N 115.410 0.01 0
+       226  130   69 TRP H     H   6.970 0.03 0
+       227  130   69 TRP CA    C  54.910 0.06 0
+       228  130   69 TRP CB    C  30.240 0.05 0
+       229  130   69 TRP N     N 120.830 0.01 0
+       230  131   70 SER H     H   8.970 0.03 0
+       231  131   70 SER CA    C  58.600 0.05 0
+       232  131   70 SER CB    C  65.400 0.02 0
+       233  131   70 SER N     N 111.570 0.01 0
+       234  132   71 CYS H     H   9.580 0.03 0
+       235  132   71 CYS CA    C  60.170 0.00 0
+       236  132   71 CYS CB    C  29.980 0.21 0
+       237  132   71 CYS N     N 121.010 0.01 0
+       238  133   72 HIS H     H   9.510 0.03 0
+       239  133   72 HIS CA    C  57.040 0.00 0
+       240  133   72 HIS CB    C  29.870 0.17 0
+       241  133   72 HIS N     N 132.930 0.01 0
+       242  134   73 ALA H     H   8.530 0.03 0
+       243  134   73 ALA CA    C  51.040 0.05 0
+       244  134   73 ALA CB    C  24.160 0.07 0
+       245  134   73 ALA N     N 127.110 0.01 0
+       246  135   74 GLN H     H   8.330 0.03 0
+       247  135   74 GLN CA    C  53.800 0.04 0
+       248  135   74 GLN CB    C  31.690 0.13 0
+       249  135   74 GLN N     N 117.400 0.01 0
+       250  136   75 ALA H     H   9.040 0.03 0
+       251  136   75 ALA CA    C  50.350 0.03 0
+       252  136   75 ALA CB    C  23.720 0.11 0
+       253  136   75 ALA N     N 122.530 0.01 0
+       254  137   76 VAL H     H   9.110 0.03 0
+       255  137   76 VAL CA    C  62.230 0.04 0
+       256  137   76 VAL CB    C  33.690 0.00 0
+       257  137   76 VAL N     N 121.050 0.01 0
+       258  138   77 LEU H     H   9.140 0.03 0
+       259  138   77 LEU CA    C  55.170 0.06 0
+       260  138   77 LEU CB    C  42.180 0.08 0
+       261  138   77 LEU N     N 132.530 0.01 0
+       262  139   78 LYS H     H   9.640 0.03 0
+       263  139   78 LYS CA    C  54.510 0.10 0
+       264  139   78 LYS CB    C  38.650 0.09 0
+       265  139   78 LYS N     N 125.670 0.01 0
+       266  140   79 ILE H     H   9.090 0.03 0
+       267  140   79 ILE CA    C  61.430 0.06 0
+       268  140   79 ILE CB    C  38.990 0.14 0
+       269  140   79 ILE N     N 125.890 0.01 0
+       270  141   80 ILE H     H   7.810 0.03 0
+       271  141   80 ILE CA    C  59.910 0.06 0
+       272  141   80 ILE CB    C  37.950 0.15 0
+       273  141   80 ILE N     N 127.160 0.01 0
+       274  142   81 ASN H     H   8.470 0.03 0
+       275  142   81 ASN CA    C  52.110 0.03 0
+       276  142   81 ASN CB    C  39.880 0.14 0
+       277  142   81 ASN N     N 126.390 0.01 0
+       278  143   82 TYR H     H   8.360 0.03 0
+       279  143   82 TYR CA    C  59.750 0.17 0
+       280  143   82 TYR CB    C  38.400 0.11 0
+       281  143   82 TYR N     N 124.800 0.01 0
+       282  144   83 ARG H     H   7.500 0.03 0
+       283  144   83 ARG CA    C  56.890 0.03 0
+       284  144   83 ARG CB    C  30.300 0.10 0
+       285  144   83 ARG N     N 117.280 0.01 0
+       286  145   84 ASP H     H   7.440 0.03 0
+       287  145   84 ASP CA    C  53.250 0.06 0
+       288  145   84 ASP CB    C  41.820 0.09 0
+       289  145   84 ASP N     N 117.720 0.01 0
+       290  146   85 ASP H     H   9.030 0.03 0
+       291  146   85 ASP CA    C  56.770 0.11 0
+       292  146   85 ASP CB    C  41.350 0.08 0
+       293  146   85 ASP N     N 126.690 0.01 0
+       294  147   86 GLU H     H   8.560 0.03 0
+       295  147   86 GLU CA    C  58.020 0.05 0
+       296  147   86 GLU CB    C  28.950 0.12 0
+       297  147   86 GLU N     N 118.020 0.01 0
+       298  148   87 LYS H     H   8.030 0.03 0
+       299  148   87 LYS CA    C  54.910 0.05 0
+       300  148   87 LYS CB    C  31.990 0.14 0
+       301  148   87 LYS N     N 116.940 0.01 0
+       302  149   88 SER H     H   7.550 0.03 0
+       303  149   88 SER CA    C  60.480 0.01 0
+       304  149   88 SER CB    C  62.640 0.03 0
+       305  149   88 SER N     N 117.750 0.01 0
+       306  150   89 PHE H     H   8.600 0.03 0
+       307  150   89 PHE CA    C  57.740 0.03 0
+       308  150   89 PHE CB    C  42.510 0.12 0
+       309  150   89 PHE N     N 127.370 0.01 0
+       310  151   90 SER H     H   8.000 0.03 0
+       311  151   90 SER CA    C  56.080 0.06 0
+       312  151   90 SER CB    C  67.240 0.04 0
+       313  151   90 SER N     N 121.500 0.01 0
+       314  152   91 ARG H     H   9.070 0.03 0
+       315  152   91 ARG CA    C  54.970 0.11 0
+       316  152   91 ARG CB    C  36.940 0.16 0
+       317  152   91 ARG N     N 117.550 0.01 0
+       318  153   92 ARG H     H   8.690 0.03 0
+       319  153   92 ARG CA    C  55.000 0.06 0
+       320  153   92 ARG CB    C  33.330 0.07 0
+       321  153   92 ARG N     N 120.900 0.01 0
+       322  154   93 ILE H     H   9.090 0.03 0
+       323  154   93 ILE CA    C  59.120 0.05 0
+       324  154   93 ILE CB    C  44.090 0.07 0
+       325  154   93 ILE N     N 112.040 0.01 0
+       326  155   94 SER H     H   8.820 0.03 0
+       327  155   94 SER CA    C  57.160 0.06 0
+       328  155   94 SER CB    C  64.200 0.05 0
+       329  155   94 SER N     N 116.700 0.01 0
+       330  156   95 HIS H     H   8.740 0.03 0
+       334  163  102 ASN H     H   8.740 0.03 0
+       335  163  102 ASN CA    C  54.430 0.03 0
+       336  163  102 ASN CB    C  37.130 0.10 0
+       337  163  102 ASN N     N 123.850 0.01 0
+       338  164  103 ASP H     H   8.340 0.03 0
+       339  164  103 ASP CA    C  52.450 0.07 0
+       340  164  103 ASP CB    C  43.270 0.10 0
+       341  164  103 ASP N     N 116.590 0.01 0
+       342  165  104 TRP H     H   8.800 0.03 0
+       343  165  104 TRP CA    C  57.650 0.03 0
+       345  165  104 TRP N     N 114.980 0.01 0
+       346  166  105 GLY H     H   7.450 0.03 0
+       347  166  105 GLY CA    C  45.970 0.11 0
+       348  166  105 GLY N     N 114.370 0.01 0
+       349  167  106 PHE H     H   7.730 0.03 0
+       350  167  106 PHE CA    C  55.640 0.04 0
+       351  167  106 PHE CB    C  41.300 0.10 0
+       352  167  106 PHE N     N 118.760 0.01 0
+       353  168  107 SER H     H   9.050 0.03 0
+       354  168  107 SER CA    C  61.150 0.03 0
+       355  168  107 SER CB    C  63.200 0.09 0
+       356  168  107 SER N     N 120.220 0.01 0
+       357  169  108 ASN H     H   8.230 0.03 0
+       358  169  108 ASN CA    C  49.700 0.08 0
+       359  169  108 ASN CB    C  37.760 0.12 0
+       360  169  108 ASN N     N 118.970 0.01 0
+       361  170  109 PHE H     H   8.270 0.03 0
+       362  170  109 PHE CA    C  63.660 0.04 0
+       363  170  109 PHE CB    C  40.460 0.15 0
+       364  170  109 PHE N     N 121.050 0.01 0
+       365  171  110 MET H     H   7.490 0.03 0
+       366  171  110 MET CA    C  54.720 0.05 0
+       367  171  110 MET CB    C  38.820 0.13 0
+       368  171  110 MET N     N 110.270 0.01 0
+       369  172  111 ALA H     H   9.050 0.03 0
+       370  172  111 ALA CA    C  52.940 0.07 0
+       371  172  111 ALA CB    C  18.430 0.11 0
+       372  172  111 ALA N     N 125.780 0.01 0
+       373  173  112 TRP H     H   9.080 0.03 0
+       374  173  112 TRP CA    C  60.550 0.05 0
+       375  173  112 TRP CB    C  29.900 0.15 0
+       376  173  112 TRP N     N 126.750 0.01 0
+       377  174  113 SER H     H   9.320 0.03 0
+       378  174  113 SER CA    C  60.160 0.06 0
+       379  174  113 SER CB    C  61.950 0.04 0
+       380  174  113 SER N     N 112.880 0.01 0
+       381  175  114 GLU H     H   6.820 0.03 0
+       382  175  114 GLU CA    C  58.320 0.12 0
+       383  175  114 GLU CB    C  30.090 0.14 0
+       384  175  114 GLU N     N 120.800 0.01 0
+       385  176  115 VAL H     H   7.200 0.03 0
+       386  176  115 VAL CA    C  64.890 0.04 0
+       387  176  115 VAL CB    C  31.480 0.09 0
+       388  176  115 VAL N     N 115.950 0.01 0
+       389  177  116 THR H     H   7.320 0.03 0
+       390  177  116 THR CA    C  61.320 0.05 0
+       391  177  116 THR CB    C  69.120 0.08 0
+       392  177  116 THR N     N 102.710 0.01 0
+       393  178  117 ASP H     H   6.960 0.03 0
+       394  178  117 ASP CA    C  51.550 0.00 0
+       395  178  117 ASP CB    C  41.340 0.00 0
+       397  179  118 PRO CA    C  64.890 0.02 0
+       398  179  118 PRO CB    C  32.140 0.14 0
+       399  180  119 GLU H     H   8.570 0.03 0
+       400  180  119 GLU CA    C  57.110 0.05 0
+       401  180  119 GLU CB    C  29.940 0.17 0
+       402  180  119 GLU N     N 116.120 0.01 0
+       403  181  120 LYS H     H   7.810 0.03 0
+       404  181  120 LYS CA    C  56.960 0.04 0
+       406  181  120 LYS N     N 116.560 0.01 0
+       407  182  121 GLY H     H   7.450 0.03 0
+       408  182  121 GLY CA    C  46.380 0.05 0
+       409  182  121 GLY N     N 104.410 0.01 0
+       410  183  122 PHE H     H   9.090 0.03 0
+       411  183  122 PHE CA    C  58.340 0.05 0
+       412  183  122 PHE CB    C  38.840 0.15 0
+       413  183  122 PHE N     N 117.030 0.01 0
+       414  184  123 ILE H     H   7.610 0.03 0
+       415  184  123 ILE CA    C  58.930 0.11 0
+       416  184  123 ILE CB    C  41.780 0.06 0
+       417  184  123 ILE N     N 116.350 0.01 0
+       418  185  124 ASP H     H   8.150 0.03 0
+       419  185  124 ASP CA    C  53.160 0.06 0
+       420  185  124 ASP CB    C  42.360 0.15 0
+       421  185  124 ASP N     N 126.620 0.01 0
+       422  186  125 ASP H     H   8.990 0.03 0
+       423  186  125 ASP CA    C  55.190 0.04 0
+       424  186  125 ASP CB    C  39.290 0.10 0
+       425  186  125 ASP N     N 127.950 0.01 0
+       426  187  126 ASP H     H   8.690 0.03 0
+       427  187  126 ASP CA    C  54.350 0.06 0
+       428  187  126 ASP CB    C  41.890 0.03 0
+       429  187  126 ASP N     N 114.510 0.01 0
+       430  188  127 LYS H     H   7.530 0.03 0
+       431  188  127 LYS CA    C  54.630 0.11 0
+       432  188  127 LYS CB    C  34.280 0.14 0
+       433  188  127 LYS N     N 116.090 0.01 0
+       434  189  128 VAL H     H   7.920 0.03 0
+       435  189  128 VAL CA    C  60.870 0.05 0
+       436  189  128 VAL CB    C  35.190 0.09 0
+       437  189  128 VAL N     N 124.210 0.01 0
+       438  190  129 THR H     H  10.230 0.03 0
+       439  190  129 THR CA    C  63.030 0.04 0
+       440  190  129 THR CB    C  69.810 0.11 0
+       441  190  129 THR N     N 125.440 0.01 0
+       442  191  130 PHE H     H   8.810 0.03 0
+       443  191  130 PHE CA    C  56.080 0.14 0
+       444  191  130 PHE CB    C  41.190 0.12 0
+       445  191  130 PHE N     N 126.800 0.00 0
+       446  192  131 GLU H     H  10.020 0.03 0
+       447  192  131 GLU CA    C  54.370 0.07 0
+       448  192  131 GLU CB    C  35.130 0.14 0
+       449  192  131 GLU N     N 123.470 0.01 0
+       450  193  132 VAL H     H   8.730 0.03 0
+       451  193  132 VAL CA    C  59.620 0.03 0
+       452  193  132 VAL CB    C  35.300 0.14 0
+       453  193  132 VAL N     N 124.680 0.01 0
+       454  194  133 PHE H     H   8.380 0.03 0
+       455  194  133 PHE CA    C  54.820 0.08 0
+       456  194  133 PHE CB    C  41.190 0.11 0
+       457  194  133 PHE N     N 126.770 0.01 0
+       458  195  134 VAL H     H   8.860 0.03 0
+       459  195  134 VAL CA    C  58.690 0.11 0
+       460  195  134 VAL CB    C  34.200 0.13 0
+       461  195  134 VAL N     N 126.370 0.01 0
+       462  196  135 GLN H     H   8.380 0.03 0
+       463  196  135 GLN CA    C  54.240 0.12 0
+       464  196  135 GLN CB    C  30.890 0.09 0
+       465  196  135 GLN N     N 124.510 0.04 0
+       466  197  136 ALA H     H   8.530 0.03 0
+       467  197  136 ALA CA    C  50.290 0.03 0
+       468  197  136 ALA CB    C  22.320 0.11 0
+       469  197  136 ALA N     N 127.960 0.01 0
+       470  198  137 ASP H     H   9.010 0.03 0
+       471  198  137 ASP CA    C  53.440 0.02 0
+       472  198  137 ASP CB    C  41.820 0.07 0
+       473  198  137 ASP N     N 126.270 0.01 0
+       474  199  138 ALA H     H   8.520 0.03 0
+       475  199  138 ALA CA    C  51.040 0.00 0
+       476  199  138 ALA CB    C  17.340 0.00 0
+       478  200  139 PRO CA    C  62.360 0.06 0
+       479  200  139 PRO CB    C  33.340 0.10 0
+       480  201  140 HIS H     H   9.020 0.03 0
+       481  201  140 HIS CA    C  54.750 0.07 0
+       483  201  140 HIS N     N 118.480 0.01 0
+       484  202  141 GLY H     H   8.640 0.03 0
+       485  202  141 GLY CA    C  46.080 0.08 0
+       486  202  141 GLY N     N 109.460 0.01 0
+       487  203  142 VAL H     H   7.630 0.03 0
+       488  203  142 VAL CA    C  60.570 0.04 0
+       489  203  142 VAL CB    C  33.030 0.17 0
+       490  203  142 VAL N     N 115.220 0.01 0
+       491  204  143 ALA H     H   8.080 0.03 0
+       492  204  143 ALA CA    C  51.990 0.07 0
+       493  204  143 ALA CB    C  19.030 0.12 0
+       494  204  143 ALA N     N 127.240 0.01 0
+       495  205  144 TRP H     H   7.460 0.03 0
+
+   stop_
+
+save_
+

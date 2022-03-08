@@ -1,0 +1,1307 @@
+data_4061
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a CA chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 93   S    CA      67.24        61.81
+#
+#After reference correction, the following residues still 
+#have a CB chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 93   S    CB      68.96        63.00
+#
+#After reference correction, the following residues still 
+#have a HN chemical shift difference (obs*-pred) greater than  2.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 39   E    H       11.11         8.26
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#N/A     1.44    1.76      N/A   -0.27   0.07    
+#
+#R003_bmr4061.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R003_bmr4061.str file):
+#HA       CA       CB      CO       N      HN
+#N/A    +1.60   +1.60    N/A    -0.27     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#    N/A  +/-0.15  +/-0.16      N/A  +/-0.25  +/-0.04  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#N/A     0.971   0.994     N/A   0.883   0.642   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#N/A     0.868   0.863     N/A   1.461   0.264   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Overexpression of Myoglobin and Assignment of Its Amide, C Alpha and C Beta 
+Resonances
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Jennings Patricia A. . 
+      2 Stone    Martin   J. . 
+      3 Wright   Peter    E. . 
+
+   stop_
+
+   _BMRB_accession_number   4061
+   _BMRB_flat_file_name     bmr4061.str
+   _Entry_type              updated
+   _Submission_date         1997-10-02
+   _Accession_date          1997-10-03
+   _Entry_origination       author
+   _NMR_STAR_version        2.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  143 
+      '13C chemical shifts' 267 
+      '15N chemical shifts' 143 
+
+   stop_
+
+   loop_
+      _Revision_date
+      _Revision_keyword
+      _Revision_author
+      _Revision_detail
+
+      1998-02-25 reformat BMRB   'converted to NMR-STAR version 2.1'                   
+      2000-03-21 updated  author 'sample concentrations added and sequence renumbered' 
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_full         
+;
+    Jennings, P. A., Stone, M. J., and Wright, P. E., "Overexpession of 
+    Myoglobin and Assignment of Its amide, C Alpha and C Beta Resonances," 
+    J. Biomol. NMR 6, 271-276 (1995).                                 
+;
+   _Citation_title        
+;
+Overexpression of Myoglobin and Assignment of Its Amide, C Alpha and C Beta 
+Resonances
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        96088117
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Jennings Patricia A. . 
+      2 Stone    Martin   J. . 
+      3 Wright   Peter    E. . 
+
+   stop_
+
+   _Journal_abbreviation  'J. Biomol. NMR'
+   _Journal_volume         6
+   _Page_first             271
+   _Page_last              276
+   _Year                   1995
+
+   loop_
+      _Keyword
+
+      'Inclusion bodies'  
+      'Heme protein'      
+      'Heteronuclear NMR' 
+       Myoglobin          
+
+   stop_
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_MbCO
+   _Saveframe_category      molecular_system
+
+   _Mol_system_name        'myoglobin carbon monoxide complex'
+   _Abbreviation_common     MbCO
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+       apomyoglobin            $apoMb 
+      'Iron protoporphyrin IX' $heme  
+      'Carbon monoxide'        $CO    
+
+   stop_
+
+   _System_physical_state   native
+   _System_oligomer_state   monomer
+   _System_paramagnetic     no
+
+   loop_
+      _Biological_function
+
+      'Oxygen storage protein' 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_apoMb
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                 apomyoglobin
+   _Name_variant                                .
+   _Abbreviation_common                         apoMb
+
+   loop_
+      _Biological_function
+
+      'Oxygen storage protein' 
+
+   stop_
+
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               154
+   _Mol_residue_sequence                       
+;
+MVLSEGEWQLVLHVWAKVEA
+DVAGHGQDILIRLFKSHPET
+LEKFDRFKHLKTEAEMKASE
+DLKKHGVTVLTALGAILKKK
+GHHEAELKPLAQSHATKHKI
+PIKYLEFISEAIIHVLHSRH
+PGDFGADAQGAMNKALELFR
+KDIAAKYKELGYQG
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_author_seq_code
+      _Residue_label
+
+        1   0 MET    2   1 VAL    3   2 LEU    4   3 SER    5   4 GLU 
+        6   5 GLY    7   6 GLU    8   7 TRP    9   8 GLN   10   9 LEU 
+       11  10 VAL   12  11 LEU   13  12 HIS   14  13 VAL   15  14 TRP 
+       16  15 ALA   17  16 LYS   18  17 VAL   19  18 GLU   20  19 ALA 
+       21  20 ASP   22  21 VAL   23  22 ALA   24  23 GLY   25  24 HIS 
+       26  25 GLY   27  26 GLN   28  27 ASP   29  28 ILE   30  29 LEU 
+       31  30 ILE   32  31 ARG   33  32 LEU   34  33 PHE   35  34 LYS 
+       36  35 SER   37  36 HIS   38  37 PRO   39  38 GLU   40  39 THR 
+       41  40 LEU   42  41 GLU   43  42 LYS   44  43 PHE   45  44 ASP 
+       46  45 ARG   47  46 PHE   48  47 LYS   49  48 HIS   50  49 LEU 
+       51  50 LYS   52  51 THR   53  52 GLU   54  53 ALA   55  54 GLU 
+       56  55 MET   57  56 LYS   58  57 ALA   59  58 SER   60  59 GLU 
+       61  60 ASP   62  61 LEU   63  62 LYS   64  63 LYS   65  64 HIS 
+       66  65 GLY   67  66 VAL   68  67 THR   69  68 VAL   70  69 LEU 
+       71  70 THR   72  71 ALA   73  72 LEU   74  73 GLY   75  74 ALA 
+       76  75 ILE   77  76 LEU   78  77 LYS   79  78 LYS   80  79 LYS 
+       81  80 GLY   82  81 HIS   83  82 HIS   84  83 GLU   85  84 ALA 
+       86  85 GLU   87  86 LEU   88  87 LYS   89  88 PRO   90  89 LEU 
+       91  90 ALA   92  91 GLN   93  92 SER   94  93 HIS   95  94 ALA 
+       96  95 THR   97  96 LYS   98  97 HIS   99  98 LYS  100  99 ILE 
+      101 100 PRO  102 101 ILE  103 102 LYS  104 103 TYR  105 104 LEU 
+      106 105 GLU  107 106 PHE  108 107 ILE  109 108 SER  110 109 GLU 
+      111 110 ALA  112 111 ILE  113 112 ILE  114 113 HIS  115 114 VAL 
+      116 115 LEU  117 116 HIS  118 117 SER  119 118 ARG  120 119 HIS 
+      121 120 PRO  122 121 GLY  123 122 ASP  124 123 PHE  125 124 GLY 
+      126 125 ALA  127 126 ASP  128 127 ALA  129 128 GLN  130 129 GLY 
+      131 130 ALA  132 131 MET  133 132 ASN  134 133 LYS  135 134 ALA 
+      136 135 LEU  137 136 GLU  138 137 LEU  139 138 PHE  140 139 ARG 
+      141 140 LYS  142 141 ASP  143 142 ILE  144 143 ALA  145 144 ALA 
+      146 145 LYS  147 146 TYR  148 147 LYS  149 148 GLU  150 149 LEU 
+      151 150 GLY  152 151 TYR  153 152 GLN  154 153 GLY 
+
+   stop_
+
+   _Sequence_homology_query_date                2009-01-31
+   _Sequence_homology_query_revised_last_date   2008-12-06
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB           1027  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1029  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1200  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1413  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1455  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1457  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1459  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1461  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1463  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1465  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1467  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1469  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1471  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           1752  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2345  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2346  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2347  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2348  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2431  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2432  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2433  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           2434  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB            291  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB            292  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB            293  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB             40  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           4062  apomyoglobin                                                                                                                                100.00 154 100.00 100.00 1.03e-82 
+      BMRB            426  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           4568  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB           4676 "unfolded myoglobin"                                                                                                                          99.35 153 100.00 100.00 7.01e-82 
+      BMRB           4695  myoglobin                                                                                                                                    99.35 153  99.35  99.35 4.36e-81 
+      BMRB           5158  apomyoglobin                                                                                                                                 99.35 153  98.69  98.69 3.72e-80 
+      BMRB           7077  (1-119)apoMb                                                                                                                                 77.27 119 100.00 100.00 1.06e-60 
+      BMRB            823  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      BMRB            824  myoglobin                                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      PDB        101M      "Sperm Whale Myoglobin F46v N-Butyl Isocyanide At Ph 9.0"                                                                                    100.00 154  98.70  99.35 1.50e-81 
+      PDB        102M      "Sperm Whale Myoglobin H64a Aquomet At Ph 9.0"                                                                                               100.00 154  98.70  99.35 2.16e-81 
+      PDB        103M      "Sperm Whale Myoglobin H64a N-Butyl Isocyanide At Ph 9.0"                                                                                    100.00 154  98.70  99.35 2.16e-81 
+      PDB        104M      "Sperm Whale Myoglobin N-Butyl Isocyanide At Ph 7.0"                                                                                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        105M      "Sperm Whale Myoglobin N-Butyl Isocyanide At Ph 9.0"                                                                                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        106M      "Sperm Whale Myoglobin V68f Ethyl Isocyanide At Ph 9.0"                                                                                      100.00 154  98.70  99.35 1.22e-81 
+      PDB        107M      "Sperm Whale Myoglobin V68f N-Butyl Isocyanide At Ph 9.0"                                                                                    100.00 154  98.70  99.35 1.22e-81 
+      PDB        108M      "Sperm Whale Myoglobin V68f N-Butyl Isocyanide At Ph 7.0"                                                                                    100.00 154  98.70  99.35 1.22e-81 
+      PDB        109M      "Sperm Whale Myoglobin D122n Ethyl Isocyanide At Ph 9.0"                                                                                     100.00 154  99.35 100.00 2.75e-82 
+      PDB        110M      "Sperm Whale Myoglobin D122n Methyl Isocyanide At Ph 9.0"                                                                                    100.00 154  99.35 100.00 2.75e-82 
+      PDB        111M      "Sperm Whale Myoglobin D122n N-Butyl Isocyanide At Ph 9.0"                                                                                   100.00 154  99.35 100.00 2.75e-82 
+      PDB        112M      "Sperm Whale Myoglobin D122n N-Propyl Isocyanide At Ph 9.0"                                                                                  100.00 154  99.35 100.00 2.75e-82 
+      PDB        1A6G      "Carbonmonoxy-Myoglobin, Atomic Resolution"                                                                                                   98.05 151  99.34 100.00 2.97e-80 
+      PDB        1A6K      "Aquomet-Myoglobin, Atomic Resolution"                                                                                                        98.05 151 100.00 100.00 1.55e-80 
+      PDB        1A6M      "Oxy-Myoglobin, Atomic Resolution"                                                                                                            98.05 151 100.00 100.00 1.55e-80 
+      PDB        1A6N      "Deoxy-Myoglobin, Atomic Resolution"                                                                                                          98.05 151 100.00 100.00 1.55e-80 
+      PDB        1ABS      "Photolysed Carbonmonoxy-Myoglobin At 20 K"                                                                                                  100.00 154  99.35 100.00 2.75e-82 
+      PDB        1AJG      "Carbonmonoxy Myoglobin At 40 K"                                                                                                              99.35 153 100.00 100.00 7.01e-82 
+      PDB        1AJH      "Photoproduct Of Carbonmonoxy Myoglobin At 40 K"                                                                                              99.35 153 100.00 100.00 7.01e-82 
+      PDB        1BVC      "Structure Of A Biliverdin Apomyoglobin Complex (Form D) At 118 K"                                                                            99.35 153 100.00 100.00 7.01e-82 
+      PDB        1BVD      "Structure Of A Biliverdin Apomyoglobin Complex (Form B) At 98 K"                                                                             99.35 153 100.00 100.00 7.01e-82 
+      PDB        1BZ6      "Atomic Resolution Crystal Structure Aquomet-Myoglobin From Sperm Whale At Room Temperature"                                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1BZP      "Atomic Resolution Crystal Structure Analysis Of Native Deoxy And Co Myoglobin From Sperm Whale At Room Temperature"                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        1BZR      "Atomic Resolution Crystal Structure Analysis Of Native Deoxy And Co Myoglobin From Sperm Whale At Room Temperature"                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        1CH1      "Recombinant Sperm Whale Myoglobin L89g Mutatnt (Met)"                                                                                       100.00 154  98.70  99.35 2.60e-81 
+      PDB        1CH2      "Recombinant Sperm Whale Myoglobin L89f Mutant (Met)"                                                                                        100.00 154  98.70  99.35 8.21e-82 
+      PDB        1CH3      "Recombinant Sperm Whale Myoglobin L89w Mutant (Met)"                                                                                        100.00 154  98.70  99.35 1.64e-81 
+      PDB        1CH5      "Recombinant Sperm Whale Myoglobin H97v Mutant (Met)"                                                                                        100.00 154  98.70  99.35 2.71e-81 
+      PDB        1CH7      "Recombinant Sperm Whale Myoglobin H97f Mutant (Met)"                                                                                        100.00 154  98.70  99.35 1.96e-81 
+      PDB        1CH9      "Recombinant Sperm Whale Myoglobin H97q Mutant (Met)"                                                                                        100.00 154  98.70  99.35 1.24e-81 
+      PDB        1CIK      "Recombinant Sperm Whale Myoglobin I99a Mutant (Met)"                                                                                        100.00 154  98.70  99.35 1.05e-81 
+      PDB        1CIO      "Recombinant Sperm Whale Myoglobin I99v Mutant (Met)"                                                                                        100.00 154  98.70 100.00 3.78e-82 
+      PDB        1CO8      "Recombinant Sperm Whale Myoglobin L104a Mutant (Met)"                                                                                       100.00 154  98.70  99.35 1.23e-81 
+      PDB        1CO9      "Recombinant Sperm Whale Myoglobin L104v Mutant (Met)"                                                                                       100.00 154  98.70 100.00 5.23e-82 
+      PDB        1CP0      "Recombinant Sperm Whale Myoglobin L104n Mutant (Met)"                                                                                       100.00 154  98.70  99.35 1.73e-81 
+      PDB        1CP5      "Recombinant Sperm Whale Myoglobin L104f Mutant (Met)"                                                                                       100.00 154  98.70  99.35 8.21e-82 
+      PDB        1CPW      "Recombinant Sperm Whale Myoglobin L104w Mutant (Met)"                                                                                       100.00 154  98.70  99.35 1.64e-81 
+      PDB        1CQ2      "Neutron Struture Of Fully Deuterated Sperm Whale Myoglobin At 2.0 Angstrom"                                                                  98.70 153 100.00 100.00 2.60e-81 
+      PDB        1DO1      "Carbonmonoxy-Myoglobin Mutant L29w At 105k"                                                                                                  99.35 154  98.69  99.35 1.03e-80 
+      PDB        1DO3      "Carbonmonoxy-Myoglobin (Mutant L29w) After Photolysis At T>180k"                                                                             99.35 154  98.69  99.35 1.03e-80 
+      PDB        1DO4      "Carbonmonoxy-Myoglobin (Mutant L29w) After Photolysis At T<180k"                                                                             99.35 154  98.69  99.35 1.03e-80 
+      PDB        1DO7      "Carbonmonoxy-Myoglobin (Mutant L29w) Rebinding Structure After Photolysis At T< 180k"                                                        99.35 154  98.69  99.35 1.03e-80 
+      PDB        1DTI      "Recombinant Sperm Whale Myoglobin H97d, D122n Mutant (Met)"                                                                                 100.00 154  98.70  99.35 1.96e-81 
+      PDB        1DTM      "Crystal Structure Of The Sperm-Whale Myoglobin Mutant H93g Complexed With 4-Methylimidazole, Metaquo Form"                                   99.35 153  99.35  99.35 7.13e-81 
+      PDB        1DUK      "Wild-Type Recombinant Sperm Whale Metaquomyoglobin"                                                                                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        1DUO      "Sperm Whale Metaquomyoglobin Proximal Histidine Mutant H93g With 1-Methylimidazole As Proximal Ligand."                                      99.35 153  99.35  99.35 7.13e-81 
+      PDB        1EBC      "Sperm Whale Met-Myoglobin:cyanide Complex"                                                                                                   99.35 153 100.00 100.00 7.01e-82 
+      PDB        1F6H      "Combined Rietveld And Stereochemical Restraint Refinement Of A Protein"                                                                      99.35 153 100.00 100.00 7.01e-82 
+      PDB        1FCS      "Crystal Structure Of A Distal Site Double Mutant Of Sperm Whale Myoglobin At 1.6 Angstroms Resolution"                                      100.00 154  98.05  98.70 1.64e-80 
+      PDB        1H1X      "Sperm Whale Myoglobin Mutant T67r S92d"                                                                                                     100.00 154  98.05  98.70 5.79e-81 
+      PDB        1HJT      "Sperm Whale Myoglobin (Ferrous, Nitric Oxide Bound)"                                                                                         99.35 153 100.00 100.00 7.01e-82 
+      PDB        1IOP      "Incorporation Of A Hemin With The Shortest Acid Side-Chains Into Myoglobin"                                                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1IRC      "Cysteine Rich Intestinal Protein"                                                                                                           100.00 154  99.35  99.35 9.95e-82 
+      PDB        1J3F      "Crystal Structure Of An Artificial Metalloprotein:cr(Iii)(3, 3'-Me2-Salophen)APO-A71g Myoglobin"                                            100.00 154  99.35  99.35 3.51e-82 
+      PDB        1J52      "Recombinant Sperm Whale Myoglobin In The Presence Of 7atm Xenon"                                                                            100.00 154  99.35 100.00 2.75e-82 
+      PDB        1JDO      "Sperm Whale Myoglobin (Ferrous, Nitric Oxide Bound)"                                                                                        100.00 154  98.70  99.35 8.21e-82 
+      PDB        1JP6      "Sperm Whale Met-Myoglobin (Room Temperature; Room Pressure)"                                                                                 99.35 153 100.00 100.00 7.01e-82 
+      PDB        1JP8      "Sperm Whale Met-Myoglobin (Room Temperature; High Pressure)"                                                                                 99.35 153 100.00 100.00 7.01e-82 
+      PDB        1JP9      "Sperm Whale Met-Myoglobin (Low Temperature; High Pressure)"                                                                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1JPB      "Sperm Whale Met-Myoglobin (Low Temperature; High Pressure)"                                                                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1JW8      "1.3 Angstrom Resolution Crystal Structure Of P6 Form Of Myoglobin"                                                                          100.00 154  99.35 100.00 2.75e-82 
+      PDB        1L2K      "Neutron Structure Determination Of Sperm Whale Met- Myoglobin At 1.5a Resolution."                                                           99.35 153 100.00 100.00 7.01e-82 
+      PDB        1LTW      "Recombinant Sperm Whale Myoglobin 29w Mutant (Oxy)"                                                                                         100.00 154  98.70  99.35 1.64e-81 
+      PDB        1LUE      "Recombinant Sperm Whale Myoglobin H64dV68AD122N MUTANT (Met)"                                                                               100.00 154  98.05  98.70 6.24e-81 
+      PDB        1MBC      "X-Ray Structure And Refinement Of Carbon-Monoxy (Fe Ii)- Myoglobin At 1.5 Angstroms Resolution"                                              99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MBD      "Neutron Diffraction Reveals Oxygen-Histidine Hydrogen Bond In Oxymyoglobin"                                                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MBI      "X-Ray Crystal Structure Of The Ferric Sperm Whale Myoglobin: Imidazole Complex At 2.0 Angstroms Resolution"                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MBN      "The Stereochemistry Of The Protein Myoglobin"                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MBO      "Structure And Refinement Of Oxymyoglobin At 1.6 Angstroms Resolution"                                                                        99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MCY      "Sperm Whale Myoglobin (Mutant With Initiator Met And With His 64 Replaced By Gln, Leu 29 Replaced By Phe"                                   100.00 154  98.70  98.70 1.41e-81 
+      PDB        1MGN      "His64(E7)-> Tyr Apomyoglobin As A Reagent For Measuring Rates Of Hemin Dissociation"                                                        100.00 154  98.70 100.00 7.62e-82 
+      PDB        1MLF      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 8.42e-82 
+      PDB        1MLG      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 8.42e-82 
+      PDB        1MLH      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 8.42e-82 
+      PDB        1MLJ      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 1.22e-81 
+      PDB        1MLK      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 1.22e-81 
+      PDB        1MLL      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70  99.35 1.22e-81 
+      PDB        1MLM      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 3.94e-82 
+      PDB        1MLN      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 3.94e-82 
+      PDB        1MLO      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 3.94e-82 
+      PDB        1MLQ      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 7.49e-82 
+      PDB        1MLR      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 7.49e-82 
+      PDB        1MLS      "Structural And Functional Effects Of Apolar Mutations Of Val68(E11) In Myoglobin"                                                           100.00 154  98.70 100.00 7.49e-82 
+      PDB        1MLU      "Nitric Oxide Recombination To Double Mutants Of Myoglobin: The Role Of Ligand Diffusion In A Fluctuating Heme Pocket"                       100.00 154  98.05  98.70 8.08e-81 
+      PDB        1MOA      "A Novel Site-Directed Mutant Of Myoglobin With An Unusually High O2 Affinity And Low Autooxidation Rate"                                    100.00 154  98.70  99.35 8.21e-82 
+      PDB        1MOB      "High-Resolution Crystal Structures Of Distal Histidine Mutants Of Sperm Whale Myoglobin"                                                    100.00 154  98.70  99.35 2.55e-81 
+      PDB        1MOC      "High-Resolution Crystal Structures Of Distal Histidine Mutants Of Sperm Whale Myoglobin"                                                    100.00 154  98.70  99.35 1.77e-81 
+      PDB        1MOD      "High-Resolution Crystal Structures Of Distal Histidine Mutants Of Sperm Whale Myoglobin"                                                    100.00 154  98.70  99.35 1.77e-81 
+      PDB        1MTI      "Phe46(Cd4) Orients The Distal Histidine For Hydrogen Bonding To Bound Ligands In Sperm Whale Myoglobin"                                     100.00 154  98.70  99.35 1.19e-81 
+      PDB        1MTJ      "Phe46(Cd4) Orients The Distal Histidine For Hydrogen Bonding To Bound Ligands In Sperm Whale Myoglobin"                                     100.00 154  98.70  99.35 1.50e-81 
+      PDB        1MTK      "Phe46(Cd4) Orients The Distal Histidine For Hydrogen Bonding To Bound Ligands In Sperm Whale Myoglobin"                                     100.00 154  98.70  99.35 1.50e-81 
+      PDB        1MYF      "Solution Structure Of Carbonmonoxy Myoglobin Determined From Nmr Distance And Chemical Shift Constraints"                                    99.35 153 100.00 100.00 7.01e-82 
+      PDB        1MYM      "Structural Determinants Of Co Stretching Vibration Frequencies In Myoglobin"                                                                100.00 154  98.70  99.35 1.50e-81 
+      PDB        1O16      "Recombinant Sperm Whale Myoglobin H64dV68SD122N MUTANT (Met)"                                                                               100.00 154  98.05  98.70 8.22e-81 
+      PDB        1OFJ      "Recombinant Sperm Whale Myoglobin L29hH64LD122N MUTANT (With Initiator Met)"                                                                100.00 154  98.05  98.70 3.28e-80 
+      PDB        1OFK      "Recombinant Sperm Whale Myoglobin F43h, H64l Mutant (Met)"                                                                                  100.00 154  98.05  98.70 3.48e-80 
+      PDB        1SPE      "Sperm Whale Native Co Myoglobin At Ph 4.0, Temp 4c"                                                                                          99.35 153 100.00 100.00 7.01e-82 
+      PDB        1SWM      "X-Ray Crystal Structure Of The Ferric Sperm Whale Myoglobin: Imidazole Complex At 2.0 Angstroms Resolution"                                  99.35 153 100.00 100.00 7.01e-82 
+      PDB        1TES      "Oxygen Binding Muscle Protein"                                                                                                              100.00 154  99.35 100.00 2.75e-82 
+      PDB        1U7R      "Crystal Structure Of Native Sperm Whale Myoglobin From Low Ionic Strength Enviroment (Form2 )"                                               99.35 153 100.00 100.00 7.01e-82 
+      PDB        1U7S      "Crystal Structure Of Native Sperm Whale Myoglobin From Low Ionic Strength Enviroment (Form 1)"                                               99.35 153 100.00 100.00 7.01e-82 
+      PDB        1UFJ      "Crystal Structure Of An Artificial Metalloprotein:fe(Iii)(3, 3'-Me2-Salophen)APO-A71g Myoglobin"                                            100.00 154  99.35  99.35 3.51e-82 
+      PDB        1UFP      "Crystal Structure Of An Artificial Metalloprotein:fe(Iii)(3, 3'-Me2-Salophen)APO-Wild Type Myoglobin"                                       100.00 154 100.00 100.00 1.03e-82 
+      PDB        1V9Q      "Crystal Structure Of An Artificial Metalloprotein:mn(Iii)(3, 3'-Me2-Salophen)APO-A71g Myoglobin"                                            100.00 154  99.35  99.35 3.51e-82 
+      PDB        1VXA      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXB      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXC      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXD      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXE      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXF      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXG      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1VXH      "Native Sperm Whale Myoglobin"                                                                                                                99.35 153 100.00 100.00 7.01e-82 
+      PDB        1WVP      "Structure Of Chemically Modified Myoglobin With Distal N- Tetrazolyl-Histidine E7(64)"                                                       99.35 153  99.35  99.35 4.86e-81 
+      PDB        1YOG      "Cobalt Myoglobin (Deoxy)"                                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      PDB        1YOH      "Cobalt Myoglobin (Met)"                                                                                                                      99.35 153 100.00 100.00 7.01e-82 
+      PDB        1YOI      "Cobalt Myoglobin (Oxy)"                                                                                                                      99.35 153 100.00 100.00 7.01e-82 
+      PDB        2BLH      "Ligand Migration And Protein Fluctuations In Myoglobin Mutant L29w"                                                                          99.35 153  98.69  99.35 1.03e-80 
+      PDB        2BLI      "L29w Mb Deoxy"                                                                                                                               99.35 153  98.69  99.35 1.03e-80 
+      PDB        2BLJ      "Structure Of L29w Mbco"                                                                                                                      99.35 153  98.69  99.35 1.03e-80 
+      PDB        2BW9      "Laue Structure Of L29w Mbco"                                                                                                                 99.35 153  98.69  99.35 1.03e-80 
+      PDB        2BWH      "Laue Structure Of A Short Lived State Of L29w Myoglobin"                                                                                     99.35 153  98.69  99.35 1.03e-80 
+      PDB        2CMM      "Structural Analysis Of The Myoglobin Reconstituted With Iron Porphine"                                                                       99.35 153 100.00 100.00 7.01e-82 
+      PDB        2D6C      "Crystal Structure Of Myoglobin Reconstituted With Iron Porphycene"                                                                           99.35 153 100.00 100.00 7.01e-82 
+      PDB        2EB8      "Crystal Structure Of Cu(Ii)(Sal-Phe)APO-Myoglobin"                                                                                          100.00 154 100.00 100.00 1.03e-82 
+      PDB        2EB9      "Crystal Structure Of Cu(Ii)(Sal-Leu)APO-Myoglobin"                                                                                          100.00 154 100.00 100.00 1.03e-82 
+      PDB        2EF2      "Crystal Structure Of An Artificial Metalloprotein:rh(Phebox- Ph)APO-A71g Myoglobin"                                                         100.00 154  99.35  99.35 3.51e-82 
+      PDB        2EKT      "Crystal Structure Of Myoglobin Reconstituted With 6-Methyl- 6-Depropionatehemin"                                                             99.35 153 100.00 100.00 7.01e-82 
+      PDB        2EKU      "Crystal Structure Of Myoglobin Reconstituted With 7-Methyl- 7-Depropionatehemin"                                                             99.35 153 100.00 100.00 7.01e-82 
+      PDB        2EVK      "The Structures Of Thiolate- And Carboxylate-Ligated Ferric H93g Myoglobin: Models For Cytochrome P450 And For Oxyanion-Bound Heme Proteins"  99.35 153  99.35  99.35 7.13e-81 
+      PDB        2EVP      "The Structures Of Thiolate- And Carboxylate-Ligated Ferric H93g Myoglobin: Models For Cytochrome P450 And For Oxyanion-Bound Heme Proteins"  99.35 153  99.35  99.35 7.13e-81 
+      PDB        2G0R      "Unphotolyzed Co-Bound L29f Myoglobin"                                                                                                       100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G0S      "Unphotolyzed Co-Bound L29f Myoglobin, Crystal 2"                                                                                            100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G0V      "Photolyzed Co L29f Myoglobin: 100ps"                                                                                                        100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G0X      "Photolyzed Co L29f Myoglobin: 316ps"                                                                                                        100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G0Z      "Photolyzed Co L29f Myoglobin: 1ns"                                                                                                          100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G10      "Photolyzed Co L29f Myoglobin: 3.16ns"                                                                                                       100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G11      "Photolyzed Co L29f Myoglobin: 31.6ns"                                                                                                       100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G12      "Photolyzed Co L29f Myoglobin: 316ns"                                                                                                        100.00 154  98.70  99.35 8.21e-82 
+      PDB        2G14      "Photolyzed Co L29f Myoglobin: 3.16us"                                                                                                       100.00 154  98.70  99.35 8.21e-82 
+      PDB        2JHO      "Cyanomet Sperm Whale Myoglobin At 1.4a Resolution"                                                                                          100.00 154 100.00 100.00 1.03e-82 
+      PDB        2MB5      "Hydration In Protein Crystals. A Neutron Diffraction Analysis Of Carbonmonoxymyoglobin"                                                      98.70 153 100.00 100.00 2.43e-81 
+      PDB        2MBW      "Recombinant Sperm Whale Myoglobin (Met)"                                                                                                    100.00 154  99.35 100.00 2.75e-82 
+      PDB        2MGA      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.55e-81 
+      PDB        2MGB      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.55e-81 
+      PDB        2MGC      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.85e-81 
+      PDB        2MGD      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.85e-81 
+      PDB        2MGE      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.85e-81 
+      PDB        2MGF      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 1.24e-81 
+      PDB        2MGG      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 1.24e-81 
+      PDB        2MGH      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 1.24e-81 
+      PDB        2MGI      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 1.77e-81 
+      PDB        2MGJ      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  98.70  99.35 2.71e-81 
+      PDB        2MGK      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  99.35 100.00 2.75e-82 
+      PDB        2MGL      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  99.35 100.00 2.75e-82 
+      PDB        2MGM      "High Resolution Crystal Structures Of Five Distal Histidine Mutants Of Sperm Whale Myoglobin"                                               100.00 154  99.35 100.00 2.75e-82 
+      PDB        2MYA      "High Resolution X-Ray Structures Of Myoglobin-And Hemoglobin-Alkyl Isocyanide Complexes"                                                     99.35 153 100.00 100.00 7.01e-82 
+      PDB        2MYB      "High Resolution X-Ray Structures Of Myoglobin-And Hemoglobin-Alkyl Isocyanide Complexes"                                                     99.35 153 100.00 100.00 7.01e-82 
+      PDB        2MYC      "High Resolution X-Ray Structures Of Myoglobin-And Hemoglobin-Alkyl Isocyanide Complexes"                                                     99.35 153 100.00 100.00 7.01e-82 
+      PDB        2MYD      "High Resolution X-Ray Structures Of Myoglobin-And Hemoglobin-Alkyl Isocyanide Complexes"                                                     99.35 153 100.00 100.00 7.01e-82 
+      PDB        2MYE      "High Resolution X-Ray Structures Of Myoglobin-And Hemoglobin-Alkyl Isocyanide Complexes"                                                     99.35 153 100.00 100.00 7.01e-82 
+      PDB        2OH8      "Myoglobin Cavity Mutant I28w"                                                                                                               100.00 154  98.70  99.35 2.35e-81 
+      PDB        2OH9      "Myoglobin Cavity Mutant V68w"                                                                                                               100.00 154  98.70  99.35 2.64e-81 
+      PDB        2OHA      "Myoglobin Cavity Mutant F138w"                                                                                                              100.00 154  98.70 100.00 1.54e-81 
+      PDB        2OHB      "Myoglobin Cavity Mutant I107w"                                                                                                              100.00 154  98.70  99.35 2.35e-81 
+      PDB        2SPL      "A Novel Site-Directed Mutant Of Myoglobin With An Unusually High O2 Affinity And Low Autooxidation Rate"                                    100.00 154  98.70  99.35 8.21e-82 
+      PDB        2SPM      "A Novel Site-Directed Mutant Of Myoglobin With An Unusually High O2 Affinity And Low Autooxidation Rate"                                    100.00 154  98.70  99.35 8.21e-82 
+      PDB        2SPN      "A Novel Site-Directed Mutant Of Myoglobin With An Unusually High O2 Affinity And Low Autooxidation Rate"                                    100.00 154  98.70  99.35 8.21e-82 
+      PDB        2SPO      "A Novel Site-Directed Mutant Of Myoglobin With An Unusually High O2 Affinity And Low Autooxidation Rate"                                    100.00 154  98.70 100.00 5.23e-82 
+      PDB        2Z6S      "Crystal Structure Of The Oxy Myoglobin Free From X-Ray- Induced Photoreduction"                                                              99.35 153 100.00 100.00 7.01e-82 
+      PDB        2Z6T      "Crystal Structure Of The Ferric Peroxo Myoglobin"                                                                                            99.35 153 100.00 100.00 7.01e-82 
+      PDB        4MBN      "Refinement Of Myoglobin And Cytochrome C"                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      PDB        5MBN      "Refinement Of Myoglobin And Cytochrome C"                                                                                                    99.35 153 100.00 100.00 7.01e-82 
+      DBJ        BAF03579  "myoglobin [Physeter catodon]"                                                                                                               100.00 154 100.00 100.00 1.03e-82 
+      GenBank    AAA72199  "synthetic myoglobin"                                                                                                                        100.00 154  99.35 100.00 2.75e-82 
+      PRF        742482A    myoglobin                                                                                                                                    99.35 153  99.35 100.00 1.67e-81 
+      SWISS-PROT P02185    "RecName: Full=Myoglobin"                                                                                                                    100.00 154 100.00 100.00 1.03e-82 
+
+   stop_
+
+save_
+
+
+    #############
+    #  Ligands  #
+    #############
+
+save_heme
+   _Saveframe_category    ligand
+
+   _Mol_type              non-polymer
+   _Name_common          'iron protoporphyrin IX'
+   _Abbreviation_common   heme
+   _Mol_aromatic          yes
+
+save_
+
+
+save_CO
+   _Saveframe_category      ligand
+
+   _Mol_type                non-polymer
+   _Name_common            'carbon monoxide'
+   _Abbreviation_common     CO
+   _Mol_empirical_formula   CO
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $apoMb 'sperm whale' 9755 Eukaryota Metazoa Physeter catodon 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_type
+      _Vector_name
+      _Gene_source
+
+      $apoMb 'recombinant technology' 'E. coli' Escherichia coli BL21(DE3) plasmid pCKR102 native 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_one
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Concentration_min_value
+      _Concentration_max_value
+      _Isotopic_labeling
+
+      $MbCO                  1    mM 0.5 1.5 '[U-90% 15N; U-95% 13C]' 
+      'potassium phosphate'  0.05 M   .   .   .                       
+       H2O                  90    %   .   .   .                       
+       D2O                  10    %   .   .   .                       
+
+   stop_
+
+save_
+
+
+    #############################
+    #  Purity of the molecules  #
+    #############################
+
+save_sample_mol_purity
+   _Saveframe_category   sample_mol_purity
+
+
+   loop_
+      _Mol_label
+      _Mol_purity_value
+      _Mol_purity_value_units
+      _Mol_purity_measurement_method
+
+      $apoMb 98 % 'Mass spectrometric analysis' 
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_software_one
+   _Saveframe_category   software
+
+   _Name                 FELIX
+   _Version              2.05
+
+   loop_
+      _Vendor
+
+      'Hare Research' 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer_one
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Bruker
+   _Model                AMX500
+   _Field_strength       500
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_experimental_conditions_MbCO
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH           5.6 . n/a 
+      temperature 35   . C   
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference_MbCO
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+
+       H2O             H  1  protons         ppm 4.6516 . .        
+      'liquid ammonia' N 15  nitrogen        ppm 0.00   . indirect 
+       TMS             C 13 'methyl carbons' ppm 0.00   . indirect 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (geminal atoms and geminal methyl     #
+#                         groups with identical chemical shifts   #
+#                         are assumed to be assigned to           #
+#                         stereospecific atoms)                   #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups                           #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. Tyr HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. Lys HG and    #
+#                         HD protons or Trp HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (Lys 12 vs. Lys 27) #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_chemical_shift_assignment_apoMb
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Software_label
+
+      $software_one 
+
+   stop_
+
+   loop_
+      _Sample_label
+
+      $sample_one 
+
+   stop_
+
+   _Sample_conditions_label         $experimental_conditions_MbCO
+   _Chem_shift_reference_set_label  $chemical_shift_reference_MbCO
+   _Mol_system_component_name        apomyoglobin
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    1    2 VAL CA    C  61.900 0.00 1
+         2    1    2 VAL CB    C  34.200 0.00 1
+         3    2    3 LEU N     N 126.230 0.00 1
+         4    2    3 LEU H     H   8.330 0.00 1
+         5    2    3 LEU CA    C  56.000 0.00 1
+         6    2    3 LEU CB    C  42.000 0.00 1
+         7    3    4 SER N     N 117.730 0.00 1
+         8    3    4 SER H     H   9.140 0.00 1
+         9    3    4 SER CA    C  56.900 0.00 1
+        10    3    4 SER CB    C  65.900 0.00 1
+        11    4    5 GLU N     N 121.430 0.00 1
+        12    4    5 GLU H     H   9.130 0.00 1
+        13    4    5 GLU CA    C  59.900 0.00 1
+        15    5    6 GLY N     N 105.630 0.00 1
+        16    5    6 GLY H     H   8.660 0.00 1
+        17    5    6 GLY CA    C  46.600 0.00 1
+        18    6    7 GLU N     N 122.830 0.00 1
+        19    6    7 GLU H     H   7.800 0.00 1
+        20    6    7 GLU CA    C  59.700 0.00 1
+        22    7    8 TRP N     N 118.830 0.00 1
+        23    7    8 TRP H     H   8.550 0.00 1
+        24    7    8 TRP CA    C  60.500 0.00 1
+        25    8    9 GLN N     N 116.930 0.00 1
+        26    8    9 GLN H     H   8.530 0.00 1
+        27    8    9 GLN CA    C  59.200 0.00 1
+        29    9   10 LEU N     N 120.430 0.00 1
+        30    9   10 LEU H     H   7.630 0.00 1
+        32   10   11 VAL N     N 120.130 0.00 1
+        33   10   11 VAL H     H   8.040 0.00 1
+        34   11   12 LEU N     N 117.930 0.00 1
+        35   11   12 LEU H     H   8.820 0.00 1
+        36   11   12 LEU CA    C  57.700 0.00 1
+        37   11   12 LEU CB    C  40.300 0.00 1
+        38   12   13 HIS N     N 120.830 0.00 1
+        39   12   13 HIS H     H   8.610 0.00 1
+        40   12   13 HIS CA    C  59.300 0.00 1
+        41   12   13 HIS CB    C  28.500 0.00 1
+        42   13   14 VAL N     N 118.630 0.00 1
+        43   13   14 VAL H     H   7.930 0.00 1
+        44   13   14 VAL CA    C  65.900 0.00 1
+        45   13   14 VAL CB    C  31.200 0.00 1
+        46   14   15 TRP N     N 122.230 0.00 1
+        47   14   15 TRP H     H   9.030 0.00 1
+        48   14   15 TRP CA    C  60.400 0.00 1
+        49   14   15 TRP CB    C  31.400 0.00 1
+        50   15   16 ALA N     N 118.530 0.00 1
+        51   15   16 ALA H     H   7.630 0.00 1
+        52   15   16 ALA CA    C  55.000 0.00 1
+        53   15   16 ALA CB    C  17.600 0.00 1
+        54   16   17 LYS N     N 115.030 0.00 1
+        55   16   17 LYS H     H   7.170 0.00 1
+        56   16   17 LYS CA    C  57.800 0.00 1
+        57   16   17 LYS CB    C  30.500 0.00 1
+        58   17   18 VAL N     N 121.230 0.00 1
+        59   17   18 VAL H     H   6.720 0.00 1
+        60   17   18 VAL CA    C  65.000 0.00 1
+        61   17   18 VAL CB    C  29.300 0.00 1
+        62   18   19 GLU N     N 114.430 0.00 1
+        63   18   19 GLU H     H   7.430 0.00 1
+        64   18   19 GLU CA    C  58.600 0.00 1
+        65   18   19 GLU CB    C  29.300 0.00 1
+        66   19   20 ALA N     N 119.530 0.00 1
+        67   19   20 ALA H     H   6.840 0.00 1
+        68   19   20 ALA CA    C  53.300 0.00 1
+        70   20   21 ASP N     N 115.430 0.00 1
+        71   20   21 ASP H     H   7.550 0.00 1
+        72   20   21 ASP CA    C  52.700 0.00 1
+        73   21   22 VAL N     N 130.130 0.00 1
+        74   21   22 VAL H     H   8.720 0.00 1
+        75   21   22 VAL CA    C  67.100 0.00 1
+        76   21   22 VAL CB    C  31.800 0.00 1
+        77   22   23 ALA N     N 122.230 0.00 1
+        78   22   23 ALA H     H   8.500 0.00 1
+        79   22   23 ALA CA    C  54.700 0.00 1
+        81   23   24 GLY N     N 105.330 0.00 1
+        82   23   24 GLY H     H   8.040 0.00 1
+        83   23   24 GLY CA    C  47.000 0.00 1
+        84   24   25 HIS N     N 115.830 0.00 1
+        85   24   25 HIS H     H   7.540 0.00 1
+        86   24   25 HIS CA    C  62.300 0.00 1
+        88   25   26 GLY N     N 107.230 0.00 1
+        89   25   26 GLY H     H   8.690 0.00 1
+        90   25   26 GLY CA    C  47.300 0.00 1
+        91   26   27 GLN N     N 120.230 0.00 1
+        92   26   27 GLN H     H   7.940 0.00 1
+        93   26   27 GLN CA    C  59.100 0.00 1
+        94   26   27 GLN CB    C  29.800 0.00 1
+        95   27   28 ASP N     N 117.030 0.00 1
+        96   27   28 ASP H     H   7.450 0.00 1
+        97   27   28 ASP CA    C  57.200 0.00 1
+        98   27   28 ASP CB    C  40.900 0.00 1
+        99   28   29 ILE N     N 119.830 0.00 1
+       100   28   29 ILE H     H   8.140 0.00 1
+       101   28   29 ILE CA    C  65.900 0.00 1
+       102   28   29 ILE CB    C  38.000 0.00 1
+       103   29   30 LEU N     N 118.130 0.00 1
+       104   29   30 LEU H     H   7.200 0.00 1
+       105   29   30 LEU CA    C  57.400 0.00 1
+       106   29   30 LEU CB    C  39.500 0.00 1
+       107   30   31 ILE N     N 115.730 0.00 1
+       108   30   31 ILE H     H   7.850 0.00 1
+       109   30   31 ILE CA    C  66.400 0.00 1
+       110   30   31 ILE CB    C  37.100 0.00 1
+       111   31   32 ARG N     N 117.930 0.00 1
+       112   31   32 ARG H     H   7.710 0.00 1
+       113   31   32 ARG CA    C  58.000 0.00 1
+       114   31   32 ARG CB    C  29.100 0.00 1
+       115   32   33 LEU N     N 122.530 0.00 1
+       116   32   33 LEU H     H   7.920 0.00 1
+       117   32   33 LEU CA    C  58.600 0.00 1
+       118   32   33 LEU CB    C  41.800 0.00 1
+       119   33   34 PHE N     N 116.330 0.00 1
+       120   33   34 PHE H     H   7.920 0.00 1
+       121   33   34 PHE CA    C  56.600 0.00 1
+       122   33   34 PHE CB    C  39.300 0.00 1
+       123   34   35 LYS N     N 116.630 0.00 1
+       124   34   35 LYS H     H   8.560 0.00 1
+       125   34   35 LYS CA    C  58.700 0.00 1
+       126   34   35 LYS CB    C  32.300 0.00 1
+       127   35   36 SER N     N 112.830 0.00 1
+       128   35   36 SER H     H   8.140 0.00 1
+       129   35   36 SER CA    C  60.700 0.00 1
+       132   36   37 HIS H     H   8.050 0.00 1
+       133   36   37 HIS CA    C  52.900 0.00 1
+       134   37   38 PRO CA    C  66.100 0.00 1
+       135   37   38 PRO CB    C  31.800 0.00 1
+       136   38   39 GLU N     N 121.830 0.00 1
+       137   38   39 GLU CA    C  59.000 0.00 1
+       140   39   40 THR N     N 113.130 0.00 1
+       141   39   40 THR H     H   8.740 0.00 1
+       142   39   40 THR CA    C  66.000 0.00 1
+       143   40   41 LEU N     N 123.330 0.00 1
+       144   40   41 LEU H     H   7.340 0.00 1
+       145   40   41 LEU CA    C  57.500 0.00 1
+       146   40   41 LEU CB    C  42.000 0.00 1
+       147   41   42 GLU N     N 112.930 0.00 1
+       148   41   42 GLU H     H   7.240 0.00 1
+       149   41   42 GLU CA    C  58.000 0.00 1
+       150   41   42 GLU CB    C  29.700 0.00 1
+       151   42   43 LYS N     N 113.130 0.00 1
+       152   42   43 LYS H     H   7.690 0.00 1
+       153   42   43 LYS CA    C  55.100 0.00 1
+       154   42   43 LYS CB    C  33.000 0.00 1
+       155   43   44 PHE N     N 118.830 0.00 1
+       156   43   44 PHE H     H   8.330 0.00 1
+       157   43   44 PHE CA    C  56.000 0.00 1
+       158   43   44 PHE CB    C  39.700 0.00 1
+       159   44   45 ASP N     N 126.330 0.00 1
+       160   44   45 ASP H     H   8.820 0.00 1
+       161   44   45 ASP CA    C  58.600 0.00 1
+       162   44   45 ASP CB    C  40.900 0.00 1
+       163   45   46 ARG N     N 113.930 0.00 1
+       164   45   46 ARG H     H   8.950 0.00 1
+       165   45   46 ARG CA    C  58.100 0.00 1
+       166   45   46 ARG CB    C  30.700 0.00 1
+       167   46   47 PHE N     N 112.530 0.00 1
+       168   46   47 PHE H     H   7.070 0.00 1
+       169   46   47 PHE CA    C  55.000 0.00 1
+       170   46   47 PHE CB    C  40.200 0.00 1
+       172   47   48 LYS H     H   7.570 0.00 1
+       173   47   48 LYS CA    C  58.900 0.00 1
+       174   47   48 LYS CB    C  31.400 0.00 1
+       175   48   49 HIS CA    C  56.200 0.00 1
+       176   48   49 HIS CB    C  31.600 0.00 1
+       177   49   50 LEU N     N 123.730 0.00 1
+       178   49   50 LEU H     H   7.570 0.00 1
+       179   49   50 LEU CA    C  54.400 0.00 1
+       180   49   50 LEU CB    C  41.400 0.00 1
+       181   50   51 LYS N     N 119.230 0.00 1
+       182   50   51 LYS H     H   8.240 0.00 1
+       183   50   51 LYS CA    C  57.200 0.00 1
+       186   51   52 THR H     H   7.570 0.00 1
+       187   51   52 THR CA    C  58.600 0.00 1
+       188   52   53 GLU CA    C  59.900 0.00 1
+       189   52   53 GLU CB    C  29.300 0.00 1
+       190   53   54 ALA N     N 120.130 0.00 1
+       191   53   54 ALA H     H   8.330 0.00 1
+       192   53   54 ALA CA    C  55.200 0.00 1
+       193   53   54 ALA CB    C  17.700 0.00 1
+       194   54   55 GLU N     N 117.730 0.00 1
+       195   54   55 GLU H     H   7.670 0.00 1
+       196   54   55 GLU CA    C  59.200 0.00 1
+       197   54   55 GLU CB    C  30.000 0.00 1
+       198   55   56 MET N     N 118.230 0.00 1
+       199   55   56 MET H     H   8.040 0.00 1
+       200   55   56 MET CA    C  60.000 0.00 1
+       201   55   56 MET CB    C  32.700 0.00 1
+       202   56   57 LYS N     N 118.430 0.00 1
+       203   56   57 LYS H     H   8.500 0.00 1
+       204   56   57 LYS CA    C  58.500 0.00 1
+       205   56   57 LYS CB    C  32.200 0.00 1
+       206   57   58 ALA N     N 117.530 0.00 1
+       207   57   58 ALA H     H   7.080 0.00 1
+       208   57   58 ALA CA    C  52.000 0.00 1
+       209   57   58 ALA CB    C  18.900 0.00 1
+       210   58   59 SER N     N 110.930 0.00 1
+       211   58   59 SER H     H   6.810 0.00 1
+       212   58   59 SER CA    C  57.500 0.00 1
+       213   58   59 SER CB    C  62.400 0.00 1
+       214   59   60 GLU N     N 134.230 0.00 1
+       215   59   60 GLU H     H   9.140 0.00 1
+       216   59   60 GLU CA    C  58.900 0.00 1
+       217   59   60 GLU CB    C  29.200 0.00 1
+       218   60   61 ASP N     N 119.130 0.00 1
+       219   60   61 ASP H     H   8.340 0.00 1
+       220   60   61 ASP CA    C  57.400 0.00 1
+       221   60   61 ASP CB    C  41.100 0.00 1
+       222   61   62 LEU N     N 123.830 0.00 1
+       223   61   62 LEU H     H   8.080 0.00 1
+       224   61   62 LEU CA    C  58.300 0.00 1
+       225   61   62 LEU CB    C  40.500 0.00 1
+       226   62   63 LYS N     N 119.830 0.00 1
+       227   62   63 LYS H     H   7.120 0.00 1
+       228   62   63 LYS CA    C  59.900 0.00 1
+       229   62   63 LYS CB    C  32.200 0.00 1
+       230   63   64 LYS N     N 117.530 0.00 1
+       231   63   64 LYS H     H   8.130 0.00 1
+       232   63   64 LYS CA    C  59.800 0.00 1
+       233   63   64 LYS CB    C  32.100 0.00 1
+       234   64   65 HIS N     N 119.930 0.00 1
+       235   64   65 HIS H     H   7.960 0.00 1
+       236   64   65 HIS CA    C  59.600 0.00 1
+       238   65   66 GLY N     N 105.730 0.00 1
+       239   65   66 GLY H     H   8.040 0.00 1
+       240   65   66 GLY CA    C  47.000 0.00 1
+       241   66   67 VAL N     N 120.530 0.00 1
+       242   66   67 VAL H     H   7.350 0.00 1
+       243   66   67 VAL CA    C  67.400 0.00 1
+       245   67   68 THR N     N 123.130 0.00 1
+       246   67   68 THR H     H   7.900 0.00 1
+       247   67   68 THR CA    C  67.200 0.00 1
+       248   68   69 VAL N     N 121.030 0.00 1
+       249   68   69 VAL H     H   7.650 0.00 1
+       250   68   69 VAL CA    C  66.400 0.00 1
+       251   68   69 VAL CB    C  31.200 0.00 1
+       252   69   70 LEU N     N 116.330 0.00 1
+       253   69   70 LEU H     H   7.900 0.00 1
+       254   69   70 LEU CA    C  58.200 0.00 1
+       256   70   71 THR N     N 117.730 0.00 1
+       257   70   71 THR H     H   8.830 0.00 1
+       258   70   71 THR CA    C  67.400 0.00 1
+       259   71   72 ALA N     N 124.730 0.00 1
+       260   71   72 ALA H     H   7.780 0.00 1
+       261   71   72 ALA CA    C  55.400 0.00 1
+       262   71   72 ALA CB    C  19.100 0.00 1
+       263   72   73 LEU N     N 118.030 0.00 1
+       264   72   73 LEU H     H   8.690 0.00 1
+       265   72   73 LEU CA    C  57.800 0.00 1
+       267   73   74 GLY N     N 107.230 0.00 1
+       268   73   74 GLY H     H   9.020 0.00 1
+       269   73   74 GLY CA    C  47.800 0.00 1
+       270   74   75 ALA N     N 121.330 0.00 1
+       271   74   75 ALA H     H   7.560 0.00 1
+       272   74   75 ALA CA    C  54.700 0.00 1
+       273   74   75 ALA CB    C  17.800 0.00 1
+       274   75   76 ILE N     N 116.430 0.00 1
+       275   75   76 ILE H     H   7.270 0.00 1
+       276   75   76 ILE CA    C  65.500 0.00 1
+       277   75   76 ILE CB    C  38.900 0.00 1
+       278   76   77 LEU N     N 121.830 0.00 1
+       279   76   77 LEU H     H   8.610 0.00 1
+       280   76   77 LEU CA    C  58.500 0.00 1
+       281   76   77 LEU CB    C  41.000 0.00 1
+       282   77   78 LYS N     N 113.330 0.00 1
+       283   77   78 LYS H     H   7.860 0.00 1
+       284   77   78 LYS CA    C  59.000 0.00 1
+       285   77   78 LYS CB    C  32.700 0.00 1
+       286   78   79 LYS N     N 114.830 0.00 1
+       287   78   79 LYS H     H   7.290 0.00 1
+       288   78   79 LYS CA    C  54.300 0.00 1
+       289   78   79 LYS CB    C  30.200 0.00 1
+       290   79   80 LYS N     N 120.130 0.00 1
+       291   79   80 LYS H     H   7.950 0.00 1
+       292   79   80 LYS CA    C  56.000 0.00 1
+       294   80   81 GLY N     N 106.330 0.00 1
+       295   80   81 GLY H     H   9.260 0.00 1
+       296   80   81 GLY CA    C  44.300 0.00 1
+       297   81   82 HIS N     N 122.230 0.00 1
+       298   81   82 HIS H     H   7.380 0.00 1
+       299   81   82 HIS CA    C  53.600 0.00 1
+       300   81   82 HIS CB    C  26.300 0.00 1
+       301   82   83 HIS N     N 114.130 0.00 1
+       302   82   83 HIS H     H   6.860 0.00 1
+       303   82   83 HIS CA    C  54.400 0.00 1
+       304   82   83 HIS CB    C  33.100 0.00 1
+       305   83   84 GLU N     N 123.930 0.00 1
+       306   83   84 GLU H     H   8.790 0.00 1
+       307   83   84 GLU CA    C  61.600 0.00 1
+       308   83   84 GLU CB    C  29.200 0.00 1
+       310   84   85 ALA H     H   8.510 0.00 1
+       313   88   89 PRO CA    C  65.700 0.00 1
+       314   88   89 PRO CB    C  30.400 0.00 1
+       315   89   90 LEU N     N 119.530 0.00 1
+       316   89   90 LEU H     H   6.340 0.00 1
+       317   89   90 LEU CA    C  56.800 0.00 1
+       318   89   90 LEU CB    C  42.300 0.00 1
+       319   90   91 ALA N     N 121.030 0.00 1
+       320   90   91 ALA H     H   8.360 0.00 1
+       321   90   91 ALA CA    C  54.700 0.00 1
+       322   90   91 ALA CB    C  18.600 0.00 1
+       323   91   92 GLN N     N 114.530 0.00 1
+       324   91   92 GLN H     H   7.880 0.00 1
+       325   91   92 GLN CA    C  59.500 0.00 1
+       326   91   92 GLN CB    C  27.800 0.00 1
+       327   92   93 SER N     N 115.130 0.00 1
+       328   92   93 SER H     H   7.960 0.00 1
+       329   92   93 SER CA    C  67.400 0.00 1
+       330   92   93 SER CB    C  68.800 0.00 1
+       331   93   94 HIS N     N 121.330 0.00 1
+       332   93   94 HIS H     H   7.680 0.00 1
+       333   93   94 HIS CA    C  61.600 0.00 1
+       334   93   94 HIS CB    C  25.000 0.00 1
+       335   94   95 ALA N     N 119.430 0.00 1
+       336   94   95 ALA H     H   7.790 0.00 1
+       337   94   95 ALA CA    C  54.200 0.00 1
+       338   94   95 ALA CB    C  18.500 0.00 1
+       339   95   96 THR N     N 103.130 0.00 1
+       340   95   96 THR H     H   6.890 0.00 1
+       341   95   96 THR CA    C  63.300 0.00 1
+       342   95   96 THR CB    C  70.400 0.00 1
+       343   96   97 LYS N     N 120.830 0.00 1
+       344   96   97 LYS H     H   6.960 0.00 1
+       345   96   97 LYS CA    C  57.000 0.00 1
+       346   96   97 LYS CB    C  32.400 0.00 1
+       347   97   98 HIS N     N 113.830 0.00 1
+       348   97   98 HIS H     H   7.150 0.00 1
+       349   97   98 HIS CA    C  54.700 0.00 1
+       350   97   98 HIS CB    C  28.800 0.00 1
+       351   98   99 LYS N     N 112.930 0.00 1
+       352   98   99 LYS H     H   6.210 0.00 1
+       356   99  100 ILE H     H   7.920 0.00 1
+       357  100  101 PRO CA    C  62.500 0.00 1
+       358  100  101 PRO CB    C  32.000 0.00 1
+       359  101  102 ILE N     N 123.830 0.00 1
+       360  101  102 ILE H     H   9.060 0.00 1
+       361  101  102 ILE CA    C  62.700 0.00 1
+       362  101  102 ILE CB    C  36.000 0.00 1
+       363  102  103 LYS N     N 119.530 0.00 1
+       364  102  103 LYS H     H   8.690 0.00 1
+       366  102  103 LYS CB    C  31.800 0.00 1
+       367  103  104 TYR N     N 115.530 0.00 1
+       368  103  104 TYR H     H   7.680 0.00 1
+       369  103  104 TYR CB    C  42.200 0.00 1
+       370  104  105 LEU N     N 120.130 0.00 1
+       371  104  105 LEU H     H   8.060 0.00 1
+       372  104  105 LEU CA    C  57.600 0.00 1
+       373  104  105 LEU CB    C  41.100 0.00 1
+       374  105  106 GLU N     N 124.430 0.00 1
+       375  105  106 GLU H     H   8.140 0.00 1
+       376  105  106 GLU CA    C  60.600 0.00 1
+       377  105  106 GLU CB    C  28.100 0.00 1
+       378  106  107 PHE N     N 118.730 0.00 1
+       379  106  107 PHE H     H   7.820 0.00 1
+       380  106  107 PHE CA    C  57.100 0.00 1
+       381  106  107 PHE CB    C  37.100 0.00 1
+       382  107  108 ILE N     N 119.130 0.00 1
+       383  107  108 ILE H     H   8.740 0.00 1
+       384  107  108 ILE CA    C  65.800 0.00 1
+       386  108  109 SER N     N 120.830 0.00 1
+       387  108  109 SER H     H   7.870 0.00 1
+       388  108  109 SER CA    C  63.700 0.00 1
+       389  109  110 GLU N     N 120.830 0.00 1
+       390  109  110 GLU H     H   7.910 0.00 1
+       391  109  110 GLU CA    C  59.500 0.00 1
+       392  110  111 ALA N     N 122.330 0.00 1
+       393  110  111 ALA H     H   7.770 0.00 1
+       394  110  111 ALA CA    C  55.500 0.00 1
+       395  110  111 ALA CB    C  17.900 0.00 1
+       396  111  112 ILE N     N 117.730 0.00 1
+       397  111  112 ILE H     H   8.410 0.00 1
+       398  111  112 ILE CA    C  66.500 0.00 1
+       400  112  113 ILE N     N 118.330 0.00 1
+       401  112  113 ILE H     H   7.880 0.00 1
+       402  112  113 ILE CA    C  64.400 0.00 1
+       403  113  114 HIS N     N 117.730 0.00 1
+       404  113  114 HIS H     H   8.480 0.00 1
+       405  113  114 HIS CA    C  60.300 0.00 1
+       406  113  114 HIS CB    C  29.900 0.00 1
+       407  114  115 VAL N     N 120.230 0.00 1
+       408  114  115 VAL H     H   8.410 0.00 1
+       409  114  115 VAL CA    C  66.600 0.00 1
+       410  114  115 VAL CB    C  31.300 0.00 1
+       411  115  116 LEU N     N 120.430 0.00 1
+       412  115  116 LEU H     H   8.410 0.00 1
+       413  115  116 LEU CA    C  59.000 0.00 1
+       415  116  117 HIS N     N 115.530 0.00 1
+       416  116  117 HIS H     H   8.120 0.00 1
+       417  116  117 HIS CA    C  59.400 0.00 1
+       418  117  118 SER N     N 112.630 0.00 1
+       419  117  118 SER H     H   8.030 0.00 1
+       420  117  118 SER CA    C  61.100 0.00 1
+       421  117  118 SER CB    C  63.500 0.00 1
+       422  118  119 ARG N     N 115.530 0.00 1
+       423  118  119 ARG H     H   8.120 0.00 1
+       424  118  119 ARG CA    C  57.400 0.00 1
+       425  118  119 ARG CB    C  31.300 0.00 1
+       427  119  120 HIS H     H   7.360 0.00 1
+       428  119  120 HIS CA    C  52.500 0.00 1
+       429  119  120 HIS CB    C  28.400 0.00 1
+       430  120  121 PRO CA    C  65.900 0.00 1
+       432  121  122 GLY N     N 106.730 0.00 1
+       433  121  122 GLY H     H   8.600 0.00 1
+       434  121  122 GLY CA    C  45.800 0.00 1
+       435  122  123 ASP N     N 117.530 0.00 1
+       436  122  123 ASP H     H   7.590 0.00 1
+       437  122  123 ASP CA    C  54.100 0.00 1
+       439  123  124 PHE N     N 123.230 0.00 1
+       440  123  124 PHE H     H   8.080 0.00 1
+       441  123  124 PHE CA    C  56.600 0.00 1
+       442  124  125 GLY N     N 109.730 0.00 1
+       443  124  125 GLY H     H   8.010 0.00 1
+       444  124  125 GLY CA    C  43.900 0.00 1
+       445  125  126 ALA N     N 121.030 0.00 1
+       446  125  126 ALA H     H   8.520 0.00 1
+       447  125  126 ALA CA    C  55.900 0.00 1
+       448  125  126 ALA CB    C  18.200 0.00 1
+       449  126  127 ASP N     N 117.330 0.00 1
+       450  126  127 ASP H     H   8.600 0.00 1
+       451  126  127 ASP CA    C  56.500 0.00 1
+       452  126  127 ASP CB    C  38.800 0.00 1
+       453  127  128 ALA N     N 126.530 0.00 1
+       454  127  128 ALA H     H   8.240 0.00 1
+       455  127  128 ALA CA    C  55.000 0.00 1
+       457  128  129 GLN N     N 118.430 0.00 1
+       458  128  129 GLN H     H   8.550 0.00 1
+       459  128  129 GLN CA    C  59.200 0.00 1
+       460  129  130 GLY N     N 107.030 0.00 1
+       461  129  130 GLY H     H   8.080 0.00 1
+       462  129  130 GLY CA    C  46.900 0.00 1
+       463  130  131 ALA N     N 124.530 0.00 1
+       464  130  131 ALA H     H   7.780 0.00 1
+       465  130  131 ALA CA    C  55.300 0.00 1
+       466  131  132 MET N     N 116.530 0.00 1
+       467  131  132 MET H     H   8.550 0.00 1
+       468  131  132 MET CA    C  57.300 0.00 1
+       469  131  132 MET CB    C  30.900 0.00 1
+       470  132  133 ASN N     N 117.530 0.00 1
+       471  132  133 ASN H     H   8.760 0.00 1
+       472  132  133 ASN CA    C  56.800 0.00 1
+       473  132  133 ASN CB    C  38.500 0.00 1
+       474  133  134 LYS N     N 120.030 0.00 1
+       475  133  134 LYS H     H   7.940 0.00 1
+       476  133  134 LYS CA    C  60.100 0.00 1
+       477  133  134 LYS CB    C  32.700 0.00 1
+       478  134  135 ALA N     N 122.830 0.00 1
+       479  134  135 ALA H     H   8.410 0.00 1
+       480  134  135 ALA CA    C  55.400 0.00 1
+       481  134  135 ALA CB    C  17.900 0.00 1
+       482  135  136 LEU N     N 116.130 0.00 1
+       483  135  136 LEU H     H   8.490 0.00 1
+       484  135  136 LEU CA    C  57.400 0.00 1
+       485  135  136 LEU CB    C  40.500 0.00 1
+       486  136  137 GLU N     N 123.230 0.00 1
+       487  136  137 GLU H     H   8.480 0.00 1
+       488  136  137 GLU CA    C  60.200 0.00 1
+       490  137  138 LEU N     N 122.130 0.00 1
+       491  137  138 LEU H     H   8.320 0.00 1
+       492  137  138 LEU CA    C  58.700 0.00 1
+       493  138  139 PHE N     N 118.430 0.00 1
+       494  138  139 PHE H     H   7.870 0.00 1
+       495  138  139 PHE CA    C  61.000 0.00 1
+       496  138  139 PHE CB    C  38.500 0.00 1
+       497  139  140 ARG N     N 116.930 0.00 1
+       498  139  140 ARG H     H   8.470 0.00 1
+       499  139  140 ARG CA    C  60.500 0.00 1
+       500  139  140 ARG CB    C  30.300 0.00 1
+       501  140  141 LYS N     N 121.630 0.00 1
+       502  140  141 LYS H     H   8.780 0.00 1
+       503  140  141 LYS CA    C  59.600 0.00 1
+       504  140  141 LYS CB    C  31.900 0.00 1
+       505  141  142 ASP N     N 122.130 0.00 1
+       506  141  142 ASP H     H   8.460 0.00 1
+       507  141  142 ASP CA    C  57.000 0.00 1
+       508  141  142 ASP CB    C  39.500 0.00 1
+       509  142  143 ILE N     N 122.730 0.00 1
+       510  142  143 ILE H     H   8.300 0.00 1
+       511  142  143 ILE CA    C  64.800 0.00 1
+       512  142  143 ILE CB    C  35.500 0.00 1
+       513  143  144 ALA N     N 123.230 0.00 1
+       514  143  144 ALA H     H   8.170 0.00 1
+       515  143  144 ALA CA    C  55.200 0.00 1
+       517  144  145 ALA N     N 120.630 0.00 1
+       518  144  145 ALA H     H   7.680 0.00 1
+       519  144  145 ALA CA    C  55.000 0.00 1
+       520  145  146 LYS N     N 119.030 0.00 1
+       521  145  146 LYS H     H   7.510 0.00 1
+       522  145  146 LYS CA    C  57.600 0.00 1
+       523  145  146 LYS CB    C  31.200 0.00 1
+       524  146  147 TYR N     N 121.430 0.00 1
+       525  146  147 TYR H     H   9.030 0.00 1
+       526  146  147 TYR CA    C  60.300 0.00 1
+       527  146  147 TYR CB    C  36.500 0.00 1
+       528  147  148 LYS N     N 117.730 0.00 1
+       529  147  148 LYS H     H   7.650 0.00 1
+       530  147  148 LYS CA    C  59.500 0.00 1
+       531  147  148 LYS CB    C  31.800 0.00 1
+       532  148  149 GLU N     N 120.930 0.00 1
+       533  148  149 GLU H     H   7.640 0.00 1
+       534  148  149 GLU CA    C  59.100 0.00 1
+       535  148  149 GLU CB    C  29.700 0.00 1
+       536  149  150 LEU N     N 117.130 0.00 1
+       537  149  150 LEU H     H   7.700 0.00 1
+       538  149  150 LEU CA    C  55.000 0.00 1
+       540  150  151 GLY N     N 107.130 0.00 1
+       541  150  151 GLY H     H   7.750 0.00 1
+       542  150  151 GLY CA    C  45.100 0.00 1
+       543  151  152 TYR N     N 121.330 0.00 1
+       544  151  152 TYR H     H   7.970 0.00 1
+       545  151  152 TYR CA    C  56.700 0.00 1
+       546  151  152 TYR CB    C  39.100 0.00 1
+       547  152  153 GLN N     N 125.030 0.00 1
+       548  152  153 GLN H     H   8.180 0.00 1
+       549  152  153 GLN CA    C  55.900 0.00 1
+       552  153  154 GLY H     H   6.540 0.00 1
+
+   stop_
+
+save_
+

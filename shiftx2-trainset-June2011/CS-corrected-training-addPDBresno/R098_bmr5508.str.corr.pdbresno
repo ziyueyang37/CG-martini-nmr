@@ -1,0 +1,1041 @@
+data_5508
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a CA chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 11   C    CA      50.93        59.09
+# 90   E    CA      53.38        59.67
+#
+#After reference correction, the following residues still 
+#have a N chemical shift difference (obs*-pred) greater than 10.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#105   R    N      106.08       118.38
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#N/A     0.39      N/A     N/A   0.08    0.04    
+#
+#R098_bmr5508.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R098_bmr5508.str file):
+#HA       CA       CB      CO       N      HN
+#N/A   +0.39      N/A     N/A   +0.08     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#    N/A  +/-0.15      N/A      N/A  +/-0.29  +/-0.05  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#N/A     0.947     N/A     N/A   0.903   0.771   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#N/A     0.773     N/A     N/A   1.472   0.247   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Native State Hydrogen Exchange Study of Suppressor and Pathogenic Variants of 
+Transthyretin
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Liu    Kai     . . 
+      2 Kelly  Jeffery . . 
+      3 Wemmer David   . . 
+
+   stop_
+
+   _BMRB_accession_number   5508
+   _BMRB_flat_file_name     bmr5508.str
+   _Entry_type              new
+   _Submission_date         2002-08-25
+   _Accession_date          2002-08-26
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  121 
+      '15N chemical shifts' 121 
+      '13C chemical shifts' 128 
+
+   stop_
+
+   loop_
+      _Related_BMRB_accession_number
+      _Relationship
+
+      5507 "wild type transthyretin" 
+      5509 "mutant v30m"             
+      5510 "mutant l55p"             
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_title        
+;
+Native State Hydrogen Exchange Study of Suppressor and Pathogenic Variants of 
+Transthyretin
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        22090787
+   _PubMed_ID              12095258
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Liu    Kai     . . 
+      2 Kelly  Jeffery . . 
+      3 Wemmer David   . . 
+
+   stop_
+
+   _Journal_abbreviation  'J. Mol. Biol.'
+   _Journal_volume         320
+   _Journal_issue          4
+   _Page_first             821
+   _Page_last              832
+   _Year                   2002
+
+   loop_
+      _Keyword
+
+      "transthyretin"     
+      "amyloid"           
+      "hydrogen exchange" 
+      "NMR spectroscopy"  
+      "protection factor" 
+
+   stop_
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_system_TTR
+   _Saveframe_category         molecular_system
+
+   _Mol_system_name            Transthyretin
+   _Abbreviation_common        TTR
+   _Enzyme_commission_number   .
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      "TTR subunit 1" $TTR_T119M 
+      "TTR subunit 2" $TTR_T119M 
+      "TTR subunit 3" $TTR_T119M 
+      "TTR subunit 4" $TTR_T119M 
+
+   stop_
+
+   _System_physical_state      native
+   _System_oligomer_state      tetramer
+   _System_paramagnetic        no
+   _System_thiol_state        "all free"
+
+   loop_
+      _Magnetic_equivalence_ID
+      _Magnetically_equivalent_system_component
+
+      1 "TTR subunit 1" 
+      1 "TTR subunit 2" 
+      1 "TTR subunit 3" 
+      1 "TTR subunit 4" 
+
+   stop_
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Database_entry_details
+
+      PDB 1F41 . . 
+      PDB 1F86 . . 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_TTR_T119M
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                 Transthyretin
+   _Name_variant                                T119M
+   _Abbreviation_common                         TTR
+   _Mol_thiol_state                            "all free"
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               128
+   _Mol_residue_sequence                       
+;
+MGPTGTGESKCPLMVKVLDA
+VRGSPAINVAVHVFRKAADD
+TWEPFASGKTSESGELHGLT
+TEEEFVEGIYKVEIDTKSYW
+KALGISPFHEHAEVVFTAND
+SGPRRYTIAALLSPYSYSTM
+AVVTNPKE
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+        1 MET    2 GLY    3 PRO    4 THR    5 GLY 
+        6 THR    7 GLY    8 GLU    9 SER   10 LYS 
+       11 CYS   12 PRO   13 LEU   14 MET   15 VAL 
+       16 LYS   17 VAL   18 LEU   19 ASP   20 ALA 
+       21 VAL   22 ARG   23 GLY   24 SER   25 PRO 
+       26 ALA   27 ILE   28 ASN   29 VAL   30 ALA 
+       31 VAL   32 HIS   33 VAL   34 PHE   35 ARG 
+       36 LYS   37 ALA   38 ALA   39 ASP   40 ASP 
+       41 THR   42 TRP   43 GLU   44 PRO   45 PHE 
+       46 ALA   47 SER   48 GLY   49 LYS   50 THR 
+       51 SER   52 GLU   53 SER   54 GLY   55 GLU 
+       56 LEU   57 HIS   58 GLY   59 LEU   60 THR 
+       61 THR   62 GLU   63 GLU   64 GLU   65 PHE 
+       66 VAL   67 GLU   68 GLY   69 ILE   70 TYR 
+       71 LYS   72 VAL   73 GLU   74 ILE   75 ASP 
+       76 THR   77 LYS   78 SER   79 TYR   80 TRP 
+       81 LYS   82 ALA   83 LEU   84 GLY   85 ILE 
+       86 SER   87 PRO   88 PHE   89 HIS   90 GLU 
+       91 HIS   92 ALA   93 GLU   94 VAL   95 VAL 
+       96 PHE   97 THR   98 ALA   99 ASN  100 ASP 
+      101 SER  102 GLY  103 PRO  104 ARG  105 ARG 
+      106 TYR  107 THR  108 ILE  109 ALA  110 ALA 
+      111 LEU  112 LEU  113 SER  114 PRO  115 TYR 
+      116 SER  117 TYR  118 SER  119 THR  120 MET 
+      121 ALA  122 VAL  123 VAL  124 THR  125 ASN 
+      126 PRO  127 LYS  128 GLU 
+
+   stop_
+
+   _Sequence_homology_query_date                2010-05-15
+   _Sequence_homology_query_revised_last_date   2010-05-15
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB      2476 "pancreatic polypeptide"                                                                                                                                   99.22 127  99.21  99.21 1.26e-67 
+      BMRB      5507  Transthyretin                                                                                                                                            100.00 128  99.22  99.22 1.87e-68 
+      BMRB      5509  Transthyretin                                                                                                                                            100.00 128  98.44  99.22 4.80e-68 
+      BMRB      5510  Transthyretin                                                                                                                                            100.00 128  98.44  98.44 2.14e-67 
+      PDB  1BM7       "Human Transthyretin (Prealbumin) Complex With Flufenamic Acid (2-[[3-(Trifluoromethyl)phenyl]amino] Benzoic Acid)"                                        99.22 127  99.21  99.21 1.26e-67 
+      PDB  1BMZ       "Human Transthyretin (Prealbumin)"                                                                                                                         99.22 127  99.21  99.21 1.26e-67 
+      PDB  1BZ8       "Transthyretin (Del Val122)"                                                                                                                               99.22 126  98.43  98.43 9.92e-66 
+      PDB  1BZD       "Tertiary Structures Of Three Amyloidogenic Transthyretin Variants And Implications For Amyloid Fibril Formation"                                          99.22 127  98.43  98.43 5.00e-67 
+      PDB  1BZE       "Tertiary Structures Of Three Amyloidogenic Transthyretin Variants And Implications For Amyloid Fibril Formation"                                          99.22 127 100.00 100.00 2.21e-68 
+      PDB  1DVQ       "Crystal Structure Of Human Transthyretin"                                                                                                                 96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVS       "Crystal Structure Of Human Transthyretin In Complex With Resveratrol"                                                                                     96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVT       "Crystal Structure Of Human Transthyretin In Complex With Flurbiprofen"                                                                                    96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVU       "Crystal Structure Of Human Transthyretin In Complex With Dibenzofuran-4,6-Dicarboxylic Acid"                                                              96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVX       "Crystal Structure Of Human Transthyretin In Complex With Diclofenac"                                                                                      96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVY       "Crystal Structure Of Transthyretin In Complex With N-(M- Trifluoromethylphenyl) Phenoxazine-4,6-Dicarboxylic Acid"                                        96.88 124  98.39  99.19 1.28e-65 
+      PDB  1DVZ       "Crystal Structure Of Human Transthyretin In Complex With O- Trifluoromethylphenyl Anthranilic Acid"                                                       96.88 124  98.39  99.19 1.28e-65 
+      PDB  1E3F       "Structure Of Human Transthyretin Complexed With Bromophenols: A New Mode Of Binding"                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  1E4H       "Structure Of Human Transthyretin Complexed With Bromophenols: A New Mode Of Binding"                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  1E5A       "Structure Of Human Transthyretin Complexed With Bromophenols: A New Mode Of Binding"                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  1ETA       "The X-Ray Crystal Structure Refinements Of Normal Human Transthyretin And The Amyloidogenic Val 30-->met Variant To 1.7 Angstroms Resolution"            100.00 128  98.44  98.44 2.42e-66 
+      PDB  1ETB       "The X-Ray Crystal Structure Refinements Of Normal Human Transthyretin And The Amyloidogenic Val 30-->met Variant To 1.7 Angstroms Resolution"             99.22 127  98.43  98.43 3.99e-67 
+      PDB  1F41       "Crystal Structure Of Human Transthyretin At 1.5a Resolution"                                                                                              99.22 127  99.21  99.21 1.26e-67 
+      PDB  1F86       "Transthyretin Thr119met Protein Stabilisation"                                                                                                            89.84 115 100.00 100.00 2.55e-61 
+      PDB  1FH2       "Transthyretin Stability As A Key Factor In Amyloidogenesis"                                                                                               90.63 116  98.28  98.28 6.72e-58 
+      PDB  1FHN       "Transthyretin Stability As A Key Factor In Amyloidogenesis"                                                                                               99.22 127 100.00 100.00 2.21e-68 
+      PDB  1ICT       "Monoclinic Form Of Human Transthyretin Complexed With Thyroxine (T4)"                                                                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  1III       "Crystal Structure Of The Transthyretin Mutant Ttr Y114c- Data Collected At Room Temperature"                                                              99.22 127  98.43  98.43 1.32e-66 
+      PDB  1IIK       "Crystal Structure Of The Transthyretin Mutant Ttr Y114c- Data Collected At Cryo Temperature"                                                              99.22 127  98.43  98.43 1.32e-66 
+      PDB  1QAB       "The Structure Of Human Retinol Binding Protein With Its Carrier Protein Transthyretin Reveals Interaction With The Carboxy Terminus Of Rbp"               99.22 127  98.43  99.21 1.85e-67 
+      PDB  1QWH       "A Covalent Dimer Of Transthyretin That Affects The Amyloid Pathway"                                                                                       91.41 117  99.15  99.15 3.77e-61 
+      PDB  1RLB       "Retinol Binding Protein Complexed With Transthyretin"                                                                                                     99.22 127  98.43  99.21 1.85e-67 
+      PDB  1THA       "Mechanism Of Molecular Recognition. Structural Aspects Of 3, 3'-Diiodo-L-Thyronine Binding To Human Serum Transthyretin"                                  99.22 127  98.43  99.21 1.85e-67 
+      PDB  1THC       "Crystal Structure Determination At 2.3a Of Human Transthyretin-3',5'-Dibromo-2',4,4',6-Tetra-Hydroxyaurone Complex"                                       99.22 127  98.43  99.21 1.85e-67 
+      PDB  1TLM       "Structural Aspects Of Inotropic Bipyridine Binding: Crystal Structure Determination To 1.9 Angstroms Of The Human Serum Transthyretin-Milrinone Complex"  99.22 127  98.43  99.21 1.85e-67 
+      PDB  1TSH       "Tertiary Structures Of Three Amyloidogenic Transthyretin Variants And Implications For Amyloid Fibril Formation"                                          99.22 127  98.43  98.43 4.53e-67 
+      PDB  1TT6       "The Orthorhombic Crystal Structure Of Transthyretin In Complex With Diethylstilbestrol"                                                                   99.22 127  99.21  99.21 1.26e-67 
+      PDB  1TTA       "The X-Ray Crystal Structure Refinements Of Normal Human Transthyretin And The Amyloidogenic Val30met Variant To 1.7 Angstroms Resolution"                 99.22 127  99.21  99.21 1.26e-67 
+      PDB  1TTB       "The X-Ray Crystal Structure Refinements Of Normal Human Transthyretin And The Amyloidogenic Val30met Variant To 1.7 Angstroms Resolution"                 99.22 127  98.43  98.43 3.99e-67 
+      PDB  1TTC       "The X-Ray Crystal Structure Refinements Of Normal Human Transthyretin And The Amyloidogenic Val30met Variant To 1.7 Angstroms Resolution"                 99.22 127  98.43  99.21 2.55e-67 
+      PDB  1TTR       "Transthyretin-V122I CARDIOMYOPATHIC MUTANT"                                                                                                               99.22 127  98.43  99.21 1.60e-67 
+      PDB  1TYR       "Transthyretin Complex With Retinoic Acid"                                                                                                                 99.22 127  99.21  99.21 1.26e-67 
+      PDB  1TZ8       "The Monoclinic Crystal Struture Of Transthyretin In Complex With Diethylstilbestrol"                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  1U21       "Transthyretin With Tethered Inhibitor On One Monomer."                                                                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  1X7S       "The X-Ray Crystallographic Structure Of The Amyloidogenic Variant Ttr Tyr78phe"                                                                           99.22 127  98.43  99.21 3.27e-67 
+      PDB  1X7T       "Structure Of Ttr R104h: A Non-Amyloidogenic Variant With Protective Clinical Effects"                                                                     99.22 127  98.43  98.43 8.53e-67 
+      PDB  1Y1D       "Crystal Structure Of Transthyretin In Complex With Iododiflunisal"                                                                                        99.22 127  99.21  99.21 1.26e-67 
+      PDB  1Z7J       "Human Transthyretin (Also Called Prealbumin) Complex With 3, 3',5,5'-Tetraiodothyroacetic Acid (T4ac)"                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  1ZCR       "Crystal Structure Of Human Transthyretin With Bound Iodide"                                                                                              100.00 128  99.22  99.22 1.87e-68 
+      PDB  1ZD6       "Crystal Structure Of Human Transthyretin With Bound Chloride"                                                                                            100.00 128  99.22  99.22 1.87e-68 
+      PDB  2B14       "The Crystal Structure Of 2,4-Dinitrophenol In Complex With The Amyloidogenic Variant Transthyretin Leu 55 Pro"                                            99.22 127  98.43  98.43 1.40e-66 
+      PDB  2B15       "The Crystal Structure Of 2,4-Dinitrophenol In Complex With Human Transthyretin"                                                                           99.22 127  99.21  99.21 1.26e-67 
+      PDB  2B16       "The Crystal Structure Of 2,4-Dinitrophenol In Complex With The Amyloidogenic Variant Transthyretin Tyr78phe"                                              99.22 127  98.43  99.21 3.27e-67 
+      PDB  2B77       "Human Transthyretin (Ttr) Complexed With Diflunisal Analogues- Ttr.2',4'-Dichloro-4-Hydroxy-1,1'-Biphenyl-3- Carboxylic Acid"                             99.22 127  99.21  99.21 1.26e-67 
+      PDB  2B9A       "Human Transthyretin (Ttr) Complexed With Diflunisal Analogues- Ttr.3',5'-Difluorobiphenyl-4-Carboxylic Acid"                                              99.22 127  99.21  99.21 1.26e-67 
+      PDB  2F7I       "Human Transthyretin (Ttr) Complexed With Diflunisal Analogues- Ttr. 2',6'-Difluorobiphenyl-4-Carboxylic Acid"                                             99.22 127  99.21  99.21 1.26e-67 
+      PDB  2F8I       "Human Transthyretin (Ttr) Complexed With Benzoxazole"                                                                                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  2FBR       "Human Transthyretin (Ttr) Complexed With Bivalant Amyloid Inhibitor (4 Carbon Linker)"                                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  2FLM       "Human Transthyretin (Ttr) Complexed With Bivalant Amyloid Inhibitor (6 Carbon Linker)"                                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  2G3X       "Crystal Structure Of Transthyretin Mutant I84s At Acidic Ph"                                                                                              99.22 127  98.43  98.43 7.16e-67 
+      PDB  2G3Z       "Crystal Structure Of Transthyretin Mutant I84a At Low Ph"                                                                                                 99.22 127  98.43  98.43 5.39e-67 
+      PDB  2G4E       "Crystal Structure Of Transthyretin Mutant I84a At Neutral Ph"                                                                                             99.22 127  98.43  98.43 5.39e-67 
+      PDB  2G4G       "Crystal Structure Of Human Transthyretin At Ph 4.6"                                                                                                       99.22 127  99.21  99.21 1.26e-67 
+      PDB  2G5U       "Human Transthyretin (Ttr) Complexed With Hydroxylated Polychlorinated Biphenyl-4,4'-Dihydroxy-3,3',5,5'- Tetrachlorobiphenyl"                             99.22 127  99.21  99.21 1.26e-67 
+      PDB  2G9K       "Human Transthyretin (Ttr) Complexed With Hydroxylated Polychlorinated Biphenyl-4-Hydroxy-2',3,3',4',5- Pentachlorobiphenyl"                               99.22 127  99.21  99.21 1.26e-67 
+      PDB  2GAB       "Human Transthyretin (Ttr) Complexed With Hydroxylated Polychlorinated Biphenyl-4-Hydroxy-3,3',5,4'- Tetrachlorobiphenyl"                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  2H4E       "Crystal Structure Of Cys10 Sulfonated Transthyretin"                                                                                                      99.22 127  98.43  98.43 2.10e-66 
+      PDB  2NOY       "Crystal Structure Of Transthyretin Mutant I84s At Ph 7.5"                                                                                                 99.22 127  98.43  98.43 7.16e-67 
+      PDB  2PAB       "Structure Of Prealbumin, Secondary, Tertiary And Quaternary Interactions Determined By Fourier Refinement At 1.8 Angstroms"                               99.22 127  98.43  99.21 1.85e-67 
+      PDB  2QGB       "Human Transthyretin (Ttr) In Apo-Form"                                                                                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  2QGC       "Human Transthyretin (Ttr) Complexed With 2-(3,5-Dimethyl-4- Hydroxyphenyl)benzoxazole"                                                                    99.22 127  99.21  99.21 1.26e-67 
+      PDB  2QGD       "Human Transthyretin (Ttr) Complexed With 2-(3,5-Dibromo-4- Hydroxyphenyl)benzoxazole"                                                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  2QGE       "Human Transthyretin (Ttr) Complexed With 2-(3,5- Dimethylphenyl)benzoxazole"                                                                              99.22 127  99.21  99.21 1.26e-67 
+      PDB  2ROX       "Transthyretin (Also Called Prealbumin) Complex With Thyroxine (T4)"                                                                                       99.22 127  99.21  99.21 1.26e-67 
+      PDB  2ROY       "Transthyretin (Also Called Prealbumin) Complex With 3',5'- Dinitro-N-Acetyl-L-Thyronine"                                                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  2TRH       "Tertiary Structures Of Three Amyloidogenic Transthyretin Variants And Implications For Amyloid Fibril Formation"                                          99.22 127  98.43  98.43 2.48e-66 
+      PDB  2TRY       "Tertiary Structures Of Three Amyloidogenic Transthyretin Variants And Implications For Amyloid Fibril Formation"                                          99.22 127  98.43  98.43 7.10e-67 
+      PDB  3A4D       "Crystal Structure Of Human Transthyretin (Wild-Type)"                                                                                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  3A4E       "Crystal Structure Of Human Transthyretin (E54g)"                                                                                                          99.22 127  98.43  98.43 1.00e-66 
+      PDB  3A4F       "Crystal Structure Of Human Transthyretin (E54k)"                                                                                                          99.22 127  98.43  99.21 3.47e-67 
+      PDB  3B56       "Crystal Structure Of Transthyretin In Complex With 3,5- Diiodosalicylic Acid"                                                                             99.22 127  99.21  99.21 1.26e-67 
+      PDB  3BSZ       "Crystal Structure Of The Transthyretin-Retinol Binding Protein-Fab Complex"                                                                               99.22 127  99.21  99.21 1.26e-67 
+      PDB  3BT0       "Crystal Structure Of Transthyretin Variant V20s"                                                                                                          99.22 127  98.43  98.43 5.77e-67 
+      PDB  3CBR       "Crystal Structure Of Human Transthyretin (Ttr) At Ph3.5"                                                                                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CFM       "Crystal Structure Of The Apo Form Of Human Wild-Type Transthyretin"                                                                                       92.19 118  99.15  99.15 2.42e-62 
+      PDB  3CFN       "Crystal Structure Of Human Transthyretin In Complex With 1- Anilino-8-Naphthalene Sulfonate"                                                              92.19 118  99.15  99.15 2.42e-62 
+      PDB  3CFQ       "Crystal Structure Of Human Wild-Type Transthyretin In Complex With Diclofenac"                                                                            92.19 118  99.15  99.15 2.42e-62 
+      PDB  3CFT       "Crystal Structure Of Human Transthyretin In Complex With 1- Amino-5-Naphthalene Sulfonate"                                                                92.19 118  99.15  99.15 2.42e-62 
+      PDB  3CN0       "Human Transthyretin (Ttr) In Complex With 3,5-Dimethyl-4- Hydroxystilbene"                                                                                99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CN1       "Human Transthyretin (Ttr) In Complex With 3,5-Dibromo-4- Hydroxystilbene"                                                                                 99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CN2       "Human Transthyretin (Ttr) In Complex With 3,5-Dibromo-4- Hydroxybiphenyl"                                                                                 99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CN3       "Human Transthyretin (Ttr) In Complex With 1,3-Dibromo-2- Hydroxy-5-Phenoxybenzene"                                                                        99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CN4       "Human Transthyretin (Ttr) In Complex With N-(3,5-Dibromo-4- Hydroxyphenyl)benzamide"                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  3CXF       "Crystal Structure Of Transthyretin Variant Y114h"                                                                                                         99.22 127  98.43  99.21 4.72e-67 
+      PDB  3D2T       "Human Transthyretin (Ttr) Complexed With Diflunisal"                                                                                                      99.22 127  99.21  99.21 1.26e-67 
+      PDB  3D7P       "Crystal Structure Of Human Transthyretin (Ttr) At Ph 4.0"                                                                                                 99.22 127  99.21  99.21 1.26e-67 
+      PDB  3DJR       "Crystal Structure Of Transthyretin Variant L58h At Neutral Ph"                                                                                            99.22 127  98.43  98.43 1.23e-66 
+      PDB  3DJS       "Crystal Structure Of Transthyretin Variant L58h At Acidic Ph"                                                                                             99.22 127  98.43  98.43 1.23e-66 
+      PDB  3DJT       "Crystal Structure Of Transthyretin Variant V30m At Acidic Ph"                                                                                             99.22 127  98.43  99.21 2.55e-67 
+      PDB  3DJZ       "Crystal Structure Of Transthyretin Variant L55p At Neutral Ph"                                                                                            99.22 127  98.43  98.43 1.40e-66 
+      PDB  3DK0       "Crystal Structure Of Transthyretin Variant L55p At Acidic Ph"                                                                                             99.22 127  98.43  98.43 1.40e-66 
+      PDB  3DK2       "Crystal Structure Of Transthyretin Variant Y114h At Acidic Ph"                                                                                            99.22 127  98.43  99.21 4.72e-67 
+      PDB  3DO4       "Crystal Structure Of Transthyretin Variant T60a At Acidic Ph"                                                                                             99.22 127  98.43  98.43 4.53e-67 
+      PDB  3ESN       "Human Transthyretin (Ttr) Complexed With N-(3,5-Dibromo-4- Hydroxyphenyl)-2,6-Dimethylbenzamide"                                                          99.22 127  99.21  99.21 1.26e-67 
+      PDB  3ESO       "Human Transthyretin (Ttr) Complexed With N-(3,5-Dibromo-4- Hydroxyphenyl)-2,5-Dichlorobenzamide"                                                          99.22 127  99.21  99.21 1.26e-67 
+      PDB  3ESP       "Human Transthyretin (Ttr) Complexed With N-(3,5-Dibromo-4- Hydroxyphenyl)-3,5-Dimethyl-4-Hydroxybenzamide"                                                99.22 127  99.21  99.21 1.26e-67 
+      PDB  3FC8       "Crystal Structure Of Transthyretin In Complex With Iododiflunisal-Betaalaome"                                                                             96.88 124  99.19  99.19 8.54e-66 
+      PDB  3FCB       "Crystal Structure Of Transthyretin In Complex With Iododiflunisal-Betaalaoh"                                                                              96.88 124  99.19  99.19 8.54e-66 
+      PDB  3GLZ       "Human Transthyretin (Ttr) Complexed With(E)-3-(2- (Trifluoromethyl)benzylideneaminooxy)propanoic Acid (Inhibitor 11)"                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  3GS0       "Human Transthyretin (Ttr) Complexed With (S)-3-(9h-Fluoren- 9-Ylideneaminooxy)-2-Methylpropanoic Acid (Inhibitor 16)"                                     99.22 127  99.21  99.21 1.26e-67 
+      PDB  3GS4       "Human Transthyretin (Ttr) Complexed With 3-(9h-Fluoren-9- Ylideneaminooxy)propanoic Acid (Inhibitor 15)"                                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  3GS7       "Human Transthyretin (Ttr) Complexed With (E)-3-(2- Methoxybenzylideneaminooxy)propanoic Acid (Inhibitor 13)"                                              99.22 127  99.21  99.21 1.26e-67 
+      PDB  3HJ0       "Transthyretin In Complex With A Covalent Small Molecule Kinetic Stabilizer"                                                                               99.22 127  98.43  98.43 2.10e-66 
+      PDB  3I9P       "Crystal Structure Of Human Transthyretin - Wild Type"                                                                                                     90.63 116  99.14  99.14 3.53e-61 
+      PDB  3IMR       "Transthyretin In Complex With (E)-2,6-Dibromo-4-(2,6- Dichlorostyryl)phenol"                                                                              99.22 127  99.21  99.21 1.26e-67 
+      PDB  3IMS       "Transthyretin In Complex With 2,6-Dibromo-4-(2,6- Dichlorophenethyl)phenol"                                                                               99.22 127  99.21  99.21 1.26e-67 
+      PDB  3IMT       "Transthyretin In Complex With (E)-4-(4-Aminostyryl)-2,6- Dibromophenol"                                                                                   99.22 127  99.21  99.21 1.26e-67 
+      PDB  3IMU       "Transthyretin In Complex With (E)-4-(3-Aminostyryl)-2,6- Dibromoaniline"                                                                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  3IMV       "Transthyretin In Complex With (E)-4-(4-Aminostyryl)-2,6- Dibromoaniline"                                                                                  99.22 127  99.21  99.21 1.26e-67 
+      PDB  3IMW       "Transthyretin In Complex With (E)-2,6-Dibromo-4-(2,6- Dimethoxystyryl)aniline"                                                                            99.22 127  99.21  99.21 1.26e-67 
+      PDB  3KGS       "V30m Mutant Human Transthyretin (Ttr) (Apov30m) Ph 7.5"                                                                                                   99.22 127  98.43  99.21 2.55e-67 
+      PDB  3KGT       "V30m Mutant Human Transthyretin (Ttr) Complexed With Genistein (V30m:gen) Ph 7.5"                                                                         99.22 127  98.43  99.21 2.55e-67 
+      PDB  3KGU       "Wild Type Human Transthyretin (Ttr) Complexed With Genistein (Ttrwt:gen) Ph 7.5"                                                                          99.22 127  99.21  99.21 1.26e-67 
+      PDB  5TTR       "Leu 55 Pro Transthyretin Crystal Structure"                                                                                                               99.22 127  98.43  98.43 1.40e-66 
+      DBJ  BAA00059   "prealbumin [Homo sapiens]"                                                                                                                                99.22 147  98.43  99.21 1.46e-67 
+      DBJ  BAG34987   "unnamed protein product [Homo sapiens]"                                                                                                                   99.22 147  99.21  99.21 6.75e-68 
+      EMBL CAA42087   "transthyretin [Homo sapiens]"                                                                                                                             99.22 147  99.21  99.21 6.75e-68 
+      EMBL CAG33189   "TTR [Homo sapiens]"                                                                                                                                       99.22 147  98.43  99.21 1.46e-67 
+      GB   AAA60011   "prealbumin [Homo sapiens]"                                                                                                                                99.22 147  99.21  99.21 6.75e-68 
+      GB   AAA60012   "prealbumin [Homo sapiens]"                                                                                                                                99.22 147  99.21  99.21 6.75e-68 
+      GB   AAA60013   "prealbumin precursor [Homo sapiens]"                                                                                                                      99.22 147  99.21  99.21 6.75e-68 
+      GB   AAA60018   "prealbumin [Homo sapiens]"                                                                                                                                99.22 147  98.43  99.21 1.46e-67 
+      GB   AAA61181   "transthyretin [Homo sapiens]"                                                                                                                             91.41 117  99.15  99.15 3.77e-61 
+      PRF  0908191A   "prealbumin,thyroxine binding"                                                                                                                             99.22 127  99.21  99.21 1.26e-67 
+      PRF  1101213A   "protein,amyloid fibril"                                                                                                                                   99.22 127  99.21  99.21 1.26e-67 
+      PRF  1709210A    transthyretin                                                                                                                                             99.22 147  99.21  99.21 6.75e-68 
+      REF  NP_000362  "transthyretin precursor [Homo sapiens]"                                                                                                                   99.22 147  99.21  99.21 6.75e-68 
+      SP   P02766     "RecName: Full=Transthyretin; AltName: Full=Prealbumin; AltName: Full=TBPA; AltName: Full=TTR; AltName: Full=ATTR; Flags: Precursor"                       99.22 147  99.21  99.21 6.75e-68 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $TTR_T119M Human 9606 Eukaryota Metazoa Homo sapiens 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_name
+
+      $TTR_T119M 'recombinant technology' . . . . . 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_1
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Concentration_min_value
+      _Concentration_max_value
+      _Isotopic_labeling
+
+      $TTR_T119M    . mM 0.3 1.5 "[U-C13; U-N15]" 
+       D2O       100 %   .   .   .               
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Bruker
+   _Model                DRX
+   _Field_strength       600
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_NMR_applied_experiment
+   _Saveframe_category   NMR_applied_experiment
+
+   _Experiment_name     
+;
+HSQC 
+HNCA 
+HNCACB 
+1H-15N NOESY
+;
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_cond_1
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH            7.0 0.1 n/a 
+      temperature 298   2   K   
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+
+      DSS N 15 'methyl protons' ppm 0.0 .        indirect . . . 0.101329118 
+      DSS C 13 'methyl protons' ppm 0.0 .        indirect . . . 0.251449530 
+      DSS H  1 'methyl protons' ppm 0.0 internal direct   . . . 1.0         
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_cs
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Sample_label
+
+      $sample_1 
+
+   stop_
+
+   _Sample_conditions_label         $sample_cond_1
+   _Chem_shift_reference_set_label  $chemical_shift_reference
+   _Mol_system_component_name       "TTR subunit 1"
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    0    1 MET CA    C  53.890 0.10 1
+         2    1    2 GLY N     N 108.780 0.25 1
+         3    1    2 GLY H     H   8.430 0.05 1
+         4    1    2 GLY CA    C  46.460 0.10 1
+         5    2    3 PRO CA    C  63.410 0.10 1
+         6    3    4 THR N     N 113.440 0.04 1
+         7    3    4 THR H     H   8.150 0.01 1
+         8    3    4 THR CA    C  61.890 0.10 1
+         9    4    5 GLY N     N 110.890 0.02 1
+        10    4    5 GLY H     H   8.280 0.01 1
+        11    4    5 GLY CA    C  45.450 0.10 1
+        12    5    6 THR N     N 112.930 0.07 1
+        13    5    6 THR H     H   8.030 0.00 1
+        14    5    6 THR CA    C  61.840 0.10 1
+        15    6    7 GLY N     N 110.960 0.03 1
+        16    6    7 GLY H     H   8.350 0.00 1
+        17    6    7 GLY CA    C  45.460 0.10 1
+        18    7    8 GLU N     N 120.500 0.03 1
+        19    7    8 GLU H     H   8.150 0.00 1
+        20    7    8 GLU CA    C  56.440 0.10 1
+        21    8    9 SER N     N 116.730 0.07 1
+        22    8    9 SER H     H   8.250 0.01 1
+        23    8    9 SER CA    C  58.400 0.10 1
+        24    9   10 LYS N     N 122.630 0.13 1
+        25    9   10 LYS H     H   8.300 0.00 1
+        26    9   10 LYS CA    C  55.710 0.10 1
+        27   10   11 CYS N     N 119.680 0.00 1
+        28   10   11 CYS H     H   8.200 0.00 1
+        30   11   12 PRO CA    C  64.640 0.10 1
+        31   12   13 LEU N     N 115.770 0.07 1
+        32   12   13 LEU H     H   6.800 0.00 1
+        33   12   13 LEU CA    C  53.830 0.10 1
+        34   13   14 MET N     N 126.940 0.04 1
+        35   13   14 MET H     H   8.600 0.01 1
+        36   13   14 MET CA    C  54.850 0.10 1
+        37   14   15 VAL N     N 122.000 0.21 1
+        38   14   15 VAL H     H   7.500 0.05 1
+        39   14   15 VAL CA    C  59.640 0.10 1
+        40   15   16 LYS N     N 127.630 0.08 1
+        41   15   16 LYS H     H   8.850 0.00 1
+        42   15   16 LYS CA    C  54.580 0.10 1
+        43   16   17 VAL N     N 124.580 0.07 1
+        44   16   17 VAL H     H   9.100 0.00 1
+        45   16   17 VAL CA    C  60.770 0.01 1
+        46   17   18 LEU N     N 126.120 0.01 1
+        47   17   18 LEU H     H   8.620 0.01 1
+        48   17   18 LEU CA    C  53.770 0.10 1
+        49   18   19 ASP N     N 121.730 0.02 1
+        50   18   19 ASP H     H   8.770 0.00 1
+        51   18   19 ASP CA    C  53.380 0.10 1
+        52   19   20 ALA N     N 127.130 0.08 1
+        53   19   20 ALA H     H   9.110 0.01 1
+        54   19   20 ALA CA    C  53.770 0.10 1
+        55   20   21 VAL N     N 120.770 0.00 1
+        56   20   21 VAL H     H   9.730 0.01 1
+        57   20   21 VAL CA    C  65.460 0.10 1
+        58   21   22 ARG N     N 116.700 0.01 1
+        59   21   22 ARG H     H   8.230 0.00 1
+        60   21   22 ARG CA    C  55.570 0.10 1
+        61   22   23 GLY N     N 109.890 0.02 1
+        62   22   23 GLY H     H   7.600 0.00 1
+        63   22   23 GLY CA    C  47.420 0.10 1
+        64   23   24 SER N     N 111.450 0.07 1
+        65   23   24 SER H     H   7.460 0.00 1
+        66   23   24 SER CA    C  55.340 0.10 1
+        67   24   25 PRO CA    C  62.770 0.10 1
+        68   25   26 ALA N     N 127.250 0.10 1
+        69   25   26 ALA H     H   8.230 0.00 1
+        70   25   26 ALA CA    C  50.710 0.10 1
+        71   26   27 ILE N     N 127.020 0.07 1
+        72   26   27 ILE H     H   7.850 0.00 1
+        73   26   27 ILE CA    C  61.850 0.10 1
+        74   27   28 ASN N     N 122.310 0.03 1
+        75   27   28 ASN H     H   7.800 0.00 1
+        76   27   28 ASN CA    C  54.380 0.10 1
+        77   28   29 VAL N     N 119.810 0.09 1
+        78   28   29 VAL H     H   8.350 0.00 1
+        79   28   29 VAL CA    C  61.620 0.10 1
+        80   29   30 ALA N     N 130.710 0.08 1
+        81   29   30 ALA H     H   9.130 0.00 1
+        82   29   30 ALA CA    C  52.810 0.10 1
+        83   30   31 VAL N     N 122.130 0.14 1
+        84   30   31 VAL H     H   8.450 0.00 1
+        85   30   31 VAL CA    C  60.450 0.10 1
+        86   31   32 HIS N     N 123.730 0.08 1
+        87   31   32 HIS H     H   9.030 0.00 1
+        88   31   32 HIS CA    C  54.910 0.10 1
+        89   32   33 VAL N     N 122.230 0.04 1
+        90   32   33 VAL H     H   9.230 0.00 1
+        91   32   33 VAL CA    C  60.140 0.10 1
+        92   33   34 PHE N     N 128.270 0.11 1
+        93   33   34 PHE H     H   9.900 0.00 1
+        94   33   34 PHE CA    C  56.140 0.10 1
+        95   34   35 ARG N     N 122.450 0.11 1
+        96   34   35 ARG H     H   9.530 0.01 1
+        97   34   35 ARG CA    C  54.210 0.10 1
+        98   35   36 LYS N     N 129.970 0.13 1
+        99   35   36 LYS H     H   8.610 0.00 1
+       100   35   36 LYS CA    C  57.120 0.10 1
+       101   36   37 ALA N     N 131.310 0.05 1
+       102   36   37 ALA H     H   8.780 0.00 1
+       103   36   37 ALA CA    C  51.030 0.10 1
+       104   37   38 ALA N     N 122.050 0.02 1
+       105   37   38 ALA H     H   8.310 0.01 1
+       106   37   38 ALA CA    C  53.930 0.10 1
+       107   38   39 ASP N     N 115.770 0.06 1
+       108   38   39 ASP H     H   7.760 0.01 1
+       109   38   39 ASP CA    C  53.470 0.10 1
+       110   39   40 ASP N     N 113.390 0.02 1
+       111   39   40 ASP H     H   7.940 0.01 1
+       112   39   40 ASP CA    C  55.940 0.10 1
+       113   40   41 THR N     N 110.950 0.04 1
+       114   40   41 THR H     H   7.290 0.00 1
+       115   40   41 THR CA    C  61.400 0.10 1
+       116   41   42 TRP N     N 120.490 0.02 1
+       117   41   42 TRP H     H   8.380 0.00 1
+       118   41   42 TRP CA    C  55.550 0.10 1
+       119   41   42 TRP NE1   N 129.010 0.10 1
+       120   41   42 TRP HE1   H   9.890 0.01 1
+       121   42   43 GLU N     N 126.190 0.06 1
+       122   42   43 GLU H     H   9.310 0.00 1
+       123   42   43 GLU CA    C  53.130 0.10 1
+       124   43   44 PRO CA    C  64.530 0.10 1
+       125   44   45 PHE N     N 125.010 0.05 1
+       126   44   45 PHE H     H   8.830 0.00 1
+       127   44   45 PHE CA    C  59.100 0.10 1
+       128   45   46 ALA N     N 118.530 0.07 1
+       129   45   46 ALA H     H   7.920 0.00 1
+       130   45   46 ALA CA    C  52.270 0.10 1
+       131   46   47 SER N     N 113.280 0.01 1
+       132   46   47 SER H     H   8.530 0.01 1
+       133   46   47 SER CA    C  57.670 0.10 1
+       134   47   48 GLY N     N 106.170 0.00 1
+       135   47   48 GLY H     H   8.370 0.00 1
+       136   47   48 GLY CA    C  45.810 0.10 1
+       137   48   49 LYS N     N 120.010 0.04 1
+       138   48   49 LYS H     H   8.440 0.00 1
+       139   48   49 LYS CA    C  53.880 0.10 1
+       140   49   50 THR N     N 111.510 0.05 1
+       141   49   50 THR H     H   8.650 0.01 1
+       142   49   50 THR CA    C  62.120 0.10 1
+       143   50   51 SER N     N 118.150 0.03 1
+       144   50   51 SER H     H   8.510 0.00 1
+       145   50   51 SER CA    C  57.170 0.10 1
+       146   51   52 GLU N     N 118.630 0.08 1
+       147   51   52 GLU H     H   9.050 0.00 1
+       148   51   52 GLU CA    C  59.150 0.10 1
+       149   52   53 SER N     N 111.500 0.04 1
+       150   52   53 SER H     H   8.080 0.00 1
+       151   52   53 SER CA    C  57.530 0.10 1
+       152   53   54 GLY N     N 111.900 0.03 1
+       153   53   54 GLY H     H   8.570 0.00 1
+       154   53   54 GLY CA    C  45.570 0.10 1
+       155   54   55 GLU N     N 115.300 0.03 1
+       156   54   55 GLU H     H   7.240 0.00 1
+       157   54   55 GLU CA    C  54.390 0.10 1
+       158   55   56 LEU N     N 123.790 0.03 1
+       159   55   56 LEU H     H   8.740 0.00 1
+       160   55   56 LEU CA    C  53.990 0.10 1
+       161   56   57 HIS N     N 124.300 0.04 1
+       162   56   57 HIS H     H   8.680 0.01 1
+       163   56   57 HIS CA    C  54.260 0.10 1
+       164   57   58 GLY N     N 109.030 0.10 1
+       165   57   58 GLY H     H   9.090 0.01 1
+       166   57   58 GLY CA    C  46.610 0.10 1
+       167   58   59 LEU N     N 119.580 0.08 1
+       168   58   59 LEU H     H   8.120 0.01 1
+       169   58   59 LEU CA    C  57.030 0.00 1
+       170   59   60 THR N     N 109.510 0.17 1
+       171   59   60 THR H     H   7.840 0.08 1
+       172   59   60 THR CA    C  59.210 0.10 1
+       173   60   61 THR N     N 111.270 0.01 1
+       174   60   61 THR H     H   8.380 0.01 1
+       175   60   61 THR CA    C  59.610 0.10 1
+       176   61   62 GLU N     N 121.400 0.04 1
+       177   61   62 GLU H     H   9.240 0.00 1
+       178   61   62 GLU CA    C  60.060 0.10 1
+       179   62   63 GLU N     N 115.980 0.00 1
+       180   62   63 GLU H     H   8.650 0.00 1
+       181   62   63 GLU CA    C  59.000 0.10 1
+       182   63   64 GLU N     N 115.360 0.02 1
+       183   63   64 GLU H     H   7.230 0.00 1
+       184   63   64 GLU CA    C  56.800 0.10 1
+       185   64   65 PHE N     N 123.800 0.04 1
+       186   64   65 PHE H     H   7.830 0.02 1
+       187   64   65 PHE CA    C  54.300 0.10 1
+       188   65   66 VAL N     N 115.220 0.01 1
+       189   65   66 VAL H     H   7.180 0.01 1
+       190   65   66 VAL CA    C  60.210 0.10 1
+       191   66   67 GLU N     N 121.870 0.03 1
+       192   66   67 GLU H     H   8.560 0.00 1
+       193   66   67 GLU CA    C  56.840 0.10 1
+       194   67   68 GLY N     N 111.050 0.04 1
+       195   67   68 GLY H     H   7.920 0.01 1
+       196   67   68 GLY CA    C  44.680 0.10 1
+       197   68   69 ILE N     N 120.660 0.10 1
+       198   68   69 ILE H     H   8.330 0.00 1
+       199   68   69 ILE CA    C  60.780 0.10 1
+       200   69   70 TYR N     N 124.790 0.10 1
+       201   69   70 TYR H     H   8.680 0.00 1
+       202   69   70 TYR CA    C  56.360 0.10 1
+       203   70   71 LYS N     N 118.630 0.01 1
+       204   70   71 LYS H     H   8.720 0.00 1
+       205   70   71 LYS CA    C  53.720 0.10 1
+       206   71   72 VAL N     N 127.410 0.09 1
+       207   71   72 VAL H     H   9.630 0.01 1
+       208   71   72 VAL CA    C  61.170 0.10 1
+       209   72   73 GLU N     N 128.240 0.07 1
+       210   72   73 GLU H     H   9.660 0.01 1
+       211   72   73 GLU CA    C  55.240 0.10 1
+       212   73   74 ILE N     N 126.150 0.04 1
+       213   73   74 ILE H     H   9.180 0.00 1
+       214   73   74 ILE CA    C  60.290 0.10 1
+       215   74   75 ASP N     N 128.510 0.04 1
+       216   74   75 ASP H     H   8.950 0.10 1
+       217   74   75 ASP CA    C  53.720 0.10 1
+       218   75   76 THR N     N 117.220 0.01 1
+       219   75   76 THR H     H   8.230 0.00 1
+       220   75   76 THR CA    C  64.450 0.10 1
+       221   76   77 LYS N     N 124.560 0.10 1
+       222   76   77 LYS H     H   7.520 0.00 1
+       223   76   77 LYS CA    C  60.330 0.10 1
+       224   77   78 SER N     N 112.950 0.07 1
+       225   77   78 SER H     H   8.180 0.00 1
+       226   77   78 SER CA    C  61.780 0.10 1
+       227   78   79 TYR N     N 121.210 0.01 1
+       228   78   79 TYR H     H   6.790 0.00 1
+       229   78   79 TYR CA    C  61.180 0.10 1
+       230   79   80 TRP N     N 117.240 0.09 1
+       231   79   80 TRP H     H   7.880 0.00 1
+       232   79   80 TRP CA    C  59.210 0.10 1
+       233   79   80 TRP NE1   N 126.520 0.10 1
+       234   79   80 TRP HE1   H  10.240 0.01 1
+       235   80   81 LYS N     N 118.190 0.04 1
+       236   80   81 LYS H     H   8.710 0.00 1
+       237   80   81 LYS CA    C  59.780 0.10 1
+       238   81   82 ALA N     N 122.180 0.10 1
+       239   81   82 ALA H     H   7.530 0.00 1
+       240   81   82 ALA CA    C  54.370 0.10 1
+       241   82   83 LEU N     N 117.580 0.10 1
+       242   82   83 LEU H     H   7.310 0.01 1
+       243   82   83 LEU CA    C  54.530 0.10 1
+       244   83   84 GLY N     N 107.470 0.01 1
+       245   83   84 GLY H     H   7.960 0.00 1
+       246   83   84 GLY CA    C  45.630 0.10 1
+       247   84   85 ILE N     N 122.860 0.05 1
+       248   84   85 ILE H     H   7.920 0.00 1
+       249   84   85 ILE CA    C  59.720 0.10 1
+       250   85   86 SER N     N 121.880 0.01 1
+       251   85   86 SER H     H   8.410 0.00 1
+       252   85   86 SER CA    C  54.910 0.10 1
+       253   86   87 PRO CA    C  61.320 0.10 1
+       254   87   88 PHE N     N 116.000 0.04 1
+       255   87   88 PHE H     H   7.370 0.00 1
+       256   87   88 PHE CA    C  60.230 0.10 1
+       257   88   89 HIS N     N 113.010 0.12 1
+       258   88   89 HIS H     H   7.670 0.00 1
+       259   88   89 HIS CA    C  58.080 0.10 1
+       260   89   90 GLU N     N 122.620 0.10 1
+       261   89   90 GLU H     H   8.360 0.00 1
+       262   89   90 GLU CA    C  53.380 0.10 1
+       263   90   91 HIS N     N 116.740 0.06 1
+       264   90   91 HIS H     H   8.100 0.00 1
+       265   90   91 HIS CA    C  54.600 0.10 1
+       266   91   92 ALA N     N 120.060 0.12 1
+       267   91   92 ALA H     H   8.510 0.00 1
+       268   91   92 ALA CA    C  51.770 0.10 1
+       269   92   93 GLU N     N 120.730 0.08 1
+       270   92   93 GLU H     H   8.160 0.00 1
+       271   92   93 GLU CA    C  54.590 0.10 1
+       272   93   94 VAL N     N 121.820 0.08 1
+       273   93   94 VAL H     H   8.870 0.00 1
+       274   93   94 VAL CA    C  61.410 0.10 1
+       275   94   95 VAL N     N 128.000 0.06 1
+       276   94   95 VAL H     H   9.300 0.00 1
+       277   94   95 VAL CA    C  61.090 0.10 1
+       278   95   96 PHE N     N 124.740 0.05 1
+       279   95   96 PHE H     H   9.050 0.01 1
+       280   95   96 PHE CA    C  56.110 0.10 1
+       281   96   97 THR N     N 118.360 0.05 1
+       282   96   97 THR H     H   8.570 0.01 1
+       283   96   97 THR CA    C  62.900 0.10 1
+       284   97   98 ALA N     N 129.430 0.08 1
+       285   97   98 ALA H     H   9.160 0.00 1
+       286   97   98 ALA CA    C  50.030 0.10 1
+       287   98   99 ASN N     N 112.030 0.08 1
+       288   98   99 ASN H     H   8.590 0.00 1
+       289   98   99 ASN CA    C  54.550 0.10 1
+       290   99  100 ASP N     N 117.190 0.03 1
+       291   99  100 ASP H     H   8.880 0.00 1
+       292   99  100 ASP CA    C  55.720 0.10 1
+       293  100  101 SER N     N 117.180 0.00 1
+       294  100  101 SER H     H   8.780 0.01 1
+       295  100  101 SER CA    C  57.250 0.10 1
+       296  101  102 GLY N     N 110.070 0.00 1
+       297  101  102 GLY H     H   7.190 0.01 1
+       298  101  102 GLY CA    C  43.790 0.10 1
+       299  102  103 PRO CA    C  57.890 0.10 1
+       300  103  104 ARG N     N 121.330 0.04 1
+       301  103  104 ARG H     H   8.910 0.01 1
+       302  103  104 ARG CA    C  58.140 0.10 1
+       303  104  105 ARG N     N 106.080 0.01 1
+       304  104  105 ARG H     H   7.270 0.00 1
+       305  104  105 ARG CA    C  54.600 0.10 1
+       306  105  106 TYR N     N 121.280 0.08 1
+       307  105  106 TYR H     H   8.860 0.00 1
+       308  105  106 TYR CA    C  58.000 0.10 1
+       309  106  107 THR N     N 120.790 0.16 1
+       310  106  107 THR H     H   8.900 0.00 1
+       311  106  107 THR CA    C  61.870 0.10 1
+       312  107  108 ILE N     N 127.110 0.06 1
+       313  107  108 ILE H     H   8.800 0.01 1
+       314  107  108 ILE CA    C  58.550 0.01 1
+       315  108  109 ALA N     N 127.840 0.05 1
+       316  108  109 ALA H     H   8.750 0.00 1
+       317  108  109 ALA CA    C  49.210 0.10 1
+       318  109  110 ALA N     N 124.100 0.04 1
+       319  109  110 ALA H     H   8.890 0.00 1
+       320  109  110 ALA CA    C  50.650 0.10 1
+       321  110  111 LEU N     N 124.090 0.02 1
+       322  110  111 LEU H     H   8.930 0.01 1
+       323  110  111 LEU CA    C  54.040 0.10 1
+       324  111  112 LEU N     N 123.230 0.07 1
+       325  111  112 LEU H     H   9.180 0.01 1
+       326  111  112 LEU CA    C  55.710 0.10 1
+       327  112  113 SER N     N 116.730 0.01 1
+       328  112  113 SER H     H   8.990 0.01 1
+       329  112  113 SER CA    C  58.140 0.10 1
+       330  113  114 PRO CA    C  61.800 0.10 1
+       331  114  115 TYR N     N 113.440 0.00 1
+       332  114  115 TYR H     H   8.370 0.01 1
+       333  114  115 TYR CA    C  58.350 0.10 1
+       334  115  116 SER N     N 112.100 0.01 1
+       335  115  116 SER H     H   7.560 0.01 1
+       336  115  116 SER CA    C  57.150 0.10 1
+       337  116  117 TYR N     N 120.350 0.32 1
+       338  116  117 TYR H     H   8.330 0.02 1
+       339  116  117 TYR CA    C  55.220 0.10 1
+       340  117  118 SER N     N 114.830 0.00 1
+       341  117  118 SER H     H   8.470 0.01 1
+       342  117  118 SER CA    C  56.580 0.00 1
+       343  118  119 THR N     N 115.850 0.03 1
+       344  118  119 THR H     H   8.950 0.01 1
+       345  118  119 THR CA    C  58.280 0.00 1
+       346  119  120 MET N     N 122.140 0.06 1
+       347  119  120 MET H     H   8.290 0.01 1
+       348  119  120 MET CA    C  53.890 0.05 1
+       349  120  121 ALA N     N 128.250 0.04 1
+       350  120  121 ALA H     H   8.230 0.01 1
+       351  120  121 ALA CA    C  50.200 0.10 1
+       352  121  122 VAL N     N 118.980 0.24 1
+       353  121  122 VAL H     H   8.320 0.00 1
+       354  121  122 VAL CA    C  60.320 0.10 1
+       355  122  123 VAL N     N 128.440 0.04 1
+       356  122  123 VAL H     H   8.270 0.00 1
+       357  122  123 VAL CA    C  60.880 0.10 1
+       358  123  124 THR N     N 119.990 0.03 1
+       359  123  124 THR H     H   8.730 0.00 1
+       360  123  124 THR CA    C  60.350 0.10 1
+       361  124  125 ASN N     N 121.790 0.03 1
+       362  124  125 ASN H     H   8.680 0.00 1
+       363  124  125 ASN CA    C  50.650 0.10 1
+       364  125  126 PRO CA    C  63.410 0.10 1
+       365  126  127 LYS N     N 120.400 0.04 1
+       366  126  127 LYS H     H   8.020 0.00 1
+       367  126  127 LYS CA    C  56.090 0.10 1
+       368  127  128 GLU N     N 126.640 0.02 1
+       369  127  128 GLU H     H   7.670 0.01 1
+       370  127  128 GLU CA    C  58.010 0.10 1
+
+   stop_
+
+save_
+

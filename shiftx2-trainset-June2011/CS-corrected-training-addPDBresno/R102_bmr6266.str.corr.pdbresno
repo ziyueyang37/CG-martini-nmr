@@ -1,0 +1,1068 @@
+data_6266
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#0.03      N/A     N/A     N/A   -1.47   -0.01   
+#
+#R102_bmr6266.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R102_bmr6266.str file):
+#HA       CA       CB      CO       N      HN
+#N/A     N/A      N/A     N/A    -1.47     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#+/-0.03      N/A      N/A      N/A  +/-0.45  +/-0.07  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#0.922     N/A     N/A     N/A   0.909   0.812   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#0.139     N/A     N/A     N/A   1.783   0.272   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Solution structure of Cu(I) HAH1
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Anastassopoulou I. . . 
+      2 Banci           L. . . 
+      3 Bertini         I. . . 
+      4 Cantini         F. . . 
+      5 Katsari         E. . . 
+      6 Rosato          A. . . 
+
+   stop_
+
+   _BMRB_accession_number   6266
+   _BMRB_flat_file_name     bmr6266.str
+   _Entry_type              new
+   _Submission_date         2004-09-03
+   _Accession_date          2004-09-03
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  344 
+      '15N chemical shifts'  66 
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_title        
+;
+Solution structure of the apo and copper(I)-loaded human metallochaperone HAH1
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        .
+   _PubMed_ID              15476398
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Anastassopoulou I. . . 
+      2 Banci           L. . . 
+      3 Bertini         I. . . 
+      4 Cantini         F. . . 
+      5 Katsari         E. . . 
+      6 Rosato          A. . . 
+
+   stop_
+
+   _Journal_abbreviation   Biochemistry
+   _Journal_volume         43
+   _Journal_issue          41
+   _Page_first             13046
+   _Page_last              13053
+   _Year                   2004
+
+   loop_
+      _Keyword
+
+      "copper protein"   
+      "copper chaperone" 
+      "Menkes"           
+      "Wilson"           
+
+   stop_
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_system_ATOX1
+   _Saveframe_category         molecular_system
+
+   _Mol_system_name           "Copper transport protein ATOX1"
+   _Abbreviation_common       "Copper transport protein ATOX1"
+   _Enzyme_commission_number   .
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      "Omega-conotoxin MVIIa" $ATOX1 
+      'COPPER (I) ION'        $CU_1+ 
+
+   stop_
+
+   _System_physical_state      native
+   _System_oligomer_state      monomer
+   _System_paramagnetic        no
+   _System_thiol_state        'all free'
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Database_entry_details
+
+      PDB 1TL4 ? . 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_ATOX1
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                "Copper transport protein ATOX1"
+   _Name_variant                                .
+   _Abbreviation_common                        "Copper transport protein ATOX1"
+   _Mol_thiol_state                            'all free'
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               68
+   _Mol_residue_sequence                       
+;
+MPKHEFSVDMTCGGCAEAVS
+RVLNKLGGVKYDIDLPNKKV
+CIESEHSMDTLLATLKKTGK
+TVSYLGLE
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+       1 MET   2 PRO   3 LYS   4 HIS   5 GLU 
+       6 PHE   7 SER   8 VAL   9 ASP  10 MET 
+      11 THR  12 CYS  13 GLY  14 GLY  15 CYS 
+      16 ALA  17 GLU  18 ALA  19 VAL  20 SER 
+      21 ARG  22 VAL  23 LEU  24 ASN  25 LYS 
+      26 LEU  27 GLY  28 GLY  29 VAL  30 LYS 
+      31 TYR  32 ASP  33 ILE  34 ASP  35 LEU 
+      36 PRO  37 ASN  38 LYS  39 LYS  40 VAL 
+      41 CYS  42 ILE  43 GLU  44 SER  45 GLU 
+      46 HIS  47 SER  48 MET  49 ASP  50 THR 
+      51 LEU  52 LEU  53 ALA  54 THR  55 LEU 
+      56 LYS  57 LYS  58 THR  59 GLY  60 LYS 
+      61 THR  62 VAL  63 SER  64 TYR  65 LEU 
+      66 GLY  67 LEU  68 GLU 
+
+   stop_
+
+   _Sequence_homology_query_date                2009-06-13
+   _Sequence_homology_query_revised_last_date   2009-06-13
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB              15690  HAH1                                                                                      100.00 68 100.00 100.00 8.14e-32 
+      PDB        1FE0          "Crystal Structure Of Cadmium-Hah1"                                                        100.00 68 100.00 100.00 8.14e-32 
+      PDB        1FE4          "Crystal Structure Of Mercury-Hah1"                                                        100.00 68 100.00 100.00 8.14e-32 
+      PDB        1FEE          "Crystal Structure Of Copper-Hah1"                                                         100.00 68 100.00 100.00 8.14e-32 
+      PDB        1TL4          "Solution Structure Of Cu(I) Hah1"                                                         100.00 68 100.00 100.00 8.14e-32 
+      PDB        1TL5          "Solution Structure Of Apohah1"                                                            100.00 68 100.00 100.00 8.14e-32 
+      PDB        2K1R          "The Solution Nmr Structure Of The Complex Between Mnk1 And Hah1 Mediated By Cu(I)"        100.00 68 100.00 100.00 8.14e-32 
+      PDB        3CJK          "Crystal Structure Of The Adduct Hah1-Cd(Ii)-Mnk1"                                          98.53 68 100.00 100.00 3.56e-31 
+      DBJ        BAF85752      "unnamed protein product [Homo sapiens]"                                                   100.00 68 100.00 100.00 8.14e-32 
+      EMBL       CAG33182      "ATOX1 [Homo sapiens]"                                                                     100.00 68  98.53 100.00 2.23e-31 
+      GenBank    AAC51227      "copper transport protein HAH1 [Homo sapiens]"                                             100.00 68 100.00 100.00 8.14e-32 
+      GenBank    AAI12249      "Antioxidant protein 1 [Homo sapiens]"                                                     100.00 68 100.00 100.00 8.14e-32 
+      GenBank    AAI12251      "Antioxidant protein 1 [Homo sapiens]"                                                     100.00 68 100.00 100.00 8.14e-32 
+      GenBank    AAN84554      "ATX1-like protein [Homo sapiens]"                                                         100.00 68 100.00 100.00 8.14e-32 
+      GenBank    AAP88788      "ATX1 antioxidant protein 1 homolog (yeast) [Homo sapiens]"                                100.00 68 100.00 100.00 8.14e-32 
+      REF        NP_004036     "antioxidant protein 1 [Homo sapiens]"                                                     100.00 68 100.00 100.00 8.14e-32 
+      REF        XP_001169183  "PREDICTED: similar to copper transport protein HAH1 isoform 1 [Pan troglodytes]"          100.00 68 100.00 100.00 8.14e-32 
+      REF        XP_001169204  "PREDICTED: similar to copper transport protein HAH1 isoform 2 [Pan troglodytes]"           97.06 73 100.00 100.00 2.92e-30 
+      SWISS-PROT O00244        "RecName: Full=Copper transport protein ATOX1; AltName: Full=Metal transport protein ATX1" 100.00 68 100.00 100.00 8.14e-32 
+
+   stop_
+
+save_
+
+
+    #############
+    #  Ligands  #
+    #############
+
+save_CU_1+
+   _Saveframe_category      ligand
+
+   _Mol_type                non-polymer
+   _Name_common            'COPPER (I) ION'
+   _Abbreviation_common     Cu
+   _Name_IUPAC              .
+   _BMRB_code               CU_1+
+   _PDB_code                CU1
+   _Mol_empirical_formula   CU1
+   _Mol_charge              1+
+   _Mol_paramagnetic        no
+   _Mol_aromatic            no
+   _Details                 .
+
+   loop_
+      _Atom_name
+      _PDB_atom_name
+      _Atom_type
+      _Atom_chirality
+      _Atom_charge
+      _Atom_oxidation_number
+      _Atom_unpaired_electrons
+
+      CU CU CU ? 1+ ? ? 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $ATOX1 Human 9606 Eukaryota Metazoa Homo sapiens 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_name
+
+      $ATOX1 'recombinant technology' "E. coli" Escherichia coli BL21(DE3)PLYSS PET20B+ 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_1
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $ATOX1            1.0 mM "[U-15N]" 
+      'sodium acetate' 10   mM  .        
+       H2O             90   %   .        
+       D2O             10   %   .        
+
+   stop_
+
+save_
+
+
+save_sample_2
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $ATOX1               1.0 mM "[U-95% 13C; U-98% 15N]" 
+       DTT                 4   mM  .                       
+      'phosphate buffer' 100   mM  .                       
+       H2O                90   %   .                       
+       D2O                10   %   .                       
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_XWINNMR
+   _Saveframe_category   software
+
+   _Name                 XWINNMR
+
+   loop_
+      _Task
+
+      collection 
+
+   stop_
+
+save_
+
+
+save_XEASY
+   _Saveframe_category   software
+
+   _Name                 XEASY
+   _Version              1.3
+
+   loop_
+      _Task
+
+      "data analysis" 
+
+   stop_
+
+save_
+
+
+save_DIANA
+   _Saveframe_category   software
+
+   _Name                 DIANA
+   _Version              1.5
+
+   loop_
+      _Task
+
+      "structure solution" 
+
+   stop_
+
+save_
+
+
+save_CYANA
+   _Saveframe_category   software
+
+   _Name                 CYANA
+   _Version              1.0
+
+   loop_
+      _Task
+
+      "structure solution" 
+
+   stop_
+
+save_
+
+
+save_AMBER
+   _Saveframe_category   software
+
+   _Name                 AMBER
+   _Version              5.0
+
+   loop_
+      _Task
+
+      refinement 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Bruker
+   _Model                AVANCE
+   _Field_strength       600
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_NMR_applied_experiment
+   _Saveframe_category   NMR_applied_experiment
+
+   _Experiment_name     
+;
+CBCANH
+CBCACONH
+HNCO
+HN(CA)CO
+(H)CCH TOCSY
+HNHA
+3D 15N-separated NOESY
+2D NOESY
+2D TOCSY
+3D 13C-separated NOESY
+;
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_cond_1
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+       pH                6 . n/a 
+       temperature     298 . K   
+      'ionic strength'  10 . mM  
+       pressure          1 . atm 
+
+   stop_
+
+save_
+
+
+save_sample_cond_2
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+       pH                7 . n/a 
+       temperature     298 . K   
+      'ionic strength' 100 . mM  
+       pressure          1 . atm 
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+
+      water   H  1 protons  ppm . . . . . . 1.0 
+      urea    N 15 nitrogen ppm . . . . . . 1.0 
+      dioxane C 13 carbon   ppm . . . . . . 1.0 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (geminal atoms and geminal methyl     #
+#                         groups with identical chemical shifts   #
+#                         are assumed to be assigned to           #
+#                         stereospecific atoms)                   #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups                           #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. Tyr HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. Lys HG and    #
+#                         HD protons or Trp HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (Lys 12 vs. Lys 27) #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_chemical_shift_set_1
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Sample_label
+
+      $sample_1 
+
+   stop_
+
+   _Sample_conditions_label         $sample_cond_1
+   _Chem_shift_reference_set_label  $chemical_shift_reference
+   _Mol_system_component_name       "Omega-conotoxin MVIIa"
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    2    2 PRO HA    H   4.260 0.00 0
+         2    2    2 PRO HB2   H   2.270 0.01 0
+         3    2    2 PRO HB3   H   1.600 0.01 0
+         4    2    2 PRO HG2   H   2.010 0.02 0
+         5    2    2 PRO HD2   H   3.520 0.00 0
+         6    2    2 PRO HD3   H   3.400 0.00 0
+         7    3    3 LYS N     N 120.730 0.20 0
+         8    3    3 LYS H     H   8.660 0.00 0
+         9    3    3 LYS HA    H   4.960 0.01 0
+        10    3    3 LYS HB2   H   1.810 0.01 0
+        11    3    3 LYS HB3   H   1.610 0.00 0
+        12    3    3 LYS HG2   H   1.020 0.00 0
+        13    3    3 LYS HG3   H   1.270 0.01 0
+        14    3    3 LYS HD2   H   1.540 0.02 0
+        15    3    3 LYS HE2   H   2.790 0.02 0
+        16    4    4 HIS N     N 122.290 0.20 0
+        17    4    4 HIS H     H   8.880 0.00 0
+        18    4    4 HIS HA    H   4.930 0.01 0
+        19    4    4 HIS HB2   H   3.030 0.01 0
+        20    4    4 HIS HB3   H   2.950 0.00 0
+        21    5    5 GLU N     N 121.080 0.20 0
+        22    5    5 GLU H     H   8.830 0.00 0
+        23    5    5 GLU HA    H   5.230 0.00 0
+        24    5    5 GLU HB2   H   1.830 0.03 0
+        25    5    5 GLU HB3   H   1.740 0.00 0
+        26    5    5 GLU HG2   H   2.160 0.00 0
+        27    5    5 GLU HG3   H   2.020 0.00 0
+        28    6    6 PHE N     N 118.310 0.00 0
+        29    6    6 PHE H     H   9.010 0.00 0
+        30    6    6 PHE HA    H   5.090 0.00 0
+        31    6    6 PHE HB2   H   2.810 0.02 0
+        32    6    6 PHE HB3   H   2.570 0.00 0
+        33    6    6 PHE HD1   H   7.010 0.00 0
+        34    6    6 PHE HE1   H   6.970 0.02 0
+        35    7    7 SER N     N 116.930 0.20 0
+        36    7    7 SER H     H   9.280 0.00 0
+        37    7    7 SER HA    H   5.330 0.01 0
+        38    7    7 SER HB2   H   3.840 0.00 0
+        39    7    7 SER HB3   H   3.800 0.00 0
+        40    8    8 VAL N     N 124.360 0.20 0
+        41    8    8 VAL H     H   7.950 0.02 0
+        42    8    8 VAL HA    H   4.730 0.00 0
+        43    8    8 VAL HB    H   1.600 0.00 0
+        44    8    8 VAL HG1   H   0.820 0.00 0
+        45    8    8 VAL HG2   H   0.570 0.00 0
+        46    9    9 ASP N     N 125.050 0.20 0
+        47    9    9 ASP H     H   8.000 0.00 0
+        48    9    9 ASP HA    H   4.510 0.00 0
+        49    9    9 ASP HB2   H   2.880 0.00 0
+        50    9    9 ASP HB3   H   2.450 0.00 0
+        51   10   10 MET N     N 124.530 0.20 0
+        52   10   10 MET H     H   7.890 0.00 0
+        53   10   10 MET HA    H   4.560 0.00 0
+        54   10   10 MET HB2   H   1.630 0.00 0
+        55   10   10 MET HG2   H   2.270 0.01 0
+        56   10   10 MET HG3   H   2.050 0.08 0
+        57   11   11 THR N     N 114.520 0.20 0
+        58   11   11 THR H     H   9.250 0.00 0
+        59   11   11 THR HA    H   4.390 0.00 0
+        60   11   11 THR HB    H   4.450 0.00 0
+        61   11   11 THR HG2   H   1.060 0.01 0
+        63   12   12 CYS H     H   7.970 0.00 0
+        64   12   12 CYS HA    H   4.960 0.00 0
+        65   12   12 CYS HB2   H   3.360 0.00 0
+        66   12   12 CYS HB3   H   3.130 0.00 0
+        67   13   13 GLY HA2   H   3.950 0.02 0
+        68   14   14 GLY N     N 114.340 0.20 0
+        69   14   14 GLY H     H   9.200 0.00 0
+        70   14   14 GLY HA2   H   4.060 0.01 0
+        71   14   14 GLY HA3   H   3.830 0.01 0
+        72   15   15 CYS N     N 125.570 0.20 0
+        73   15   15 CYS H     H   8.190 0.00 0
+        74   15   15 CYS HA    H   3.900 0.00 0
+        75   15   15 CYS HB2   H   3.250 0.00 0
+        76   15   15 CYS HB3   H   2.740 0.00 0
+        77   16   16 ALA N     N 120.040 0.20 0
+        78   16   16 ALA H     H   6.850 0.00 0
+        79   16   16 ALA HA    H   4.000 0.02 0
+        80   16   16 ALA HB    H   1.550 0.00 0
+        81   17   17 GLU N     N 118.660 0.20 0
+        82   17   17 GLU H     H   7.930 0.01 0
+        83   17   17 GLU HA    H   3.990 0.02 0
+        84   17   17 GLU HB2   H   2.100 0.01 0
+        85   17   17 GLU HB3   H   2.030 0.00 0
+        86   17   17 GLU HG2   H   2.330 0.00 0
+        87   17   17 GLU HG3   H   2.190 0.00 0
+        88   18   18 ALA N     N 121.420 0.20 0
+        89   18   18 ALA H     H   7.560 0.00 0
+        90   18   18 ALA HA    H   3.990 0.00 0
+        91   18   18 ALA HB    H   1.460 0.00 0
+        92   19   19 VAL N     N 117.450 0.20 0
+        93   19   19 VAL H     H   7.580 0.00 0
+        94   19   19 VAL HA    H   3.180 0.00 0
+        95   19   19 VAL HB    H   2.140 0.01 0
+        96   19   19 VAL HG1   H   0.930 0.00 0
+        97   19   19 VAL HG2   H   0.510 0.00 0
+        98   20   20 SER N     N 113.840 0.01 0
+        99   20   20 SER H     H   8.000 0.00 0
+       100   20   20 SER HA    H   3.680 0.00 0
+       101   20   20 SER HB2   H   3.920 0.01 0
+       102   20   20 SER HB3   H   4.040 0.01 0
+       103   21   21 ARG N     N 118.480 0.01 0
+       104   21   21 ARG H     H   8.180 0.00 0
+       105   21   21 ARG HA    H   3.900 0.01 0
+       106   21   21 ARG HB2   H   1.870 0.00 0
+       107   21   21 ARG HB3   H   1.780 0.01 0
+       108   21   21 ARG HG2   H   1.720 0.00 0
+       109   21   21 ARG HG3   H   1.440 0.02 0
+       110   21   21 ARG HD2   H   3.170 0.01 0
+       111   22   22 VAL N     N 111.580 0.20 0
+       112   22   22 VAL H     H   7.550 0.00 0
+       113   22   22 VAL HA    H   3.940 0.01 0
+       114   22   22 VAL HB    H   2.020 0.01 0
+       115   22   22 VAL HG1   H   0.850 0.00 0
+       116   22   22 VAL HG2   H   0.920 0.01 0
+       117   23   23 LEU N     N 121.590 0.20 0
+       118   23   23 LEU H     H   7.590 0.00 0
+       119   23   23 LEU HA    H   3.840 0.01 0
+       120   23   23 LEU HB2   H   1.230 0.01 0
+       121   23   23 LEU HB3   H   0.800 0.00 0
+       122   23   23 LEU HG    H   1.410 0.00 0
+       123   23   23 LEU HD1   H   0.400 0.00 0
+       124   24   24 ASN N     N 117.800 0.20 0
+       125   24   24 ASN H     H   8.700 0.00 0
+       126   24   24 ASN HA    H   4.410 0.00 0
+       127   24   24 ASN HB2   H   2.890 0.00 0
+       128   24   24 ASN HB3   H   2.810 0.01 0
+       129   24   24 ASN ND2   N 113.390 0.20 0
+       130   24   24 ASN HD21  H   7.640 0.00 0
+       131   24   24 ASN HD22  H   7.150 0.00 0
+       132   25   25 LYS N     N 117.620 0.20 0
+       133   25   25 LYS H     H   7.290 0.00 0
+       134   25   25 LYS HA    H   3.970 0.00 0
+       135   25   25 LYS HB2   H   1.800 0.00 0
+       136   25   25 LYS HB3   H   1.740 0.00 0
+       137   25   25 LYS HG2   H   1.400 0.01 0
+       138   25   25 LYS HD2   H   2.220 0.64 0
+       139   25   25 LYS HE2   H   2.850 0.01 0
+       140   26   26 LEU N     N 120.560 0.20 0
+       141   26   26 LEU H     H   7.060 0.00 0
+       142   26   26 LEU HA    H   4.010 0.00 0
+       143   26   26 LEU HB2   H   1.860 0.00 0
+       144   26   26 LEU HB3   H   1.380 0.00 0
+       145   26   26 LEU HG    H   1.660 0.01 0
+       146   26   26 LEU HD1   H   0.310 0.00 0
+       147   26   26 LEU HD2   H   0.390 0.00 0
+       148   27   27 GLY N     N 103.290 0.20 0
+       149   27   27 GLY H     H   7.660 0.00 0
+       150   27   27 GLY HA2   H   4.260 0.00 0
+       151   27   27 GLY HA3   H   3.890 0.01 0
+       152   28   28 GLY N     N 105.540 0.20 0
+       153   28   28 GLY H     H   8.490 0.01 0
+       154   28   28 GLY HA2   H   3.870 0.02 0
+       155   29   29 VAL N     N 109.860 0.00 0
+       156   29   29 VAL H     H   7.800 0.00 0
+       157   29   29 VAL HA    H   4.860 0.00 0
+       158   29   29 VAL HB    H   1.950 0.00 0
+       159   29   29 VAL HG1   H   0.980 0.00 0
+       160   29   29 VAL HG2   H   0.870 0.00 0
+       161   30   30 LYS N     N 122.980 0.01 0
+       162   30   30 LYS H     H   8.190 0.00 0
+       163   30   30 LYS HA    H   4.530 0.00 0
+       164   30   30 LYS HB2   H   1.800 0.00 0
+       165   30   30 LYS HB3   H   1.720 0.00 0
+       166   30   30 LYS HG2   H   1.380 0.00 0
+       167   30   30 LYS HG3   H   1.310 0.01 0
+       168   30   30 LYS HD2   H   1.570 0.02 0
+       169   30   30 LYS HE2   H   2.860 0.02 0
+       170   31   31 TYR N     N 120.730 0.20 0
+       171   31   31 TYR H     H   8.440 0.00 0
+       172   31   31 TYR HA    H   5.870 0.00 0
+       173   31   31 TYR HB2   H   2.630 0.00 0
+       174   31   31 TYR HE1   H   6.710 0.00 0
+       175   31   31 TYR HD1   H   6.510 0.02 0
+       176   32   32 ASP N     N 118.310 0.00 0
+       177   32   32 ASP H     H   8.670 0.00 0
+       178   32   32 ASP HA    H   4.910 0.02 0
+       179   32   32 ASP HB2   H   2.550 0.02 0
+       180   32   32 ASP HB3   H   2.420 0.00 0
+       181   33   33 ILE N     N 124.180 0.20 0
+       182   33   33 ILE H     H   8.950 0.01 0
+       183   33   33 ILE HA    H   4.250 0.00 0
+       184   33   33 ILE HB    H   1.860 0.02 0
+       185   33   33 ILE HG2   H   0.760 0.00 0
+       186   33   33 ILE HG12  H   1.770 0.00 0
+       187   33   33 ILE HG13  H   0.870 0.00 0
+       188   33   33 ILE HD1   H   0.910 0.00 0
+       189   34   34 ASP N     N 129.370 0.20 0
+       190   34   34 ASP H     H   8.970 0.01 0
+       191   34   34 ASP HA    H   4.850 0.01 0
+       192   34   34 ASP HB2   H   2.880 0.00 0
+       193   34   34 ASP HB3   H   2.440 0.00 0
+       195   35   35 LEU H     H   8.800 0.00 0
+       196   35   35 LEU HA    H   4.200 0.00 0
+       197   35   35 LEU HB2   H   1.870 0.01 0
+       198   35   35 LEU HB3   H   1.480 0.01 0
+       199   35   35 LEU HG    H   1.430 0.01 0
+       200   35   35 LEU HD1   H   0.770 0.02 0
+       201   35   35 LEU HD2   H   0.730 0.01 0
+       202   36   36 PRO HA    H   4.170 0.02 0
+       203   36   36 PRO HB2   H   2.260 0.01 0
+       204   36   36 PRO HB3   H   1.660 0.00 0
+       205   36   36 PRO HG2   H   2.070 0.01 0
+       206   36   36 PRO HG3   H   1.890 0.00 0
+       207   36   36 PRO HD2   H   3.710 0.01 0
+       208   36   36 PRO HD3   H   4.170 0.00 0
+       209   37   37 ASN N     N 109.160 0.20 0
+       210   37   37 ASN H     H   7.160 0.00 0
+       211   37   37 ASN HA    H   4.790 0.02 0
+       212   37   37 ASN HB2   H   2.700 0.01 0
+       213   37   37 ASN HB3   H   2.270 0.00 0
+       214   37   37 ASN ND2   N 119.780 0.00 0
+       215   37   37 ASN HD21  H   6.850 0.00 0
+       216   37   37 ASN HD22  H   9.080 0.00 0
+       217   38   38 LYS N     N 119.180 0.20 0
+       218   38   38 LYS H     H   8.270 0.00 0
+       219   38   38 LYS HA    H   3.630 0.00 0
+       220   38   38 LYS HB2   H   2.420 0.00 0
+       221   38   38 LYS HB3   H   1.920 0.02 0
+       222   38   38 LYS HG2   H   1.450 0.01 0
+       223   38   38 LYS HE2   H   2.970 0.02 0
+       224   39   39 LYS N     N 115.900 0.20 0
+       225   39   39 LYS H     H   8.110 0.00 0
+       226   39   39 LYS HA    H   5.540 0.00 0
+       227   39   39 LYS HB2   H   1.680 0.00 0
+       228   39   39 LYS HB3   H   1.500 0.00 0
+       229   39   39 LYS HG2   H   1.370 0.01 0
+       230   39   39 LYS HG3   H   1.190 0.00 0
+       231   39   39 LYS HD2   H   1.450 0.02 0
+       232   40   40 VAL N     N 120.560 0.20 0
+       233   40   40 VAL H     H   9.100 0.00 0
+       234   40   40 VAL HA    H   4.850 0.00 0
+       235   40   40 VAL HB    H   1.800 0.01 0
+       236   40   40 VAL HG1   H   0.860 0.00 0
+       237   40   40 VAL HG2   H   0.810 0.00 0
+       238   41   41 CYS N     N 125.740 0.20 0
+       239   41   41 CYS H     H   8.690 0.00 0
+       240   41   41 CYS HA    H   5.480 0.00 0
+       241   41   41 CYS HB2   H   2.990 0.01 0
+       242   41   41 CYS HB3   H   2.930 0.01 0
+       243   42   42 ILE N     N 125.220 0.20 0
+       244   42   42 ILE H     H   9.530 0.00 0
+       245   42   42 ILE HA    H   4.880 0.00 0
+       246   42   42 ILE HB    H   1.940 0.00 0
+       247   42   42 ILE HG2   H   1.020 0.00 0
+       248   42   42 ILE HG12  H   0.850 0.03 0
+       249   42   42 ILE HG13  H   1.740 0.00 0
+       250   42   42 ILE HD1   H   0.800 0.02 0
+       251   43   43 GLU N     N 129.880 0.00 0
+       252   43   43 GLU H     H   9.520 0.02 0
+       253   43   43 GLU HA    H   5.230 0.00 0
+       254   43   43 GLU HB2   H   2.040 0.01 0
+       255   43   43 GLU HB3   H   1.790 0.01 0
+       256   43   43 GLU HG2   H   2.060 0.01 0
+       257   44   44 SER N     N 120.730 0.20 0
+       258   44   44 SER H     H   8.660 0.02 0
+       259   44   44 SER HA    H   4.780 0.02 0
+       260   44   44 SER HB2   H   4.300 0.00 0
+       261   44   44 SER HB3   H   3.870 0.00 0
+       262   45   45 GLU N     N 120.040 0.20 0
+       263   45   45 GLU H     H   8.930 0.00 0
+       264   45   45 GLU HA    H   4.480 0.00 0
+       265   45   45 GLU HB2   H   1.580 0.00 0
+       266   45   45 GLU HG2   H   2.210 0.01 0
+       267   45   45 GLU HG3   H   2.110 0.02 0
+       268   46   46 HIS N     N 119.000 0.20 0
+       269   46   46 HIS H     H   8.320 0.02 0
+       270   46   46 HIS HA    H   4.530 0.00 0
+       271   46   46 HIS HB2   H   2.780 0.00 0
+       272   46   46 HIS HD2   H   6.760 0.00 0
+       273   46   46 HIS HE1   H   7.660 0.02 0
+       274   47   47 SER N     N 115.380 0.20 0
+       275   47   47 SER H     H   8.880 0.01 0
+       276   47   47 SER HA    H   4.260 0.01 0
+       277   47   47 SER HB2   H   4.050 0.00 0
+       278   47   47 SER HB3   H   4.240 0.01 0
+       279   48   48 MET N     N 120.730 0.20 0
+       280   48   48 MET H     H   8.800 0.00 0
+       281   48   48 MET HA    H   3.260 0.01 0
+       282   48   48 MET HB2   H   1.430 0.01 0
+       283   48   48 MET HG2   H   1.620 0.02 0
+       284   48   48 MET HG3   H   1.300 0.00 0
+       285   49   49 ASP N     N 115.380 0.20 0
+       286   49   49 ASP H     H   8.260 0.00 0
+       287   49   49 ASP HA    H   4.090 0.01 0
+       288   49   49 ASP HB2   H   2.440 0.01 0
+       289   50   50 THR N     N 119.000 0.20 0
+       290   50   50 THR H     H   7.950 0.01 0
+       291   50   50 THR HA    H   3.790 0.00 0
+       292   50   50 THR HB    H   4.200 0.00 0
+       293   50   50 THR HG2   H   0.850 0.00 0
+       294   51   51 LEU N     N 123.840 0.20 0
+       295   51   51 LEU H     H   7.870 0.00 0
+       296   51   51 LEU HA    H   3.400 0.00 0
+       297   51   51 LEU HB2   H   1.920 0.01 0
+       298   51   51 LEU HB3   H   0.750 0.01 0
+       299   51   51 LEU HG    H   1.630 0.01 0
+       300   51   51 LEU HD1   H   0.760 0.01 0
+       301   51   51 LEU HD2   H   0.570 0.00 0
+       302   52   52 LEU N     N 120.190 0.01 0
+       303   52   52 LEU H     H   8.910 0.01 0
+       304   52   52 LEU HA    H   3.440 0.00 0
+       305   52   52 LEU HB2   H   1.810 0.00 0
+       306   52   52 LEU HB3   H   1.660 0.00 0
+       307   52   52 LEU HG    H   1.460 0.02 0
+       308   52   52 LEU HD1   H   0.910 0.01 0
+       309   52   52 LEU HD2   H   0.870 0.01 0
+       310   53   53 ALA N     N 117.800 0.20 0
+       311   53   53 ALA H     H   7.780 0.00 0
+       312   53   53 ALA HA    H   3.790 0.00 0
+       313   53   53 ALA HB    H   1.340 0.02 0
+       314   54   54 THR N     N 113.470 0.01 0
+       315   54   54 THR H     H   7.560 0.00 0
+       316   54   54 THR HA    H   3.550 0.01 0
+       317   54   54 THR HB    H   3.980 0.00 0
+       318   54   54 THR HG2   H   0.870 0.00 0
+       319   55   55 LEU N     N 118.830 0.20 0
+       320   55   55 LEU H     H   8.100 0.00 0
+       321   55   55 LEU HA    H   3.700 0.00 0
+       322   55   55 LEU HB2   H   1.630 0.00 0
+       323   55   55 LEU HB3   H   0.930 0.00 0
+       324   55   55 LEU HG    H   1.250 0.00 0
+       325   55   55 LEU HD2   H   0.460 0.00 0
+       326   56   56 LYS N     N 118.660 0.20 0
+       327   56   56 LYS H     H   8.260 0.00 0
+       328   56   56 LYS HA    H   3.870 0.01 0
+       329   56   56 LYS HB2   H   1.870 0.00 0
+       330   56   56 LYS HB3   H   1.710 0.01 0
+       331   56   56 LYS HG2   H   1.610 0.02 0
+       332   56   56 LYS HG3   H   1.350 0.00 0
+       333   56   56 LYS HD2   H   1.550 0.01 0
+       334   57   57 LYS N     N 119.870 0.20 0
+       335   57   57 LYS H     H   7.610 0.00 0
+       336   57   57 LYS HA    H   4.070 0.01 0
+       337   57   57 LYS HB2   H   2.070 0.01 0
+       338   57   57 LYS HB3   H   1.880 0.01 0
+       339   57   57 LYS HG2   H   1.810 0.00 0
+       340   57   57 LYS HG3   H   1.390 0.00 0
+       341   57   57 LYS HD2   H   1.620 0.01 0
+       342   57   57 LYS HE2   H   2.840 0.01 0
+       343   58   58 THR N     N 106.050 0.20 0
+       344   58   58 THR H     H   7.480 0.00 0
+       345   58   58 THR HA    H   4.070 0.01 0
+       346   58   58 THR HB    H   3.980 0.01 0
+       347   58   58 THR HG2   H   1.170 0.00 0
+       348   58   58 THR HG1   H   4.340 0.01 0
+       349   59   59 GLY N     N 107.260 0.20 0
+       350   59   59 GLY H     H   7.820 0.00 0
+       351   59   59 GLY HA2   H   4.130 0.00 0
+       352   59   59 GLY HA3   H   3.700 0.00 0
+       353   60   60 LYS N     N 117.280 0.20 0
+       354   60   60 LYS H     H   7.280 0.00 0
+       355   60   60 LYS HA    H   4.590 0.00 0
+       356   60   60 LYS HB2   H   1.740 0.00 0
+       357   60   60 LYS HB3   H   1.370 0.00 0
+       358   60   60 LYS HG2   H   1.130 0.00 0
+       359   60   60 LYS HG3   H   1.180 0.01 0
+       360   60   60 LYS HD2   H   1.550 0.01 0
+       361   60   60 LYS HD3   H   1.460 0.02 0
+       362   60   60 LYS HE2   H   2.970 0.01 0
+       363   60   60 LYS HE3   H   2.870 0.02 0
+       364   61   61 THR N     N 117.620 0.20 0
+       365   61   61 THR H     H   8.780 0.00 0
+       366   61   61 THR HA    H   4.030 0.00 0
+       367   61   61 THR HB    H   3.920 0.01 0
+       368   61   61 THR HG2   H   1.130 0.02 0
+       369   62   62 VAL N     N 127.290 0.20 0
+       370   62   62 VAL H     H   8.450 0.01 0
+       371   62   62 VAL HA    H   5.180 0.00 0
+       372   62   62 VAL HB    H   1.690 0.01 0
+       373   62   62 VAL HG1   H   0.880 0.00 0
+       374   62   62 VAL HG2   H   0.750 0.01 0
+       375   63   63 SER N     N 118.930 0.20 0
+       376   63   63 SER H     H   9.000 0.00 0
+       377   63   63 SER HA    H   4.760 0.01 0
+       378   63   63 SER HB2   H   3.770 0.00 0
+       379   63   63 SER HB3   H   3.690 0.00 0
+       380   64   64 TYR N     N 124.600 0.06 0
+       381   64   64 TYR H     H   9.290 0.01 0
+       382   64   64 TYR HA    H   4.470 0.00 0
+       383   64   64 TYR HB2   H   2.860 0.01 0
+       384   64   64 TYR HE1   H   6.610 0.00 0
+       385   64   64 TYR HD1   H   6.360 0.02 0
+       386   65   65 LEU N     N 127.980 0.20 0
+       387   65   65 LEU H     H   8.200 0.01 0
+       388   65   65 LEU HA    H   4.190 0.01 0
+       389   65   65 LEU HB2   H   1.250 0.00 0
+       390   65   65 LEU HG    H   1.350 0.00 0
+       391   65   65 LEU HD1   H   0.650 0.02 0
+       392   65   65 LEU HD2   H   0.670 0.00 0
+       393   66   66 GLY N     N 104.670 0.20 0
+       394   66   66 GLY H     H   5.810 0.00 0
+       395   66   66 GLY HA2   H   3.890 0.00 0
+       396   66   66 GLY HA3   H   3.280 0.00 0
+       397   67   67 LEU N     N 118.660 0.20 0
+       398   67   67 LEU H     H   7.850 0.00 0
+       399   67   67 LEU HA    H   4.640 0.00 0
+       400   67   67 LEU HB2   H   1.510 0.01 0
+       401   67   67 LEU HB3   H   1.450 0.01 0
+       402   67   67 LEU HG    H   1.490 0.01 0
+       403   67   67 LEU HD1   H   0.730 0.00 0
+       404   67   67 LEU HD2   H   0.670 0.01 0
+       406   68   68 GLU H     H   8.390 0.02 0
+       407   68   68 GLU HA    H   4.180 0.01 0
+       408   68   68 GLU HB2   H   1.880 0.00 0
+       409   68   68 GLU HB3   H   1.760 0.00 0
+       410   68   68 GLU HG2   H   2.150 0.01 0
+
+   stop_
+
+save_
+

@@ -1,0 +1,1837 @@
+data_5142
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a HA chemical shift difference (obs*-pred) greater than  0.7ppm:
+#NUM  AA    CS     Observed*    Predicted
+#  5   R    HA       4.31         3.29
+# 33   K    HA       4.16         2.74
+# 95   C    HA       4.94         4.18
+#
+#After reference correction, the following residues still 
+#have a CA chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#128   C    CA      51.94        56.94
+#
+#After reference correction, the following residues still 
+#have a CB chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#  6   C    CB      32.58        41.31
+#128   C    CB      35.06        40.59
+#
+#After reference correction, the following residues still 
+#have a N chemical shift difference (obs*-pred) greater than 10.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#112   W    N      114.08       126.68
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#-0.03   -0.62   -0.58   -0.18   -0.73   -0.09   
+#
+#R015_bmr5142.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R015_bmr5142.str file):
+#HA       CA       CB      CO       N      HN
+#N/A    -0.60   -0.60   -0.18    -0.73     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#+/-0.02  +/-0.16  +/-0.16  +/-0.16  +/-0.32  +/-0.06  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#0.882   0.957   0.993   0.770   0.844   0.676   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#0.124   0.935   0.884   0.925   1.811   0.319   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Assignment of 1H, 13C and 15N resonances of Human Lysozyme at 4 C
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Kumeta      Hiroyuki   . . 
+      2 Kobashigawa Yoshihiro  . . 
+      3 Miura       Kazunori   . . 
+      4 Nishimiya   Yoshiyuki  . . 
+      5 Oka         Chitoshi   . . 
+      6 Nemoto      Nobuaki    . . 
+      7 Miura       Ai         . . 
+      8 Nitta       Katsutoshi . . 
+      9 Tsuda       Sakae      . . 
+
+   stop_
+
+   _BMRB_accession_number   5142
+   _BMRB_flat_file_name     bmr5142.str
+   _Entry_type              new
+   _Submission_date         2001-09-06
+   _Accession_date          2001-09-07
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  584 
+      '15N chemical shifts' 127 
+      '13C chemical shifts' 374 
+
+   stop_
+
+   loop_
+      _Related_BMRB_accession_number
+      _Relationship
+
+      5130 "human lysozyme at 35 C" 
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_title        
+;
+Letter to the Editor: Assignments of 1H, 13C and 15N Resonances of Human Lysozyme at 4 degrees C
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        21880664
+   _PubMed_ID              11883780
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Kumeta      Hiroyuki   . . 
+      2 Kobashigawa Yoshihiro  . . 
+      3 Miura       Kazunori   . . 
+      4 Nishimiya   Yoshiyuki  . . 
+      5 Oka         Chitoshi   . . 
+      6 Nemoto      Nobuaki    . . 
+      7 Miura       Ai         . . 
+      8 Nitta       Katsutoshi . . 
+      9 Tsuda       Sakae      . . 
+
+   stop_
+
+   _Journal_abbreviation  "J. Biomol. NMR"
+   _Journal_volume         22
+   _Journal_issue          2
+   _Page_first             183
+   _Page_last              184
+   _Year                   2002
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_system_human_lysozyme
+   _Saveframe_category         molecular_system
+
+   _Mol_system_name           "human lysozyme"
+   _Abbreviation_common       "human lysozyme"
+   _Enzyme_commission_number   3.2.1.17
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      "human lysozyme" $human_lysozyme 
+
+   stop_
+
+   _System_physical_state      native
+   _System_oligomer_state      monomer
+   _System_paramagnetic        no
+   _System_thiol_state        'all disulfide bound'
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_human_lysozyme
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                "human lysozyme"
+   _Name_variant                                .
+   _Abbreviation_common                        "human lysozyme"
+   _Mol_thiol_state                            'all disulfide bound'
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               130
+   _Mol_residue_sequence                       
+;
+KVFERCELARTLKRLGMDGY
+RGISLANWMCLAKWESGYNT
+RATNYNAGDRSTDYGIFQIN
+SRYWCNDGKTPGAVNACHLS
+CSALLQDNIADAVACAKRVV
+RDPQGIRAWVAWRNRCQNRD
+VRQYVQGCGV
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+        1 LYS    2 VAL    3 PHE    4 GLU    5 ARG 
+        6 CYS    7 GLU    8 LEU    9 ALA   10 ARG 
+       11 THR   12 LEU   13 LYS   14 ARG   15 LEU 
+       16 GLY   17 MET   18 ASP   19 GLY   20 TYR 
+       21 ARG   22 GLY   23 ILE   24 SER   25 LEU 
+       26 ALA   27 ASN   28 TRP   29 MET   30 CYS 
+       31 LEU   32 ALA   33 LYS   34 TRP   35 GLU 
+       36 SER   37 GLY   38 TYR   39 ASN   40 THR 
+       41 ARG   42 ALA   43 THR   44 ASN   45 TYR 
+       46 ASN   47 ALA   48 GLY   49 ASP   50 ARG 
+       51 SER   52 THR   53 ASP   54 TYR   55 GLY 
+       56 ILE   57 PHE   58 GLN   59 ILE   60 ASN 
+       61 SER   62 ARG   63 TYR   64 TRP   65 CYS 
+       66 ASN   67 ASP   68 GLY   69 LYS   70 THR 
+       71 PRO   72 GLY   73 ALA   74 VAL   75 ASN 
+       76 ALA   77 CYS   78 HIS   79 LEU   80 SER 
+       81 CYS   82 SER   83 ALA   84 LEU   85 LEU 
+       86 GLN   87 ASP   88 ASN   89 ILE   90 ALA 
+       91 ASP   92 ALA   93 VAL   94 ALA   95 CYS 
+       96 ALA   97 LYS   98 ARG   99 VAL  100 VAL 
+      101 ARG  102 ASP  103 PRO  104 GLN  105 GLY 
+      106 ILE  107 ARG  108 ALA  109 TRP  110 VAL 
+      111 ALA  112 TRP  113 ARG  114 ASN  115 ARG 
+      116 CYS  117 GLN  118 ASN  119 ARG  120 ASP 
+      121 VAL  122 ARG  123 GLN  124 TYR  125 VAL 
+      126 GLN  127 GLY  128 CYS  129 GLY  130 VAL 
+
+   stop_
+
+   _Sequence_homology_query_date                2010-05-15
+   _Sequence_homology_query_revised_last_date   2010-05-15
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB         2542  lysozyme                                                                                                                                                              100.00 130 100.00 100.00 3.05e-70 
+      BMRB         5123  lysozyme                                                                                                                                                              100.00 130 100.00 100.00 3.05e-70 
+      BMRB         5124  lysozyme                                                                                                                                                              100.00 130  99.23  99.23 9.50e-70 
+      BMRB         5125  lysozyme                                                                                                                                                              100.00 130  99.23  99.23 1.42e-69 
+      BMRB         5130 "human lysozyme"                                                                                                                                                       100.00 130 100.00 100.00 3.05e-70 
+      BMRB           76  lysozyme                                                                                                                                                              100.00 130  99.23 100.00 6.21e-70 
+      PDB  133L          "Role Of Arg 115 In The Catalytic Action Of Human Lysozyme. X-Ray Structure Of His 115 And Glu 115 Mutants"                                                            100.00 130  99.23  99.23 8.67e-70 
+      PDB  134L          "Role Of Arg 115 In The Catalytic Action Of Human Lysozyme. X-Ray Structure Of His 115 And Glu 115 Mutants"                                                            100.00 130  99.23  99.23 8.96e-70 
+      PDB  1B5U          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutant"                              100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B5V          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutants"                             100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B5W          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutants"                             100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B5X          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutants"                             100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B5Y          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutants"                             100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B5Z          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme: Calorimetry And X-Ray Analysis Of Six Ser->ala Mutants"                             100.00 130  99.23 100.00 6.75e-70 
+      PDB  1B7L          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 1.13e-69 
+      PDB  1B7M          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 9.99e-70 
+      PDB  1B7N          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 2.36e-69 
+      PDB  1B7O          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 1.69e-69 
+      PDB  1B7P          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 4.60e-69 
+      PDB  1B7Q          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 2.52e-69 
+      PDB  1B7R          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 2.26e-69 
+      PDB  1B7S          "Verification Of Spmp Using Mutant Human Lysozymes"                                                                                                                    100.00 130  99.23  99.23 1.11e-69 
+      PDB  1BB3          "Human Lysozyme Mutant A96l"                                                                                                                                           100.00 130  99.23  99.23 1.13e-69 
+      PDB  1BB4          "Human Lysozyme Double Mutant A96l, W109h"                                                                                                                             100.00 130  98.46  98.46 8.31e-69 
+      PDB  1BB5          "Human Lysozyme Mutant A96l Complexed With Chitotriose"                                                                                                                100.00 130  99.23  99.23 1.13e-69 
+      PDB  1C43          "Mutant Human Lysozyme With Foreign N-Terminal Residues"                                                                                                                99.23 130 100.00 100.00 1.02e-69 
+      PDB  1C45          "Mutant Human Lysozyme With Foreign N-Terminal Residues"                                                                                                                99.23 130 100.00 100.00 1.06e-69 
+      PDB  1C46          "Mutant Human Lysozyme With Foreign N-Terminal Residues"                                                                                                               100.00 131 100.00 100.00 2.90e-70 
+      PDB  1C7P          "Crystal Structure Of Mutant Human Lysozyme With Four Extra Residues (Eaea) At The N-Terminal"                                                                         100.00 134 100.00 100.00 1.84e-70 
+      PDB  1CJ6          "T11a Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.09e-69 
+      PDB  1CJ7          "T11v Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.01e-69 
+      PDB  1CJ8          "T40a Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.09e-69 
+      PDB  1CJ9          "T40v Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.01e-69 
+      PDB  1CKC          "T43a Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.09e-69 
+      PDB  1CKD          "T43v Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.01e-69 
+      PDB  1CKF          "T52a Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.09e-69 
+      PDB  1CKG          "T52v Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.01e-69 
+      PDB  1CKH          "T70v Mutant Human Lysozyme"                                                                                                                                           100.00 130  99.23  99.23 1.01e-69 
+      PDB  1D6P          "Human Lysozyme L63 Mutant Labelled With 2',3'-Epoxypropyl N, N'-Diacetylchitobiose"                                                                                   100.00 130  99.23  99.23 1.88e-69 
+      PDB  1D6Q          "Human Lysozyme E102 Mutant Labelled With 2',3'-Epoxypropyl Glycoside Of N-Acetyllactosamine"                                                                          100.00 130  99.23 100.00 7.09e-70 
+      PDB  1DI3          "Role Of Amino Acid Residues At Turns In The Conformational Stability And Folding Of Human Lysozyme"                                                                   100.00 130  99.23  99.23 2.01e-69 
+      PDB  1DI4          "Role Of Amino Acid Residues At Turns In The Conformational Stability And Folding Of Human Lysozyme"                                                                   100.00 128  98.46  98.46 1.10e-67 
+      PDB  1DI5          "Role Of Amino Acid Residues At Turns In The Conformational Stability And Folding Of Human Lysozyme"                                                                   100.00 129  99.23  99.23 2.28e-68 
+      PDB  1EQ4          "Crystal Structures Of Salt Bridge Mutants Of Human Lysozyme"                                                                                                          100.00 130  99.23 100.00 7.40e-70 
+      PDB  1EQ5          "Crystal Structures Of Salt Bridge Mutants Of Human Lysozyme"                                                                                                          100.00 130  99.23 100.00 9.66e-70 
+      PDB  1EQE          "Crystal Structures Of Salt Bridge Mutants Of Human Lysozyme"                                                                                                          100.00 130  99.23 100.00 9.66e-70 
+      PDB  1GAY          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.01e-69 
+      PDB  1GAZ          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 3.89e-70 
+      PDB  1GB0          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 6.21e-70 
+      PDB  1GB2          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 5.81e-70 
+      PDB  1GB3          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 9.04e-70 
+      PDB  1GB5          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.01e-69 
+      PDB  1GB6          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 3.89e-70 
+      PDB  1GB7          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 6.21e-70 
+      PDB  1GB8          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 5.81e-70 
+      PDB  1GB9          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 9.04e-70 
+      PDB  1GBO          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.01e-69 
+      PDB  1GBW          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 3.89e-70 
+      PDB  1GBX          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 6.21e-70 
+      PDB  1GBY          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23 100.00 5.81e-70 
+      PDB  1GBZ          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 9.04e-70 
+      PDB  1GDW          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 2.01e-69 
+      PDB  1GDX          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 1.42e-69 
+      PDB  1GE0          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 3.29e-69 
+      PDB  1GE1          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 1.36e-69 
+      PDB  1GE2          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 3.35e-69 
+      PDB  1GE3          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 1.45e-69 
+      PDB  1GE4          "Crystal Structure Of Mutant Human Lysozyme Substituted At Left-Handed Helical Positions"                                                                              100.00 130  99.23  99.23 1.73e-69 
+      PDB  1GEV          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23  99.23 1.03e-69 
+      PDB  1GEZ          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23 100.00 5.08e-70 
+      PDB  1GF0          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23 100.00 5.08e-70 
+      PDB  1GF3          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23 100.00 5.08e-70 
+      PDB  1GF4          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23  99.23 7.65e-70 
+      PDB  1GF5          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23 100.00 5.08e-70 
+      PDB  1GF6          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23  99.23 7.65e-70 
+      PDB  1GF7          "Buried Polar Mutant Human Lysozyme"                                                                                                                                   100.00 130  99.23  99.23 7.65e-70 
+      PDB  1GF8          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.11e-69 
+      PDB  1GF9          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.29e-69 
+      PDB  1GFA          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.06e-69 
+      PDB  1GFE          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.93e-69 
+      PDB  1GFG          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.03e-69 
+      PDB  1GFH          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.29e-69 
+      PDB  1GFJ          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.06e-69 
+      PDB  1GFK          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.93e-69 
+      PDB  1GFR          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.03e-69 
+      PDB  1GFT          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.29e-69 
+      PDB  1GFU          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.06e-69 
+      PDB  1GFV          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 1.93e-69 
+      PDB  1HNL          "Crystal Structure Of A Glutathionylated Human Lysozyme: A Folding Intermediate Mimic In The Formation Of A Disulfide Bond"                                            100.00 130  99.23  99.23 1.57e-69 
+      PDB  1I1Z          "Mutant Human Lysozyme (Q86d)"                                                                                                                                         100.00 130  99.23  99.23 1.57e-69 
+      PDB  1I20          "Mutant Human Lysozyme (A92d)"                                                                                                                                         100.00 130  99.23  99.23 1.62e-69 
+      PDB  1INU          "Crystal Structure Of Mutant Human Lysozyme Substituted At The Surface Positions"                                                                                      100.00 130  99.23  99.23 2.03e-69 
+      PDB  1IOC          "Crystal Structure Of Mutant Human Lysozyme, Eaea-I56t"                                                                                                                100.00 134  99.23  99.23 5.43e-70 
+      PDB  1IP1          "G37a Human Lysozyme"                                                                                                                                                  100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP2          "G48a Human Lysozyme"                                                                                                                                                  100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP3          "G68a Human Lysozyme"                                                                                                                                                  100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP4          "G72a Human Lysozyme"                                                                                                                                                  100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP5          "G105a Human Lysozyme"                                                                                                                                                 100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP6          "G127a Human Lysozyme"                                                                                                                                                 100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IP7          "G129a Human Lysozyme"                                                                                                                                                 100.00 130  99.23  99.23 9.90e-70 
+      PDB  1IWT          "Crystal Structure Analysis Of Human Lysozyme At 113k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWU          "Crystal Structure Analysis Of Human Lysozyme At 127k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWV          "Crystal Structure Analysis Of Human Lysozyme At 147k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWW          "Crystal Structure Analysis Of Human Lysozyme At 152k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWX          "Crystal Structure Analysis Of Human Lysozyme At 161k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWY          "Crystal Structure Analysis Of Human Lysozyme At 170k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IWZ          "Crystal Structure Analysis Of Human Lysozyme At 178k."                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IY3          "Solution Structure Of The Human Lysozyme At 4 Degree C"                                                                                                               100.00 130 100.00 100.00 3.05e-70 
+      PDB  1IY4          "Solution Structure Of The Human Lysozyme At 35 Degree C"                                                                                                              100.00 130 100.00 100.00 3.05e-70 
+      PDB  1JKA          "Human Lysozyme Mutant With Glu 35 Replaced By Asp"                                                                                                                    100.00 130  99.23 100.00 9.58e-70 
+      PDB  1JKB          "Human Lysozyme Mutant With Glu 35 Replaced By Ala"                                                                                                                    100.00 130  99.23  99.23 1.39e-69 
+      PDB  1JKC          "Human Lysozyme Mutant With Trp 109 Replaced By Phe"                                                                                                                   100.00 130  99.23 100.00 9.58e-70 
+      PDB  1JKD          "Human Lysozyme Mutant With Trp 109 Replaced By Ala"                                                                                                                   100.00 130  99.23  99.23 2.79e-69 
+      PDB  1JSF          "Full-Matrix Least-Squares Refinement Of Human Lysozyme"                                                                                                               100.00 130 100.00 100.00 3.05e-70 
+      PDB  1JWR          "Crystal Structure Of Human Lysozyme At 100 K"                                                                                                                         100.00 130 100.00 100.00 3.05e-70 
+      PDB  1LAA          "X-Ray Structure Of Glu 53 Human Lysozyme"                                                                                                                             100.00 130  99.23 100.00 7.09e-70 
+      PDB  1LHH          "Role Of Proline Residues In Human Lysozyme Stability: A Scanning Calorimetric Study Combined With X-Ray Structure Analysis Of Proline Mutants"                        100.00 130  99.23  99.23 1.24e-69 
+      PDB  1LHI          "Role Of Proline Residues In Human Lysozyme Stability: A Scanning Calorimetric Study Combined With X-Ray Structure Analysis Of Proline Mutants"                        100.00 130  99.23  99.23 3.99e-69 
+      PDB  1LHJ          "Role Of Proline Residues In Human Lysozyme Stability: A Scanning Calorimetric Study Combined With X-Ray Structure Analysis Of Proline Mutants"                        100.00 130  99.23  99.23 3.99e-69 
+      PDB  1LHK          "Role Of Proline Residues In Human Lysozyme Stability: A Scanning Calorimetric Study Combined With X-Ray Structure Analysis Of Proline Mutants"                        100.00 130  99.23  99.23 1.54e-69 
+      PDB  1LHL          "Role Of Proline Residues In Human Lysozyme Stability: A Scanning Calorimetric Study Combined With X-Ray Structure Analysis Of Proline Mutants"                        100.00 130  99.23  99.23 9.26e-70 
+      PDB  1LHM          "The Crystal Structure Of A Mutant Lysozyme C77(Slash)95a With Increased Secretion Efficiency In Yeast"                                                                100.00 130  98.46  98.46 6.86e-69 
+      PDB  1LOZ          "Amyloidogenic Variant (I56t) Variant Of Human Lysozyme"                                                                                                               100.00 130  99.23  99.23 9.50e-70 
+      PDB  1LYY          "Amyloidogenic Variant (Asp67his) Of Human Lysozyme"                                                                                                                   100.00 130  99.23  99.23 1.42e-69 
+      PDB  1LZ1          "Refinement Of Human Lysozyme At 1.5 Angstroms Resolution. Analysis Of Non-Bonded And Hydrogen-Bond Interactions"                                                      100.00 130 100.00 100.00 3.05e-70 
+      PDB  1LZ4          "Enthalpic Destabilization Of A Mutant Human Lysozyme Lacking A Disulfide Bridge Between Cysteine-77 And Cysteine-95"                                                  100.00 130  99.23  99.23 1.57e-69 
+      PDB  1LZR          "Structural Changes Of The Active Site Cleft And Different Saccharide Binding Modes In Human Lysozyme Co-Crystallized With Hexa-N-Acetyl-Chitohexaose At Ph 4.0"       100.00 130 100.00 100.00 3.05e-70 
+      PDB  1LZS          "Structural Changes Of The Active Site Cleft And Different Saccharide Binding Modes In Human Lysozyme Co-Crystallized With Hexa-N-Acetyl-Chitohexaose At Ph 4.0"       100.00 130 100.00 100.00 3.05e-70 
+      PDB  1OP9          "Complex Of Human Lysozyme With Camelid Vhh Hl6 Antibody Fragment"                                                                                                     100.00 130 100.00 100.00 3.05e-70 
+      PDB  1OUA          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The I56t Mutant"                                                          100.00 130  99.23  99.23 9.50e-70 
+      PDB  1OUB          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V100a Mutant"                                                         100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUC          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V110a Mutant"                                                         100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUD          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V121a Mutant"                                                         100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUE          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V125a Mutant"                                                         100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUF          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V130a Mutant"                                                          99.23 130 100.00 100.00 8.81e-70 
+      PDB  1OUG          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V2a Mutant"                                                           100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUH          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V74a Mutant"                                                          100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUI          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V93a Mutant"                                                          100.00 130  99.23  99.23 8.81e-70 
+      PDB  1OUJ          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: X-Ray Structure Of The V99a Mutant"                                                          100.00 130  99.23  99.23 8.81e-70 
+      PDB  1QSW          "Crystal Structure Analysis Of A Human Lysozyme Mutant W64c C65a"                                                                                                      100.00 130  98.46  98.46 2.88e-68 
+      PDB  1RE2          "Human Lysozyme Labelled With Two 2',3'-Epoxypropyl Beta- Glycoside Of N-Acetyllactosamine"                                                                            100.00 130 100.00 100.00 3.05e-70 
+      PDB  1REM          "Human Lysozyme With Man-B1,4-Glcnac Covalently Attached To Asp53"                                                                                                     100.00 130 100.00 100.00 3.05e-70 
+      PDB  1REX          "Native Human Lysozyme"                                                                                                                                                100.00 130 100.00 100.00 3.05e-70 
+      PDB  1REY          "Human Lysozyme-N,N'-Diacetylchitobiose Complex"                                                                                                                       100.00 130 100.00 100.00 3.05e-70 
+      PDB  1REZ          "Human Lysozyme-N-Acetyllactosamine Complex"                                                                                                                           100.00 130 100.00 100.00 3.05e-70 
+      PDB  1TAY          "Dissection Of The Functional Role Of Structural Elements Of Tyrosine-63 In The Catalytic Action Of Human Lysozyme"                                                    100.00 130  99.23  99.23 2.17e-69 
+      PDB  1TBY          "Dissection Of The Functional Role Of Structural Elements Of Tyrosine-63 In The Catalytic Action Of Human Lysozyme"                                                    100.00 130  99.23  99.23 1.88e-69 
+      PDB  1TCY          "Dissection Of The Functional Role Of Structural Elements Of Tyrosine-63 In The Catalytic Action Of Human Lysozyme"                                                    100.00 130  99.23 100.00 6.16e-70 
+      PDB  1TDY          "Dissection Of The Functional Role Of Structural Elements Of Tyrosine-63 In The Catalytic Action Of Human Lysozyme"                                                    100.00 130  99.23 100.00 1.41e-69 
+      PDB  1UBZ          "Crystal Structure Of Glu102-Mutant Human Lysozyme Doubly Labeled With 2',3'-Epoxypropyl Beta-Glycoside Of N- Acetyllactosamine"                                       100.00 130  99.23 100.00 7.09e-70 
+      PDB  1W08          "Structure Of T70n Human Lysozyme"                                                                                                                                     100.00 130  99.23  99.23 1.11e-69 
+      PDB  1WQM          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1WQN          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1WQO          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1WQP          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1WQQ          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1WQR          "Contribution Of Hydrogen Bonds To The Conformational Stability Of Human Lysozyme"                                                                                     100.00 130  99.23 100.00 6.16e-70 
+      PDB  1YAM          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: Calorimetric Studies And X-Ray Structural Analysis Of The Five Isoleucine To Valine Mutants" 100.00 130  99.23 100.00 4.34e-70 
+      PDB  1YAN          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: Calorimetric Studies And X-Ray Structural Analysis Of The Five Isoleucine To Valine Mutants" 100.00 130  99.23 100.00 4.34e-70 
+      PDB  1YAO          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: Calorimetric Studies And X-Ray Structural Analysis Of The Five Isoleucine To Valine Mutants" 100.00 130  99.23 100.00 4.34e-70 
+      PDB  1YAP          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: Calorimetric Studies And X-Ray Structural Analysis Of The Five Isoleucine To Valine Mutants" 100.00 130  99.23 100.00 4.34e-70 
+      PDB  1YAQ          "Contribution Of Hydrophobic Residues To The Stability Of Human Lysozyme: Calorimetric Studies And X-Ray Structural Analysis Of The Five Isoleucine To Valine Mutants" 100.00 130  99.23 100.00 4.34e-70 
+      PDB  207L          "Mutant Human Lysozyme C77a"                                                                                                                                           100.00 130  99.23  99.23 1.57e-69 
+      PDB  208L          "Mutant Human Lysozyme C77a"                                                                                                                                           100.00 130  99.23  99.23 1.57e-69 
+      PDB  2BQA          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  98.46  98.46 6.86e-69 
+      PDB  2BQK          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                  99.23 130  98.45  98.45 2.12e-68 
+      PDB  2HEA          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 1.21e-69 
+      PDB  2HEB          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 1.21e-69 
+      PDB  2HEC          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 1.21e-69 
+      PDB  2HED          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 1.21e-69 
+      PDB  2HEE          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 2.44e-69 
+      PDB  2HEF          "Contribution Of Water Molecules In The Interior Of A Protein To The Conformational Stability"                                                                         100.00 130  99.23  99.23 1.21e-69 
+      PDB  2LHM          "Crystal Structures Of The Apo-And Holomutant Human Lysozymes With An Introduced Ca2+ Binding Site"                                                                    100.00 130  98.46  98.46 7.84e-69 
+      PDB  2MEA          "Changes In Conformational Stability Of A Series Of Mutant Human Lysozymes At Constant Positions"                                                                      100.00 130  99.23  99.23 8.67e-70 
+      PDB  2MEB          "Changes In Conformational Stability Of A Series Of Mutant Human Lysozymes At Constant Positions"                                                                      100.00 130  99.23 100.00 5.30e-70 
+      PDB  2MEC          "Changes In Conformational Stability Of A Series Of Mutant Human Lysozymes At Constant Positions"                                                                      100.00 130  99.23 100.00 5.95e-70 
+      PDB  2MED          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  99.23  99.23 8.67e-70 
+      PDB  2MEE          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  99.23 100.00 5.30e-70 
+      PDB  2MEF          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  99.23 100.00 5.95e-70 
+      PDB  2MEG          "Changes In Conformational Stability Of A Series Of Mutant Human Lysozymes At Constant Positions"                                                                      100.00 130  99.23  99.23 1.42e-69 
+      PDB  2MEH          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  99.23  99.23 9.50e-70 
+      PDB  2MEI          "Contribution Of Hydrophobic Effect To The Conformational Stability Of Human Lysozyme"                                                                                 100.00 130  99.23  99.23 1.50e-69 
+      PDB  2NWD          "Structure Of Chemically Synthesized Human Lysozyme At 1 Angstrom Resolution"                                                                                          100.00 130 100.00 100.00 3.05e-70 
+      PDB  2ZIJ          "Crystal Structure Of Human Lysozyme Expressed In E. Coli."                                                                                                            100.00 130 100.00 100.00 3.05e-70 
+      PDB  2ZIK          "Crystal Structure Of Human Lysozyme From Pichia Pastoris"                                                                                                             100.00 130 100.00 100.00 3.05e-70 
+      PDB  2ZIL          "Crystal Structure Of Human Lysozyme From Urine"                                                                                                                       100.00 130 100.00 100.00 3.05e-70 
+      PDB  2ZWB          "Neutron Crystal Structure Of Wild Type Human Lysozyme In D2o"                                                                                                          99.23 130 100.00 100.00 1.02e-69 
+      PDB  3EBA          "Cabhul6 Fglw Mutant (Humanized) In Complex With Human Lysozyme"                                                                                                       100.00 130 100.00 100.00 3.05e-70 
+      PDB  3FE0          "X-Ray Crystal Structure Of Wild Type Human Lysozyme In D2o"                                                                                                           100.00 130 100.00 100.00 3.05e-70 
+      PDB  3LHM          "Crystal Structures Of The Apo-And Holomutant Human Lysozymes With An Introduced Ca2+ Binding Site"                                                                    100.00 130  98.46  98.46 7.84e-69 
+      DBJ  BAA00314      "lysozyme [synthetic construct]"                                                                                                                                       100.00 131  99.23  99.23 1.65e-69 
+      DBJ  BAG34722      "unnamed protein product [Homo sapiens]"                                                                                                                               100.00 148 100.00 100.00 5.76e-71 
+      DBJ  BAG73364      "lysozyme [synthetic construct]"                                                                                                                                       100.00 148  99.23  99.23 3.03e-70 
+      EMBL CAA32175      "lysozyme [Homo sapiens]"                                                                                                                                              100.00 130 100.00 100.00 3.05e-70 
+      EMBL CAA53144      "lysozyme [synthetic construct]"                                                                                                                                       100.00 131 100.00 100.00 2.86e-70 
+      GB   AAA36188      "lysozyme precursor (EC 3.2.1.17) [Homo sapiens]"                                                                                                                      100.00 148  99.23 100.00 1.24e-70 
+      GB   AAA59535      "lysozyme precursor (EC 3.2.1.17) [Homo sapiens]"                                                                                                                      100.00 148 100.00 100.00 5.76e-71 
+      GB   AAA59536      "lysozyme precursor (EC 3.2.1.17) [Homo sapiens]"                                                                                                                      100.00 148 100.00 100.00 5.76e-71 
+      GB   AAA72819      "lysozyme [synthetic construct]"                                                                                                                                       100.00 130 100.00 100.00 3.05e-70 
+      GB   AAB26052      "lysozyme=amyloid fibril protein [human, Peptide Mutant, 130 aa]"                                                                                                      100.00 130  99.23  99.23 9.50e-70 
+      REF  NP_000230     "lysozyme C precursor [Homo sapiens]"                                                                                                                                  100.00 148 100.00 100.00 5.76e-71 
+      REF  NP_001009073  "lysozyme C precursor [Pan troglodytes]"                                                                                                                               100.00 148 100.00 100.00 5.76e-71 
+      SP   P61626        "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; Flags: Precursor"                                                                              100.00 148 100.00 100.00 5.76e-71 
+      SP   P61627        "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; Flags: Precursor"                                                                              100.00 148 100.00 100.00 5.76e-71 
+      SP   P61628        "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; Flags: Precursor"                                                                              100.00 148 100.00 100.00 5.76e-71 
+      SP   P79179        "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; Flags: Precursor"                                                                              100.00 148 100.00 100.00 6.69e-71 
+      SP   P79239        "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; Flags: Precursor"                                                                              100.00 148  99.23  99.23 1.63e-70 
+
+   stop_
+
+save_
+
+
+    ########################################
+    #  Molecular bond linkage definitions  #
+    ########################################
+
+save_crosslink_bond_definitions
+   _Saveframe_category   crosslink_bonds
+
+
+   loop_
+      _Bond_order
+      _Bond_type
+      _Atom_one_mol_system_component_name
+      _Atom_one_residue_seq_code
+      _Atom_one_residue_label
+      _Atom_one_atom_name
+      _Atom_two_mol_system_component_name
+      _Atom_two_residue_seq_code
+      _Atom_two_residue_label
+      _Atom_two_atom_name
+
+      single disulfide "human lysozyme"  6 CYS SG "human lysozyme" 128 CYS SG 
+      single disulfide "human lysozyme" 30 CYS SG "human lysozyme" 116 CYS SG 
+      single disulfide "human lysozyme" 65 CYS SG "human lysozyme"  81 CYS SG 
+      single disulfide "human lysozyme" 77 CYS SG "human lysozyme"  95 CYS SG 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $human_lysozyme Human 9606 Eukaryota Metazoa Homo sapiens 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_name
+
+      $human_lysozyme 'recombinant technology' . . . . . 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_1
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $human_lysozyme 1.0 mM . 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Varian
+   _Model                Unity
+   _Field_strength       500
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_NMR_applied_experiment
+   _Saveframe_category   NMR_applied_experiment
+
+   _Experiment_name     
+;
+15N-edited NOESY
+15N-edited TOCSY
+CBCA(CO)NNH
+HNCACB
+13C-edited NOESY
+1H-13C-1H HCCH-TOCSY
+1H-15N HSQC
+;
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_HL04-cond_1
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH            3.8 0.1 n/a 
+      temperature 277   1   K   
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+
+      DSS H 1 'methyl protons' ppm 0.0 internal direct . . . 1.0 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_shift_set_1
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Sample_label
+
+      $sample_1 
+
+   stop_
+
+   _Sample_conditions_label         $HL04-cond_1
+   _Chem_shift_reference_set_label  $chemical_shift_reference
+   _Mol_system_component_name       "human lysozyme"
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    1    1 LYS C     C 171.070 0.00 0
+         2    1    1 LYS CA    C  55.530 0.00 0
+         3    1    1 LYS HA    H   3.900 0.00 0
+         4    1    1 LYS CB    C  33.860 0.00 0
+         5    1    1 LYS HB2   H   1.680 0.00 0
+         6    1    1 LYS HG3   H   0.960 0.00 0
+         7    1    1 LYS HD2   H   0.630 0.00 0
+         8    2    2 VAL N     N 126.670 0.00 0
+         9    2    2 VAL H     H   9.080 0.00 0
+        10    2    2 VAL C     C 177.470 0.00 0
+        11    2    2 VAL CA    C  61.400 0.00 0
+        12    2    2 VAL HA    H   4.860 0.00 0
+        13    2    2 VAL CB    C  31.660 0.00 0
+        14    2    2 VAL HB    H   1.970 0.00 0
+        15    2    2 VAL HG1   H   0.890 0.00 0
+        16    2    2 VAL HG2   H   0.890 0.00 0
+        17    3    3 PHE N     N 127.300 0.00 0
+        18    3    3 PHE H     H   9.010 0.00 0
+        19    3    3 PHE C     C 176.090 0.00 0
+        20    3    3 PHE CA    C  59.360 0.00 0
+        21    3    3 PHE HA    H   4.080 0.00 0
+        22    3    3 PHE CB    C  41.330 0.00 0
+        23    3    3 PHE HB2   H   2.980 0.00 0
+        24    3    3 PHE HB3   H   2.760 0.00 0
+        25    4    4 GLU N     N 120.220 0.00 0
+        26    4    4 GLU H     H   8.470 0.00 0
+        27    4    4 GLU C     C 176.550 0.00 0
+        28    4    4 GLU CA    C  56.130 0.00 0
+        29    4    4 GLU HA    H   4.340 0.00 0
+        30    4    4 GLU CB    C  29.800 0.00 0
+        31    4    4 GLU HB2   H   2.370 0.00 0
+        32    4    4 GLU HB3   H   2.600 0.00 0
+        33    4    4 GLU HG2   H   2.030 0.00 0
+        34    4    4 GLU HG3   H   2.220 0.00 0
+        35    5    5 ARG N     N 125.340 0.00 0
+        36    5    5 ARG H     H   8.680 0.00 0
+        37    5    5 ARG C     C 176.820 0.00 0
+        38    5    5 ARG CA    C  60.810 0.00 0
+        39    5    5 ARG HA    H   4.340 0.00 0
+        40    5    5 ARG CB    C  32.090 0.00 0
+        41    5    5 ARG HB2   H   2.470 0.00 0
+        42    5    5 ARG HG2   H   1.920 0.00 0
+        43    5    5 ARG HD3   H   3.190 0.00 0
+        44    6    6 CYS N     N 114.190 0.00 0
+        45    6    6 CYS H     H   8.970 0.00 0
+        46    6    6 CYS C     C 177.180 0.00 0
+        47    6    6 CYS CA    C  54.420 0.00 0
+        48    6    6 CYS HA    H   4.740 0.00 0
+        50    6    6 CYS HB2   H   3.160 0.00 0
+        51    6    6 CYS HB3   H   2.960 0.00 0
+        52    7    7 GLU N     N 123.410 0.00 0
+        53    7    7 GLU H     H   8.080 0.00 0
+        54    7    7 GLU C     C 180.210 0.00 0
+        55    7    7 GLU CA    C  58.880 0.00 0
+        56    7    7 GLU HA    H   4.120 0.00 0
+        57    7    7 GLU CB    C  29.570 0.00 0
+        58    7    7 GLU HB2   H   2.620 0.00 0
+        59    7    7 GLU HB3   H   2.480 0.00 0
+        60    7    7 GLU HG2   H   2.210 0.00 0
+        61    7    7 GLU HG3   H   2.090 0.00 0
+        62    8    8 LEU N     N 121.400 0.00 0
+        63    8    8 LEU H     H   8.600 0.00 0
+        64    8    8 LEU C     C 177.240 0.00 0
+        65    8    8 LEU CA    C  57.610 0.00 0
+        66    8    8 LEU HA    H   3.670 0.00 0
+        67    8    8 LEU CB    C  39.460 0.00 0
+        68    8    8 LEU HB2   H   1.550 0.00 0
+        69    8    8 LEU HG    H   0.770 0.00 0
+        70    8    8 LEU HD1   H  -0.310 0.00 0
+        71    8    8 LEU HD2   H   0.370 0.00 0
+        72    9    9 ALA N     N 122.510 0.00 0
+        73    9    9 ALA H     H   8.450 0.00 0
+        74    9    9 ALA C     C 179.160 0.00 0
+        75    9    9 ALA CA    C  56.520 0.00 0
+        76    9    9 ALA HA    H   3.990 0.00 0
+        77    9    9 ALA CB    C  17.740 0.00 0
+        78    9    9 ALA HB    H   1.500 0.00 0
+        79   10   10 ARG N     N 114.570 0.00 0
+        80   10   10 ARG H     H   8.460 0.00 0
+        81   10   10 ARG C     C 179.460 0.00 0
+        82   10   10 ARG CA    C  60.050 0.00 0
+        83   10   10 ARG HA    H   3.860 0.00 0
+        84   10   10 ARG CB    C  30.920 0.00 0
+        85   10   10 ARG HB2   H   1.820 0.00 0
+        86   10   10 ARG HG2   H   1.520 0.00 0
+        87   10   10 ARG HD3   H   0.750 0.00 0
+        88   11   11 THR N     N 118.470 0.00 0
+        89   11   11 THR H     H   7.880 0.00 0
+        90   11   11 THR C     C 175.420 0.00 0
+        91   11   11 THR CA    C  67.230 0.00 0
+        92   11   11 THR HA    H   3.930 0.00 0
+        93   11   11 THR CB    C  68.750 0.00 0
+        94   11   11 THR HB    H   4.240 0.00 0
+        95   11   11 THR HG2   H   1.200 0.00 0
+        96   12   12 LEU N     N 118.670 0.00 0
+        97   12   12 LEU H     H   8.890 0.00 0
+        98   12   12 LEU C     C 178.690 0.00 0
+        99   12   12 LEU CA    C  57.750 0.00 0
+       100   12   12 LEU HA    H   3.630 0.00 0
+       101   12   12 LEU CB    C  41.140 0.00 0
+       102   12   12 LEU HB2   H   1.890 0.00 0
+       103   12   12 LEU HB3   H   0.720 0.00 0
+       104   12   12 LEU HG    H   1.640 0.00 0
+       105   12   12 LEU HD1   H   0.610 0.00 0
+       106   12   12 LEU HD2   H   0.510 0.00 0
+       107   13   13 LYS N     N 118.760 0.00 0
+       108   13   13 LYS H     H   8.240 0.00 0
+       109   13   13 LYS C     C 180.550 0.00 0
+       110   13   13 LYS CA    C  58.830 0.00 0
+       111   13   13 LYS HA    H   4.060 0.00 0
+       112   13   13 LYS CB    C  32.760 0.00 0
+       113   13   13 LYS HB2   H   2.170 0.00 0
+       114   13   13 LYS HG3   H   1.910 0.00 0
+       115   13   13 LYS HD2   H   0.980 0.00 0
+       116   13   13 LYS HE2   H   3.850 0.00 0
+       117   13   13 LYS HE3   H   3.620 0.00 0
+       118   14   14 ARG N     N 121.410 0.00 0
+       119   14   14 ARG H     H   8.040 0.00 0
+       120   14   14 ARG C     C 177.550 0.00 0
+       121   14   14 ARG CA    C  59.210 0.00 0
+       122   14   14 ARG HA    H   4.170 0.00 0
+       123   14   14 ARG CB    C  29.970 0.00 0
+       124   14   14 ARG HB2   H   2.050 0.00 0
+       125   14   14 ARG HG2   H   1.770 0.00 0
+       126   14   14 ARG HD3   H   3.270 0.00 0
+       127   15   15 LEU N     N 116.370 0.00 0
+       128   15   15 LEU H     H   7.550 0.00 0
+       129   15   15 LEU C     C 176.530 0.00 0
+       130   15   15 LEU CA    C  54.410 0.00 0
+       131   15   15 LEU HA    H   4.400 0.00 0
+       132   15   15 LEU CB    C  41.660 0.00 0
+       133   15   15 LEU HB2   H   1.510 0.00 0
+       134   15   15 LEU HG    H   1.810 0.00 0
+       135   15   15 LEU HD1   H   0.710 0.00 0
+       136   15   15 LEU HD2   H   0.830 0.00 0
+       137   16   16 GLY N     N 105.720 0.00 0
+       138   16   16 GLY H     H   7.570 0.00 0
+       139   16   16 GLY C     C 176.130 0.00 0
+       140   16   16 GLY CA    C  47.370 0.00 0
+       141   16   16 GLY HA2   H   4.090 0.00 0
+       142   16   16 GLY HA3   H   3.880 0.00 0
+       143   17   17 MET N     N 113.610 0.00 0
+       144   17   17 MET H     H   7.480 0.00 0
+       145   17   17 MET C     C 177.870 0.00 0
+       146   17   17 MET CA    C  56.970 0.00 0
+       147   17   17 MET HA    H   3.940 0.00 0
+       148   17   17 MET CB    C  34.350 0.00 0
+       149   17   17 MET HB2   H   1.330 0.00 0
+       150   17   17 MET HB3   H   1.230 0.00 0
+       151   17   17 MET HG2   H   1.660 0.00 0
+       152   17   17 MET HG3   H   1.450 0.00 0
+       153   18   18 ASP N     N 118.210 0.00 0
+       154   18   18 ASP H     H   9.190 0.00 0
+       155   18   18 ASP C     C 175.920 0.00 0
+       156   18   18 ASP CA    C  55.860 0.00 0
+       157   18   18 ASP HA    H   4.430 0.00 0
+       158   18   18 ASP CB    C  41.240 0.00 0
+       159   18   18 ASP HB2   H   3.290 0.00 0
+       160   18   18 ASP HB3   H   2.360 0.00 0
+       161   19   19 GLY N     N 119.470 0.00 0
+       162   19   19 GLY H     H   9.150 0.00 0
+       163   19   19 GLY C     C 175.250 0.00 0
+       164   19   19 GLY CA    C  45.690 0.00 0
+       165   19   19 GLY HA2   H   4.200 0.00 0
+       166   19   19 GLY HA3   H   3.330 0.00 0
+       167   20   20 TYR N     N 125.870 0.00 0
+       168   20   20 TYR H     H   8.000 0.00 0
+       169   20   20 TYR C     C 176.540 0.00 0
+       170   20   20 TYR CA    C  60.710 0.00 0
+       171   20   20 TYR HA    H   4.130 0.00 0
+       172   20   20 TYR CB    C  38.640 0.00 0
+       173   20   20 TYR HB2   H   3.080 0.00 0
+       174   20   20 TYR HB3   H   3.340 0.00 0
+       175   21   21 ARG N     N 125.290 0.00 0
+       176   21   21 ARG H     H   9.130 0.00 0
+       177   21   21 ARG C     C 175.930 0.00 0
+       178   21   21 ARG CA    C  56.270 0.00 0
+       179   21   21 ARG HA    H   3.580 0.00 0
+       180   21   21 ARG CB    C  27.030 0.00 0
+       181   21   21 ARG HB2   H   2.030 0.00 0
+       182   21   21 ARG HB3   H   1.670 0.00 0
+       183   21   21 ARG HG2   H   1.090 0.00 0
+       184   21   21 ARG HD3   H   2.940 0.00 0
+       185   22   22 GLY N     N 102.740 0.00 0
+       186   22   22 GLY H     H   7.870 0.00 0
+       187   22   22 GLY C     C 174.450 0.00 0
+       188   22   22 GLY CA    C  45.290 0.00 0
+       189   22   22 GLY HA2   H   4.020 0.00 0
+       190   22   22 GLY HA3   H   3.580 0.00 0
+       191   23   23 ILE N     N 124.490 0.00 0
+       192   23   23 ILE H     H   7.830 0.00 0
+       193   23   23 ILE C     C 175.470 0.00 0
+       194   23   23 ILE CA    C  60.990 0.00 0
+       195   23   23 ILE HA    H   3.810 0.00 0
+       196   23   23 ILE CB    C  38.090 0.00 0
+       197   23   23 ILE HB    H   1.990 0.00 0
+       198   23   23 ILE HG12  H   1.300 0.00 0
+       199   23   23 ILE HG2   H  -0.320 0.00 0
+       200   23   23 ILE HD1   H   0.590 0.00 0
+       201   24   24 SER N     N 122.630 0.00 0
+       202   24   24 SER H     H   8.980 0.00 0
+       203   24   24 SER C     C 174.860 0.00 0
+       204   24   24 SER CA    C  57.500 0.00 0
+       205   24   24 SER HA    H   4.420 0.00 0
+       206   24   24 SER CB    C  65.150 0.00 0
+       207   24   24 SER HB2   H   3.800 0.00 0
+       208   24   24 SER HB3   H   4.160 0.00 0
+       209   25   25 LEU N     N 121.100 0.00 0
+       210   25   25 LEU H     H   8.810 0.00 0
+       211   25   25 LEU C     C 177.930 0.00 0
+       212   25   25 LEU CA    C  58.110 0.00 0
+       213   25   25 LEU HA    H   4.210 0.00 0
+       214   25   25 LEU CB    C  42.330 0.00 0
+       215   25   25 LEU HB2   H   2.000 0.00 0
+       216   25   25 LEU HG    H   1.350 0.00 0
+       217   25   25 LEU HD1   H   0.980 0.00 0
+       218   25   25 LEU HD2   H   1.000 0.00 0
+       219   26   26 ALA N     N 118.200 0.00 0
+       220   26   26 ALA H     H   8.990 0.00 0
+       221   26   26 ALA C     C 179.050 0.00 0
+       222   26   26 ALA CA    C  56.020 0.00 0
+       223   26   26 ALA HA    H   3.860 0.00 0
+       224   26   26 ALA CB    C  18.380 0.00 0
+       225   26   26 ALA HB    H   1.550 0.00 0
+       226   27   27 ASN N     N 116.570 0.00 0
+       227   27   27 ASN H     H   7.790 0.00 0
+       228   27   27 ASN C     C 177.680 0.00 0
+       229   27   27 ASN CA    C  58.290 0.00 0
+       230   27   27 ASN HA    H   4.580 0.00 0
+       231   27   27 ASN CB    C  40.690 0.00 0
+       232   27   27 ASN HB2   H   3.060 0.00 0
+       233   27   27 ASN HB3   H   2.120 0.00 0
+       234   28   28 TRP N     N 119.680 0.00 0
+       235   28   28 TRP H     H   7.890 0.00 0
+       236   28   28 TRP C     C 178.640 0.00 0
+       237   28   28 TRP CA    C  60.440 0.00 0
+       238   28   28 TRP HA    H   4.390 0.00 0
+       239   28   28 TRP CB    C  30.670 0.00 0
+       240   28   28 TRP HB2   H   3.360 0.00 0
+       241   28   28 TRP HB3   H   3.060 0.00 0
+       242   29   29 MET N     N 116.060 0.00 0
+       243   29   29 MET H     H   8.460 0.00 0
+       244   29   29 MET C     C 176.980 0.00 0
+       245   29   29 MET CA    C  55.290 0.00 0
+       246   29   29 MET HA    H   4.430 0.00 0
+       247   29   29 MET CB    C  30.790 0.00 0
+       248   29   29 MET HB2   H   2.340 0.00 0
+       249   29   29 MET HG3   H   2.060 0.00 0
+       250   30   30 CYS N     N 119.320 0.00 0
+       251   30   30 CYS H     H   8.100 0.00 0
+       252   30   30 CYS C     C 175.720 0.00 0
+       253   30   30 CYS CA    C  60.670 0.00 0
+       254   30   30 CYS HA    H   2.950 0.00 0
+       255   30   30 CYS CB    C  44.560 0.00 0
+       256   30   30 CYS HB2   H   3.140 0.00 0
+       257   31   31 LEU N     N 117.760 0.00 0
+       258   31   31 LEU H     H   8.150 0.00 0
+       259   31   31 LEU C     C 177.340 0.00 0
+       260   31   31 LEU CA    C  58.930 0.00 0
+       261   31   31 LEU HA    H   4.000 0.00 0
+       262   31   31 LEU CB    C  42.130 0.00 0
+       263   31   31 LEU HB2   H   2.420 0.00 0
+       264   31   31 LEU HG    H   1.490 0.00 0
+       265   31   31 LEU HD1   H  -0.140 0.00 0
+       266   31   31 LEU HD2   H   0.480 0.00 0
+       267   32   32 ALA N     N 118.580 0.00 0
+       268   32   32 ALA H     H   8.440 0.00 0
+       269   32   32 ALA C     C 179.500 0.00 0
+       270   32   32 ALA CA    C  55.130 0.00 0
+       271   32   32 ALA HA    H   4.080 0.00 0
+       272   32   32 ALA CB    C  18.590 0.00 0
+       273   32   32 ALA HB    H   1.380 0.00 0
+       274   33   33 LYS N     N 119.310 0.00 0
+       275   33   33 LYS H     H   8.830 0.00 0
+       276   33   33 LYS C     C 180.020 0.00 0
+       277   33   33 LYS CA    C  60.720 0.00 0
+       279   33   33 LYS CB    C  30.800 0.00 0
+       280   33   33 LYS HB2   H   2.130 0.00 0
+       281   33   33 LYS HG2   H   0.680 0.00 0
+       282   33   33 LYS HG3   H   0.460 0.00 0
+       283   33   33 LYS HD2   H   1.480 0.00 0
+       284   33   33 LYS HE3   H   2.660 0.00 0
+       285   34   34 TRP N     N 117.760 0.00 0
+       286   34   34 TRP H     H   7.820 0.00 0
+       287   34   34 TRP C     C 177.870 0.00 0
+       288   34   34 TRP CA    C  59.210 0.00 0
+       289   34   34 TRP HA    H   4.280 0.00 0
+       290   34   34 TRP CB    C  28.950 0.00 0
+       291   34   34 TRP HB2   H   3.320 0.00 0
+       292   34   34 TRP HB3   H   2.800 0.00 0
+       293   35   35 GLU N     N 116.060 0.00 0
+       294   35   35 GLU H     H   8.820 0.00 0
+       295   35   35 GLU C     C 176.970 0.00 0
+       296   35   35 GLU CA    C  57.640 0.00 0
+       297   35   35 GLU HA    H   4.450 0.00 0
+       298   35   35 GLU CB    C  27.520 0.00 0
+       299   35   35 GLU HB2   H   2.050 0.00 0
+       300   35   35 GLU HB3   H   1.940 0.00 0
+       301   35   35 GLU HG3   H   2.690 0.00 0
+       302   36   36 SER N     N 107.550 0.00 0
+       303   36   36 SER H     H   7.960 0.00 0
+       304   36   36 SER C     C 176.760 0.00 0
+       305   36   36 SER CA    C  57.990 0.00 0
+       306   36   36 SER HA    H   4.660 0.00 0
+       307   36   36 SER CB    C  67.840 0.00 0
+       308   36   36 SER HB2   H   4.440 0.00 0
+       309   36   36 SER HB3   H   3.550 0.00 0
+       310   37   37 GLY N     N 115.520 0.00 0
+       311   37   37 GLY H     H   8.160 0.00 0
+       312   37   37 GLY C     C 174.450 0.00 0
+       313   37   37 GLY CA    C  47.510 0.00 0
+       314   37   37 GLY HA2   H   3.720 0.00 0
+       315   37   37 GLY HA3   H   3.450 0.00 0
+       316   38   38 TYR N     N 108.450 0.00 0
+       317   38   38 TYR H     H   7.400 0.00 0
+       318   38   38 TYR C     C 173.150 0.00 0
+       319   38   38 TYR CA    C  56.480 0.00 0
+       320   38   38 TYR HA    H   3.690 0.00 0
+       321   38   38 TYR CB    C  36.830 0.00 0
+       322   38   38 TYR HB2   H   3.820 0.00 0
+       323   38   38 TYR HB3   H   3.190 0.00 0
+       324   39   39 ASN N     N 116.760 0.00 0
+       325   39   39 ASN H     H   7.130 0.00 0
+       326   39   39 ASN C     C 176.550 0.00 0
+       327   39   39 ASN CA    C  51.460 0.00 0
+       328   39   39 ASN HA    H   5.530 0.00 0
+       329   39   39 ASN CB    C  40.310 0.00 0
+       330   39   39 ASN HB2   H   3.510 0.00 0
+       331   39   39 ASN HB3   H   2.720 0.00 0
+       332   39   39 ASN HD21  H   7.870 0.00 0
+       333   39   39 ASN HD22  H   7.240 0.00 0
+       334   40   40 THR N     N 115.000 0.00 0
+       335   40   40 THR H     H   9.270 0.00 0
+       336   40   40 THR C     C 174.220 0.00 0
+       337   40   40 THR CA    C  64.570 0.00 0
+       338   40   40 THR HA    H   4.050 0.00 0
+       339   40   40 THR CB    C  69.500 0.00 0
+       340   40   40 THR HB    H   1.550 0.00 0
+       341   40   40 THR HG2   H   1.590 0.00 0
+       342   41   41 ARG N     N 113.740 0.00 0
+       343   41   41 ARG H     H   7.670 0.00 0
+       344   41   41 ARG C     C 176.450 0.00 0
+       345   41   41 ARG CA    C  55.080 0.00 0
+       346   41   41 ARG HA    H   4.460 0.00 0
+       347   41   41 ARG CB    C  29.980 0.00 0
+       348   41   41 ARG HB2   H   1.680 0.00 0
+       349   41   41 ARG HB3   H   1.570 0.00 0
+       350   41   41 ARG HG2   H   2.090 0.00 0
+       351   41   41 ARG HD3   H   3.220 0.00 0
+       352   42   42 ALA N     N 122.440 0.00 0
+       353   42   42 ALA H     H   6.830 0.00 0
+       354   42   42 ALA C     C 176.770 0.00 0
+       355   42   42 ALA CA    C  53.470 0.00 0
+       356   42   42 ALA HA    H   4.160 0.00 0
+       357   42   42 ALA CB    C  19.060 0.00 0
+       358   42   42 ALA HB    H   1.340 0.00 0
+       359   43   43 THR N     N 113.660 0.00 0
+       360   43   43 THR H     H   8.400 0.00 0
+       361   43   43 THR C     C 173.270 0.00 0
+       362   43   43 THR CA    C  60.340 0.00 0
+       363   43   43 THR HA    H   5.290 0.00 0
+       364   43   43 THR CB    C  72.690 0.00 0
+       365   43   43 THR HB    H   3.770 0.00 0
+       366   43   43 THR HG2   H   1.120 0.00 0
+       367   44   44 ASN N     N 118.460 0.00 0
+       368   44   44 ASN H     H   8.130 0.00 0
+       369   44   44 ASN C     C 172.660 0.00 0
+       370   44   44 ASN CA    C  53.350 0.00 0
+       371   44   44 ASN HA    H   5.030 0.00 0
+       372   44   44 ASN CB    C  43.340 0.00 0
+       373   44   44 ASN HB2   H   2.770 0.00 0
+       374   44   44 ASN HD21  H   7.790 0.00 0
+       375   44   44 ASN HD22  H   6.950 0.00 0
+       376   45   45 TYR N     N 127.250 0.00 0
+       377   45   45 TYR H     H   9.160 0.00 0
+       378   45   45 TYR C     C 173.710 0.00 0
+       379   45   45 TYR CA    C  57.600 0.00 0
+       380   45   45 TYR HA    H   4.840 0.00 0
+       381   45   45 TYR CB    C  39.950 0.00 0
+       382   45   45 TYR HB2   H   3.020 0.00 0
+       383   45   45 TYR HB3   H   2.790 0.00 0
+       384   46   46 ASN N     N 127.560 0.00 0
+       385   46   46 ASN H     H   8.960 0.00 0
+       386   46   46 ASN C     C 172.870 0.00 0
+       387   46   46 ASN CA    C  51.550 0.00 0
+       388   46   46 ASN HA    H   4.690 0.00 0
+       389   46   46 ASN CB    C  39.170 0.00 0
+       390   46   46 ASN HB2   H   2.770 0.00 0
+       391   46   46 ASN HB3   H   2.690 0.00 0
+       392   46   46 ASN HD21  H   7.140 0.00 0
+       393   46   46 ASN HD22  H   6.900 0.00 0
+       394   47   47 ALA N     N 124.830 0.00 0
+       395   47   47 ALA H     H   8.650 0.00 0
+       396   47   47 ALA C     C 179.500 0.00 0
+       397   47   47 ALA CA    C  54.460 0.00 0
+       398   47   47 ALA HA    H   3.690 0.00 0
+       399   47   47 ALA CB    C  18.370 0.00 0
+       400   47   47 ALA HB    H   1.450 0.00 0
+       401   48   48 GLY N     N 103.900 0.00 0
+       402   48   48 GLY H     H   8.660 0.00 0
+       403   48   48 GLY C     C 174.660 0.00 0
+       404   48   48 GLY CA    C  47.150 0.00 0
+       405   48   48 GLY HA2   H   3.810 0.00 0
+       406   49   49 ASP N     N 116.140 0.00 0
+       407   49   49 ASP H     H   7.180 0.00 0
+       408   49   49 ASP C     C 175.160 0.00 0
+       409   49   49 ASP CA    C  52.270 0.00 0
+       410   49   49 ASP HA    H   4.710 0.00 0
+       411   49   49 ASP CB    C  40.490 0.00 0
+       412   49   49 ASP HB2   H   2.930 0.00 0
+       413   49   49 ASP HB3   H   2.420 0.00 0
+       414   50   50 ARG N     N 113.640 0.00 0
+       415   50   50 ARG H     H   7.910 0.00 0
+       416   50   50 ARG C     C 174.150 0.00 0
+       417   50   50 ARG CA    C  57.650 0.00 0
+       418   50   50 ARG HA    H   3.850 0.00 0
+       419   50   50 ARG CB    C  27.030 0.00 0
+       420   50   50 ARG HB2   H   2.260 0.00 0
+       421   50   50 ARG HB3   H   2.060 0.00 0
+       422   50   50 ARG HG2   H   1.620 0.00 0
+       423   50   50 ARG HD3   H   3.250 0.00 0
+       424   51   51 SER N     N 113.720 0.00 0
+       425   51   51 SER H     H   8.060 0.00 0
+       426   51   51 SER C     C 171.290 0.00 0
+       427   51   51 SER CA    C  57.360 0.00 0
+       428   51   51 SER HA    H   4.730 0.00 0
+       429   51   51 SER CB    C  66.360 0.00 0
+       430   51   51 SER HB2   H   4.170 0.00 0
+       431   51   51 SER HB3   H   3.590 0.00 0
+       432   52   52 THR N     N 115.600 0.00 0
+       433   52   52 THR H     H   9.170 0.00 0
+       434   52   52 THR C     C 171.680 0.00 0
+       435   52   52 THR CA    C  61.610 0.00 0
+       436   52   52 THR HA    H   5.040 0.00 0
+       437   52   52 THR CB    C  71.440 0.00 0
+       438   52   52 THR HB    H   3.860 0.00 0
+       439   52   52 THR HG2   H   0.390 0.00 0
+       440   53   53 ASP N     N 123.530 0.00 0
+       441   53   53 ASP H     H   8.940 0.00 0
+       442   53   53 ASP C     C 175.340 0.00 0
+       443   53   53 ASP CA    C  51.990 0.00 0
+       444   53   53 ASP HA    H   5.250 0.00 0
+       445   53   53 ASP CB    C  41.950 0.00 0
+       446   53   53 ASP HB2   H   2.720 0.00 0
+       447   53   53 ASP HB3   H   2.050 0.00 0
+       448   54   54 TYR N     N 117.870 0.00 0
+       449   54   54 TYR H     H   9.240 0.00 0
+       450   54   54 TYR C     C 178.340 0.00 0
+       451   54   54 TYR CA    C  59.580 0.00 0
+       452   54   54 TYR HA    H   4.810 0.00 0
+       453   54   54 TYR CB    C  43.050 0.00 0
+       454   54   54 TYR HB2   H   2.990 0.00 0
+       455   54   54 TYR HB3   H   2.740 0.00 0
+       456   55   55 GLY N     N 112.090 0.00 0
+       457   55   55 GLY H     H   9.140 0.00 0
+       458   55   55 GLY C     C 177.080 0.00 0
+       459   55   55 GLY CA    C  46.600 0.00 0
+       460   55   55 GLY HA2   H   4.590 0.00 0
+       461   55   55 GLY HA3   H   4.470 0.00 0
+       462   56   56 ILE N     N 121.240 0.00 0
+       463   56   56 ILE H     H   9.300 0.00 0
+       464   56   56 ILE C     C 175.650 0.00 0
+       465   56   56 ILE CA    C  62.170 0.00 0
+       466   56   56 ILE HA    H   4.080 0.00 0
+       467   56   56 ILE CB    C  39.550 0.00 0
+       468   56   56 ILE HB    H   1.180 0.00 0
+       469   56   56 ILE HG12  H   0.060 0.00 0
+       470   56   56 ILE HG2   H   0.060 0.00 0
+       471   57   57 PHE N     N 114.970 0.00 0
+       472   57   57 PHE H     H   8.430 0.00 0
+       473   57   57 PHE C     C 173.060 0.00 0
+       474   57   57 PHE CA    C  56.010 0.00 0
+       475   57   57 PHE HA    H   4.640 0.00 0
+       476   57   57 PHE CB    C  39.630 0.00 0
+       477   57   57 PHE HB2   H   2.680 0.00 0
+       478   58   58 GLN N     N 113.230 0.00 0
+       479   58   58 GLN H     H   7.910 0.00 0
+       480   58   58 GLN C     C 173.840 0.00 0
+       481   58   58 GLN CA    C  55.210 0.00 0
+       482   58   58 GLN HA    H   3.470 0.00 0
+       483   58   58 GLN CB    C  26.970 0.00 0
+       484   58   58 GLN HB2   H   1.940 0.00 0
+       485   58   58 GLN HB3   H   2.070 0.00 0
+       486   58   58 GLN HG3   H   2.590 0.00 0
+       487   59   59 ILE N     N 122.160 0.00 0
+       488   59   59 ILE H     H   7.950 0.00 0
+       489   59   59 ILE C     C 177.170 0.00 0
+       490   59   59 ILE CA    C  61.450 0.00 0
+       491   59   59 ILE HA    H   4.380 0.00 0
+       492   59   59 ILE CB    C  39.390 0.00 0
+       493   59   59 ILE HB    H   1.930 0.00 0
+       494   59   59 ILE HG12  H   1.090 0.00 0
+       495   59   59 ILE HG2   H   1.090 0.00 0
+       496   59   59 ILE HD1   H   1.090 0.00 0
+       497   60   60 ASN N     N 127.390 0.00 0
+       498   60   60 ASN H     H   8.670 0.00 0
+       499   60   60 ASN C     C 176.990 0.00 0
+       500   60   60 ASN CA    C  56.360 0.00 0
+       501   60   60 ASN HA    H   5.710 0.00 0
+       502   60   60 ASN CB    C  43.890 0.00 0
+       503   60   60 ASN HB2   H   3.040 0.00 0
+       504   60   60 ASN HB3   H   3.430 0.00 0
+       505   61   61 SER N     N 119.140 0.00 0
+       506   61   61 SER H     H   9.250 0.00 0
+       507   61   61 SER C     C 174.890 0.00 0
+       508   61   61 SER CA    C  60.730 0.00 0
+       509   61   61 SER HA    H   5.170 0.00 0
+       510   61   61 SER CB    C  64.660 0.00 0
+       511   61   61 SER HB2   H   4.460 0.00 0
+       512   62   62 ARG N     N 122.960 0.00 0
+       513   62   62 ARG H     H   8.780 0.00 0
+       514   62   62 ARG C     C 177.150 0.00 0
+       515   62   62 ARG CA    C  58.750 0.00 0
+       516   62   62 ARG HA    H   4.170 0.00 0
+       517   62   62 ARG CB    C  30.060 0.00 0
+       518   62   62 ARG HB2   H   1.780 0.00 0
+       519   62   62 ARG HG2   H   1.420 0.00 0
+       520   62   62 ARG HD3   H   1.060 0.00 0
+       521   63   63 TYR N     N 114.300 0.00 0
+       522   63   63 TYR H     H   7.440 0.00 0
+       523   63   63 TYR C     C 176.560 0.00 0
+       524   63   63 TYR CA    C  58.850 0.00 0
+       525   63   63 TYR HA    H   4.350 0.00 0
+       526   63   63 TYR CB    C  40.060 0.00 0
+       527   63   63 TYR HB2   H   1.590 0.00 0
+       528   64   64 TRP N     N 114.030 0.00 0
+       529   64   64 TRP H     H   7.290 0.00 0
+       530   64   64 TRP C     C 174.410 0.00 0
+       531   64   64 TRP CA    C  58.870 0.00 0
+       532   64   64 TRP HA    H   5.030 0.00 0
+       533   64   64 TRP CB    C  33.920 0.00 0
+       534   64   64 TRP HB2   H   3.360 0.00 0
+       535   65   65 CYS N     N 110.210 0.00 0
+       536   65   65 CYS H     H   7.450 0.00 0
+       537   65   65 CYS C     C 172.180 0.00 0
+       538   65   65 CYS CA    C  52.650 0.00 0
+       539   65   65 CYS HA    H   5.710 0.00 0
+       540   65   65 CYS CB    C  45.600 0.00 0
+       541   65   65 CYS HB2   H   2.830 0.00 0
+       542   65   65 CYS HB3   H   2.490 0.00 0
+       543   66   66 ASN N     N 118.400 0.00 0
+       544   66   66 ASN H     H   8.770 0.00 0
+       545   66   66 ASN C     C 176.650 0.00 0
+       546   66   66 ASN CA    C  51.260 0.00 0
+       547   66   66 ASN HA    H   5.700 0.00 0
+       548   66   66 ASN CB    C  40.570 0.00 0
+       549   66   66 ASN HB2   H   2.890 0.00 0
+       550   66   66 ASN HB3   H   2.490 0.00 0
+       551   66   66 ASN HD21  H   7.740 0.00 0
+       552   66   66 ASN HD22  H   7.170 0.00 0
+       553   67   67 ASP N     N 131.450 0.00 0
+       554   67   67 ASP H     H  10.600 0.00 0
+       555   67   67 ASP C     C 177.460 0.00 0
+       556   67   67 ASP CA    C  51.550 0.00 0
+       557   67   67 ASP HA    H   5.000 0.00 0
+       558   67   67 ASP CB    C  41.090 0.00 0
+       559   67   67 ASP HB2   H   3.320 0.00 0
+       560   67   67 ASP HB3   H   2.310 0.00 0
+       561   68   68 GLY N     N 107.910 0.00 0
+       562   68   68 GLY H     H   8.320 0.00 0
+       563   68   68 GLY C     C 174.170 0.00 0
+       564   68   68 GLY CA    C  46.440 0.00 0
+       565   68   68 GLY HA2   H   4.110 0.00 0
+       566   68   68 GLY HA3   H   3.870 0.00 0
+       567   69   69 LYS N     N 117.280 0.00 0
+       568   69   69 LYS H     H   8.250 0.00 0
+       569   69   69 LYS C     C 175.660 0.00 0
+       570   69   69 LYS CA    C  55.380 0.00 0
+       571   69   69 LYS HA    H   4.820 0.00 0
+       572   69   69 LYS CB    C  33.810 0.00 0
+       573   69   69 LYS HB2   H   1.820 0.00 0
+       574   69   69 LYS HB3   H   1.900 0.00 0
+       575   69   69 LYS HG2   H   1.210 0.00 0
+       576   69   69 LYS HG3   H   1.340 0.00 0
+       577   69   69 LYS HD2   H   1.690 0.00 0
+       578   69   69 LYS HE3   H   3.010 0.00 0
+       579   70   70 THR N     N 121.120 0.00 0
+       580   70   70 THR H     H   8.570 0.00 0
+       581   70   70 THR CA    C  60.180 0.00 0
+       582   70   70 THR HA    H   4.820 0.00 0
+       583   70   70 THR CB    C  70.380 0.00 0
+       584   70   70 THR HB    H   4.110 0.00 0
+       585   70   70 THR HG2   H   1.060 0.00 0
+       586   71   71 PRO C     C 177.150 0.00 0
+       587   71   71 PRO CA    C  63.220 0.00 0
+       588   71   71 PRO HA    H   4.390 0.00 0
+       589   71   71 PRO CB    C  32.040 0.00 0
+       590   71   71 PRO HB2   H   2.310 0.00 0
+       591   71   71 PRO HG2   H   2.040 0.00 0
+       592   71   71 PRO HD2   H   4.140 0.00 0
+       593   71   71 PRO HD3   H   3.900 0.00 0
+       594   72   72 GLY N     N 109.630 0.00 0
+       595   72   72 GLY H     H   8.870 0.00 0
+       596   72   72 GLY C     C 174.470 0.00 0
+       597   72   72 GLY CA    C  46.170 0.00 0
+       598   72   72 GLY HA2   H   3.810 0.00 0
+       599   72   72 GLY HA3   H   3.690 0.00 0
+       600   73   73 ALA N     N 120.430 0.00 0
+       601   73   73 ALA H     H   7.220 0.00 0
+       602   73   73 ALA C     C 178.460 0.00 0
+       603   73   73 ALA CA    C  52.670 0.00 0
+       604   73   73 ALA HA    H   4.620 0.00 0
+       605   73   73 ALA CB    C  20.910 0.00 0
+       606   73   73 ALA HB    H   1.550 0.00 0
+       607   74   74 VAL N     N 119.360 0.00 0
+       608   74   74 VAL H     H   7.880 0.00 0
+       609   74   74 VAL C     C 175.880 0.00 0
+       610   74   74 VAL CA    C  62.580 0.00 0
+       611   74   74 VAL HA    H   3.920 0.00 0
+       612   74   74 VAL CB    C  33.960 0.00 0
+       613   74   74 VAL HB    H   1.920 0.00 0
+       614   74   74 VAL HG1   H   0.930 0.00 0
+       615   74   74 VAL HG2   H   0.710 0.00 0
+       616   75   75 ASN N     N 119.150 0.00 0
+       617   75   75 ASN H     H   8.820 0.00 0
+       618   75   75 ASN C     C 176.680 0.00 0
+       619   75   75 ASN CA    C  51.270 0.00 0
+       620   75   75 ASN HA    H   3.900 0.00 0
+       621   75   75 ASN CB    C  37.160 0.00 0
+       622   75   75 ASN HB2   H   3.040 0.00 0
+       623   75   75 ASN HD21  H   7.800 0.00 0
+       624   75   75 ASN HD22  H   7.080 0.00 0
+       625   76   76 ALA N     N 120.040 0.00 0
+       626   76   76 ALA H     H   8.280 0.00 0
+       627   76   76 ALA C     C 179.950 0.00 0
+       628   76   76 ALA CA    C  55.170 0.00 0
+       629   76   76 ALA HA    H   4.030 0.00 0
+       630   76   76 ALA CB    C  19.390 0.00 0
+       631   76   76 ALA HB    H   1.470 0.00 0
+       632   77   77 CYS N     N 110.600 0.00 0
+       633   77   77 CYS H     H   9.440 0.00 0
+       634   77   77 CYS C     C 173.020 0.00 0
+       635   77   77 CYS CA    C  55.980 0.00 0
+       636   77   77 CYS HA    H   4.350 0.00 0
+       637   77   77 CYS CB    C  39.420 0.00 0
+       638   77   77 CYS HB2   H   3.510 0.00 0
+       639   78   78 HIS N     N 117.440 0.00 0
+       640   78   78 HIS H     H   7.780 0.00 0
+       641   78   78 HIS C     C 173.270 0.00 0
+       642   78   78 HIS CA    C  55.970 0.00 0
+       643   78   78 HIS HA    H   3.980 0.00 0
+       644   78   78 HIS CB    C  25.760 0.00 0
+       645   78   78 HIS HB2   H   3.450 0.00 0
+       646   78   78 HIS HB3   H   3.270 0.00 0
+       647   79   79 LEU N     N 118.310 0.00 0
+       648   79   79 LEU H     H   8.910 0.00 0
+       649   79   79 LEU C     C 176.520 0.00 0
+       650   79   79 LEU CA    C  53.850 0.00 0
+       651   79   79 LEU HA    H   4.730 0.00 0
+       652   79   79 LEU CB    C  47.110 0.00 0
+       653   79   79 LEU HB2   H   1.660 0.00 0
+       654   79   79 LEU HB3   H   1.220 0.00 0
+       655   79   79 LEU HG    H   0.810 0.00 0
+       656   79   79 LEU HD1   H   0.630 0.00 0
+       657   79   79 LEU HD2   H   0.630 0.00 0
+       658   80   80 SER N     N 116.770 0.00 0
+       659   80   80 SER H     H   8.750 0.00 0
+       660   80   80 SER C     C 176.690 0.00 0
+       661   80   80 SER CA    C  57.560 0.00 0
+       662   80   80 SER HA    H   5.010 0.00 0
+       663   80   80 SER CB    C  63.390 0.00 0
+       664   80   80 SER HB2   H   3.940 0.00 0
+       665   81   81 CYS N     N 125.690 0.00 0
+       666   81   81 CYS H     H   8.530 0.00 0
+       667   81   81 CYS C     C 176.490 0.00 0
+       668   81   81 CYS CA    C  57.320 0.00 0
+       669   81   81 CYS HA    H   3.940 0.00 0
+       670   81   81 CYS CB    C  37.470 0.00 0
+       671   81   81 CYS HB2   H   1.860 0.00 0
+       672   81   81 CYS HB3   H   1.090 0.00 0
+       673   82   82 SER N     N 114.290 0.00 0
+       674   82   82 SER H     H   8.510 0.00 0
+       675   82   82 SER C     C 177.380 0.00 0
+       676   82   82 SER CA    C  61.280 0.00 0
+       677   82   82 SER HA    H   3.890 0.00 0
+       678   82   82 SER HB2   H   1.690 0.00 0
+       679   83   83 ALA N     N 125.770 0.00 0
+       680   83   83 ALA H     H   7.890 0.00 0
+       681   83   83 ALA C     C 179.110 0.00 0
+       682   83   83 ALA CA    C  54.480 0.00 0
+       683   83   83 ALA HA    H   4.380 0.00 0
+       684   83   83 ALA CB    C  18.270 0.00 0
+       685   83   83 ALA HB    H   1.690 0.00 0
+       686   84   84 LEU N     N 116.450 0.00 0
+       687   84   84 LEU H     H   7.970 0.00 0
+       688   84   84 LEU C     C 174.840 0.00 0
+       689   84   84 LEU CA    C  54.230 0.00 0
+       690   84   84 LEU HA    H   4.360 0.00 0
+       691   84   84 LEU CB    C  40.670 0.00 0
+       692   84   84 LEU HB2   H   2.250 0.00 0
+       693   84   84 LEU HG    H   1.670 0.00 0
+       694   84   84 LEU HD1   H   1.050 0.00 0
+       695   84   84 LEU HD2   H   0.790 0.00 0
+       696   85   85 LEU N     N 117.110 0.00 0
+       697   85   85 LEU H     H   7.200 0.00 0
+       698   85   85 LEU C     C 177.640 0.00 0
+       699   85   85 LEU CA    C  53.330 0.00 0
+       700   85   85 LEU HA    H   5.730 0.00 0
+       701   85   85 LEU CB    C  42.830 0.00 0
+       702   85   85 LEU HB2   H   1.800 0.00 0
+       703   85   85 LEU HG    H   1.120 0.00 0
+       704   85   85 LEU HD1   H   1.040 0.00 0
+       705   85   85 LEU HD2   H   1.040 0.00 0
+       706   86   86 GLN N     N 116.200 0.00 0
+       707   86   86 GLN H     H   6.780 0.00 0
+       708   86   86 GLN C     C 175.490 0.00 0
+       709   86   86 GLN CA    C  54.520 0.00 0
+       710   86   86 GLN HA    H   4.420 0.00 0
+       711   86   86 GLN CB    C  30.890 0.00 0
+       712   86   86 GLN HB2   H   2.010 0.00 0
+       713   86   86 GLN HB3   H   1.710 0.00 0
+       714   86   86 GLN HG2   H   2.510 0.00 0
+       715   86   86 GLN HG3   H   2.670 0.00 0
+       716   86   86 GLN HE21  H   7.590 0.00 0
+       717   86   86 GLN HE22  H   7.070 0.00 0
+       718   87   87 ASP N     N 120.040 0.00 0
+       719   87   87 ASP H     H   8.910 0.00 0
+       720   87   87 ASP C     C 175.950 0.00 0
+       721   87   87 ASP CA    C  57.030 0.00 0
+       722   87   87 ASP HA    H   4.170 0.00 0
+       723   87   87 ASP CB    C  40.050 0.00 0
+       724   87   87 ASP HB2   H   2.500 0.00 0
+       725   87   87 ASP HB3   H   2.640 0.00 0
+       726   88   88 ASN N     N 113.960 0.00 0
+       727   88   88 ASN H     H   7.590 0.00 0
+       728   88   88 ASN C     C 177.340 0.00 0
+       729   88   88 ASN CA    C  52.110 0.00 0
+       730   88   88 ASN HA    H   4.900 0.00 0
+       731   88   88 ASN CB    C  38.240 0.00 0
+       732   88   88 ASN HB2   H   3.020 0.00 0
+       733   88   88 ASN HB3   H   2.790 0.00 0
+       734   88   88 ASN HD21  H   7.840 0.00 0
+       735   88   88 ASN HD22  H   7.090 0.00 0
+       736   89   89 ILE N     N 118.940 0.00 0
+       737   89   89 ILE H     H   8.480 0.00 0
+       738   89   89 ILE C     C 175.120 0.00 0
+       739   89   89 ILE CA    C  61.430 0.00 0
+       740   89   89 ILE HA    H   4.590 0.00 0
+       741   89   89 ILE CB    C  38.710 0.00 0
+       742   89   89 ILE HB    H   2.130 0.00 0
+       743   89   89 ILE HG12  H   1.010 0.00 0
+       744   89   89 ILE HG2   H   1.020 0.00 0
+       745   89   89 ILE HD1   H   0.250 0.00 0
+       746   90   90 ALA N     N 125.510 0.00 0
+       747   90   90 ALA H     H   8.350 0.00 0
+       748   90   90 ALA C     C 180.870 0.00 0
+       749   90   90 ALA CA    C  57.030 0.00 0
+       750   90   90 ALA HA    H   3.880 0.00 0
+       751   90   90 ALA CB    C  17.690 0.00 0
+       752   90   90 ALA HB    H   1.460 0.00 0
+       753   91   91 ASP N     N 118.240 0.00 0
+       754   91   91 ASP H     H   9.290 0.00 0
+       755   91   91 ASP C     C 176.810 0.00 0
+       756   91   91 ASP CA    C  56.900 0.00 0
+       757   91   91 ASP HA    H   4.500 0.00 0
+       758   91   91 ASP CB    C  38.130 0.00 0
+       759   91   91 ASP HB2   H   2.710 0.00 0
+       760   91   91 ASP HB3   H   2.480 0.00 0
+       761   92   92 ALA N     N 122.590 0.00 0
+       762   92   92 ALA H     H   7.680 0.00 0
+       763   92   92 ALA C     C 178.750 0.00 0
+       764   92   92 ALA CA    C  55.710 0.00 0
+       765   92   92 ALA HA    H   3.960 0.00 0
+       766   92   92 ALA CB    C  17.710 0.00 0
+       767   92   92 ALA HB    H   1.580 0.00 0
+       768   93   93 VAL N     N 117.730 0.00 0
+       769   93   93 VAL H     H   8.740 0.00 0
+       770   93   93 VAL C     C 176.350 0.00 0
+       771   93   93 VAL CA    C  66.940 0.00 0
+       772   93   93 VAL HA    H   3.250 0.00 0
+       773   93   93 VAL CB    C  31.120 0.00 0
+       774   93   93 VAL HB    H   2.170 0.00 0
+       775   93   93 VAL HG1   H   0.820 0.00 0
+       776   93   93 VAL HG2   H   0.820 0.00 0
+       777   94   94 ALA N     N 120.890 0.00 0
+       778   94   94 ALA H     H   8.100 0.00 0
+       779   94   94 ALA C     C 180.870 0.00 0
+       780   94   94 ALA CA    C  55.420 0.00 0
+       781   94   94 ALA HA    H   3.890 0.00 0
+       782   94   94 ALA CB    C  17.840 0.00 0
+       783   94   94 ALA HB    H   1.550 0.00 0
+       784   95   95 CYS N     N 115.760 0.00 0
+       785   95   95 CYS H     H   8.430 0.00 0
+       786   95   95 CYS C     C 174.740 0.00 0
+       787   95   95 CYS CA    C  55.250 0.00 0
+       788   95   95 CYS HA    H   4.980 0.00 0
+       789   95   95 CYS CB    C  34.890 0.00 0
+       790   95   95 CYS HB2   H   3.370 0.00 0
+       791   95   95 CYS HB3   H   2.690 0.00 0
+       792   96   96 ALA N     N 123.710 0.00 0
+       793   96   96 ALA H     H   8.890 0.00 0
+       794   96   96 ALA C     C 179.150 0.00 0
+       795   96   96 ALA CA    C  56.070 0.00 0
+       796   96   96 ALA HA    H   3.770 0.00 0
+       797   96   96 ALA CB    C  17.570 0.00 0
+       798   96   96 ALA HB    H   0.850 0.00 0
+       799   97   97 LYS N     N 113.930 0.00 0
+       800   97   97 LYS H     H   8.030 0.00 0
+       801   97   97 LYS C     C 177.360 0.00 0
+       802   97   97 LYS CA    C  59.940 0.00 0
+       803   97   97 LYS HA    H   3.630 0.00 0
+       804   97   97 LYS CB    C  33.040 0.00 0
+       805   97   97 LYS HB2   H   1.730 0.00 0
+       806   97   97 LYS HG2   H   1.030 0.00 0
+       807   97   97 LYS HG3   H   1.220 0.00 0
+       808   97   97 LYS HD2   H   0.820 0.00 0
+       809   97   97 LYS HE2   H  -0.490 0.00 0
+       810   97   97 LYS HE3   H  -0.050 0.00 0
+       811   98   98 ARG N     N 117.650 0.00 0
+       812   98   98 ARG H     H   7.130 0.00 0
+       813   98   98 ARG C     C 179.660 0.00 0
+       814   98   98 ARG CA    C  58.240 0.00 0
+       815   98   98 ARG HA    H   4.010 0.00 0
+       816   98   98 ARG CB    C  28.330 0.00 0
+       817   98   98 ARG HB2   H   1.940 0.00 0
+       818   98   98 ARG HG2   H   1.630 0.00 0
+       819   98   98 ARG HD3   H   2.680 0.00 0
+       820   99   99 VAL N     N 122.700 0.00 0
+       821   99   99 VAL H     H   8.420 0.00 0
+       822   99   99 VAL C     C 180.100 0.00 0
+       823   99   99 VAL CA    C  65.760 0.00 0
+       824   99   99 VAL HA    H   2.480 0.00 0
+       825   99   99 VAL CB    C  30.550 0.00 0
+       826   99   99 VAL HB    H   1.910 0.00 0
+       827   99   99 VAL HG1   H  -0.370 0.00 0
+       828   99   99 VAL HG2   H  -0.630 0.00 0
+       829  100  100 VAL N     N 107.600 0.00 0
+       830  100  100 VAL H     H   7.540 0.00 0
+       831  100  100 VAL C     C 174.650 0.00 0
+       832  100  100 VAL CA    C  63.320 0.00 0
+       833  100  100 VAL HA    H   3.940 0.00 0
+       834  100  100 VAL CB    C  31.260 0.00 0
+       835  100  100 VAL HB    H   2.440 0.00 0
+       836  100  100 VAL HG1   H   1.060 0.00 0
+       837  100  100 VAL HG2   H   1.420 0.00 0
+       838  101  101 ARG N     N 118.670 0.00 0
+       839  101  101 ARG H     H   7.610 0.00 0
+       840  101  101 ARG C     C 177.460 0.00 0
+       841  101  101 ARG CA    C  58.710 0.00 0
+       842  101  101 ARG HA    H   4.180 0.00 0
+       843  101  101 ARG CB    C  31.220 0.00 0
+       844  101  101 ARG HB2   H   2.190 0.00 0
+       845  101  101 ARG HB3   H   1.950 0.00 0
+       846  101  101 ARG HG2   H   1.330 0.00 0
+       847  101  101 ARG HG3   H   2.660 0.00 0
+       848  101  101 ARG HD2   H   3.540 0.00 0
+       849  101  101 ARG HD3   H   3.310 0.00 0
+       850  102  102 ASP N     N 120.910 0.00 0
+       851  102  102 ASP H     H   7.420 0.00 0
+       852  102  102 ASP CA    C  53.820 0.00 0
+       853  102  102 ASP HA    H   4.940 0.00 0
+       854  102  102 ASP CB    C  38.820 0.00 0
+       855  102  102 ASP HB2   H   3.060 0.00 0
+       856  103  103 PRO C     C 178.190 0.00 0
+       857  103  103 PRO CA    C  66.220 0.00 0
+       858  103  103 PRO HA    H   4.200 0.00 0
+       859  103  103 PRO CB    C  32.440 0.00 0
+       860  103  103 PRO HB2   H   2.310 0.00 0
+       861  103  103 PRO HG2   H   2.160 0.00 0
+       862  103  103 PRO HG3   H   2.040 0.00 0
+       863  103  103 PRO HD3   H   3.760 0.00 0
+       864  104  104 GLN N     N 113.040 0.00 0
+       865  104  104 GLN H     H   8.630 0.00 0
+       866  104  104 GLN C     C 177.040 0.00 0
+       867  104  104 GLN CA    C  57.490 0.00 0
+       868  104  104 GLN HA    H   4.100 0.00 0
+       869  104  104 GLN CB    C  28.990 0.00 0
+       870  104  104 GLN HB2   H   1.980 0.00 0
+       871  104  104 GLN HB3   H   1.810 0.00 0
+       872  104  104 GLN HG3   H   2.310 0.00 0
+       873  104  104 GLN HE21  H   7.560 0.00 0
+       874  104  104 GLN HE22  H   6.870 0.00 0
+       875  105  105 GLY N     N 108.190 0.00 0
+       876  105  105 GLY H     H   8.090 0.00 0
+       877  105  105 GLY C     C 175.830 0.00 0
+       878  105  105 GLY CA    C  45.930 0.00 0
+       879  105  105 GLY HA2   H   3.880 0.00 0
+       880  106  106 ILE N     N 126.560 0.00 0
+       881  106  106 ILE H     H   8.730 0.00 0
+       882  106  106 ILE C     C 173.910 0.00 0
+       883  106  106 ILE CA    C  62.720 0.00 0
+       884  106  106 ILE HA    H   3.970 0.00 0
+       885  106  106 ILE CB    C  38.760 0.00 0
+       886  106  106 ILE HB    H   0.900 0.00 0
+       887  106  106 ILE HG12  H  -0.470 0.00 0
+       888  106  106 ILE HG2   H  -0.480 0.00 0
+       889  106  106 ILE HD1   H  -0.710 0.00 0
+       890  107  107 ARG N     N 116.270 0.00 0
+       891  107  107 ARG H     H   7.350 0.00 0
+       892  107  107 ARG C     C 175.380 0.00 0
+       893  107  107 ARG CA    C  57.720 0.00 0
+       894  107  107 ARG HA    H   4.090 0.00 0
+       895  107  107 ARG CB    C  29.230 0.00 0
+       896  107  107 ARG HB2   H   2.140 0.00 0
+       897  107  107 ARG HG2   H   1.830 0.00 0
+       898  107  107 ARG HD3   H   3.360 0.00 0
+       899  108  108 ALA N     N 119.380 0.00 0
+       900  108  108 ALA H     H   7.190 0.00 0
+       901  108  108 ALA C     C 178.110 0.00 0
+       902  108  108 ALA CA    C  54.160 0.00 0
+       903  108  108 ALA HA    H   3.820 0.00 0
+       904  108  108 ALA CB    C  18.990 0.00 0
+       905  108  108 ALA HB    H   0.900 0.00 0
+       906  109  109 TRP N     N 115.200 0.00 0
+       907  109  109 TRP H     H   7.510 0.00 0
+       908  109  109 TRP C     C 176.770 0.00 0
+       909  109  109 TRP CA    C  59.270 0.00 0
+       910  109  109 TRP HA    H   4.830 0.00 0
+       911  109  109 TRP CB    C  29.730 0.00 0
+       912  109  109 TRP HB2   H   3.240 0.00 0
+       913  110  110 VAL N     N 128.400 0.00 0
+       914  110  110 VAL H     H   9.020 0.00 0
+       915  110  110 VAL C     C 177.380 0.00 0
+       916  110  110 VAL CA    C  66.360 0.00 0
+       917  110  110 VAL HA    H   3.620 0.00 0
+       918  110  110 VAL CB    C  31.830 0.00 0
+       919  110  110 VAL HB    H   2.180 0.00 0
+       920  110  110 VAL HG1   H   1.120 0.00 0
+       921  110  110 VAL HG2   H   1.040 0.00 0
+       922  111  111 ALA N     N 119.120 0.00 0
+       923  111  111 ALA H     H   8.940 0.00 0
+       924  111  111 ALA C     C 180.180 0.00 0
+       925  111  111 ALA CA    C  55.190 0.00 0
+       926  111  111 ALA HA    H   4.240 0.00 0
+       927  111  111 ALA CB    C  18.020 0.00 0
+       928  111  111 ALA HB    H   1.430 0.00 0
+       929  112  112 TRP N     N 114.080 0.00 0
+       930  112  112 TRP H     H   7.390 0.00 0
+       931  112  112 TRP C     C 179.130 0.00 0
+       932  112  112 TRP CA    C  62.690 0.00 0
+       933  112  112 TRP HA    H   3.680 0.00 0
+       934  112  112 TRP CB    C  28.620 0.00 0
+       935  112  112 TRP HB2   H   3.820 0.00 0
+       936  112  112 TRP HB3   H   3.110 0.00 0
+       937  113  113 ARG N     N 118.980 0.00 0
+       938  113  113 ARG H     H   7.780 0.00 0
+       939  113  113 ARG C     C 177.720 0.00 0
+       940  113  113 ARG CA    C  59.600 0.00 0
+       941  113  113 ARG HA    H   3.810 0.00 0
+       942  113  113 ARG CB    C  30.210 0.00 0
+       943  113  113 ARG HB2   H   2.210 0.00 0
+       944  113  113 ARG HG2   H   1.650 0.00 0
+       945  113  113 ARG HG3   H   1.900 0.00 0
+       946  113  113 ARG HD2   H   3.620 0.00 0
+       947  113  113 ARG HD3   H   3.300 0.00 0
+       948  114  114 ASN N     N 112.820 0.00 0
+       949  114  114 ASN H     H   7.980 0.00 0
+       950  114  114 ASN C     C 176.760 0.00 0
+       951  114  114 ASN CA    C  54.690 0.00 0
+       952  114  114 ASN HA    H   4.460 0.00 0
+       953  114  114 ASN CB    C  39.010 0.00 0
+       954  114  114 ASN HB2   H   2.630 0.00 0
+       955  114  114 ASN HD21  H   7.560 0.00 0
+       956  114  114 ASN HD22  H   7.060 0.00 0
+       957  115  115 ARG N     N 113.260 0.00 0
+       958  115  115 ARG H     H   7.880 0.00 0
+       959  115  115 ARG C     C 175.910 0.00 0
+       960  115  115 ARG CA    C  54.740 0.00 0
+       961  115  115 ARG HA    H   3.970 0.00 0
+       962  115  115 ARG CB    C  31.360 0.00 0
+       963  115  115 ARG HB2   H   1.310 0.00 0
+       964  115  115 ARG HG2   H   1.060 0.00 0
+       965  115  115 ARG HD3   H   2.630 0.00 0
+       966  116  116 CYS N     N 114.300 0.00 0
+       967  116  116 CYS H     H   7.350 0.00 0
+       968  116  116 CYS C     C 173.450 0.00 0
+       969  116  116 CYS CA    C  54.990 0.00 0
+       970  116  116 CYS HA    H   4.320 0.00 0
+       971  116  116 CYS CB    C  44.140 0.00 0
+       972  116  116 CYS HB2   H   2.490 0.00 0
+       973  116  116 CYS HB3   H   1.610 0.00 0
+       974  117  117 GLN N     N 120.720 0.00 0
+       975  117  117 GLN H     H   6.710 0.00 0
+       976  117  117 GLN CA    C  57.150 0.00 0
+       977  117  117 GLN HA    H   3.110 0.00 0
+       978  117  117 GLN CB    C  28.390 0.00 0
+       979  117  117 GLN HB2   H   1.650 0.00 0
+       980  117  117 GLN HG3   H   0.590 0.00 0
+       981  118  118 ASN N     N 119.330 0.00 0
+       982  118  118 ASN H     H   9.360 0.00 0
+       983  118  118 ASN C     C 173.360 0.00 0
+       984  118  118 ASN CA    C  54.630 0.00 0
+       985  118  118 ASN HA    H   4.390 0.00 0
+       986  118  118 ASN CB    C  37.030 0.00 0
+       987  118  118 ASN HB2   H   3.110 0.00 0
+       988  119  119 ARG N     N 115.970 0.00 0
+       989  119  119 ARG H     H   7.480 0.00 0
+       990  119  119 ARG C     C 174.780 0.00 0
+       991  119  119 ARG CA    C  53.950 0.00 0
+       992  119  119 ARG HA    H   4.570 0.00 0
+       993  119  119 ARG CB    C  32.500 0.00 0
+       994  119  119 ARG HB2   H   1.740 0.00 0
+       995  119  119 ARG HG2   H   1.310 0.00 0
+       996  119  119 ARG HD2   H   2.920 0.00 0
+       997  119  119 ARG HD3   H   2.630 0.00 0
+       998  120  120 ASP N     N 118.630 0.00 0
+       999  120  120 ASP H     H   8.600 0.00 0
+      1000  120  120 ASP C     C 177.640 0.00 0
+      1001  120  120 ASP CA    C  54.000 0.00 0
+      1002  120  120 ASP HA    H   4.700 0.00 0
+      1003  120  120 ASP CB    C  39.700 0.00 0
+      1004  120  120 ASP HB2   H   2.920 0.00 0
+      1005  120  120 ASP HB3   H   2.730 0.00 0
+      1006  121  121 VAL N     N 119.170 0.00 0
+      1007  121  121 VAL H     H   8.840 0.00 0
+      1008  121  121 VAL C     C 176.660 0.00 0
+      1009  121  121 VAL CA    C  61.010 0.00 0
+      1010  121  121 VAL HA    H   4.870 0.00 0
+      1011  121  121 VAL CB    C  32.200 0.00 0
+      1012  121  121 VAL HB    H   2.730 0.00 0
+      1013  121  121 VAL HG1   H   1.170 0.00 0
+      1014  121  121 VAL HG2   H   0.870 0.00 0
+      1015  122  122 ARG N     N 122.580 0.00 0
+      1016  122  122 ARG H     H   8.350 0.00 0
+      1017  122  122 ARG C     C 179.290 0.00 0
+      1018  122  122 ARG CA    C  59.660 0.00 0
+      1019  122  122 ARG HA    H   3.960 0.00 0
+      1020  122  122 ARG CB    C  29.970 0.00 0
+      1021  122  122 ARG HB2   H   2.010 0.00 0
+      1022  122  122 ARG HG2   H   1.880 0.00 0
+      1023  122  122 ARG HD3   H   3.290 0.00 0
+      1024  123  123 GLN N     N 115.650 0.00 0
+      1025  123  123 GLN H     H   9.080 0.00 0
+      1026  123  123 GLN C     C 177.220 0.00 0
+      1027  123  123 GLN CA    C  57.770 0.00 0
+      1028  123  123 GLN HA    H   4.090 0.00 0
+      1029  123  123 GLN CB    C  27.570 0.00 0
+      1030  123  123 GLN HB2   H   1.260 0.00 0
+      1031  123  123 GLN HG2   H   1.880 0.00 0
+      1032  123  123 GLN HG3   H   1.740 0.00 0
+      1033  124  124 TYR N     N 116.450 0.00 0
+      1034  124  124 TYR H     H   7.590 0.00 0
+      1035  124  124 TYR C     C 176.130 0.00 0
+      1036  124  124 TYR CA    C  62.250 0.00 0
+      1037  124  124 TYR HA    H   4.160 0.00 0
+      1038  124  124 TYR CB    C  38.900 0.00 0
+      1039  124  124 TYR HB2   H   3.260 0.00 0
+      1040  124  124 TYR HB3   H   2.960 0.00 0
+      1041  125  125 VAL N     N 103.260 0.00 0
+      1042  125  125 VAL H     H   7.230 0.00 0
+      1043  125  125 VAL C     C 175.850 0.00 0
+      1044  125  125 VAL CA    C  60.020 0.00 0
+      1045  125  125 VAL HA    H   4.520 0.00 0
+      1046  125  125 VAL CB    C  33.090 0.00 0
+      1047  125  125 VAL HB    H   2.350 0.00 0
+      1048  125  125 VAL HG1   H   0.960 0.00 0
+      1049  125  125 VAL HG2   H   0.800 0.00 0
+      1050  126  126 GLN N     N 124.180 0.00 0
+      1051  126  126 GLN H     H   7.370 0.00 0
+      1052  126  126 GLN C     C 176.660 0.00 0
+      1053  126  126 GLN CA    C  57.470 0.00 0
+      1054  126  126 GLN HA    H   4.230 0.00 0
+      1055  126  126 GLN CB    C  28.370 0.00 0
+      1056  126  126 GLN HB2   H   2.100 0.00 0
+      1057  126  126 GLN HB3   H   1.980 0.00 0
+      1058  126  126 GLN HG3   H   2.400 0.00 0
+      1059  127  127 GLY N     N 112.870 0.00 0
+      1060  127  127 GLY H     H   9.350 0.00 0
+      1061  127  127 GLY C     C 175.790 0.00 0
+      1062  127  127 GLY CA    C  45.820 0.00 0
+      1063  127  127 GLY HA2   H   4.230 0.00 0
+      1064  127  127 GLY HA3   H   3.870 0.00 0
+      1065  128  128 CYS N     N 113.690 0.00 0
+      1066  128  128 CYS H     H   7.660 0.00 0
+      1067  128  128 CYS C     C 175.500 0.00 0
+      1068  128  128 CYS CA    C  51.960 0.00 0
+      1069  128  128 CYS HA    H   4.920 0.00 0
+      1070  128  128 CYS CB    C  35.050 0.00 0
+      1071  128  128 CYS HB2   H   3.220 0.00 0
+      1072  128  128 CYS HB3   H   2.690 0.00 0
+      1073  129  129 GLY N     N 111.540 0.00 0
+      1074  129  129 GLY H     H   9.010 0.00 0
+      1075  129  129 GLY C     C 174.500 0.00 0
+      1076  129  129 GLY CA    C  46.960 0.00 0
+      1077  129  129 GLY HA2   H   3.910 0.00 0
+      1078  130  130 VAL N     N 115.920 0.00 0
+      1079  130  130 VAL H     H   7.630 0.00 0
+      1080  130  130 VAL CA    C  61.250 0.00 0
+      1081  130  130 VAL HA    H   4.300 0.00 0
+      1082  130  130 VAL CB    C  33.610 0.00 0
+      1083  130  130 VAL HB    H   2.210 0.00 0
+      1084  130  130 VAL HG1   H   0.750 0.00 0
+      1085  130  130 VAL HG2   H   0.750 0.00 0
+
+   stop_
+
+save_
+

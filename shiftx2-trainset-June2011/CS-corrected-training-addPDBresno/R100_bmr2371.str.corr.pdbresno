@@ -1,0 +1,814 @@
+data_2371
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a HN chemical shift difference (obs*-pred) greater than  2.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 30   T    H       10.94         8.92
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#-0.04   0.12      N/A     N/A   -2.16   -0.04   
+#
+#R100_bmr2371.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R100_bmr2371.str file):
+#HA       CA       CB      CO       N      HN
+#N/A   +0.12      N/A     N/A    -2.16     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#+/-0.03  +/-0.12      N/A      N/A  +/-0.43  +/-0.08  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#0.935   0.985     N/A     N/A   0.899   0.671   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#0.133   0.551     N/A     N/A   1.923   0.336   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+Three-Dimensional 15N-1H-1H and 15N-13C-1H nuclear-magnetic resonance studies of
+ HPr a central component of the phosphoenolpyruvate-dependent phosphotransferase
+ system from Escherichia coli
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 'van Nuland' Nico  A.J. . 
+      2 'van Dijk'   Alard A.   . 
+      3  Dijkstra    Klaas .    . 
+      4 'van Hoesel' Frans H.J. . 
+      5  Scheek      Ruud  M.   . 
+      6  Robillard   G.    T.   . 
+
+   stop_
+
+   _BMRB_accession_number   2371
+   _BMRB_flat_file_name     bmr2371.str
+   _Entry_type              revision
+   _Submission_date         1995-07-31
+   _Accession_date          1996-04-13
+   _Entry_origination       BMRB
+   _NMR_STAR_version        2.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  173 
+      '13C chemical shifts'  85 
+      '15N chemical shifts'  82 
+
+   stop_
+
+   loop_
+      _Revision_date
+      _Revision_keyword
+      _Revision_author
+      _Revision_detail
+
+      1999-06-14 revision BMRB 'Converted to BMRB NMR-STAR V 2.1 format'                
+      1996-04-13 revision BMRB 'Link to the Protein Data Bank added'                    
+      1996-03-25 reformat BMRB 'Converted to the BMRB 1996-03-01 STAR flat-file format' 
+      1995-07-31 original BMRB 'Last release in original BMRB flat-file format'         
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_full         
+;
+ van Nuland, Nico A.J., van Dijk, Alard A., Dijkstra, Klaas, 
+ van Hoesel, Frans H.J., Scheek, Ruud M., Robillard, G.T., 
+ "Three-Dimensional 15N-1H-1H and 15N-13C-1H nuclear-magnetic resonance 
+ studies of HPr a central component of the phosphoenolpyruvate-dependent 
+ phosphotransferase system from Escherichia coli,"
+ Eur. J. Biochem. 203, 483-491 (1992).
+;
+   _Citation_title        
+;
+Three-Dimensional 15N-1H-1H and 15N-13C-1H nuclear-magnetic resonance studies of
+ HPr a central component of the phosphoenolpyruvate-dependent phosphotransferase
+ system from Escherichia coli
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        ?
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 'van Nuland' Nico  A.J. . 
+      2 'van Dijk'   Alard A.   . 
+      3  Dijkstra    Klaas .    . 
+      4 'van Hoesel' Frans H.J. . 
+      5  Scheek      Ruud  M.   . 
+      6  Robillard   G.    T.   . 
+
+   stop_
+
+   _Journal_abbreviation  'Eur. J. Biochem.'
+   _Journal_volume         203
+   _Page_first             483
+   _Page_last              491
+   _Year                   1992
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_system_phosphocarrier_protein_HPr
+   _Saveframe_category      molecular_system
+
+   _Mol_system_name        'phosphocarrier protein HPr'
+   _Abbreviation_common     ?
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      'phosphocarrier protein HPr' $phosphocarrier_protein_HPr 
+
+   stop_
+
+   _System_physical_state   ?
+   _System_oligomer_state   ?
+   _System_paramagnetic     ?
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_phosphocarrier_protein_HPr
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                'phosphocarrier protein HPr'
+   _Abbreviation_common                         ?
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               85
+   _Mol_residue_sequence                       
+;
+MFQQEVTITAPNGLHTRPAA
+QFVKEAKGFTSEITVTSNGK
+SASAKSLFKLQTLGLTQGTV
+VTISAEGEDEQKAVEHLVKL
+MAELE
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+       1 MET   2 PHE   3 GLN   4 GLN   5 GLU 
+       6 VAL   7 THR   8 ILE   9 THR  10 ALA 
+      11 PRO  12 ASN  13 GLY  14 LEU  15 HIS 
+      16 THR  17 ARG  18 PRO  19 ALA  20 ALA 
+      21 GLN  22 PHE  23 VAL  24 LYS  25 GLU 
+      26 ALA  27 LYS  28 GLY  29 PHE  30 THR 
+      31 SER  32 GLU  33 ILE  34 THR  35 VAL 
+      36 THR  37 SER  38 ASN  39 GLY  40 LYS 
+      41 SER  42 ALA  43 SER  44 ALA  45 LYS 
+      46 SER  47 LEU  48 PHE  49 LYS  50 LEU 
+      51 GLN  52 THR  53 LEU  54 GLY  55 LEU 
+      56 THR  57 GLN  58 GLY  59 THR  60 VAL 
+      61 VAL  62 THR  63 ILE  64 SER  65 ALA 
+      66 GLU  67 GLY  68 GLU  69 ASP  70 GLU 
+      71 GLN  72 LYS  73 ALA  74 VAL  75 GLU 
+      76 HIS  77 LEU  78 VAL  79 LYS  80 LEU 
+      81 MET  82 ALA  83 GLU  84 LEU  85 GLU 
+
+   stop_
+
+   _Sequence_homology_query_date                2009-06-13
+   _Sequence_homology_query_revised_last_date   2009-06-06
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB            2060 "phosphocarrier protein HPr"                                                                                                                                                                     100.00 85 100.00 100.00 1.15e-40 
+      BMRB              29 "phosphocarrier protein HPr"                                                                                                                                                                     100.00 85 100.00 100.00 1.15e-40 
+      BMRB            4264 "Histidine Phosphocarrier"                                                                                                                                                                       100.00 85 100.00 100.00 1.15e-40 
+      PDB        1CM2       "Structure Of His15asp Hpr After Hydrolysis Of Ringed Species."                                                                                                                                  100.00 85  98.82  98.82 1.07e-39 
+      PDB        1CM3       "His15asp Hpr From E. Coli"                                                                                                                                                                      100.00 85  98.82  98.82 1.07e-39 
+      PDB        1GGR       "Complex Of Enzyme Iiaglc And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Nmr, Restrained Regularized Mean Structure"                                              100.00 85 100.00 100.00 1.15e-40 
+      PDB        1HDN       "The High-Resolution Structure Of The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Determined By Restrained Molecular Dynamics From Nmr Nuclear Overhauser Effect Data" 100.00 85 100.00 100.00 1.15e-40 
+      PDB        1J6T       "Complex Of Enzyme Iiamtl And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Nmr, Restrained Regularized Mean Structure"                                              100.00 85 100.00 100.00 1.15e-40 
+      PDB        1PFH       "The Phosphorylated Form Of The Histidine-Containing Phosphocarrier Protein Hpr"                                                                                                                 100.00 85  98.82  98.82 1.36e-39 
+      PDB        1POH       "The 2.0 Angstroms Resolution Structure Of Escherichia Coli Histidine-Containing Phosphocarrier Protein Hpr: A Redetermination"                                                                  100.00 85 100.00 100.00 1.15e-40 
+      PDB        1VRC       "Complex Of Enzyme Iiamannose And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Nmr, Restrained Regularized Mean Structure"                                          100.00 85 100.00 100.00 1.15e-40 
+      PDB        2JEL       "Jel42 FabHPR COMPLEX"                                                                                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+      PDB        3EZA       "Complex Of The Amino Terminal Domain Of Enzyme I And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Nmr, Restrained Regularized Mean Structure"                      100.00 85 100.00 100.00 1.15e-40 
+      PDB        3EZB       "Complex Of The Amino Terminal Domain Of Enzyme I And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli"                                                                 100.00 85 100.00 100.00 1.15e-40 
+      PDB        3EZE       "Complex Of The Amino Terminal Domain Of Enzyme I And The Histidine-Containing Phosphocarrier Protein Hpr From Escherichia Coli Nmr, Restrained Regularized Mean Structure"                      100.00 85 100.00 100.00 1.15e-40 
+      DBJ        BAA16289   "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli str. K12 substr. W3110]"                                                                      100.00 85 100.00 100.00 1.15e-40 
+      DBJ        BAB36710   "PTS system protein HPr [Escherichia coli O157:H7 str. Sakai]"                                                                                                                                   100.00 85 100.00 100.00 1.15e-40 
+      DBJ        BAB92987   "HPr of PTS system [Serratia marcescens]"                                                                                                                                                        100.00 85  98.82 100.00 2.36e-40 
+      DBJ        BAG78230   "phosphocarrier protein HPr [Escherichia coli SE11]"                                                                                                                                             100.00 85 100.00 100.00 1.15e-40 
+      DBJ        BAH64556   "PTS family phosphohistidinoprotein-hexose phosphotransferase [Klebsiella pneumoniae NTUH-K2044]"                                                                                                100.00 85  98.82 100.00 2.61e-40 
+      EMBL       CAA32865   "unnamed protein product [Salmonella typhimurium]"                                                                                                                                               100.00 85 100.00 100.00 1.15e-40 
+      EMBL       CAA35818   "unnamed protein product [Klebsiella pneumoniae]"                                                                                                                                                100.00 85  98.82 100.00 2.61e-40 
+      EMBL       CAD07663   "phosphocarrier protein HPr [Salmonella enterica subsp. enterica serovar Typhi]"                                                                                                                 100.00 85 100.00 100.00 1.15e-40 
+      EMBL       CAQ88297   "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia fergusonii ATCC 35469]"                                                                            100.00 85 100.00 100.00 1.15e-40 
+      EMBL       CAQ99313   "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli IAI1]"                                                                                        100.00 85 100.00 100.00 1.15e-40 
+      GenBank    AAA23655   "ptsH protein"                                                                                                                                                                                   100.00 85 100.00 100.00 1.15e-40 
+      GenBank    AAA24384   "HPr protein (EC 2.7.1.68)"                                                                                                                                                                      100.00 85 100.00 100.00 1.15e-40 
+      GenBank    AAA24438   "histidine-containing protein"                                                                                                                                                                   100.00 85 100.00 100.00 1.15e-40 
+      GenBank    AAA24440    HPr                                                                                                                                                                                             100.00 85 100.00 100.00 1.15e-40 
+      GenBank    AAA27052   "ptsH protein"                                                                                                                                                                                   100.00 85 100.00 100.00 1.15e-40 
+      PIR        AE0810     "phosphocarrier protein HPr [imported] - Salmonella enterica subsp. enterica serovar Typhi (strain CT18)"                                                                                        100.00 85 100.00 100.00 1.15e-40 
+      PRF        1107231B   "protein,His containing"                                                                                                                                                                         100.00 85 100.00 100.00 1.15e-40 
+      REF        AP_003009  "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli str. K-12 substr. W3110]"                                                                     100.00 85 100.00 100.00 1.15e-40 
+      REF        NP_288977  "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli O157:H7 EDL933]"                                                                              100.00 85 100.00 100.00 1.15e-40 
+      REF        NP_311314  "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli O157:H7 str. Sakai]"                                                                          100.00 85 100.00 100.00 1.15e-40 
+      REF        NP_416910  "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Escherichia coli str. K-12 substr. MG1655]"                                                                    100.00 85 100.00 100.00 1.15e-40 
+      REF        NP_456968  "phosphohistidinoprotein-hexose phosphotransferase component of PTS system (Hpr) [Salmonella enterica subsp. enterica serovar Typhi str. CT18]"                                                  100.00 85 100.00 100.00 1.15e-40 
+      SWISS-PROT P0AA04     "RecName: Full=Phosphocarrier protein HPr; AltName: Full=Histidine-containing protein"                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+      SWISS-PROT P0AA05     "RecName: Full=Phosphocarrier protein HPr; AltName: Full=Histidine-containing protein"                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+      SWISS-PROT P0AA06     "RecName: Full=Phosphocarrier protein HPr; AltName: Full=Histidine-containing protein"                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+      SWISS-PROT P0AA07     "RecName: Full=Phosphocarrier protein HPr; AltName: Full=Histidine-containing protein"                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+      SWISS-PROT P0AA08     "RecName: Full=Phosphocarrier protein HPr; AltName: Full=Histidine-containing protein"                                                                                                           100.00 85 100.00 100.00 1.15e-40 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Genus
+      _Species
+      _Strain
+
+      $phosphocarrier_protein_HPr . ? Escherichia coli HB2154 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Genus
+      _Species
+      _Strain
+
+      $phosphocarrier_protein_HPr 'not available' Escherichia coli HB2154 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_one
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      ? ? ? ? 
+
+   stop_
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_condition_set_one
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH            6.5 . na 
+      temperature 303   . K  
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chem_shift_reference_par_set_one
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Chem_shift_value
+
+       DSS             H 0 
+       TSP             C 0 
+      'liquid ammonia' N 0 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (geminal atoms and geminal methyl     #
+#                         groups with identical chemical shifts   #
+#                         are assumed to be assigned to           #
+#                         stereospecific atoms)                   #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups                           #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. Tyr HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. Lys HG and    #
+#                         HD protons or Trp HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (Lys 12 vs. Lys 27) #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_chemical_shift_assignment_data_set_one
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Sample_label
+
+      $sample_one 
+
+   stop_
+
+   _Sample_conditions_label         $sample_condition_set_one
+   _Chem_shift_reference_set_label  $chem_shift_reference_par_set_one
+   _Mol_system_component_name       'phosphocarrier protein HPr'
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    1    1 MET CA    C  54.820 0.00 1
+         2    1    1 MET HA    H   4.600 0.00 1
+         3    2    2 PHE H     H   8.990 0.00 1
+         4    2    2 PHE CA    C  57.320 0.00 1
+         5    2    2 PHE HA    H   4.800 0.00 1
+         6    2    2 PHE N     N 129.340 0.00 1
+         7    3    3 GLN H     H   7.730 0.00 1
+         8    3    3 GLN CA    C  53.720 0.00 1
+         9    3    3 GLN HA    H   5.730 0.00 1
+        10    3    3 GLN N     N 123.340 0.00 1
+        11    4    4 GLN H     H   8.570 0.00 1
+        12    4    4 GLN CA    C  55.520 0.00 1
+        13    4    4 GLN HA    H   4.400 0.00 1
+        14    4    4 GLN N     N 119.740 0.00 1
+        15    5    5 GLU H     H   8.330 0.00 1
+        16    5    5 GLU CA    C  54.820 0.00 1
+        17    5    5 GLU HA    H   5.440 0.00 1
+        18    5    5 GLU N     N 122.740 0.00 1
+        19    6    6 VAL H     H   9.270 0.00 1
+        20    6    6 VAL CA    C  60.320 0.00 1
+        21    6    6 VAL HA    H   4.540 0.00 1
+        22    6    6 VAL N     N 121.240 0.00 1
+        23    7    7 THR H     H   8.230 0.00 1
+        24    7    7 THR CA    C  61.920 0.00 1
+        25    7    7 THR HA    H   4.870 0.00 1
+        26    7    7 THR N     N 122.640 0.00 1
+        27    8    8 ILE H     H   8.720 0.00 1
+        28    8    8 ILE CA    C  61.820 0.00 1
+        29    8    8 ILE HA    H   3.950 0.00 1
+        30    8    8 ILE N     N 126.740 0.00 1
+        31    9    9 THR H     H   8.660 0.00 1
+        32    9    9 THR CA    C  61.420 0.00 1
+        33    9    9 THR HA    H   4.540 0.00 1
+        34    9    9 THR N     N 120.640 0.00 1
+        35   10   10 ALA H     H   7.490 0.00 1
+        36   10   10 ALA CA    C  50.720 0.00 1
+        37   10   10 ALA HA    H   4.550 0.00 1
+        38   10   10 ALA N     N 130.140 0.00 1
+        39   11   11 PRO CA    C  65.220 0.00 1
+        40   11   11 PRO HA    H   4.170 0.00 1
+        41   12   12 ASN H     H   8.800 0.00 1
+        42   12   12 ASN CA    C  52.620 0.00 1
+        43   12   12 ASN HA    H   4.910 0.00 1
+        44   12   12 ASN N     N 114.740 0.00 1
+        45   13   13 GLY H     H   8.030 0.00 1
+        46   13   13 GLY CA    C  45.120 0.00 1
+        47   13   13 GLY HA2   H   4.170 0.00 2
+        48   13   13 GLY HA3   H   3.400 0.00 2
+        49   13   13 GLY N     N 106.940 0.00 1
+        50   14   14 LEU H     H   8.100 0.00 1
+        51   14   14 LEU CA    C  53.420 0.00 1
+        52   14   14 LEU HA    H   4.490 0.00 1
+        53   14   14 LEU N     N 123.040 0.00 1
+        54   15   15 HIS H     H   7.020 0.00 1
+        55   15   15 HIS CA    C  54.820 0.00 1
+        56   15   15 HIS HA    H   4.760 0.00 1
+        57   15   15 HIS N     N 120.440 0.00 1
+        58   16   16 THR H     H   8.130 0.00 1
+        59   16   16 THR CA    C  67.720 0.00 1
+        60   16   16 THR HA    H   3.760 0.00 1
+        61   16   16 THR N     N 113.540 0.00 1
+        62   17   17 ARG H     H   8.590 0.00 1
+        63   17   17 ARG CA    C  61.020 0.00 1
+        64   17   17 ARG HA    H   4.360 0.00 1
+        65   17   17 ARG N     N 119.340 0.00 1
+        66   18   18 PRO CA    C  65.020 0.00 1
+        67   18   18 PRO HA    H   4.510 0.00 1
+        68   19   19 ALA H     H   8.350 0.00 1
+        69   19   19 ALA CA    C  55.420 0.00 1
+        70   19   19 ALA HA    H   3.840 0.00 1
+        71   19   19 ALA N     N 121.740 0.00 1
+        72   20   20 ALA H     H   8.380 0.00 1
+        73   20   20 ALA CA    C  55.220 0.00 1
+        74   20   20 ALA HA    H   4.070 0.00 1
+        75   20   20 ALA N     N 119.440 0.00 1
+        76   21   21 GLN H     H   7.660 0.00 1
+        77   21   21 GLN CA    C  58.520 0.00 1
+        78   21   21 GLN HA    H   4.090 0.00 1
+        79   21   21 GLN N     N 119.740 0.00 1
+        80   22   22 PHE H     H   8.500 0.00 1
+        81   22   22 PHE CA    C  62.020 0.00 1
+        82   22   22 PHE HA    H   3.910 0.00 1
+        83   22   22 PHE N     N 122.240 0.00 1
+        84   23   23 VAL H     H   8.370 0.00 1
+        85   23   23 VAL CA    C  65.120 0.00 1
+        86   23   23 VAL HA    H   4.170 0.00 1
+        87   23   23 VAL N     N 118.840 0.00 1
+        88   24   24 LYS H     H   7.750 0.00 1
+        89   24   24 LYS CA    C  59.820 0.00 1
+        90   24   24 LYS HA    H   3.880 0.00 1
+        91   24   24 LYS N     N 119.140 0.00 1
+        92   25   25 GLU H     H   8.130 0.00 1
+        93   25   25 GLU CA    C  58.820 0.00 1
+        94   25   25 GLU HA    H   3.980 0.00 1
+        95   25   25 GLU N     N 117.640 0.00 1
+        96   26   26 ALA H     H   8.830 0.00 1
+        97   26   26 ALA CA    C  55.520 0.00 1
+        98   26   26 ALA HA    H   3.970 0.00 1
+        99   26   26 ALA N     N 124.640 0.00 1
+       100   27   27 LYS H     H   8.020 0.00 1
+       101   27   27 LYS CA    C  58.820 0.00 1
+       102   27   27 LYS HA    H   3.890 0.00 1
+       103   27   27 LYS N     N 112.740 0.00 1
+       104   28   28 GLY H     H   7.550 0.00 1
+       105   28   28 GLY CA    C  45.120 0.00 1
+       106   28   28 GLY HA2   H   3.910 0.00 2
+       107   28   28 GLY HA3   H   3.400 0.00 2
+       108   28   28 GLY N     N 105.740 0.00 1
+       109   29   29 PHE H     H   7.370 0.00 1
+       110   29   29 PHE CA    C  57.320 0.00 1
+       111   29   29 PHE HA    H   4.730 0.00 1
+       112   29   29 PHE N     N 119.540 0.00 1
+       113   30   30 THR H     H  10.980 0.00 1
+       114   30   30 THR CA    C  64.020 0.00 1
+       115   30   30 THR HA    H   4.180 0.00 1
+       116   30   30 THR N     N 118.940 0.00 1
+       117   31   31 SER H     H   9.150 0.00 1
+       118   31   31 SER CA    C  61.220 0.00 1
+       119   31   31 SER HA    H   4.420 0.00 1
+       120   31   31 SER N     N 120.140 0.00 1
+       121   32   32 GLU H     H   7.870 0.00 1
+       122   32   32 GLU CA    C  56.120 0.00 1
+       123   32   32 GLU HA    H   4.450 0.00 1
+       124   32   32 GLU N     N 121.540 0.00 1
+       125   33   33 ILE H     H   9.100 0.00 1
+       126   33   33 ILE CA    C  60.420 0.00 1
+       127   33   33 ILE HA    H   5.120 0.00 1
+       128   33   33 ILE N     N 128.840 0.00 1
+       129   34   34 THR H     H   9.720 0.00 1
+       130   34   34 THR CA    C  61.320 0.00 1
+       131   34   34 THR HA    H   4.940 0.00 1
+       132   34   34 THR N     N 125.240 0.00 1
+       133   35   35 VAL H     H   9.290 0.00 1
+       134   35   35 VAL CA    C  60.920 0.00 1
+       135   35   35 VAL HA    H   4.860 0.00 1
+       136   35   35 VAL N     N 126.240 0.00 1
+       137   36   36 THR H     H   8.940 0.00 1
+       138   36   36 THR CA    C  60.920 0.00 1
+       139   36   36 THR HA    H   5.480 0.00 1
+       140   36   36 THR N     N 122.340 0.00 1
+       141   37   37 SER H     H   9.110 0.00 1
+       142   37   37 SER CA    C  56.820 0.00 1
+       143   37   37 SER HA    H   4.790 0.00 1
+       144   37   37 SER N     N 119.140 0.00 1
+       145   38   38 ASN H     H   9.820 0.00 1
+       146   38   38 ASN CA    C  54.320 0.00 1
+       147   38   38 ASN HA    H   4.410 0.00 1
+       148   38   38 ASN N     N 127.540 0.00 1
+       149   39   39 GLY H     H   8.630 0.00 1
+       150   39   39 GLY CA    C  45.420 0.00 1
+       151   39   39 GLY HA2   H   4.130 0.00 2
+       152   39   39 GLY HA3   H   3.580 0.00 2
+       153   39   39 GLY N     N 103.240 0.00 1
+       154   40   40 LYS H     H   7.950 0.00 1
+       155   40   40 LYS CA    C  54.920 0.00 1
+       156   40   40 LYS HA    H   4.690 0.00 1
+       157   40   40 LYS N     N 122.740 0.00 1
+       158   41   41 SER H     H   8.430 0.00 1
+       159   41   41 SER CA    C  57.020 0.00 1
+       160   41   41 SER HA    H   5.830 0.00 1
+       161   41   41 SER N     N 116.240 0.00 1
+       162   42   42 ALA H     H   9.140 0.00 1
+       163   42   42 ALA CA    C  50.820 0.00 1
+       164   42   42 ALA HA    H   4.590 0.00 1
+       165   42   42 ALA N     N 123.640 0.00 1
+       166   43   43 SER H     H   8.200 0.00 1
+       167   43   43 SER CA    C  57.120 0.00 1
+       168   43   43 SER HA    H   4.830 0.00 1
+       169   43   43 SER N     N 114.040 0.00 1
+       170   44   44 ALA H     H   8.400 0.00 1
+       171   44   44 ALA CA    C  52.720 0.00 1
+       172   44   44 ALA HA    H   4.210 0.00 1
+       173   44   44 ALA N     N 126.740 0.00 1
+       174   45   45 LYS H     H   7.670 0.00 1
+       175   45   45 LYS CA    C  55.720 0.00 1
+       176   45   45 LYS HA    H   4.350 0.00 1
+       177   45   45 LYS N     N 107.840 0.00 1
+       178   46   46 SER H     H   7.200 0.00 1
+       179   46   46 SER CA    C  55.020 0.00 1
+       180   46   46 SER HA    H   4.830 0.00 1
+       181   46   46 SER N     N 113.640 0.00 1
+       182   47   47 LEU H     H   9.110 0.00 1
+       183   47   47 LEU CA    C  58.520 0.00 1
+       184   47   47 LEU HA    H   4.040 0.00 1
+       185   47   47 LEU N     N 131.140 0.00 1
+       186   48   48 PHE H     H   8.260 0.00 1
+       187   48   48 PHE CA    C  60.120 0.00 1
+       188   48   48 PHE HA    H   4.360 0.00 1
+       189   48   48 PHE N     N 115.940 0.00 1
+       190   49   49 LYS H     H   7.670 0.00 1
+       191   49   49 LYS CA    C  57.520 0.00 1
+       192   49   49 LYS HA    H   4.100 0.00 1
+       193   49   49 LYS N     N 116.640 0.00 1
+       194   50   50 LEU H     H   8.620 0.00 1
+       195   50   50 LEU CA    C  58.520 0.00 1
+       196   50   50 LEU HA    H   3.760 0.00 1
+       197   50   50 LEU N     N 124.040 0.00 1
+       198   51   51 GLN H     H   7.910 0.00 1
+       199   51   51 GLN CA    C  58.220 0.00 1
+       200   51   51 GLN HA    H   4.140 0.00 1
+       201   51   51 GLN N     N 111.940 0.00 1
+       202   52   52 THR H     H   7.540 0.00 1
+       203   52   52 THR CA    C  63.220 0.00 1
+       204   52   52 THR HA    H   4.270 0.00 1
+       205   52   52 THR N     N 109.640 0.00 1
+       206   53   53 LEU H     H   7.440 0.00 1
+       207   53   53 LEU CA    C  54.920 0.00 1
+       208   53   53 LEU HA    H   4.270 0.00 1
+       209   53   53 LEU N     N 121.140 0.00 1
+       210   54   54 GLY H     H   8.290 0.00 1
+       211   54   54 GLY CA    C  46.720 0.00 1
+       212   54   54 GLY HA2   H   3.970 0.00 2
+       213   54   54 GLY HA3   H   3.560 0.00 2
+       214   54   54 GLY N     N 108.140 0.00 1
+       215   55   55 LEU H     H   8.450 0.00 1
+       216   55   55 LEU CA    C  53.720 0.00 1
+       217   55   55 LEU HA    H   4.320 0.00 1
+       218   55   55 LEU N     N 125.240 0.00 1
+       219   56   56 THR H     H   7.310 0.00 1
+       220   56   56 THR CA    C  60.420 0.00 1
+       221   56   56 THR HA    H   4.260 0.00 1
+       222   56   56 THR N     N 110.740 0.00 1
+       223   57   57 GLN H     H   8.840 0.00 1
+       224   57   57 GLN CA    C  58.520 0.00 1
+       225   57   57 GLN HA    H   3.640 0.00 1
+       226   57   57 GLN N     N 122.240 0.00 1
+       227   58   58 GLY H     H   9.290 0.00 1
+       228   58   58 GLY CA    C  44.620 0.00 1
+       229   58   58 GLY HA2   H   4.320 0.00 2
+       230   58   58 GLY HA3   H   3.460 0.00 2
+       231   58   58 GLY N     N 115.840 0.00 1
+       232   59   59 THR H     H   7.880 0.00 1
+       233   59   59 THR CA    C  64.320 0.00 1
+       234   59   59 THR HA    H   4.060 0.00 1
+       235   59   59 THR N     N 118.440 0.00 1
+       236   60   60 VAL H     H   8.610 0.00 1
+       237   60   60 VAL CA    C  62.220 0.00 1
+       238   60   60 VAL HA    H   4.450 0.00 1
+       239   60   60 VAL N     N 128.040 0.00 1
+       240   61   61 VAL H     H   9.280 0.00 1
+       241   61   61 VAL CA    C  59.020 0.00 1
+       242   61   61 VAL HA    H   4.980 0.00 1
+       243   61   61 VAL N     N 125.740 0.00 1
+       244   62   62 THR H     H   8.880 0.00 1
+       245   62   62 THR CA    C  62.120 0.00 1
+       246   62   62 THR HA    H   4.850 0.00 1
+       247   62   62 THR N     N 118.340 0.00 1
+       248   63   63 ILE H     H   9.030 0.00 1
+       249   63   63 ILE CA    C  60.620 0.00 1
+       250   63   63 ILE HA    H   4.860 0.00 1
+       251   63   63 ILE N     N 129.340 0.00 1
+       252   64   64 SER H     H   9.090 0.00 1
+       253   64   64 SER CA    C  55.820 0.00 1
+       254   64   64 SER HA    H   5.610 0.00 1
+       255   64   64 SER N     N 121.240 0.00 1
+       256   65   65 ALA H     H   9.180 0.00 1
+       257   65   65 ALA CA    C  50.220 0.00 1
+       258   65   65 ALA HA    H   5.680 0.00 1
+       259   65   65 ALA N     N 124.140 0.00 1
+       260   66   66 GLU H     H   8.340 0.00 1
+       261   66   66 GLU CA    C  54.120 0.00 1
+       262   66   66 GLU HA    H   5.360 0.00 1
+       263   66   66 GLU N     N 119.040 0.00 1
+       264   67   67 GLY H     H  10.170 0.00 1
+       265   67   67 GLY CA    C  45.220 0.00 1
+       266   67   67 GLY HA2   H   4.850 0.00 2
+       267   67   67 GLY HA3   H   3.950 0.00 2
+       268   67   67 GLY N     N 118.640 0.00 1
+       269   68   68 GLU H     H   9.030 0.00 1
+       270   68   68 GLU CA    C  59.220 0.00 1
+       271   68   68 GLU HA    H   4.030 0.00 1
+       272   68   68 GLU N     N 118.740 0.00 1
+       273   69   69 ASP H     H   7.240 0.00 1
+       274   69   69 ASP CA    C  50.820 0.00 1
+       275   69   69 ASP HA    H   4.930 0.00 1
+       276   69   69 ASP N     N 114.140 0.00 1
+       277   70   70 GLU H     H   6.870 0.00 1
+       278   70   70 GLU CA    C  59.420 0.00 1
+       279   70   70 GLU HA    H   3.790 0.00 1
+       280   70   70 GLU N     N 116.340 0.00 1
+       281   71   71 GLN H     H   7.730 0.00 1
+       282   71   71 GLN CA    C  58.820 0.00 1
+       283   71   71 GLN HA    H   3.270 0.00 1
+       284   71   71 GLN N     N 119.740 0.00 1
+       285   72   72 LYS H     H   7.510 0.00 1
+       286   72   72 LYS CA    C  58.520 0.00 1
+       287   72   72 LYS HA    H   3.880 0.00 1
+       288   72   72 LYS N     N 118.940 0.00 1
+       289   73   73 ALA H     H   8.310 0.00 1
+       290   73   73 ALA CA    C  53.820 0.00 1
+       291   73   73 ALA HA    H   1.920 0.00 1
+       292   73   73 ALA N     N 120.840 0.00 1
+       293   74   74 VAL H     H   7.250 0.00 1
+       294   74   74 VAL CA    C  67.420 0.00 1
+       295   74   74 VAL HA    H   3.260 0.00 1
+       296   74   74 VAL N     N 115.740 0.00 1
+       297   75   75 GLU H     H   8.270 0.00 1
+       298   75   75 GLU CA    C  60.120 0.00 1
+       299   75   75 GLU HA    H   3.850 0.00 1
+       300   75   75 GLU N     N 116.540 0.00 1
+       301   76   76 HIS H     H   8.240 0.00 1
+       302   76   76 HIS CA    C  59.820 0.00 1
+       303   76   76 HIS HA    H   4.240 0.00 1
+       304   76   76 HIS N     N 117.940 0.00 1
+       305   77   77 LEU H     H   7.990 0.00 1
+       306   77   77 LEU CA    C  57.620 0.00 1
+       307   77   77 LEU HA    H   4.040 0.00 1
+       308   77   77 LEU N     N 119.040 0.00 1
+       309   78   78 VAL H     H   8.960 0.00 1
+       310   78   78 VAL CA    C  66.920 0.00 1
+       311   78   78 VAL HA    H   3.590 0.00 1
+       312   78   78 VAL N     N 119.840 0.00 1
+       313   79   79 LYS H     H   7.240 0.00 1
+       314   79   79 LYS CA    C  59.420 0.00 1
+       315   79   79 LYS HA    H   4.020 0.00 1
+       316   79   79 LYS N     N 120.440 0.00 1
+       317   80   80 LEU H     H   7.730 0.00 1
+       318   80   80 LEU CA    C  57.620 0.00 1
+       319   80   80 LEU HA    H   4.050 0.00 1
+       320   80   80 LEU N     N 118.340 0.00 1
+       321   81   81 MET H     H   8.090 0.00 1
+       322   81   81 MET CA    C  58.320 0.00 1
+       323   81   81 MET HA    H   4.060 0.00 1
+       324   81   81 MET N     N 116.240 0.00 1
+       325   82   82 ALA H     H   7.830 0.00 1
+       326   82   82 ALA CA    C  53.720 0.00 1
+       327   82   82 ALA HA    H   4.300 0.00 1
+       328   82   82 ALA N     N 118.740 0.00 1
+       329   83   83 GLU H     H   7.780 0.00 1
+       330   83   83 GLU CA    C  55.820 0.00 1
+       331   83   83 GLU HA    H   4.420 0.00 1
+       332   83   83 GLU N     N 116.140 0.00 1
+       333   84   84 LEU H     H   7.240 0.00 1
+       334   84   84 LEU CA    C  55.920 0.00 1
+       335   84   84 LEU HA    H   4.270 0.00 1
+       336   84   84 LEU N     N 121.640 0.00 1
+       337   85   85 GLU H     H   7.870 0.00 1
+       338   85   85 GLU CA    C  57.520 0.00 1
+       339   85   85 GLU HA    H   4.270 0.00 1
+       340   85   85 GLU N     N 125.540 0.00 1
+
+   stop_
+
+save_
+

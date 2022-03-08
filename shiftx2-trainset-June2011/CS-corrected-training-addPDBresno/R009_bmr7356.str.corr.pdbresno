@@ -1,0 +1,1122 @@
+data_7356
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a CB chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 59   D    CB      33.08        42.75
+#115   Q    CB      42.23        30.96
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#N/A     -0.28   0.03      N/A   -0.76   -0.10   
+#
+#R009_bmr7356.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R009_bmr7356.str file):
+#HA       CA       CB      CO       N      HN
+#N/A    -0.12   -0.12    N/A    -0.76     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#    N/A  +/-0.11  +/-0.12      N/A  +/-0.28  +/-0.05  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#N/A     0.979   0.990     N/A   0.914   0.753   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#N/A     0.625   0.652     N/A   1.590   0.289   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+HN,CA,CB Chemical shift assignments for apo-Rat intestinal fatty acid binding protein, Clofibric acid-Rat intestinal fatty acid binding protein complex,  Fenofibric acid-Rat intestinal fatty acid binding protein complex and Tolfenamic acid-Rat intestinal fatty acid binding protein complex.
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Velkov  Tony        .    . 
+      2 Scanlon Martin      J.   . 
+      3 Porter  Christopher J.H. . 
+
+   stop_
+
+   _BMRB_accession_number   7356
+   _BMRB_flat_file_name     bmr7356.str
+   _Entry_type              new
+   _Submission_date         2006-12-17
+   _Accession_date          2006-12-17
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      "13C chemical shifts" 247 
+      "1H chemical shifts"  129 
+      "15N chemical shifts" 128 
+
+   stop_
+
+   loop_
+      _Revision_date
+      _Revision_keyword
+      _Revision_author
+      _Revision_detail
+
+      2008-07-14 update   BMRB   "complete entry citation" 
+      2007-03-08 original author "original release"        
+
+   stop_
+
+   loop_
+      _Related_BMRB_accession_number
+      _Relationship
+
+      15082  apo                   
+       7355 "Clofibric_acid bound" 
+       7357 "tolfenamic bound"     
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_title        
+;
+Examination of the role of intestinal fatty acid-binding protein in drug 
+absorption using a parallel artificial membrane permeability assay.
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _PubMed_ID              17462580
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Velkov    Tony        .    . 
+      2 Horne     James       .    . 
+      3 Languerre Aisha       .    . 
+      4 Jones     Eric        .    . 
+      5 Scanlon   Martin      J.   . 
+      6 Porter    Christopher J.H. . 
+
+   stop_
+
+   _Journal_abbreviation  "Chem. Biol."
+   _Journal_name_full     "Chemistry & Biology"
+   _Journal_volume         14
+   _Journal_issue          4
+   _Journal_CSD            ?
+   _Page_first             453
+   _Page_last              465
+   _Year                   2007
+
+   loop_
+      _Keyword
+
+      "Intestinal fatty acid binding protein" 
+      "intestinal lipophilic drug transport"  
+
+   stop_
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_assembly
+   _Saveframe_category      molecular_system
+
+   _Mol_system_name        "Rat intestinal fatty acid binding protein"
+   _Abbreviation_common    "Rat intestinal fatty acid binding protein"
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      "single polypeptide chain" $Rat_intestinal_fatty_acid_binding_protein 
+       Fenofibric_acid           $Fenofibric_acid                           
+
+   stop_
+
+   _System_physical_state   native
+   _System_oligomer_state   monomer
+   _System_paramagnetic     no
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Database_entry_relation_type
+      _Database_entry_details
+
+      PDB 1ICM ? "Structure used for drug docking and chemical shift mapping" ? 
+      PDB 2IFB ? "Structure used for palmitic acid chemical shift mapping"    ? 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_Rat_intestinal_fatty_acid_binding_protein
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                 Rat_intestinal_fatty_acid_binding_protein
+   _Molecular_mass                              14993.0
+   _Mol_thiol_state                            "not present"
+
+   loop_
+      _Biological_function
+
+      "cytosolic fatty acid binding protein" 
+
+   stop_
+
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               131
+   _Mol_residue_sequence                       
+;
+AFDGTWKVDRNENYEKFMEK
+MGINVVKRKLGAHDNLKLTI
+TQEGNKFTVKESSNFRNIDV
+VFELGVDFAYSLADGTELTG
+TWTMEGNKLVGKFKRVDNGK
+ELIAVREISGNELIQTYTYE
+GVEAKRIFKKE
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+        1 ALA    2 PHE    3 ASP    4 GLY    5 THR 
+        6 TRP    7 LYS    8 VAL    9 ASP   10 ARG 
+       11 ASN   12 GLU   13 ASN   14 TYR   15 GLU 
+       16 LYS   17 PHE   18 MET   19 GLU   20 LYS 
+       21 MET   22 GLY   23 ILE   24 ASN   25 VAL 
+       26 VAL   27 LYS   28 ARG   29 LYS   30 LEU 
+       31 GLY   32 ALA   33 HIS   34 ASP   35 ASN 
+       36 LEU   37 LYS   38 LEU   39 THR   40 ILE 
+       41 THR   42 GLN   43 GLU   44 GLY   45 ASN 
+       46 LYS   47 PHE   48 THR   49 VAL   50 LYS 
+       51 GLU   52 SER   53 SER   54 ASN   55 PHE 
+       56 ARG   57 ASN   58 ILE   59 ASP   60 VAL 
+       61 VAL   62 PHE   63 GLU   64 LEU   65 GLY 
+       66 VAL   67 ASP   68 PHE   69 ALA   70 TYR 
+       71 SER   72 LEU   73 ALA   74 ASP   75 GLY 
+       76 THR   77 GLU   78 LEU   79 THR   80 GLY 
+       81 THR   82 TRP   83 THR   84 MET   85 GLU 
+       86 GLY   87 ASN   88 LYS   89 LEU   90 VAL 
+       91 GLY   92 LYS   93 PHE   94 LYS   95 ARG 
+       96 VAL   97 ASP   98 ASN   99 GLY  100 LYS 
+      101 GLU  102 LEU  103 ILE  104 ALA  105 VAL 
+      106 ARG  107 GLU  108 ILE  109 SER  110 GLY 
+      111 ASN  112 GLU  113 LEU  114 ILE  115 GLN 
+      116 THR  117 TYR  118 THR  119 TYR  120 GLU 
+      121 GLY  122 VAL  123 GLU  124 ALA  125 LYS 
+      126 ARG  127 ILE  128 PHE  129 LYS  130 LYS 
+      131 GLU 
+
+   stop_
+
+   _Sequence_homology_query_date                2010-05-15
+   _Sequence_homology_query_revised_last_date   2010-05-15
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB             15082  Rat_intestinal_fatty_acid_binding_protein                                                                                                                                   100.00 131 100.00 100.00 1.29e-68 
+      BMRB              7355  Rat_intestinal_fatty_acid_binding_protein                                                                                                                                   100.00 131 100.00 100.00 1.29e-68 
+      BMRB              7357  Rat_intestinal_fatty_acid_binding_protein                                                                                                                                   100.00 131 100.00 100.00 1.29e-68 
+      PDB  1AEL               "Nmr Structure Of Apo Intestinal Fatty Acid-Binding Protein, 20 Structures"                                                                                                  100.00 131 100.00 100.00 1.29e-68 
+      PDB  1DC9               "Properties And Crystal Structure Of A Beta-Barrel Folding Mutant, V60n Intestinal Fatty Acid Binding Protein (Ifabp)"                                                       100.00 131  99.24  99.24 9.31e-68 
+      PDB  1ICM               "Escherichia Coli-Derived Rat Intestinal Fatty Acid Binding Protein With Bound Myristate At 1.5 A Resolution And I- Fabparg106-->gln With Bound Oleate At 1.74 A Resolution" 100.00 131 100.00 100.00 1.29e-68 
+      PDB  1ICN               "Escherichia Coli-Derived Rat Intestinal Fatty Acid Binding Protein With Bound Myristate At 1.5 A Resolution And I- Fabparg106-->gln With Bound Oleate At 1.74 A Resolution" 100.00 131  99.24 100.00 3.60e-68 
+      PDB  1IFB               "Refined Apoprotein Structure Of Rat Intestinal Fatty Acid Binding Protein Produced In Escherichia Coli"                                                                     100.00 131 100.00 100.00 1.29e-68 
+      PDB  1IFC               "Refinement Of The Structure Of Recombinant Rat Intestinal Fatty Acid-Binding Apoprotein At 1.2 Angstroms Resolution"                                                        100.00 132 100.00 100.00 1.19e-68 
+      PDB  1T8V               "The Nmr Structure Of D34a I-Fabp: Implications For The Determinants Of Ligand Binding Stoichiometry"                                                                        100.00 131  99.24  99.24 7.94e-68 
+      PDB  1URE               "Nmr Structure Of Intestinal Fatty Acid-Binding Protein Complexed With Palmitate, 20 Structures"                                                                             100.00 131 100.00 100.00 1.29e-68 
+      PDB  2IFB               "Crystal Structure Of Rat Intestinal Fatty-Acid-Binding Protein. Refinement And Analysis Of The Escherichia Coli- Drived Protein With Bound Palmitate"                       100.00 131 100.00 100.00 1.29e-68 
+      GB   AAA41133           "fatty acid binding protein [Rattus norvegicus]"                                                                                                                              60.31  80 100.00 100.00 3.45e-38 
+      GB   AAA41138           "intestinal FABP [Rattus norvegicus]"                                                                                                                                        100.00 132  98.47  98.47 1.39e-66 
+      GB   AAA41141           "fatty acid binding protein (FABP) [Rattus norvegicus]"                                                                                                                      100.00 132 100.00 100.00 1.19e-68 
+      GB   EDL82110           "fatty acid binding protein 2, intestinal [Rattus norvegicus]"                                                                                                               100.00 132 100.00 100.00 1.19e-68 
+      PRF  1202232A           "protein,fatty acid binding"                                                                                                                                                 100.00 132 100.00 100.00 1.19e-68 
+      PRF  1202232A:PDB=1IFC  "protein,fatty acid binding"                                                                                                                                                 100.00 132 100.00 100.00 1.19e-68 
+      REF  NP_037200          "fatty acid-binding protein, intestinal [Rattus norvegicus]"                                                                                                                 100.00 132 100.00 100.00 1.19e-68 
+      SP   P02693             "RecName: Full=Fatty acid-binding protein, intestinal; AltName: Full=Intestinal-type fatty acid-binding protein; Short=I-FABP; AltName: Full=Fatty acid-binding protein 2"   100.00 132 100.00 100.00 1.19e-68 
+
+   stop_
+
+save_
+
+
+    #############
+    #  Ligands  #
+    #############
+
+save_chem_comp_FENO
+   _Saveframe_category                    ligand
+
+   _Mol_type                              non-polymer
+   _Name_common                           Fenofibric_acid
+   _PDB_code                              ?
+   _Mol_empirical_formula                 ?
+   _Molecular_mass                        ?
+   _Mol_charge                            0
+   _Mol_paramagnetic                      ?
+   _Mol_aromatic                          ?
+   _Topology_file_name                    ?
+   _Mol_structure_file_name               ?
+   _Mol_structure_file_format             ?
+   _Stereochemistry_parameter_file_name   ?
+
+   loop_
+      _Bond_order
+      _Bond_atom_one_atom_name
+      _Bond_atom_two_atom_name
+      _PDB_bond_atom_one_atom_name
+      _PDB_bond_atom_two_atom_name
+
+      SING ? ? ? ? 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+
+      $Rat_intestinal_fatty_acid_binding_protein "Norway rat" 10116 Eukaryota Metazoa Rattus norvegicus 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Vector_name
+
+      $Rat_intestinal_fatty_acid_binding_protein "recombinant technology" ? ? ? BL21(DE3) pTrc99A 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_Fenofibric_acid-Rat_FABP2
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $Rat_intestinal_fatty_acid_binding_protein  0.5 mM "[U-99% 13C; U-99% 15N]" 
+      "Fenofibric acid"                           5   mM "natural abundance"      
+       H2O                                       90   %  "natural abundance"      
+       D2O                                       10   %  "natural abundance"      
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_SPARKY
+   _Saveframe_category   software
+
+   _Name                 SPARKY
+
+   loop_
+      _Vendor
+      _Address
+      _Electronic_address
+
+      Goddard ? ? 
+
+   stop_
+
+   loop_
+      _Task
+
+      "chemical shift assignment" 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_nmr_spectrometer_1
+   _Saveframe_category   NMR_spectrometer
+
+   _Manufacturer         Varian
+   _Model                Inova
+   _Field_strength       600
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_3D_CBCA(CO)NH_1
+   _Saveframe_category   NMR_applied_experiment
+
+   _Experiment_name     "3D CBCA(CO)NH"
+   _Sample_label        $Fenofibric_acid-Rat_FABP2
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_cond
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+       temperature     295.15 ? K  
+       pH                5.5  ? pH 
+      "ionic strength"   0.05 ? M  
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference_1
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+
+      DSS H  1 "methyl protons" ppm 0.00 internal direct   ? ? ? 1.000000000 
+      DSS C 13 "methyl protons" ppm 0.00 n/a      indirect ? ? ? 0.251449530 
+      DSS N 15 "methyl protons" ppm 0.00 n/a      indirect ? ? ? 0.101329118 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_assigned_chem_shift_list
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Software_label
+
+      $SPARKY 
+
+   stop_
+
+   loop_
+      _Sample_label
+
+      $Fenofibric_acid-Rat_FABP2 
+
+   stop_
+
+   _Sample_conditions_label         $sample_cond
+   _Chem_shift_reference_set_label  $chemical_shift_reference_1
+   _Mol_system_component_name       "single polypeptide chain"
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    1    1 ALA CA    C  52.320 0.40 1
+         2    1    1 ALA CB    C  19.220 0.40 1
+         3    2    2 PHE H     H   9.340 0.04 1
+         4    2    2 PHE CA    C  59.510 0.40 1
+         5    2    2 PHE CB    C  39.940 0.40 1
+         6    2    2 PHE N     N 116.140 0.40 1
+         7    3    3 ASP H     H   7.920 0.04 1
+         8    3    3 ASP CA    C  55.120 0.40 1
+         9    3    3 ASP CB    C  41.440 0.40 1
+        10    3    3 ASP N     N 115.890 0.40 1
+        11    4    4 GLY H     H   8.520 0.04 1
+        12    4    4 GLY CA    C  43.680 0.40 1
+        13    4    4 GLY N     N 107.910 0.40 1
+        14    5    5 THR H     H   8.360 0.04 1
+        15    5    5 THR CA    C  62.380 0.40 1
+        16    5    5 THR CB    C  69.680 0.40 1
+        17    5    5 THR N     N 116.220 0.40 1
+        18    6    6 TRP H     H   9.370 0.04 1
+        19    6    6 TRP CA    C  54.650 0.40 1
+        20    6    6 TRP CB    C  31.250 0.40 1
+        21    6    6 TRP N     N 127.280 0.40 1
+        22    7    7 LYS H     H   9.540 0.04 1
+        23    7    7 LYS CA    C  54.590 0.40 1
+        24    7    7 LYS CB    C  35.310 0.40 1
+        25    7    7 LYS N     N 123.800 0.40 1
+        26    8    8 VAL H     H   8.840 0.04 1
+        27    8    8 VAL CA    C  64.880 0.40 1
+        28    8    8 VAL CB    C  31.240 0.40 1
+        29    8    8 VAL N     N 128.810 0.40 1
+        30    9    9 ASP H     H   9.710 0.04 1
+        31    9    9 ASP CA    C  55.300 0.40 1
+        32    9    9 ASP CB    C  46.720 0.40 1
+        33    9    9 ASP N     N 126.840 0.40 1
+        34   10   10 ARG H     H   7.770 0.04 1
+        35   10   10 ARG CA    C  54.750 0.40 1
+        36   10   10 ARG CB    C  31.530 0.40 1
+        37   10   10 ARG N     N 112.100 0.40 1
+        38   11   11 ASN H     H   8.700 0.04 1
+        39   11   11 ASN CA    C  51.120 0.40 1
+        40   11   11 ASN CB    C  43.440 0.40 1
+        41   11   11 ASN N     N 115.860 0.40 1
+        42   12   12 GLU H     H   9.460 0.04 1
+        43   12   12 GLU CA    C  55.700 0.40 1
+        44   12   12 GLU CB    C  32.460 0.40 1
+        45   12   12 GLU N     N 119.720 0.40 1
+        46   13   13 ASN H     H   9.390 0.04 1
+        47   13   13 ASN CA    C  54.160 0.40 1
+        48   13   13 ASN CB    C  39.780 0.40 1
+        49   13   13 ASN N     N 121.820 0.40 1
+        50   14   14 TYR H     H   8.410 0.04 1
+        51   14   14 TYR CA    C  58.600 0.40 1
+        52   14   14 TYR CB    C  40.270 0.40 1
+        53   14   14 TYR N     N 118.550 0.40 1
+        54   15   15 GLU H     H   9.030 0.04 1
+        55   15   15 GLU CA    C  61.480 0.40 1
+        56   15   15 GLU CB    C  27.920 0.40 1
+        57   15   15 GLU N     N 119.260 0.40 1
+        58   16   16 LYS H     H   8.320 0.04 1
+        59   16   16 LYS CA    C  58.320 0.40 1
+        60   16   16 LYS CB    C  31.320 0.40 1
+        61   16   16 LYS N     N 119.150 0.40 1
+        62   17   17 PHE H     H   7.830 0.04 1
+        63   17   17 PHE CA    C  62.720 0.40 1
+        64   17   17 PHE CB    C  40.900 0.40 1
+        65   17   17 PHE N     N 121.220 0.40 1
+        66   18   18 MET H     H   8.570 0.04 1
+        67   18   18 MET CA    C  59.950 0.40 1
+        68   18   18 MET CB    C  35.340 0.40 1
+        69   18   18 MET N     N 117.050 0.40 1
+        70   19   19 GLU H     H   7.860 0.04 1
+        71   19   19 GLU CA    C  59.730 0.40 1
+        72   19   19 GLU CB    C  29.410 0.40 1
+        73   19   19 GLU N     N 117.700 0.40 1
+        74   20   20 LYS H     H   8.030 0.04 1
+        75   20   20 LYS CA    C  57.300 0.40 1
+        76   20   20 LYS CB    C  31.310 0.40 1
+        77   20   20 LYS N     N 122.980 0.40 1
+        78   21   21 MET H     H   7.710 0.04 1
+        79   21   21 MET CA    C  55.700 0.40 1
+        80   21   21 MET CB    C  32.490 0.40 1
+        81   21   21 MET N     N 114.530 0.40 1
+        82   22   22 GLY H     H   7.670 0.04 1
+        83   22   22 GLY CA    C  45.330 0.40 1
+        84   22   22 GLY N     N 107.000 0.40 1
+        85   23   23 ILE H     H   7.190 0.04 1
+        86   23   23 ILE CA    C  59.070 0.40 1
+        87   23   23 ILE CB    C  36.020 0.40 1
+        88   23   23 ILE N     N 119.530 0.40 1
+        89   24   24 ASN H     H   8.880 0.04 1
+        90   24   24 ASN CA    C  54.470 0.40 1
+        91   24   24 ASN CB    C  39.900 0.40 1
+        92   24   24 ASN N     N 126.930 0.40 1
+        93   25   25 VAL H     H   8.520 0.04 1
+        94   25   25 VAL CA    C  66.350 0.40 1
+        95   25   25 VAL CB    C  31.920 0.40 1
+        96   25   25 VAL N     N 121.570 0.40 1
+        97   26   26 VAL H     H   7.630 0.04 1
+        98   26   26 VAL CA    C  66.050 0.40 1
+        99   26   26 VAL CB    C  31.690 0.40 1
+       100   26   26 VAL N     N 119.930 0.40 1
+       101   27   27 LYS H     H   7.710 0.04 1
+       102   27   27 LYS CA    C  58.580 0.40 1
+       103   27   27 LYS CB    C  32.550 0.40 1
+       104   27   27 LYS N     N 117.430 0.40 1
+       105   28   28 ARG H     H   8.610 0.04 1
+       106   28   28 ARG CA    C  59.370 0.40 1
+       107   28   28 ARG CB    C  30.670 0.40 1
+       108   28   28 ARG N     N 118.810 0.40 1
+       109   29   29 LYS H     H   7.630 0.04 1
+       110   29   29 LYS CA    C  59.200 0.40 1
+       111   29   29 LYS CB    C  31.900 0.40 1
+       112   29   29 LYS N     N 118.750 0.40 1
+       113   30   30 LEU H     H   7.420 0.04 1
+       114   30   30 LEU CA    C  56.350 0.40 1
+       115   30   30 LEU CB    C  42.200 0.40 1
+       116   30   30 LEU N     N 117.090 0.40 1
+       117   31   31 GLY H     H   8.750 0.04 1
+       118   31   31 GLY CA    C  47.440 0.40 1
+       119   31   31 GLY N     N 106.880 0.40 1
+       120   32   32 ALA H     H   8.010 0.04 1
+       121   32   32 ALA CA    C  53.680 0.40 1
+       122   32   32 ALA CB    C  18.460 0.40 1
+       123   32   32 ALA N     N 118.990 0.40 1
+       124   33   33 HIS H     H   7.430 0.04 1
+       125   33   33 HIS CA    C  53.700 0.40 1
+       126   33   33 HIS CB    C  28.500 0.40 1
+       127   33   33 HIS N     N 116.860 0.40 1
+       128   34   34 ASP H     H   7.140 0.04 1
+       129   34   34 ASP CA    C  54.650 0.40 1
+       130   34   34 ASP CB    C  41.040 0.40 1
+       131   34   34 ASP N     N 116.750 0.40 1
+       132   35   35 ASN H     H   9.240 0.04 1
+       133   35   35 ASN CA    C  53.590 0.40 1
+       134   35   35 ASN CB    C  37.450 0.40 1
+       135   35   35 ASN N     N 118.320 0.40 1
+       136   36   36 LEU H     H   6.960 0.04 1
+       137   36   36 LEU CA    C  56.990 0.40 1
+       138   36   36 LEU CB    C  42.150 0.40 1
+       139   36   36 LEU N     N 118.150 0.40 1
+       140   37   37 LYS H     H   9.590 0.04 1
+       141   37   37 LYS CA    C  54.630 0.40 1
+       142   37   37 LYS CB    C  36.270 0.40 1
+       143   37   37 LYS N     N 126.940 0.40 1
+       144   38   38 LEU H     H   9.360 0.04 1
+       145   38   38 LEU CA    C  52.440 0.40 1
+       146   38   38 LEU CB    C  45.690 0.40 1
+       147   38   38 LEU N     N 122.390 0.40 1
+       148   39   39 THR H     H   9.140 0.04 1
+       149   39   39 THR CA    C  62.350 0.40 1
+       150   39   39 THR CB    C  70.020 0.40 1
+       151   39   39 THR N     N 120.230 0.40 1
+       152   40   40 ILE H     H   9.570 0.04 1
+       153   40   40 ILE CA    C  61.510 0.40 1
+       154   40   40 ILE CB    C  39.900 0.40 1
+       155   40   40 ILE N     N 128.450 0.40 1
+       156   41   41 THR H     H   8.770 0.04 1
+       157   41   41 THR CA    C  61.540 0.40 1
+       158   41   41 THR CB    C  71.380 0.40 1
+       159   41   41 THR N     N 122.260 0.40 1
+       160   42   42 GLN H     H   8.980 0.04 1
+       161   42   42 GLN CA    C  54.300 0.40 1
+       162   42   42 GLN CB    C  29.490 0.40 1
+       163   42   42 GLN N     N 127.990 0.40 1
+       164   43   43 GLU H     H   8.890 0.04 1
+       165   43   43 GLU CA    C  54.640 0.40 1
+       166   43   43 GLU CB    C  31.170 0.40 1
+       167   43   43 GLU N     N 128.770 0.40 1
+       168   44   44 GLY H     H   9.030 0.04 1
+       169   44   44 GLY CA    C  47.250 0.40 1
+       170   44   44 GLY N     N 116.950 0.40 1
+       171   45   45 ASN H     H   8.900 0.04 1
+       172   45   45 ASN CA    C  52.920 0.40 1
+       173   45   45 ASN CB    C  38.820 0.40 1
+       174   45   45 ASN N     N 124.800 0.40 1
+       175   46   46 LYS H     H   7.950 0.04 1
+       176   46   46 LYS CA    C  55.490 0.40 1
+       177   46   46 LYS CB    C  34.300 0.40 1
+       178   46   46 LYS N     N 119.970 0.40 1
+       179   47   47 PHE H     H   9.110 0.04 1
+       180   47   47 PHE CA    C  56.270 0.40 1
+       181   47   47 PHE CB    C  42.660 0.40 1
+       182   47   47 PHE N     N 125.280 0.40 1
+       183   48   48 THR H     H   8.320 0.04 1
+       184   48   48 THR CA    C  61.920 0.40 1
+       185   48   48 THR CB    C  69.910 0.40 1
+       186   48   48 THR N     N 114.880 0.40 1
+       187   49   49 VAL H     H   9.660 0.04 1
+       188   49   49 VAL CA    C  60.450 0.40 1
+       189   49   49 VAL CB    C  34.160 0.40 1
+       190   49   49 VAL N     N 127.240 0.40 1
+       191   50   50 LYS H     H   9.280 0.04 1
+       192   50   50 LYS CA    C  55.490 0.40 1
+       193   50   50 LYS CB    C  31.980 0.40 1
+       194   50   50 LYS N     N 127.540 0.40 1
+       195   51   51 GLU H     H   9.390 0.04 1
+       196   51   51 GLU CA    C  54.880 0.40 1
+       197   51   51 GLU CB    C  30.690 0.40 1
+       198   51   51 GLU N     N 128.020 0.40 1
+       199   52   52 SER H     H   9.070 0.04 1
+       200   52   52 SER CA    C  56.400 0.40 1
+       201   52   52 SER CB    C  65.040 0.40 1
+       202   52   52 SER N     N 120.350 0.40 1
+       203   53   53 SER H     H   9.010 0.04 1
+       204   53   53 SER CA    C  57.040 0.40 1
+       205   53   53 SER CB    C  67.840 0.40 1
+       206   53   53 SER N     N 120.350 0.40 1
+       207   54   54 ASN H     H   9.220 0.04 1
+       208   54   54 ASN CA    C  54.320 0.40 1
+       209   54   54 ASN CB    C  37.770 0.40 1
+       210   54   54 ASN N     N 114.990 0.40 1
+       211   55   55 PHE H     H   8.210 0.04 1
+       212   55   55 PHE CA    C  59.800 0.40 1
+       213   55   55 PHE CB    C  40.450 0.40 1
+       214   55   55 PHE N     N 113.370 0.40 1
+       215   56   56 ARG H     H   7.460 0.04 1
+       216   56   56 ARG CA    C  55.330 0.40 1
+       217   56   56 ARG CB    C  30.560 0.40 1
+       218   56   56 ARG N     N 111.520 0.40 1
+       219   57   57 ASN H     H   8.540 0.04 1
+       220   57   57 ASN CA    C  52.740 0.40 1
+       221   57   57 ASN CB    C  40.470 0.40 1
+       222   57   57 ASN N     N 118.340 0.40 1
+       223   58   58 ILE H     H   8.890 0.04 1
+       224   58   58 ILE CA    C  59.820 0.40 1
+       225   58   58 ILE CB    C  42.900 0.40 1
+       226   58   58 ILE N     N 116.900 0.40 1
+       227   59   59 ASP H     H   8.530 0.04 1
+       228   59   59 ASP CA    C  53.280 0.40 1
+       230   59   59 ASP N     N 122.450 0.40 1
+       231   60   60 VAL H     H   9.130 0.04 1
+       232   60   60 VAL CA    C  61.730 0.40 1
+       233   60   60 VAL CB    C  34.220 0.40 1
+       234   60   60 VAL N     N 122.590 0.40 1
+       235   61   61 VAL H     H   8.260 0.04 1
+       236   61   61 VAL CA    C  59.900 0.40 1
+       237   61   61 VAL CB    C  34.290 0.40 1
+       238   61   61 VAL N     N 125.110 0.40 1
+       239   62   62 PHE H     H   8.390 0.04 1
+       240   62   62 PHE CA    C  55.390 0.40 1
+       241   62   62 PHE CB    C  40.390 0.40 1
+       242   62   62 PHE N     N 120.700 0.40 1
+       243   63   63 GLU H     H   9.470 0.04 1
+       244   63   63 GLU CA    C  53.460 0.40 1
+       245   63   63 GLU CB    C  32.380 0.40 1
+       246   63   63 GLU N     N 119.730 0.40 1
+       247   64   64 LEU H     H   8.960 0.04 1
+       248   64   64 LEU CA    C  56.250 0.40 1
+       249   64   64 LEU CB    C  41.070 0.40 1
+       250   64   64 LEU N     N 124.450 0.40 1
+       251   65   65 GLY H     H   9.300 0.04 1
+       252   65   65 GLY CA    C  46.010 0.40 1
+       253   65   65 GLY N     N 107.620 0.40 1
+       254   66   66 VAL H     H   7.950 0.04 1
+       255   66   66 VAL CA    C  62.350 0.40 1
+       256   66   66 VAL CB    C  32.590 0.40 1
+       257   66   66 VAL N     N 121.670 0.40 1
+       258   67   67 ASP H     H   8.790 0.04 1
+       259   67   67 ASP CA    C  55.300 0.40 1
+       260   67   67 ASP CB    C  41.650 0.40 1
+       261   67   67 ASP N     N 131.600 0.40 1
+       262   68   68 PHE H     H   9.270 0.04 1
+       263   68   68 PHE CA    C  55.940 0.40 1
+       264   68   68 PHE CB    C  41.690 0.40 1
+       265   68   68 PHE N     N 119.550 0.40 1
+       266   69   69 ALA H     H   8.400 0.04 1
+       267   69   69 ALA CA    C  50.730 0.40 1
+       268   69   69 ALA CB    C  20.950 0.40 1
+       269   69   69 ALA N     N 121.400 0.40 1
+       270   70   70 TYR H     H   8.460 0.04 1
+       271   70   70 TYR CA    C  57.700 0.40 1
+       272   70   70 TYR CB    C  42.840 0.40 1
+       273   70   70 TYR N     N 122.850 0.40 1
+       274   71   71 SER H     H   7.770 0.04 1
+       275   71   71 SER CA    C  55.970 0.40 1
+       276   71   71 SER CB    C  64.500 0.40 1
+       277   71   71 SER N     N 120.360 0.40 1
+       278   72   72 LEU H     H   9.040 0.04 1
+       279   72   72 LEU CA    C  54.250 0.40 1
+       280   72   72 LEU N     N 121.550 0.40 1
+       281   73   73 ALA CA    C  54.420 0.40 1
+       282   73   73 ALA CB    C  17.380 0.40 1
+       283   74   74 ASP H     H   7.670 0.04 1
+       284   74   74 ASP CA    C  53.000 0.40 1
+       285   74   74 ASP CB    C  40.030 0.40 1
+       286   74   74 ASP N     N 113.970 0.40 1
+       287   75   75 GLY H     H   7.980 0.04 1
+       288   75   75 GLY CA    C  44.340 0.40 1
+       289   75   75 GLY N     N 108.100 0.40 1
+       290   76   76 THR H     H   7.790 0.04 1
+       291   76   76 THR CA    C  64.860 0.40 1
+       292   76   76 THR CB    C  67.780 0.40 1
+       293   76   76 THR N     N 118.580 0.40 1
+       294   77   77 GLU H     H   8.620 0.04 1
+       295   77   77 GLU CA    C  57.180 0.40 1
+       296   77   77 GLU CB    C  30.730 0.40 1
+       297   77   77 GLU N     N 128.190 0.40 1
+       298   78   78 LEU H     H   8.940 0.04 1
+       299   78   78 LEU CA    C  53.370 0.40 1
+       300   78   78 LEU CB    C  46.320 0.40 1
+       301   78   78 LEU N     N 121.480 0.40 1
+       302   79   79 THR H     H   8.560 0.04 1
+       303   79   79 THR CA    C  60.350 0.40 1
+       304   79   79 THR CB    C  70.700 0.40 1
+       305   79   79 THR N     N 112.060 0.40 1
+       306   80   80 GLY H     H   8.520 0.04 1
+       307   80   80 GLY CA    C  46.450 0.40 1
+       308   80   80 GLY N     N 110.010 0.40 1
+       309   81   81 THR H     H   6.770 0.04 1
+       310   81   81 THR CA    C  60.280 0.40 1
+       311   81   81 THR CB    C  72.770 0.40 1
+       312   81   81 THR N     N 106.330 0.40 1
+       313   82   82 TRP H     H   9.350 0.04 1
+       314   82   82 TRP CA    C  55.740 0.40 1
+       315   82   82 TRP CB    C  32.400 0.40 1
+       316   82   82 TRP N     N 122.890 0.40 1
+       317   83   83 THR H     H   9.300 0.04 1
+       318   83   83 THR CA    C  60.320 0.40 1
+       319   83   83 THR CB    C  71.990 0.40 1
+       320   83   83 THR N     N 112.910 0.40 1
+       321   84   84 MET H     H   8.930 0.04 1
+       322   84   84 MET CA    C  53.920 0.40 1
+       323   84   84 MET CB    C  32.920 0.40 1
+       324   84   84 MET N     N 120.550 0.40 1
+       325   85   85 GLU H     H   9.090 0.04 1
+       326   85   85 GLU CA    C  54.750 0.40 1
+       327   85   85 GLU CB    C  30.490 0.40 1
+       328   85   85 GLU N     N 127.020 0.40 1
+       329   86   86 GLY H     H   9.070 0.04 1
+       330   86   86 GLY CA    C  47.540 0.40 1
+       331   86   86 GLY N     N 116.410 0.40 1
+       332   87   87 ASN H     H   8.860 0.04 1
+       333   87   87 ASN CA    C  53.070 0.40 1
+       334   87   87 ASN CB    C  38.510 0.40 1
+       335   87   87 ASN N     N 122.700 0.40 1
+       336   88   88 LYS H     H   8.030 0.04 1
+       337   88   88 LYS CA    C  55.640 0.40 1
+       338   88   88 LYS CB    C  34.690 0.40 1
+       339   88   88 LYS N     N 118.520 0.40 1
+       340   89   89 LEU H     H   8.550 0.04 1
+       341   89   89 LEU CA    C  53.760 0.40 1
+       342   89   89 LEU CB    C  44.270 0.40 1
+       343   89   89 LEU N     N 123.850 0.40 1
+       344   90   90 VAL H     H   9.590 0.04 1
+       345   90   90 VAL CA    C  62.630 0.40 1
+       346   90   90 VAL CB    C  33.330 0.40 1
+       347   90   90 VAL N     N 125.270 0.40 1
+       348   91   91 GLY H     H  10.130 0.04 1
+       349   91   91 GLY CA    C  44.180 0.40 1
+       350   91   91 GLY N     N 123.270 0.40 1
+       351   92   92 LYS H     H   7.630 0.04 1
+       352   92   92 LYS CA    C  55.020 0.40 1
+       353   92   92 LYS CB    C  33.090 0.40 1
+       354   92   92 LYS N     N 124.070 0.40 1
+       355   93   93 PHE H     H   9.030 0.04 1
+       356   93   93 PHE CA    C  55.490 0.40 1
+       357   93   93 PHE CB    C  43.300 0.40 1
+       358   93   93 PHE N     N 122.580 0.40 1
+       359   94   94 LYS H     H   9.350 0.04 1
+       360   94   94 LYS CA    C  54.620 0.40 1
+       361   94   94 LYS CB    C  35.360 0.40 1
+       362   94   94 LYS N     N 120.620 0.40 1
+       363   95   95 ARG H     H   8.740 0.04 1
+       364   95   95 ARG CA    C  56.600 0.40 1
+       365   95   95 ARG CB    C  30.690 0.40 1
+       366   95   95 ARG N     N 123.140 0.40 1
+       367   96   96 VAL H     H   8.410 0.04 1
+       368   96   96 VAL CA    C  65.270 0.40 1
+       369   96   96 VAL CB    C  32.270 0.40 1
+       370   96   96 VAL N     N 125.470 0.40 1
+       371   97   97 ASP H     H   9.150 0.04 1
+       372   97   97 ASP CA    C  56.380 0.40 1
+       373   97   97 ASP CB    C  38.570 0.40 1
+       374   97   97 ASP N     N 118.090 0.40 1
+       375   98   98 ASN H     H   8.650 0.04 1
+       376   98   98 ASN CA    C  51.370 0.40 1
+       377   98   98 ASN CB    C  39.150 0.40 1
+       378   98   98 ASN N     N 116.310 0.40 1
+       379   99   99 GLY H     H   7.970 0.04 1
+       380   99   99 GLY CA    C  46.380 0.40 1
+       381   99   99 GLY N     N 108.610 0.40 1
+       382  100  100 LYS H     H   8.170 0.04 1
+       383  100  100 LYS CA    C  56.870 0.40 1
+       384  100  100 LYS CB    C  33.970 0.40 1
+       385  100  100 LYS N     N 119.480 0.40 1
+       386  101  101 GLU H     H   8.410 0.04 1
+       387  101  101 GLU CA    C  56.050 0.40 1
+       388  101  101 GLU CB    C  32.610 0.40 1
+       389  101  101 GLU N     N 118.920 0.40 1
+       390  102  102 LEU H     H   9.080 0.04 1
+       391  102  102 LEU CA    C  54.020 0.40 1
+       392  102  102 LEU CB    C  46.300 0.40 1
+       393  102  102 LEU N     N 126.880 0.40 1
+       394  103  103 ILE H     H   8.670 0.04 1
+       395  103  103 ILE CA    C  58.900 0.40 1
+       396  103  103 ILE CB    C  39.360 0.40 1
+       397  103  103 ILE N     N 125.200 0.40 1
+       398  104  104 ALA H     H   9.510 0.04 1
+       399  104  104 ALA CA    C  49.750 0.40 1
+       400  104  104 ALA CB    C  23.680 0.40 1
+       401  104  104 ALA N     N 121.690 0.40 1
+       402  105  105 VAL H     H   9.230 0.04 1
+       403  105  105 VAL CA    C  60.950 0.40 1
+       404  105  105 VAL N     N 121.670 0.40 1
+       405  106  106 ARG H     H   9.700 0.04 1
+       406  106  106 ARG CA    C  54.780 0.40 1
+       407  106  106 ARG CB    C  32.920 0.40 1
+       408  106  106 ARG N     N 124.900 0.40 1
+       409  107  107 GLU H     H   8.610 0.04 1
+       410  107  107 GLU CA    C  54.260 0.40 1
+       411  107  107 GLU CB    C  34.430 0.40 1
+       412  107  107 GLU N     N 120.280 0.40 1
+       413  108  108 ILE H     H   8.780 0.04 1
+       414  108  108 ILE CA    C  58.580 0.40 1
+       415  108  108 ILE CB    C  37.010 0.40 1
+       416  108  108 ILE N     N 123.360 0.40 1
+       417  109  109 SER H     H   8.980 0.04 1
+       418  109  109 SER CA    C  56.270 0.40 1
+       419  109  109 SER CB    C  63.540 0.40 1
+       420  109  109 SER N     N 122.510 0.40 1
+       421  110  110 GLY H     H   9.250 0.04 1
+       422  110  110 GLY CA    C  47.660 0.40 1
+       423  110  110 GLY N     N 118.850 0.40 1
+       424  111  111 ASN H     H   8.900 0.04 1
+       425  111  111 ASN CA    C  52.900 0.40 1
+       426  111  111 ASN CB    C  38.670 0.40 1
+       427  111  111 ASN N     N 123.190 0.40 1
+       428  112  112 GLU H     H   8.090 0.04 1
+       429  112  112 GLU CA    C  55.090 0.40 1
+       430  112  112 GLU CB    C  33.410 0.40 1
+       431  112  112 GLU N     N 117.520 0.40 1
+       432  113  113 LEU H     H   8.320 0.04 1
+       433  113  113 LEU CA    C  53.910 0.40 1
+       434  113  113 LEU CB    C  43.330 0.40 1
+       435  113  113 LEU N     N 122.850 0.40 1
+       436  114  114 ILE H     H   9.370 0.04 1
+       437  114  114 ILE CA    C  61.180 0.40 1
+       438  114  114 ILE CB    C  38.850 0.40 1
+       439  114  114 ILE N     N 126.880 0.40 1
+       440  115  115 GLN H     H   9.060 0.04 1
+       441  115  115 GLN CA    C  53.340 0.40 1
+       443  115  115 GLN N     N 130.250 0.40 1
+       444  116  116 THR H     H   9.300 0.04 1
+       445  116  116 THR CA    C  61.720 0.40 1
+       446  116  116 THR CB    C  69.930 0.40 1
+       447  116  116 THR N     N 125.040 0.40 1
+       448  117  117 TYR H     H   9.480 0.04 1
+       449  117  117 TYR CA    C  53.650 0.40 1
+       450  117  117 TYR CB    C  43.750 0.40 1
+       451  117  117 TYR N     N 127.160 0.40 1
+       452  118  118 THR H     H   9.250 0.04 1
+       453  118  118 THR CA    C  62.170 0.40 1
+       454  118  118 THR CB    C  71.370 0.40 1
+       455  118  118 THR N     N 112.750 0.40 1
+       456  119  119 TYR H     H   9.090 0.04 1
+       457  119  119 TYR CA    C  58.520 0.40 1
+       458  119  119 TYR CB    C  43.010 0.40 1
+       459  119  119 TYR N     N 125.660 0.40 1
+       460  120  120 GLU H     H   9.600 0.04 1
+       461  120  120 GLU CA    C  56.240 0.40 1
+       462  120  120 GLU CB    C  28.760 0.40 1
+       463  120  120 GLU N     N 125.180 0.40 1
+       464  121  121 GLY H     H   8.630 0.04 1
+       465  121  121 GLY CA    C  45.260 0.40 1
+       466  121  121 GLY N     N 101.980 0.40 1
+       467  122  122 VAL H     H   8.410 0.04 1
+       468  122  122 VAL CA    C  62.160 0.40 1
+       469  122  122 VAL CB    C  32.920 0.40 1
+       470  122  122 VAL N     N 122.990 0.40 1
+       471  123  123 GLU H     H   8.620 0.04 1
+       472  123  123 GLU CA    C  53.850 0.40 1
+       473  123  123 GLU CB    C  33.850 0.40 1
+       474  123  123 GLU N     N 125.970 0.40 1
+       475  124  124 ALA H     H   8.880 0.04 1
+       476  124  124 ALA CA    C  50.900 0.40 1
+       477  124  124 ALA CB    C  23.860 0.40 1
+       478  124  124 ALA N     N 124.650 0.40 1
+       479  125  125 LYS H     H   8.950 0.04 1
+       480  125  125 LYS CA    C  54.340 0.40 1
+       481  125  125 LYS CB    C  38.100 0.40 1
+       482  125  125 LYS N     N 114.740 0.40 1
+       483  126  126 ARG H     H   9.010 0.04 1
+       484  126  126 ARG CA    C  56.380 0.40 1
+       485  126  126 ARG CB    C  33.150 0.40 1
+       486  126  126 ARG N     N 117.830 0.40 1
+       487  127  127 ILE H     H   8.870 0.04 1
+       488  127  127 ILE CA    C  61.120 0.40 1
+       489  127  127 ILE CB    C  39.790 0.40 1
+       490  127  127 ILE N     N 123.010 0.40 1
+       491  128  128 PHE H     H   9.950 0.04 1
+       492  128  128 PHE CA    C  55.860 0.40 1
+       493  128  128 PHE CB    C  42.720 0.40 1
+       494  128  128 PHE N     N 126.170 0.40 1
+       495  129  129 LYS H     H   8.980 0.04 1
+       496  129  129 LYS CA    C  54.840 0.40 1
+       497  129  129 LYS CB    C  35.870 0.40 1
+       498  129  129 LYS N     N 118.730 0.40 1
+       499  130  130 LYS H     H   8.610 0.04 1
+       500  130  130 LYS CA    C  56.660 0.40 1
+       501  130  130 LYS CB    C  33.160 0.40 1
+       502  130  130 LYS N     N 125.080 0.40 1
+       503  131  131 GLU H     H   8.410 0.04 1
+       504  131  131 GLU CA    C  58.300 0.40 1
+
+   stop_
+
+save_
+

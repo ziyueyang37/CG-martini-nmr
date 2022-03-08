@@ -1,0 +1,2005 @@
+data_4562
+
+#N.B. (Observed* = Observed shift + Offset correction)
+#
+#After reference correction, the following residues still 
+#have a CA chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+#  6   C    CA      54.67        59.68
+#
+#After reference correction, the following residues still 
+#have a CB chemical shift difference (obs*-pred) greater than  5.0ppm:
+#NUM  AA    CS     Observed*    Predicted
+# 94   C    CB      34.56        44.93
+#127   C    CB      34.75        41.68
+#
+#The average CS difference between predicted and observed:
+#HA       CA       CB      CO       N      HN
+#-0.03   -0.33   -0.32     N/A     N/A   0.02    
+#
+#R114_bmr4562.str.corr chemical shifts have been re-referenced with the following 
+#offsets (these values have been added to the original R114_bmr4562.str file):
+#HA       CA       CB      CO       N      HN
+#N/A    -0.32   -0.32    N/A     N/A     N/A
+#
+#The 95% confidence intervals for the above recommended offsets are:
+#    HA       CA       CB       CO       N        HN
+#+/-0.02  +/-0.16  +/-0.16      N/A      N/A  +/-0.05  
+#
+#The Correlation Coefficients between predicted and observed 
+#chemical shifts are:
+#HA       CA       CB      CO       N      HN
+#0.926   0.964   0.993     N/A     N/A   0.691   
+#
+#The RMSD between predicted and observed* (reference 
+#corrected) chemical shifts are:
+#HA       CA       CB      CO       N       HN
+#0.125   0.882   0.844     N/A     N/A   0.269   
+#
+
+
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Saveframe_category      entry_information
+
+   _Entry_title            
+;
+1H and 13C chemical shift assignments of native hen egg white lysozyme
+;
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Wang      Yunjun .  . 
+      2 Bjorndahl Trent  C. . 
+      3 Wishart   David  S. . 
+
+   stop_
+
+   _BMRB_accession_number   4562
+   _BMRB_flat_file_name     bmr4562.str
+   _Entry_type              new
+   _Submission_date         1999-12-14
+   _Accession_date          1999-12-15
+   _Entry_origination       author
+   _NMR_STAR_version        2.1.1
+   _Experimental_method     NMR
+   _Details                
+;
+TOCSY, HSQC, and HSQC-TOCSY experiments conducted at National
+Nuclear Magnetic Resonance Centre (NANUC) on 800MHz Varian 
+;
+
+   loop_
+      _Saveframe_category_type
+      _Saveframe_category_type_count
+
+      assigned_chemical_shifts 1 
+
+   stop_
+
+   loop_
+      _Data_type
+      _Data_type_count
+
+      '1H chemical shifts'  709 
+      '13C chemical shifts' 407 
+
+   stop_
+
+save_
+
+
+#############################
+#  Citation for this entry  #
+#############################
+
+save_entry_citation
+   _Saveframe_category     entry_citation
+
+   _Citation_title        
+;
+Letter to the Editor: Complete 1H and Non-carbonylic 13C Assignments of Native
+Hen Egg-white Lysozyme
+;
+   _Citation_status        published
+   _Citation_type          journal
+   _MEDLINE_UI_code        20365224
+
+   loop_
+      _Author_ordinal
+      _Author_family_name
+      _Author_given_name
+      _Author_middle_initials
+      _Author_family_title
+
+      1 Wang      Yunjun .  . 
+      2 Bjorndahl Trent  C. . 
+      3 Wishart   David  S. . 
+
+   stop_
+
+   _Journal_abbreviation  'J. Biomol. NMR'
+   _Journal_name_full     'Journal of Biomolecular NMR'
+   _Journal_volume         17
+   _Page_first             83
+   _Page_last              84
+   _Year                   2000
+
+save_
+
+
+##################################
+#  Molecular system description  #
+##################################
+
+save_system_HEWL
+   _Saveframe_category         molecular_system
+
+   _Mol_system_name           'Hen Egg White Lysozyme'
+   _Abbreviation_common        HEWL
+   _Enzyme_commission_number   3.2.1.17
+
+   loop_
+      _Mol_system_component_name
+      _Mol_label
+
+      'Hen Egg White Lysozyme' $HEWL 
+
+   stop_
+
+   _System_molecular_weight    14296
+   _System_physical_state      native
+   _System_oligomer_state      monomer
+   _System_type                simple
+   _System_paramagnetic        no
+   _System_thiol_state        'all disulfide bound'
+
+   loop_
+      _Biological_function
+
+      hydrolase 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Monomeric polymers  #
+    ########################
+
+save_HEWL
+   _Saveframe_category                          monomeric_polymer
+
+   _Mol_type                                    polymer
+   _Mol_polymer_class                           protein
+   _Name_common                                'hen egg white lysozyme'
+   _Name_variant                                .
+   _Abbreviation_common                         HEWL
+   _Name_CAS                                    .
+   _CAS_registry_number                         .
+   _Enzyme_commission_number                    3.2.1.17
+   _Molecular_mass                              14296
+   _Mol_thiol_state                            'all disulfide bound'
+   
+   	##############################
+   	#  Polymer residue sequence  #
+   	##############################
+   
+   _Residue_count                               129
+   _Mol_residue_sequence                       
+;
+KVFGRCELAAAMKRHGLDNY
+RGYSLGNWVCAAKFESNFNT
+QATNRNTDGSTDYGILQINS
+RWWCNDGRTPGSRNLCNIPC
+SALLSSDITASVNCAKKIVS
+DGNGMNAWVAWRNRCKGTDV
+QAWIRGCRL
+;
+
+   loop_
+      _Residue_seq_code
+      _Residue_label
+
+        1 LYS    2 VAL    3 PHE    4 GLY    5 ARG 
+        6 CYS    7 GLU    8 LEU    9 ALA   10 ALA 
+       11 ALA   12 MET   13 LYS   14 ARG   15 HIS 
+       16 GLY   17 LEU   18 ASP   19 ASN   20 TYR 
+       21 ARG   22 GLY   23 TYR   24 SER   25 LEU 
+       26 GLY   27 ASN   28 TRP   29 VAL   30 CYS 
+       31 ALA   32 ALA   33 LYS   34 PHE   35 GLU 
+       36 SER   37 ASN   38 PHE   39 ASN   40 THR 
+       41 GLN   42 ALA   43 THR   44 ASN   45 ARG 
+       46 ASN   47 THR   48 ASP   49 GLY   50 SER 
+       51 THR   52 ASP   53 TYR   54 GLY   55 ILE 
+       56 LEU   57 GLN   58 ILE   59 ASN   60 SER 
+       61 ARG   62 TRP   63 TRP   64 CYS   65 ASN 
+       66 ASP   67 GLY   68 ARG   69 THR   70 PRO 
+       71 GLY   72 SER   73 ARG   74 ASN   75 LEU 
+       76 CYS   77 ASN   78 ILE   79 PRO   80 CYS 
+       81 SER   82 ALA   83 LEU   84 LEU   85 SER 
+       86 SER   87 ASP   88 ILE   89 THR   90 ALA 
+       91 SER   92 VAL   93 ASN   94 CYS   95 ALA 
+       96 LYS   97 LYS   98 ILE   99 VAL  100 SER 
+      101 ASP  102 GLY  103 ASN  104 GLY  105 MET 
+      106 ASN  107 ALA  108 TRP  109 VAL  110 ALA 
+      111 TRP  112 ARG  113 ASN  114 ARG  115 CYS 
+      116 LYS  117 GLY  118 THR  119 ASP  120 VAL 
+      121 GLN  122 ALA  123 TRP  124 ILE  125 ARG 
+      126 GLY  127 CYS  128 ARG  129 LEU 
+
+   stop_
+
+   _Sequence_homology_query_date                2010-05-15
+   _Sequence_homology_query_revised_last_date   2010-05-15
+
+   loop_
+      _Database_name
+      _Database_accession_code
+      _Database_entry_mol_name
+      _Sequence_query_to_submitted_percentage
+      _Sequence_subject_length
+      _Sequence_identity
+      _Sequence_positive
+      _Sequence_homology_expectation_value
+
+      BMRB      1093  lysozyme                                                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      BMRB      4831 "hen egg white lysozyme"                                                                                                                                          100.00 129  99.22 100.00 9.23e-69 
+      BMRB      4943 "Chicken Egg White  Lysozyme"                                                                                                                                     100.00 133 100.00 100.00 3.84e-69 
+      BMRB      5068 "hen egg white lysozyme"                                                                                                                                          100.00 130 100.00 100.00 3.54e-69 
+      BMRB      7143 "hen egg white lysozyme"                                                                                                                                          100.00 129  99.22 100.00 9.23e-69 
+      BMRB      7144 "hen egg white lysozyme"                                                                                                                                          100.00 129  99.22 100.00 9.23e-69 
+      BMRB      7160  metLYZ                                                                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  193L       "The 1.33 A Structure Of Tetragonal Hen Egg White Lysozyme"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  194L       "The 1.40 A Structure Of Spacehab-01 Hen Egg White Lysozyme"                                                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1AKI       "The Structure Of The Orthorhombic Form Of Hen Egg-White Lysozyme At 1.5 Angstroms Resolution"                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1AT6       "Hen Egg White Lysozyme With A Isoaspartate Residue"                                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1AZF       "Chicken Egg White Lysozyme Crystal Grown In Bromide Solution"                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1B0D       "Structural Effects Of Monovalent Anions On Polymorphic Lysozyme Crystals"                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1B2K       "Structural Effects Of Monovalent Anions On Polymorphic Lysozyme Crystals"                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BGI       "Orthorhombic Lysozyme Crystallized At High Temperature (310k)"                                                                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BHZ       "Low Temperature Middle Resolution Structure Of Hen Egg White Lysozyme From Masc Data"                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BVK       "Humanized Anti-Lysozyme Fv Complexed With Lysozyme"                                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BVX       "The 1.8 A Structure Of Gel Grown Tetragonal Hen Egg White Lysozyme"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BWH       "The 1.8 A Structure Of Ground Control Grown Tetragonal Hen Egg White Lysozyme"                                                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BWI       "The 1.8 A Structure Of Microbatch Oil Drop Grown Tetragonal Hen Egg White Lysozyme"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1BWJ       "The 1.8 A Structure Of Microgravity Grown Tetragonal Hen Egg White Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1C08       "Crystal Structure Of Hyhel-10 Fv-Hen Lysozyme Complex"                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1C10       "Crystal Structure Of Hew Lysozyme Under Pressure Of Xenon (8 Bar)"                                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  1DPW       "Structure Of Hen Egg-White Lysozyme In Complex With Mpd"                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1DPX       "Structure Of Hen Egg-White Lysozyme"                                                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1DQJ       "Crystal Structure Of The Anti-Lysozyme Antibody Hyhel-63 Complexed With Hen Egg White Lysozyme"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1E8L       "Nmr Solution Structure Of Hen Lysozyme"                                                                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1F0W       "Crystal Structure Of Orthorhombic Lysozyme Grown At Ph 6.5"                                                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1F10       "Crystal Structure Of Orthorhombic Lysozyme Grown At Ph 6.5 At 88% Relative Humidity"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1FDL       "Crystallographic Refinement Of The Three-Dimensional Structure Of The Fab D1.3-Lysozyme Complex At 2.5- Angstroms Resolution"                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1FLQ       "Hen Egg White Lysozyme Mutant With Alanine Substituted For Glycine"                                                                                              100.00 129  99.22  99.22 1.41e-68 
+      PDB  1FLU       "Hen Egg White Lysozyme Mutant With Alanine Substituted For Glycine"                                                                                              100.00 129  99.22  99.22 1.41e-68 
+      PDB  1FLW       "Hen Egg White Lysozyme Mutant With Alanine Substituted For Glycine"                                                                                              100.00 129  99.22  99.22 1.41e-68 
+      PDB  1FLY       "Hen Egg White Lysozyme Mutant With Alanine Substituted For Glycine"                                                                                              100.00 129  99.22  99.22 1.41e-68 
+      PDB  1FN5       "Hen Egg White Lysozyme Mutant With Alanine Substituted For Glycine"                                                                                              100.00 129  99.22  99.22 1.41e-68 
+      PDB  1G7H       "Crystal Structure Of Hen Egg White Lysozyme (Hel) Complexed With The Mutant Anti-Hel Monoclonal Antibody D1.3(Vlw92a)"                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1G7I       "Crystal Structure Of Hen Egg White Lysozyme (Hel) Complexed With The Mutant Anti-Hel Monoclonal Antibody D1.3 (Vlw92f)"                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1G7J       "Crystal Structure Of Hen Egg White Lysozyme (Hel) Complexed With The Mutant Anti-Hel Monoclonal Antibody D1.3 (Vlw92h)"                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1G7L       "Crystal Structure Of Hen Egg White Lysozyme (Hel) Complexed With The Mutant Anti-Hel Monoclonal Antibody D1.3 (Vlw92s)"                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1G7M       "Crystal Structure Of Hen Egg White Lysozyme (Hel) Complexed With The Mutant Anti-Hel Monoclonal Antibody D1.3 (Vlw92v)"                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1GPQ       "Structure Of Ivy Complexed With Its Target, Hewl"                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1GWD       "Tri-Iodide Derivative Of Hen Egg-White Lysozyme"                                                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  1GXV       "Solution Structure Of Lysozyme At Low And High Pressure"                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1GXX       "Solution Structure Of Lysozyme At Low And High Pressure"                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1H6M       "Covalent Glycosyl-Enzyme Intermediate Of Hen Egg White Lysozyme"                                                                                                 100.00 129  99.22 100.00 8.56e-69 
+      PDB  1H87       "Gadolinium Derivative Of Tetragonal Hen Egg-White Lysozyme At 1.7 A Resolution"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HC0       "Structure Of Lysozyme With Periodate"                                                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HEL       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HEM       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129  99.22 100.00 8.78e-69 
+      PDB  1HEN       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129  98.45 100.00 1.18e-68 
+      PDB  1HEO       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129  99.22 100.00 5.60e-69 
+      PDB  1HEQ       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129  98.45 100.00 1.68e-68 
+      PDB  1HER       "Structural And Thermodynamic Analysis Of Compensating Mutations Within The Core Of Chicken Egg White Lysozyme"                                                   100.00 129  99.22 100.00 1.01e-68 
+      PDB  1HEW       "Refinement Of An Enzyme Complex With Inhibitor Bound At Partial Occupancy. Hen Egg-White Lysozyme And Tri-N- Acetylchitotriose At 1.75 Angstroms Resolution"     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HF4       "Structural Effects Of Monovalent Anions On Polymorphic Lysozyme Crystals"                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HSW       "Lysozyme (Mucopeptide N-Acetylmuramyl Hydrolase)"                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1HSX       "Lysozyme Grown At Basic Ph And Its Low Humidity Variant"                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1IC4       "Crystal Structure Of Hyhel-10 Fv Mutant(Hd32a)-Hen Lysozyme Complex"                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1IC5       "Crystal Structure Of Hyhel-10 Fv Mutant(Hd99a)-Hen Lysozyme Complex"                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1IC7       "Crystal Structure Of Hyhel-10 Fv Mutant(Hd32a99a)-Hen Lysozyme Complex"                                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1IEE       "Structure Of Tetragonal Hen Egg White Lysozyme At 0.94 A From Crystals Grown By The Counter-Diffusion Method"                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1IO5       "Hydrogen And Hydration Of Hen Egg-White Lysozyme Determined By Neutron Diffraction"                                                                               99.22 129 100.00 100.00 2.13e-68 
+      PDB  1IOS       "Stabilization Of Hen Egg White Lysozyme By A Cavity-Filling Mutation"                                                                                            100.00 129  99.22  99.22 1.92e-68 
+      PDB  1IOT       "Stabilization Of Hen Egg White Lysozyme By A Cavity-Filling Mutation"                                                                                            100.00 129  99.22 100.00 9.95e-69 
+      PDB  1IR7       "Im Mutant Of Lysozyme"                                                                                                                                           100.00 129  99.22 100.00 8.14e-69 
+      PDB  1IR8       "Im Mutant Of Lysozyme"                                                                                                                                           100.00 129  99.22 100.00 8.14e-69 
+      PDB  1IR9       "Im Mutant Of Lysozyme"                                                                                                                                           100.00 129  99.22 100.00 8.14e-69 
+      PDB  1J1O       "Crystal Structure Of Hyhel-10 Fv Mutant Ly50f Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1J1P       "Crystal Structure Of Hyhel-10 Fv Mutant Ls91a Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1J1X       "Crystal Structure Of Hyhel-10 Fv Mutant Ls93a Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JA2       "Binding Of N-Acetylglucosamine To Chicken Egg Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JA4       "Binding Of N-Acetylglucosamine To Chicken Egg Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JA6       "Binding Of N-Acetylglucosamine To Chicken Egg Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JA7       "Binding Of N-Acetylglucosamine To Chicken Egg Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JIS       "Crystal Structure Of Tetragonal Lysozyme Grown At Ph 4.6"                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JIT       "Crystal Structure Of Tetragonal Lysozyme Grown In Presence 30% Trehalose"                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JIY       "Crystal Structure Of Tetragonal Lysozyme Grown In Presence 20% Sorbitol"                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JJ0       "Crystal Structure Of Tetragonal Lysozyme Grown In Presence Of 30% Sucrose"                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JJ1       "Crystal Structure Of Orthorhombic Lysozyme Grown At Ph 4.6 In Presence Of 5% Sorbitol"                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JJ3       "Crystal Structure Of Monoclinic Lysozyme Grown At Ph 4.6"                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JPO       "Low Temperature Orthorhombic Lysozyme"                                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JTO       "Degenerate Interfaces In Antigen-Antibody Complexes"                                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1JTT       "Degenerate Interfaces In Antigen-Antibody Complexes"                                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1KIP       "Fv Mutant Y(B 32)a (Vh Domain) Of Mouse Monoclonal Antibody D1.3 Complexed With Hen Egg White Lysozyme"                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1KIQ       "Fv Mutant Y(B 101)f (Vh Domain) Of Mouse Monoclonal Antibody D1.3 Complexed With Hen Egg White Lysozyme"                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1KIR       "Fv Mutant Y(A 50)s (Vl Domain) Of Mouse Monoclonal Antibody D1.3 Complexed With Hen Egg White Lysozyme"                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1KXW       "Analysis Of The Stabilization Of Hen Lysozyme With The Helix Dipole And Charged Side Chains"                                                                     100.00 129  99.22 100.00 9.95e-69 
+      PDB  1KXY       "Analysis Of The Stabilization Of Hen Lysozyme With The Helix Dipole And Charged Side Chains"                                                                     100.00 129  99.22 100.00 1.49e-68 
+      PDB  1LCN       "Monoclinic Hen Egg White Lysozyme, Thiocyanate Complex"                                                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJ3       "Crystal Structure Of Monoclinic Lysozyme Grown At Ph 4.6"                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJ4       "Crystal Structure Of Monoclinic Lysozyme Grown At Ph 4.6"                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJE       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 10% Sucrose"                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJF       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 10% Sucrose"                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJG       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 5% Glycerol"                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJH       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 5% Glycerol"                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJI       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence 10% Sorbitol"                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJJ       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 10% Trehalose"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LJK       "Crystal Structure Of Monoclinic Lysozyme Grown In Presence Of 15% Trehalose"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LKR       "Monoclinic Hen Egg White Lysozyme Iodide"                                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LKS       "Hen Egg White Lysozyme Nitrate"                                                                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LMA       "Protein Hydration And Water Structure: X-Ray Analysis Of A Closely Packed Protein Crystal With Very Low Solvent Content"                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LPI       "Hew Lysozyme: Trp...Na Cation-Pi Interaction"                                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSA       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSB       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSC       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSD       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSE       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSF       "The Influence Of Temperature On Lysozyme Crystals. Structure And Dynamics Of Protein And Water"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LSG       "Three-Dimensional Structure Of The Platelet Integrin Recognition Segment Of The Fibrinogen Gamma Chain Obtained By Carrier Protein-Driven Crystallization"       100.00 144 100.00 100.00 1.39e-69 
+      PDB  1LSY       "Crystal Structure Of The Mutant D52s Hen Egg White Lysozyme With An Oligosaccharide Product"                                                                     100.00 147  99.22  99.22 8.35e-69 
+      PDB  1LSZ       "Crystal Structure Of The Mutant D52s Hen Egg White Lysozyme With An Oligosaccharide Product"                                                                     100.00 147  99.22  99.22 8.35e-69 
+      PDB  1LYO       "Cross-Linked Lysozyme Crystal In Neat Water"                                                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LYS       "X-Ray Structure Of A Monoclinic Form Of Hen Egg-White Lysozyme Crystallized At 313k. Comparison Of Two Independent Molecules"                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZ8       "Lysozyme Phased On Anomalous Signal Of Sulfurs And Chlorines"                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZ9       "Anomalous Signal Of Solvent Bromines Used For Phasing Of Lysozyme"                                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZA       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZB       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZC       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZD       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129  99.22 100.00 1.42e-68 
+      PDB  1LZE       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129  99.22 100.00 1.42e-68 
+      PDB  1LZG       "Dissection Of Protein-Carbohydrate Interactions In Mutant Hen Egg-White Lysozyme Complexes And Their Hydrolytic Activity"                                        100.00 129  99.22 100.00 1.80e-68 
+      PDB  1LZH       "The Structures Of The Monoclinic And Orthorhombic Forms Of Hen Egg-White Lysozyme At 6 Angstroms Resolution."                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  1LZN       "Neutron Structure Of Hen Egg-White Lysozyme"                                                                                                                      99.22 129 100.00 100.00 2.13e-68 
+      PDB  1LZT       "Refinement Of Triclinic Lysozyme"                                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1MEL       "Crystal Structure Of A Camel Single-Domain Vh Antibody Fragment In Complex With Lysozyme"                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1MLC       "Monoclonal Antibody Fab D44.1 Raised Against Chicken Egg- White Lysozyme Complexed With Lysozyme"                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1N4F       "Para-Arsanilate Derivative Of Hen Egg-White Lysozyme"                                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1NBY       "Crystal Structure Of Hyhel-63 Complexed With Hel Mutant K96a"                                                                                                    100.00 129  99.22  99.22 1.67e-68 
+      PDB  1NBZ       "Crystal Structure Of Hyhel-63 Complexed With Hel Mutant K97a"                                                                                                    100.00 129  99.22  99.22 1.67e-68 
+      PDB  1NDM       "Crystal Structure Of Fab Fragment Of Antibody Hyhel-26 Complexed With Lysozyme"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1P2C       "Crystal Structure Analysis Of An Anti-Lysozyme Antibody"                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1PS5       "Structure Of The Monoclinic C2 Form Of Hen Egg-White Lysozyme At 2.0 Angstroms Resolution"                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1QIO       "Specific Chemical And Structural Damage Caused By Intense Synchrotron Radiation To Hen Egg White Lysozyme"                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1QTK       "Crystal Structure Of Hew Lysozyme Under Pressure Of Krypton (55 Bar)"                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1RCM       "Crystal Structure Of A Ubiquitin-Dependent Degradation Substrate: A Three-Disulfide Form Of Lysozyme"                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1RFP       "Analysis Of The Stabilization Of Hen Lysozyme With The Helix Dipole And Charged Side Chains"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1RI8       "Crystal Structure Of The Camelid Single Domain Antibody 1d2l19 In Complex With Hen Egg White Lysozyme"                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1RJC       "Crystal Structure Of The Camelid Single Domain Antibody Cab- Lys2 In Complex With Hen Egg White Lysozyme"                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SF4       "Binding Of N,N'-Diacetylchitobiose To Hew Lysozyme: A Powder Diffraction Study"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SF6       
+;
+Binding Of N,N',N"-Triacetylchitotriose To Hew Lysozyme: A Powder Diffraction Study
+; 100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SF7       "Binding Of Tetra-N-Acetylchitotetraose To Hew Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SFB       "Binding Of Penta-N-Acetylchitopentaose To Hew Lysozyme: A Powder Diffraction Study"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SFG       "Binding Of Hexa-N-Acetylchitohexaose: A Powder Diffraction Study"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1SQ2       "Crystal Structure Analysis Of The Nurse Shark New Antigen Receptor (Nar) Variable Domain In Complex With Lyxozyme"                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  1T3P       "Half-Sandwich Arene Ruthenium(Ii)-Enzyme Complex"                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1T6V       "Crystal Structure Analysis Of The Nurse Shark New Antigen Receptor (Nar) Variable Domain In Complex With Lysozyme"                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UA6       "Crystal Structure Of Hyhel-10 Fv Mutant Sfsf Complexed With Hen Egg White Lysozyme Complex"                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UC0       "Crystal Structure Of Wild-Type Hen-Egg White Lysozyme Singly Labeled With 2',3'-Epoxypropyl Beta-Glycoside Of N- Acetyllactosamine"                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UCO       "Hen Egg-White Lysozyme, Low Humidity Form"                                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UIG       "Analysis Of The Stabilization Of Hen Lysozyme With The Helix Dipole And Charged Side Chains"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UIH       "Analysis Of The Stabilization Of Hen Lysozyme With The Helix Dipole And Charged Side Chains"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1UUZ       "Ivy:a New Family Of Protein"                                                                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1V7S       "Triclinic Hen Lysozyme Crystallized At 313k From A D2o Solution"                                                                                                  99.22 129 100.00 100.00 1.81e-68 
+      PDB  1V7T       "Triclinic Lysozyme With Low Solvent Content Obtained By Phase Transition"                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VAT       "Iodine Derivative Of Hen Egg-White Lysozyme"                                                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VAU       "Xenon Derivative Of Hen Egg-White Lysozyme"                                                                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VDP       "The Crystal Structure Of The Monoclinic Form Of Hen Egg White Lysozyme At 1.7 Angstroms Resolution In Space"                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VDQ       "The Crystal Structure Of The Orthorhombic Form Of Hen Egg White Lysozyme At 1.5 Angstroms Resolution"                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VDS       "The Crystal Structure Of The Tetragonal Form Of Hen Egg White Lysozyme At 1.6 Angstroms Resolution In Space"                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VDT       "The Crystal Structure Of The Tetragonal Form Of Hen Egg White Lysozyme At 1.7 Angstroms Resolution Under Basic Conditions In Space"                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VED       "The Crystal Structure Of The Orthorhombic Form Of Hen Egg White Lysozyme At 1.9 Angstroms Resolution In Space"                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  1VFB       "Bound Water Molecules And Conformational Stabilization Help Mediate An Antigen-Antibody Association"                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  1W6Z       "High Energy Tetragonal Lysozyme X-Ray Structure"                                                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  1WTM       "X-Ray Structure Of Hew Lysozyme Orthorhombic Crystal Formed In The Earth's Magnetic Field"                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1WTN       "The Structure Of Hew Lysozyme Orthorhombic Crystal Growth Under A High Magnetic Field"                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XEI       "The Crystal Structures Of Lysozyme At Very Low Levels Of Hydration"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XEJ       "The Crystal Structures Of Lysozyme At Very Low Levels Of Hydration"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XEK       "The Crystal Structures Of Lysozyme At Very Low Levels Of Hydration"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XFP       "Crystal Structure Of The Cdr2 Germline Reversion Mutant Of Cab-Lys3 In Complex With Hen Egg White Lysozyme"                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XGP       "Structure For Antibody Hyhel-63 Y33a Mutant Complexed With Hen Egg Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XGQ       "Structure For Antibody Hyhel-63 Y33v Mutant Complexed With Hen Egg Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XGR       "Structure For Antibody Hyhel-63 Y33i Mutant Complexed With Hen Egg Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XGT       "Structure For Antibody Hyhel-63 Y33l Mutant Complexed With Hen Egg Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1XGU       "Structure For Antibody Hyhel-63 Y33f Mutant Complexed With Hen Egg Lysozyme"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YIK       "Structure Of Hen Egg White Lysozyme Soaked With Cu-Cyclam"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YIL       "Structure Of Hen Egg White Lysozyme Soaked With Cu2- Xylylbicyclam"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YKX       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YKY       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YKZ       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YL0       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YL1       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1YQV       "The Crystal Structure Of The Antibody Fab Hyhel5 Complex With Lysozyme At 1.7a Resolution"                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  1Z55       "Effect Of Alcohols On Protein Hydration"                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  1ZMY       "Cabbcii-10 Vhh Framework With Cdr Loops Of Cablys3 Grafted On It And In Complex With Hen Egg White Lysozyme"                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  1ZV5       "Crystal Structure Of The Variable Domain Of The Camelid Heavy-Chain Antibody D2-L29 In Complex With Hen Egg White Lysozyme"                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  1ZVH       "Crystal Stucture Of The Vhh Domain D2-L24 In Complex With Hen Egg White Lysozyme"                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  1ZVY       "Crystal Structure Of The Vhh D3-L11 In Complex With Hen Egg White Lysozyme"                                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  2A6U       "Ph Evolution Of Tetragonal Hewl At 4 Degrees Celcius."                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  2A7D       "On The Routine Use Of Soft X-Rays In Macromolecular Crystallography, Part Iii- The Optimal Data Collection Wavelength"                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  2A7F       "On The Routine Use Of Soft X-Rays In Macromolecular Crystallography, Part Iii- The Optimal Data Collection Wavelength"                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  2AUB       "Lysozyme Structure Derived From Thin-Film-Based Crystals"                                                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  2B5Z       "Hen Lysozyme Chemically Glycosylated"                                                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2BLX       'Hewl Before A High Dose X-Ray "burn"'                                                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2BLY       'Hewl After A High Dose X-Ray "burn"'                                                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  2BPU       "The Kedge Holmium Derivative Of Hen Egg-White Lysozyme At High Resolution From Single Wavelength Anomalous Diffraction"                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  2C8O       "Lysozyme (1sec) And Uv Lasr Excited Fluorescence"                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2C8P       "Lysozyme (60sec) And Uv Laser Excited Fluorescence"                                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  2CDS        Lysozyme                                                                                                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  2CGI       "Siras Structure Of Tetragonal Lysosyme Using Derivative Data Collected At The High Energy Remote Holmium Kedge"                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  2D4I       "Monoclinic Hen Egg-White Lysozyme Crystallized At Ph4.5 Form Heavy Water Solution"                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  2D4J       "Transformed Monoclinic Crystal Of Hen Egg-White Lysozyme From A Heavy Water Solution"                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2D4K       "Monoclinic Hen Egg-White Lysozyme Crystallized At 313k"                                                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  2D6B       "Novel Bromate Species Trapped Within A Protein Crystal"                                                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  2D91       "Structure Of Hyper-Vil-Lysozyme"                                                                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQC       "Crystal Structure Of Hyhel-10 Fv Mutant(Hy33f) Complexed With Hen Egg Lysozyme"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQD       "Crystal Structure Of Hyhel-10 Fv Mutant (Hy50f) Complexed With Hen Egg Lysozyme"                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQE       "Crystal Structure Of Hyhel-10 Fv Mutant (Hy53a) Complexed With Hen Egg Lysozyme"                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQF       "Crystal Structure Of Hyhel-10 Fv Mutant (Y33ay53a) Complexed With Hen Egg Lysozyme"                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQG       "Crystal Structure Of Hyhel-10 Fv Mutant (Hy53f) Complexed With Hen Egg Lysozyme"                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQH       "Crystal Structure Of Hyhel-10 Fv Mutant (Hy58a) Complexed With Hen Egg Lysozyme"                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQI       "Crystal Structure Of Hyhel-10 Fv Mutant (Ly50a) Complexed With Hen Egg Lysozyme"                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2DQJ       "Crystal Structure Of Hyhel-10 Fv (Wild-Type) Complexed With Hen Egg Lysozyme At 1.8a Resolution"                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2EIZ       "Crystal Structure Of Humanized Hyhel-10 Fv Mutant(Hw47y)- Hen Lysozyme Complex"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  2EKS       "Crystal Structure Of Humanized Hyhel-10 Fv-Hen Lysozyme Complex"                                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  2EPE       "Crystal Structure Analysis Of Hen Egg White Lysozyme Grown By Capillary Method"                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  2F2N       "Triclinic Hen Egg Lysozyme Cross-Linked By Glutaraldehyde"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2F30       "Triclinic Cross-Linked Lysozyme Soaked With 4.5m Urea"                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  2F4A       "Triclinic Cross-Linked Lysozyme Soaked With Thiourea 1.5m"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2F4G       "Triclinic Cross-Linked Lysozyme Soaked In Bromoethanol 1m"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2FBB       "Crystal Structure Analysis Of Hexagonal Lysozyme"                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2G4P       "Anomalous Substructure Of Lysozyme At Ph 4.5"                                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2G4Q       "Anomalous Substructure Of Lysozyme At Ph 8.0"                                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2H9J       "Structure Of Hen Egg White Lysozyme Soaked With Ni2- Xylylbicyclam"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  2H9K       "Structure Of Hen Egg White Lysozyme Soaked With Ni-Cyclam"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HS7       "Multipattern Rietveld Refinement With Protein Powder Data: An Approach To Higher Resolution"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HS9       "Multipattern Rietveld Refinement With Protein Powder Data: An Approach To Higher Resolution"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HSO       "Multipattern Rietveld Refinement With Protein Powder Data: An Approach To Higher Resolution"                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HTX       "Crystal Structure Analysis Of Hen Egg White Lysozyme Crosslinked By Polymerized Glutaraldehyde In Acidic Environment"                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HU1       "Crystal Structure Analysis Of Hen Egg White Lyszoyme"                                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HU3       "Parent Structure Of Hen Egg White Lysozyme Grown In Acidic Ph 4.8. Refinement For Comparison With Crosslinked Molecules Of Lysozyme"                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  2HUB       "Structure Of Hen Egg-White Lysozyme Determined From Crystals Grown In Ph 7.5"                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2I25       "Crystal Structure Analysis Of The Nurse Shark New Antigen Receptor Pbla8 Variable Domain In Complex With Lysozyme"                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  2I26       "Crystal Structure Analysis Of The Nurse Shark New Antigen Receptor Ancestral Variable Domain In Complex With Lysozyme"                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  2I6Z       "X-Ray Diffraction Studies Of Adducts Between Anticancer Platinum Drugs And Hen Egg White Lysozyme"                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  2IFF       "Structure Of An Antibody-Lysozyme Complex: Effect Of A Conservative Mutation"                                                                                    100.00 129  99.22 100.00 7.37e-69 
+      PDB  2LYM       "Crystal Structure Of Hen Egg-White Lysozyme At A Hydrostatic Pressure Of 1000 Atmospheres"                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2LYO       "Cross-Linked Chicken Lysozyme Crystal In 90% Acetonitrile- Water"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2LZH       "The Structures Of The Monoclinic And Orthorhombic Forms Of Hen Egg-White Lysozyme At 6 Angstroms Resolution."                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2LZT       "Refinement Of Triclinic Lysozyme. Ii. The Method Of Stereochemically Restrained Least-Squares"                                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  2PC2       "Lysozyme Cocrystallized With Tris-Dipicolinate Eu Complex"                                                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  2Q0M       "Tricarbonylmanganese(I)-Lysozyme Complex : A Structurally Characterized Organometallic Protein"                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  2VB1       "Hewl At 0.65 Angstrom Resolution"                                                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2W1L       "The Interdependence Of Wavelength, Redundancy And Dose In Sulfur Sad Experiments: 0.979 A Wavelength 991 Images Data"                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2W1M       "The Interdependence Of Wavelength, Redundancy And Dose In Sulfur Sad Experiments: 2.070 A Wavelength With 2theta 30 Degrees Data"                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  2W1X       "The Interdependence Of Wavelength, Redundancy And Dose In Sulfur Sad Experiments: 1.284 A Wavelength 360 Images Data"                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2W1Y       "The Interdependence Of Wavelength, Redundancy And Dose In Sulfur Sad Experiments: 1.540 A Wavelength 180 Images Data"                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2WAR       "Hen Egg White Lysozyme E35q Chitopentaose Complex"                                                                                                               100.00 129  99.22 100.00 8.56e-69 
+      PDB  2YSS       "Crystal Structure Of Humanized Hyhel-10 Fv Mutant(Hq39kw47y)-Hen Lysozyme Complex"                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  2YVB       "High Resolution X-Ray Crystal Structure Of Tetragonal Hen Egg White Lysozyme"                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2Z12       "Structure Of The Transformed Monoclinic Lysozyme By Controlled Dehydration"                                                                                      100.00 129 100.00 100.00 3.75e-69 
+      PDB  2Z18       "Phase Transition Of Monoclinic Lysozyme Crystal Soaked In A 10% Nacl Solution"                                                                                   100.00 129 100.00 100.00 3.75e-69 
+      PDB  2Z19       "Phase Transition Of Monoclinic Lysozyme Crystal Soaked In A Saturated Nacl Solution"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZNW       "Crystal Structure Of Scfv10 In Complex With Hen Egg Lysozyme"                                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZNX       "5-Fluorotryptophan Incorporated Scfv10 Complexed To Hen Egg Lysozyme"                                                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZQ3       "The Crystal Structure Of The Orthorhombic Form Of Hen Egg White Lysozyme At 1.6 Angstroms Resolution"                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZQ4       "The Crystal Structure Of The Orthorhombic Form Of Hen Egg White Lysozyme At 2.0 Angstroms Resolution"                                                            100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZXS       "Effect Of Glycine-Amide (Glyad) On Lysozyme"                                                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  2ZYP       "X-Ray Structure Of Hen Egg-White Lysozyme With Poly(Allyl Amine)"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A3Q       "Structure Of N59d Hen Egg-White Lysozyme In Complex With (Glcnac)3"                                                                                              100.00 129  99.22 100.00 9.95e-69 
+      PDB  3A3R       "Structure Of N59d Hen Egg-White Lysozyme"                                                                                                                        100.00 129  99.22 100.00 9.95e-69 
+      PDB  3A67       "Crystal Structure Of Hyhel-10 Fv Mutant Ln31d Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A6B       "Crystal Structure Of Hyhel-10 Fv Mutant Ln32d Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A6C       "Crystal Structure Of Hyhel-10 Fv Mutant Ln92d Complexed With Hen Egg White Lysozyme"                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A8Z       "Crystal Structure Of Hen Egg White Lysozyme"                                                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A90       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 1mm Rhcl3"                                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A91       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 5mm Rhcl3"                                                                                               100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A92       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 10mm Rhcl3"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A93       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 30mm Rhcl3"                                                                                              100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A94       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 100mm Rhcl3"                                                                                             100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A95       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 100mm Rhcl3 At Ph3.8"                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  3A96       "Crystal Structure Of Hen Egg White Lysozyme Soaked With 100mm Rhcl3 At Ph2.2"                                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  3B6L       "Crystal Structure Of Lysozyme Folded In Sds And 2-Methyl-2, 4-Pentanediol"                                                                                       100.00 147 100.00 100.00 2.14e-69 
+      PDB  3B72       "Crystal Structure Of Lysozyme Folded In Sds And 2-Methyl-2, 4-Pentanediol"                                                                                       100.00 147 100.00 100.00 2.14e-69 
+      PDB  3D9A       "High Resolution Crystal Structure Structure Of Hyhel10 Fab Complexed To Hen Egg Lysozyme"                                                                        100.00 129 100.00 100.00 3.75e-69 
+      PDB  3E3D       "Structure Of Hen Egg White Lysozyme With The Magic Triangle I3c"                                                                                                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  3EMS       "Effect Of Ariginine On Lysozyme"                                                                                                                                 100.00 133 100.00 100.00 4.18e-69 
+      PDB  3EXD       "Sulfur-Sad Phased Hewl Crystal"                                                                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  3F6Z       "Crystal Structure Of Pseudomonas Aeruginosa Mlic In Complex With Hen Egg White Lysozyme"                                                                         100.00 129 100.00 100.00 3.75e-69 
+      PDB  3G3A       "Structure Of A Lamprey Variable Lymphocyte Receptor In Complex With A Protein Antigen"                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  3G3B       "Structure Of A Lamprey Variable Lymphocyte Receptor Mutant In Complex With A Protein Antigen"                                                                    100.00 129 100.00 100.00 3.75e-69 
+      PDB  3HFM       "Structure Of An Antibody-Antigen Complex. Crystal Structure Of The HyHEL-10 Fab-Lysozyme Complex"                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  3KAM       "Hen Egg White Lysozyme Derivatized With Rhenium(I) Diaquatricarbonyl Cation"                                                                                     100.00 129 100.00 100.00 3.75e-69 
+      PDB  3LYM       "Crystal Structure Of Hen Egg-White Lysozyme At A Hydrostatic Pressure Of 1000 Atmospheres"                                                                       100.00 129 100.00 100.00 3.75e-69 
+      PDB  3LYO       "Cross-Linked Chicken Lysozyme Crystal In 95% Acetonitrile- Water"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  3LYT       "Comparison Of Radiation-Induced Decay And Structure Refinement From X-Ray Data Collected From Lysozyme Crystals At Low And Ambient Temperatures"                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  3LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  3LZT       "Refinement Of Triclinic Lysozyme At Atomic Resolution"                                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  3M3U       "Effect Of Temperature On Tryptophan Fluorescence In Lysozyme Crystals"                                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  4LYM       "Crystal Structure Of Low Humidity Tetragonal Lysozyme At 2.1-Angstroms Resolution. Variability In Hydration Shell And Its Structural Consequences"               100.00 129 100.00 100.00 3.75e-69 
+      PDB  4LYO       "Cross-Linked Chicken Lysozyme Crystal In Neat Acetonitrile, Then Back-Soaked In Water"                                                                           100.00 129 100.00 100.00 3.75e-69 
+      PDB  4LYT       "Comparison Of Radiation-Induced Decay And Structure Refinement From X-Ray Data Collected From Lysozyme Crystals At Low And Ambient Temperatures"                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  4LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  4LZT       "Atomic Resolution Refinement Of Triclinic Hew Lysozyme At 295k"                                                                                                  100.00 129 100.00 100.00 3.75e-69 
+      PDB  5LYM       "Studies Of Monoclinic Hen Egg White Lysozyme. Iv. X-Ray Refinement At 1.8 Angstrom Resolution And A Comparison Of The Variable Regions In The Polymorphic Forms" 100.00 129 100.00 100.00 3.75e-69 
+      PDB  5LYT       "Comparison Of Radiation-Induced Decay And Structure Refinement From X-Ray Data Collected From Lysozyme Crystals At Low And Ambient Temperatures"                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  5LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  6LYT       "Comparison Of Radiation-Induced Decay And Structure Refinement From X-Ray Data Collected From Lysozyme Crystals At Low And Ambient Temperatures"                 100.00 129 100.00 100.00 3.75e-69 
+      PDB  6LYZ       "Real-Space Refinement Of The Structure Of Hen Egg-White Lysozyme"                                                                                                100.00 129 100.00 100.00 3.75e-69 
+      PDB  7LYZ       "Protein Model Building By The Use Of A Constrained- Restrained Least-Squares Procedure"                                                                          100.00 129 100.00 100.00 3.75e-69 
+      PDB  8LYZ       "An X-Ray Study Of The Structure And Binding Properties Of Iodine-Inactivated Lysozyme"                                                                           100.00 129 100.00 100.00 3.75e-69 
+      EMBL CAA23711   "unnamed protein product [Gallus gallus]"                                                                                                                         100.00 147  98.45  99.22 1.39e-68 
+      GB   AAA48943   "lysozyme ( [Gallus gallus]"                                                                                                                                      100.00 147 100.00 100.00 2.14e-69 
+      GB   AAL69327   "egg white lysozyme [Gallus gallus]"                                                                                                                              100.00 147 100.00 100.00 2.14e-69 
+      GB   ACL81571   "lysozyme [Gallus gallus]"                                                                                                                                        100.00 147  99.22  99.22 1.92e-68 
+      GB   ACL81572   "lysozyme [Gallus gallus]"                                                                                                                                        100.00 147  99.22  99.22 1.92e-68 
+      GB   ACL81574   "lysozyme [Gallus gallus]"                                                                                                                                        100.00 147  99.22  99.22 1.92e-68 
+      PRF  630460A     lysozyme                                                                                                                                                         100.00 129  99.22 100.00 9.95e-69 
+      REF  NP_990612  "lysozyme C precursor [Gallus gallus]"                                                                                                                            100.00 147  98.45  99.22 1.39e-68 
+      SP   P00698     "RecName: Full=Lysozyme C; AltName: Full=1,4-beta-N-acetylmuramidase C; AltName: Full=Allergen Gal d IV; AltName: Allergen=Gal d 4; Flags: Precursor"             100.00 147 100.00 100.00 2.14e-69 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Saveframe_category   natural_source
+
+
+   loop_
+      _Mol_label
+      _Organism_name_common
+      _NCBI_taxonomy_ID
+      _Superkingdom
+      _Kingdom
+      _Genus
+      _Species
+      _Tissue
+
+      $HEWL chicken 9031 Eukaryota Metazoa Gallus gallus 'egg white' 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Saveframe_category   experimental_source
+
+
+   loop_
+      _Mol_label
+      _Production_method
+      _Host_organism_name_common
+      _Genus
+      _Species
+      _Strain
+      _Variant
+      _Organ
+      _Tissue
+      _Cell_line
+      _Cell_type
+      _ATCC_number
+      _Vector_type
+      _Vector_name
+      _Vendor_name
+      _Gene_source
+      _Details
+
+      $HEWL vendor . . . . . . . . . . . . 'Boerhinger Mannheim' . 
+;
+Lyophyllized hen egg white lysozyme was purchased Boerhinger Mannheim
+(lot 1410392-96)
+; 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_HEWL_1
+   _Saveframe_category   sample
+
+   _Sample_type          solution
+
+   loop_
+      _Mol_label
+      _Concentration_value
+      _Concentration_value_units
+      _Isotopic_labeling
+
+      $HEWL 10 mM . 
+
+   stop_
+
+save_
+
+
+    #############################
+    #  Purity of the molecules  #
+    #############################
+
+save_sample_mol_purity
+   _Saveframe_category   sample_mol_purity
+
+   _Sample_label        $HEWL_1
+
+   loop_
+      _Mol_label
+      _Mol_purity_value
+      _Mol_purity_value_units
+      _Mol_purity_measurement_method
+
+      $HEWL 99 % vendor 
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_VNMR
+   _Saveframe_category   software
+
+   _Name                 VNMR
+   _Version              5.1
+
+   loop_
+      _Vendor
+
+      Varian 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer
+   _Saveframe_category        NMR_spectrometer
+
+   _Manufacturer              Varian
+   _Model                     Inova
+   _Field_strength            800
+   _Software_version_number   5.1
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_NMR_applied_experiment
+   _Saveframe_category   NMR_applied_experiment
+
+   _Sample_label        $HEWL_1
+   _Details             
+;
+2D-NOESY
+2D_TOCSY
+2D_13C_HSQC(aliphatic)
+2D_13C_HSQC(aromatic)
+2D_13C_HSQCTOCSY
+;
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_cond_1
+   _Saveframe_category   sample_conditions
+
+
+   loop_
+      _Variable_type
+      _Variable_value
+      _Variable_value_error
+      _Variable_value_units
+
+      pH            3.6 . n/a 
+      temperature 318   . K   
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Saveframe_category   chemical_shift_reference
+
+
+   loop_
+      _Mol_common_name
+      _Atom_type
+      _Atom_isotope_number
+      _Atom_group
+      _Chem_shift_units
+      _Chem_shift_value
+      _Reference_method
+      _Reference_type
+      _External_reference_sample_geometry
+      _External_reference_location
+      _External_reference_axis
+      _Indirect_shift_ratio
+      _Reference_correction_type
+      _Correction_value
+
+      DSS H  1 'methyl protons' ppm 0.00 internal direct . . . . . . 
+      DSS C 13 'methyl protons' ppm 0.00 internal direct . . . . . . 
+
+   stop_
+
+save_
+
+
+	###################################
+	#  Assigned chemical shift lists  #
+	###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+
+save_assigned_chemical_shifts
+   _Saveframe_category               assigned_chemical_shifts
+
+
+   loop_
+      _Software_label
+
+      $VNMR 
+
+   stop_
+
+   loop_
+      _Experiment_label
+
+      $NMR_applied_experiment 
+
+   stop_
+
+   loop_
+      _Sample_label
+
+      $HEWL_1 
+
+   stop_
+
+   _Sample_conditions_label         $cond_1
+   _Chem_shift_reference_set_label  $chemical_shift_reference
+   _Mol_system_component_name       'Hen Egg White Lysozyme'
+
+   loop_
+      _Atom_shift_assign_ID
+      _Residue_PDB_seq_code
+      _Residue_seq_code
+      _Residue_label
+      _Atom_name
+      _Atom_type
+      _Chem_shift_value
+      _Chem_shift_value_error
+      _Chem_shift_ambiguity_code
+
+         1    1    1 LYS HA    H   4.000 0.02 1
+         2    1    1 LYS HB2   H   1.660 0.02 2
+         3    1    1 LYS HB3   H   1.940 0.02 2
+         4    1    1 LYS HG2   H   1.160 0.02 2
+         5    1    1 LYS HG3   H   1.370 0.02 2
+         6    1    1 LYS HD2   H   0.680 0.02 2
+         7    1    1 LYS HD3   H   1.100 0.02 2
+         8    1    1 LYS HE2   H   1.770 0.02 2
+         9    1    1 LYS HE3   H   1.860 0.02 2
+        10    1    1 LYS CA    C  55.430 0.02 1
+        11    1    1 LYS CB    C  33.970 0.02 1
+        12    1    1 LYS CG    C  29.130 0.02 1
+        13    1    1 LYS CD    C  24.160 0.02 1
+        14    1    1 LYS CE    C  41.430 0.02 1
+        15    2    2 VAL H     H   8.890 0.02 1
+        16    2    2 VAL HA    H   4.970 0.02 1
+        17    2    2 VAL HB    H   2.030 0.02 1
+        18    2    2 VAL HG1   H   0.970 0.02 2
+        19    2    2 VAL HG2   H   1.060 0.02 2
+        20    2    2 VAL CA    C  61.490 0.02 1
+        21    2    2 VAL CB    C  31.760 0.02 1
+        22    2    2 VAL CG1   C  21.330 0.02 1
+        23    2    2 VAL CG2   C  20.960 0.02 1
+        24    3    3 PHE H     H   8.840 0.02 1
+        25    3    3 PHE HA    H   4.250 0.02 1
+        26    3    3 PHE HB2   H   2.690 0.02 2
+        27    3    3 PHE HB3   H   3.190 0.02 2
+        28    3    3 PHE HD1   H   7.020 0.02 1
+        29    3    3 PHE HD2   H   7.020 0.02 1
+        30    3    3 PHE HE1   H   7.220 0.02 1
+        31    3    3 PHE HE2   H   7.220 0.02 1
+        32    3    3 PHE HZ    H   7.520 0.02 1
+        33    3    3 PHE CA    C  58.980 0.02 1
+        34    3    3 PHE CB    C  42.210 0.02 1
+        35    3    3 PHE CD1   C 131.170 0.02 1
+        36    3    3 PHE CD2   C 131.170 0.02 1
+        37    3    3 PHE CE1   C 131.460 0.02 1
+        38    3    3 PHE CE2   C 131.460 0.02 1
+        39    3    3 PHE CZ    C 129.810 0.02 1
+        40    4    4 GLY H     H   8.500 0.02 1
+        41    4    4 GLY HA2   H   4.350 0.02 2
+        42    4    4 GLY HA3   H   4.000 0.02 2
+        43    4    4 GLY CA    C  43.980 0.02 1
+        44    5    5 ARG H     H   8.540 0.02 1
+        45    5    5 ARG HA    H   3.390 0.02 1
+        46    5    5 ARG HB2   H   2.110 0.02 1
+        47    5    5 ARG HB3   H   2.110 0.02 1
+        48    5    5 ARG HG2   H   1.660 0.02 2
+        49    5    5 ARG HG3   H   1.760 0.02 2
+        50    5    5 ARG HD2   H   3.480 0.02 2
+        51    5    5 ARG HD3   H   3.880 0.02 2
+        52    5    5 ARG HE    H   7.520 0.02 1
+        53    5    5 ARG CA    C  60.380 0.02 1
+        54    5    5 ARG CB    C  31.020 0.02 1
+        55    5    5 ARG CG    C  27.400 0.02 1
+        56    5    5 ARG CD    C  43.580 0.02 1
+        57    6    6 CYS H     H   8.570 0.02 1
+        58    6    6 CYS HA    H   4.740 0.02 1
+        59    6    6 CYS HB2   H   2.840 0.02 2
+        60    6    6 CYS HB3   H   3.240 0.02 2
+        61    6    6 CYS CA    C  54.680 0.02 1
+        62    6    6 CYS CB    C  33.710 0.02 1
+        63    7    7 GLU H     H   8.080 0.02 1
+        64    7    7 GLU HA    H   4.130 0.02 1
+        65    7    7 GLU HB2   H   2.210 0.02 2
+        66    7    7 GLU HB3   H   2.340 0.02 2
+        67    7    7 GLU HG2   H   2.350 0.02 2
+        68    7    7 GLU HG3   H   2.550 0.02 2
+        69    7    7 GLU CA    C  58.940 0.02 1
+        70    7    7 GLU CB    C  29.520 0.02 1
+        71    7    7 GLU CG    C  35.440 0.02 1
+        72    8    8 LEU H     H   8.590 0.02 1
+        73    8    8 LEU HA    H   3.770 0.02 1
+        74    8    8 LEU HB2   H   0.950 0.02 2
+        75    8    8 LEU HB3   H   1.580 0.02 2
+        76    8    8 LEU HG    H   1.490 0.02 1
+        77    8    8 LEU HD1   H  -0.030 0.02 2
+        78    8    8 LEU HD2   H   0.550 0.02 2
+        79    8    8 LEU CA    C  56.920 0.02 1
+        80    8    8 LEU CB    C  40.160 0.02 1
+        81    8    8 LEU CG    C  26.040 0.02 1
+        82    8    8 LEU CD1   C  22.460 0.02 2
+        83    8    8 LEU CD2   C  28.280 0.02 2
+        84    9    9 ALA H     H   8.370 0.02 1
+        85    9    9 ALA HA    H   3.620 0.02 1
+        86    9    9 ALA HB    H   1.570 0.02 1
+        87    9    9 ALA CA    C  55.750 0.02 1
+        88    9    9 ALA CB    C  18.730 0.02 1
+        89   10   10 ALA H     H   8.160 0.02 1
+        90   10   10 ALA HA    H   3.990 0.02 1
+        91   10   10 ALA HB    H   1.570 0.02 1
+        92   10   10 ALA CA    C  55.200 0.02 1
+        93   10   10 ALA CB    C  17.900 0.02 1
+        94   11   11 ALA H     H   7.800 0.02 1
+        95   11   11 ALA HA    H   4.290 0.02 1
+        96   11   11 ALA HB    H   1.530 0.02 1
+        97   11   11 ALA CA    C  55.100 0.02 1
+        98   11   11 ALA CB    C  17.950 0.02 1
+        99   12   12 MET H     H   9.060 0.02 1
+       100   12   12 MET HA    H   3.480 0.02 1
+       101   12   12 MET HB2   H   1.910 0.02 2
+       102   12   12 MET HB3   H   1.560 0.02 2
+       103   12   12 MET HG2   H   1.380 0.02 2
+       104   12   12 MET HG3   H   2.740 0.02 2
+       105   12   12 MET CA    C  61.180 0.02 1
+       106   12   12 MET CB    C  32.780 0.02 1
+       107   12   12 MET CG    C  35.580 0.02 1
+       108   13   13 LYS H     H   8.530 0.02 1
+       109   13   13 LYS HA    H   3.970 0.02 1
+       110   13   13 LYS HB2   H   1.960 0.02 2
+       111   13   13 LYS HB3   H   2.220 0.02 2
+       112   13   13 LYS HG2   H   1.510 0.02 1
+       113   13   13 LYS HG3   H   1.510 0.02 1
+       114   13   13 LYS HD2   H   1.510 0.02 2
+       115   13   13 LYS HD3   H   1.750 0.02 2
+       116   13   13 LYS HE2   H   3.050 0.02 1
+       117   13   13 LYS HE3   H   3.050 0.02 1
+       118   13   13 LYS CA    C  59.420 0.02 1
+       119   13   13 LYS CB    C  32.330 0.02 1
+       120   13   13 LYS CG    C  25.240 0.02 1
+       121   13   13 LYS CD    C  30.140 0.02 1
+       122   13   13 LYS CE    C  42.170 0.02 1
+       123   14   14 ARG H     H   8.230 0.02 1
+       124   14   14 ARG HA    H   4.150 0.02 1
+       125   14   14 ARG HB2   H   1.840 0.02 2
+       126   14   14 ARG HB3   H   1.960 0.02 2
+       127   14   14 ARG HG2   H   1.600 0.02 2
+       128   14   14 ARG HG3   H   1.730 0.02 2
+       129   14   14 ARG HD2   H   3.170 0.02 2
+       130   14   14 ARG HD3   H   3.210 0.02 2
+       131   14   14 ARG HE    H   7.120 0.02 1
+       132   14   14 ARG CA    C  58.690 0.02 1
+       133   14   14 ARG CB    C  29.750 0.02 1
+       134   14   14 ARG CG    C  27.710 0.02 1
+       135   14   14 ARG CD    C  43.260 0.02 1
+       136   15   15 HIS H     H   7.310 0.02 1
+       137   15   15 HIS HA    H   4.610 0.02 1
+       138   15   15 HIS HB2   H   2.580 0.02 2
+       139   15   15 HIS HB3   H   3.720 0.02 2
+       140   15   15 HIS HD2   H   7.540 0.02 1
+       141   15   15 HIS HE1   H   8.860 0.02 1
+       142   15   15 HIS CA    C  55.930 0.02 1
+       143   15   15 HIS CB    C  28.680 0.02 1
+       144   15   15 HIS CD2   C 120.410 0.02 1
+       145   15   15 HIS CE1   C 138.050 0.02 1
+       146   16   16 GLY H     H   7.630 0.02 1
+       147   16   16 GLY HA2   H   4.120 0.02 2
+       148   16   16 GLY HA3   H   3.940 0.02 2
+       149   16   16 GLY CA    C  47.260 0.02 1
+       150   17   17 LEU H     H   7.160 0.02 1
+       151   17   17 LEU HA    H   3.960 0.02 1
+       152   17   17 LEU HB2   H   0.330 0.02 2
+       153   17   17 LEU HB3   H   0.720 0.02 2
+       154   17   17 LEU HG    H   0.730 0.02 1
+       155   17   17 LEU HD1   H  -0.620 0.02 2
+       156   17   17 LEU HD2   H  -0.120 0.02 2
+       157   17   17 LEU CA    C  54.920 0.02 1
+       158   17   17 LEU CB    C  41.270 0.02 1
+       159   17   17 LEU CG    C  25.040 0.02 1
+       160   17   17 LEU CD1   C  20.950 0.02 2
+       161   17   17 LEU CD2   C  23.650 0.02 2
+       162   18   18 ASP H     H   8.660 0.02 1
+       163   18   18 ASP HA    H   4.270 0.02 1
+       164   18   18 ASP HB2   H   2.410 0.02 2
+       165   18   18 ASP HB3   H   3.020 0.02 2
+       166   18   18 ASP CA    C  56.150 0.02 1
+       167   18   18 ASP CB    C  41.050 0.02 1
+       168   19   19 ASN H     H   8.320 0.02 1
+       169   19   19 ASN HA    H   4.020 0.02 1
+       170   19   19 ASN HB2   H   2.850 0.02 2
+       171   19   19 ASN HB3   H   3.060 0.02 2
+       172   19   19 ASN CA    C  54.870 0.02 1
+       173   19   19 ASN CB    C  37.370 0.02 1
+       174   20   20 TYR H     H   8.050 0.02 1
+       175   20   20 TYR HA    H   4.280 0.02 1
+       176   20   20 TYR HB2   H   3.060 0.02 2
+       177   20   20 TYR HB3   H   3.240 0.02 2
+       178   20   20 TYR HD1   H   7.210 0.02 1
+       179   20   20 TYR HD2   H   7.210 0.02 1
+       180   20   20 TYR HE1   H   6.980 0.02 1
+       181   20   20 TYR HE2   H   6.980 0.02 1
+       182   20   20 TYR CA    C  60.600 0.02 1
+       183   20   20 TYR CB    C  38.470 0.02 1
+       184   20   20 TYR CD1   C 133.060 0.02 1
+       185   20   20 TYR CD2   C 133.060 0.02 1
+       186   20   20 TYR CE1   C 118.840 0.02 1
+       187   20   20 TYR CE2   C 118.840 0.02 1
+       188   21   21 ARG H     H   8.890 0.02 1
+       189   21   21 ARG HA    H   3.630 0.02 1
+       190   21   21 ARG HB2   H   1.840 0.02 2
+       191   21   21 ARG HB3   H   2.240 0.02 2
+       192   21   21 ARG HG2   H   1.190 0.02 2
+       193   21   21 ARG HG3   H   1.360 0.02 2
+       194   21   21 ARG HD2   H   3.090 0.02 1
+       195   21   21 ARG HD3   H   3.090 0.02 1
+       196   21   21 ARG HE    H   7.120 0.02 1
+       197   21   21 ARG CA    C  56.210 0.02 1
+       198   21   21 ARG CB    C  27.440 0.02 1
+       199   21   21 ARG CG    C  27.730 0.02 1
+       200   21   21 ARG CD    C  42.610 0.02 1
+       201   22   22 GLY H     H   7.600 0.02 1
+       202   22   22 GLY HA2   H   3.890 0.02 2
+       203   22   22 GLY HA3   H   3.510 0.02 2
+       204   22   22 GLY CA    C  44.990 0.02 1
+       205   23   23 TYR H     H   7.660 0.02 1
+       206   23   23 TYR HA    H   4.580 0.02 1
+       207   23   23 TYR HB2   H   2.530 0.02 2
+       208   23   23 TYR HB3   H   3.320 0.02 2
+       209   23   23 TYR HD1   H   7.060 0.02 1
+       210   23   23 TYR HD2   H   7.060 0.02 1
+       211   23   23 TYR HE1   H   6.720 0.02 1
+       212   23   23 TYR HE2   H   6.720 0.02 1
+       213   23   23 TYR CA    C  54.340 0.02 1
+       214   23   23 TYR CB    C  38.810 0.02 1
+       215   23   23 TYR CD1   C 133.870 0.02 1
+       216   23   23 TYR CD2   C 133.870 0.02 1
+       217   23   23 TYR CE1   C 118.770 0.02 1
+       218   23   23 TYR CE2   C 118.770 0.02 1
+       219   24   24 SER H     H   8.910 0.02 1
+       220   24   24 SER HA    H   4.570 0.02 1
+       221   24   24 SER HB2   H   4.230 0.02 2
+       222   24   24 SER HB3   H   4.370 0.02 2
+       223   24   24 SER CB    C  63.980 0.02 1
+       224   25   25 LEU H     H   9.030 0.02 1
+       225   25   25 LEU HA    H   4.420 0.02 1
+       226   25   25 LEU HB2   H   1.690 0.02 2
+       227   25   25 LEU HB3   H   1.750 0.02 2
+       228   25   25 LEU HG    H   1.620 0.02 1
+       229   25   25 LEU HD1   H   0.880 0.02 2
+       230   25   25 LEU HD2   H   1.000 0.02 2
+       231   25   25 LEU CA    C  58.650 0.02 1
+       232   25   25 LEU CB    C  41.420 0.02 1
+       233   25   25 LEU CD1   C  22.960 0.02 1
+       234   25   25 LEU CD2   C  23.440 0.02 1
+       235   26   26 GLY H     H   9.550 0.02 1
+       236   26   26 GLY HA2   H   4.200 0.02 2
+       237   26   26 GLY HA3   H   3.680 0.02 2
+       238   26   26 GLY CA    C  47.960 0.02 1
+       239   27   27 ASN H     H   8.160 0.02 1
+       240   27   27 ASN HA    H   4.220 0.02 1
+       241   27   27 ASN HB2   H   2.320 0.02 2
+       242   27   27 ASN HB3   H   2.880 0.02 2
+       243   27   27 ASN CA    C  55.780 0.02 1
+       244   27   27 ASN CB    C  40.270 0.02 1
+       245   28   28 TRP H     H   7.200 0.02 1
+       246   28   28 TRP HA    H   3.770 0.02 1
+       247   28   28 TRP HB2   H   3.200 0.02 2
+       248   28   28 TRP HB3   H   3.270 0.02 2
+       249   28   28 TRP HD1   H   7.310 0.02 1
+       250   28   28 TRP HE1   H   9.360 0.02 1
+       251   28   28 TRP HE3   H   7.770 0.02 1
+       252   28   28 TRP HZ2   H   7.470 0.02 1
+       253   28   28 TRP HZ3   H   6.320 0.02 1
+       254   28   28 TRP HH2   H   6.800 0.02 1
+       255   28   28 TRP CA    C  58.940 0.02 1
+       256   28   28 TRP CB    C  29.710 0.02 1
+       257   28   28 TRP CD1   C 128.130 0.02 1
+       258   28   28 TRP CE3   C 118.900 0.02 1
+       259   28   28 TRP CZ2   C 114.760 0.02 1
+       260   28   28 TRP CZ3   C 121.330 0.02 1
+       261   28   28 TRP CH2   C 123.600 0.02 1
+       262   29   29 VAL H     H   7.560 0.02 1
+       263   29   29 VAL HA    H   3.460 0.02 1
+       264   29   29 VAL HB    H   1.950 0.02 1
+       265   29   29 VAL HG1   H   0.940 0.02 2
+       266   29   29 VAL HG2   H   1.260 0.02 2
+       267   29   29 VAL CA    C  66.680 0.02 1
+       268   29   29 VAL CB    C  32.210 0.02 1
+       269   29   29 VAL CG1   C  22.300 0.02 1
+       270   29   29 VAL CG2   C  22.300 0.02 1
+       271   30   30 CYS H     H   7.990 0.02 1
+       272   30   30 CYS HA    H   2.510 0.02 1
+       273   30   30 CYS HB2   H   2.610 0.02 2
+       274   30   30 CYS HB3   H   2.950 0.02 2
+       275   30   30 CYS CA    C  60.750 0.02 1
+       276   30   30 CYS CB    C  42.210 0.02 1
+       277   31   31 ALA H     H   8.100 0.02 1
+       278   31   31 ALA HA    H   3.730 0.02 1
+       279   31   31 ALA HB    H   1.020 0.02 1
+       280   31   31 ALA CA    C  55.530 0.02 1
+       281   31   31 ALA CB    C  17.060 0.02 1
+       282   32   32 ALA H     H   7.600 0.02 1
+       283   32   32 ALA HA    H   4.020 0.02 1
+       284   32   32 ALA HB    H   1.330 0.02 1
+       285   32   32 ALA CA    C  55.530 0.02 1
+       286   32   32 ALA CB    C  18.810 0.02 1
+       287   33   33 LYS H     H   7.940 0.02 1
+       288   33   33 LYS HA    H   2.580 0.02 1
+       289   33   33 LYS HB2   H   0.980 0.02 2
+       290   33   33 LYS HB3   H   1.060 0.02 2
+       291   33   33 LYS HG2   H  -0.390 0.02 2
+       292   33   33 LYS HG3   H   0.470 0.02 2
+       293   33   33 LYS HD2   H   0.620 0.02 2
+       294   33   33 LYS HD3   H   0.700 0.02 2
+       295   33   33 LYS HE2   H   2.360 0.02 2
+       296   33   33 LYS HE3   H   2.680 0.02 2
+       297   33   33 LYS HZ    H   7.260 0.02 1
+       298   33   33 LYS CA    C  58.700 0.02 1
+       299   33   33 LYS CB    C  29.480 0.02 1
+       300   33   33 LYS CG    C  23.020 0.02 1
+       301   33   33 LYS CD    C  26.700 0.02 1
+       302   33   33 LYS CE    C  42.410 0.02 1
+       303   34   34 PHE H     H   7.330 0.02 1
+       304   34   34 PHE HA    H   4.330 0.02 1
+       305   34   34 PHE HB2   H   2.310 0.02 2
+       306   34   34 PHE HB3   H   3.200 0.02 2
+       307   34   34 PHE HD1   H   7.250 0.02 1
+       308   34   34 PHE HD2   H   7.250 0.02 1
+       309   34   34 PHE HE1   H   7.370 0.02 1
+       310   34   34 PHE HE2   H   7.370 0.02 1
+       311   34   34 PHE HZ    H   7.510 0.02 1
+       312   34   34 PHE CA    C  60.810 0.02 1
+       313   34   34 PHE CB    C  39.510 0.02 1
+       314   34   34 PHE CD1   C 131.920 0.02 1
+       315   34   34 PHE CD2   C 131.920 0.02 1
+       316   34   34 PHE CE1   C 131.640 0.02 1
+       317   34   34 PHE CE2   C 131.640 0.02 1
+       318   34   34 PHE CZ    C 131.000 0.02 1
+       319   35   35 GLU H     H   8.550 0.02 1
+       320   35   35 GLU HA    H   4.460 0.02 1
+       321   35   35 GLU HB2   H   1.790 0.02 2
+       322   35   35 GLU HB3   H   2.050 0.02 2
+       323   35   35 GLU HG2   H   2.180 0.02 2
+       324   35   35 GLU HG3   H   2.210 0.02 2
+       325   35   35 GLU CA    C  57.860 0.02 1
+       326   35   35 GLU CB    C  27.480 0.02 1
+       327   35   35 GLU CG    C  34.380 0.02 1
+       328   36   36 SER H     H   7.940 0.02 1
+       329   36   36 SER HA    H   4.580 0.02 1
+       330   36   36 SER HB2   H   3.570 0.02 2
+       331   36   36 SER HB3   H   4.490 0.02 2
+       332   36   36 SER CB    C  67.360 0.02 1
+       333   37   37 ASN H     H   8.150 0.02 1
+       334   37   37 ASN HA    H   4.490 0.02 1
+       335   37   37 ASN HB2   H   2.510 0.02 1
+       336   37   37 ASN HB3   H   3.320 0.02 1
+       337   37   37 ASN CA    C  54.350 0.02 1
+       338   37   37 ASN CB    C  37.880 0.02 1
+       339   38   38 PHE H     H   7.360 0.02 1
+       340   38   38 PHE HA    H   3.880 0.02 1
+       341   38   38 PHE HB2   H   3.630 0.02 2
+       342   38   38 PHE HB3   H   3.880 0.02 2
+       343   38   38 PHE HD1   H   6.990 0.02 1
+       344   38   38 PHE HD2   H   6.990 0.02 1
+       345   38   38 PHE HE1   H   7.450 0.02 1
+       346   38   38 PHE HE2   H   7.450 0.02 1
+       347   38   38 PHE HZ    H   6.980 0.02 1
+       348   38   38 PHE CA    C  56.800 0.02 1
+       349   38   38 PHE CB    C  36.660 0.02 1
+       350   38   38 PHE CD1   C 130.520 0.02 1
+       351   38   38 PHE CD2   C 130.520 0.02 1
+       352   38   38 PHE CE1   C 131.070 0.02 1
+       353   38   38 PHE CE2   C 131.070 0.02 1
+       354   38   38 PHE CZ    C 128.140 0.02 1
+       355   39   39 ASN H     H   7.410 0.02 1
+       356   39   39 ASN HA    H   5.420 0.02 1
+       357   39   39 ASN HB2   H   3.490 0.02 2
+       358   39   39 ASN HB3   H   2.860 0.02 2
+       359   39   39 ASN CA    C  51.810 0.02 1
+       360   39   39 ASN CB    C  39.720 0.02 1
+       361   40   40 THR H     H   9.330 0.02 1
+       362   40   40 THR HA    H   4.070 0.02 1
+       363   40   40 THR HB    H   4.620 0.02 1
+       364   40   40 THR HG2   H   1.650 0.02 1
+       365   40   40 THR CA    C  64.350 0.02 1
+       366   40   40 THR CB    C  69.370 0.02 1
+       367   40   40 THR CG2   C  18.220 0.02 1
+       368   41   41 GLN H     H   7.890 0.02 1
+       369   41   41 GLN HA    H   4.450 0.02 1
+       370   41   41 GLN HB2   H   1.910 0.02 2
+       371   41   41 GLN HB3   H   2.400 0.02 2
+       372   41   41 GLN HG2   H   2.310 0.02 2
+       373   41   41 GLN HG3   H   2.460 0.02 2
+       374   41   41 GLN CA    C  54.710 0.02 1
+       375   41   41 GLN CB    C  29.140 0.02 1
+       376   41   41 GLN CG    C  34.950 0.02 1
+       377   42   42 ALA H     H   6.850 0.02 1
+       378   42   42 ALA HA    H   4.150 0.02 1
+       379   42   42 ALA HB    H   1.350 0.02 1
+       380   42   42 ALA CA    C  53.510 0.02 1
+       381   42   42 ALA CB    C  19.070 0.02 1
+       382   43   43 THR H     H   8.220 0.02 1
+       383   43   43 THR HA    H   5.140 0.02 1
+       384   43   43 THR HB    H   3.750 0.02 1
+       385   43   43 THR HG2   H   1.070 0.02 1
+       386   43   43 THR CA    C  60.210 0.02 1
+       387   43   43 THR CB    C  72.700 0.02 1
+       388   43   43 THR CG2   C  22.350 0.02 1
+       389   44   44 ASN H     H   8.140 0.02 1
+       390   44   44 ASN HA    H   5.020 0.02 1
+       391   44   44 ASN HB2   H   2.730 0.02 1
+       392   44   44 ASN HB3   H   2.730 0.02 1
+       393   44   44 ASN CA    C  52.980 0.02 1
+       394   44   44 ASN CB    C  43.010 0.02 1
+       395   45   45 ARG H     H   8.780 0.02 1
+       396   45   45 ARG HA    H   4.520 0.02 1
+       397   45   45 ARG HB2   H   1.730 0.02 2
+       398   45   45 ARG HB3   H   1.850 0.02 2
+       399   45   45 ARG HG2   H   1.660 0.02 1
+       400   45   45 ARG HG3   H   1.660 0.02 1
+       401   45   45 ARG HD2   H   3.180 0.02 1
+       402   45   45 ARG HD3   H   3.180 0.02 1
+       403   45   45 ARG HE    H   7.050 0.02 1
+       404   45   45 ARG CA    C  56.230 0.02 1
+       405   45   45 ARG CB    C  30.530 0.02 1
+       406   45   45 ARG CG    C  26.800 0.02 1
+       407   45   45 ARG CD    C  42.990 0.02 1
+       408   46   46 ASN H     H   8.870 0.02 1
+       409   46   46 ASN HA    H   5.130 0.02 1
+       410   46   46 ASN HB2   H   2.850 0.02 2
+       411   46   46 ASN HB3   H   2.910 0.02 2
+       412   46   46 ASN CA    C  52.530 0.02 1
+       413   46   46 ASN CB    C  40.950 0.02 1
+       414   47   47 THR H     H   8.750 0.02 1
+       415   47   47 THR HA    H   4.130 0.02 1
+       416   47   47 THR HB    H   4.380 0.02 1
+       417   47   47 THR HG2   H   1.370 0.02 1
+       418   47   47 THR CA    C  64.530 0.02 1
+       419   47   47 THR CB    C  68.680 0.02 1
+       420   47   47 THR CG2   C  21.960 0.02 1
+       421   48   48 ASP H     H   7.800 0.02 1
+       422   48   48 ASP HA    H   4.600 0.02 1
+       423   48   48 ASP HB2   H   2.670 0.02 2
+       424   48   48 ASP HB3   H   3.100 0.02 2
+       425   48   48 ASP CA    C  54.680 0.02 1
+       426   48   48 ASP CB    C  40.090 0.02 1
+       427   49   49 GLY H     H   7.870 0.02 1
+       428   49   49 GLY HA2   H   4.420 0.02 2
+       429   49   49 GLY HA3   H   3.730 0.02 2
+       430   49   49 GLY CA    C  45.170 0.02 1
+       431   50   50 SER H     H   8.230 0.02 1
+       432   50   50 SER HA    H   4.570 0.02 1
+       433   50   50 SER HB2   H   3.770 0.02 2
+       434   50   50 SER HB3   H   4.260 0.02 2
+       435   50   50 SER CA    C  58.200 0.02 1
+       436   50   50 SER CB    C  66.020 0.02 1
+       437   51   51 THR H     H   9.080 0.02 1
+       438   51   51 THR HA    H   4.890 0.02 1
+       439   51   51 THR HB    H   3.770 0.02 1
+       440   51   51 THR HG2   H   0.330 0.02 1
+       441   51   51 THR CA    C  62.080 0.02 1
+       442   51   51 THR CB    C  71.810 0.02 1
+       443   51   51 THR CG2   C  20.260 0.02 1
+       444   52   52 ASP H     H   8.800 0.02 1
+       445   52   52 ASP HA    H   5.230 0.02 1
+       446   52   52 ASP HB2   H   2.030 0.02 2
+       447   52   52 ASP HB3   H   2.670 0.02 2
+       448   52   52 ASP CA    C  52.190 0.02 1
+       449   52   52 ASP CB    C  41.780 0.02 1
+       450   53   53 TYR H     H   8.990 0.02 1
+       451   53   53 TYR HA    H   4.780 0.02 1
+       452   53   53 TYR HB2   H   2.660 0.02 1
+       453   53   53 TYR HB3   H   2.960 0.02 1
+       454   53   53 TYR HD1   H   7.110 0.02 1
+       455   53   53 TYR HD2   H   7.110 0.02 1
+       456   53   53 TYR HE1   H   6.830 0.02 1
+       457   53   53 TYR HE2   H   6.830 0.02 1
+       458   53   53 TYR CA    C  59.390 0.02 1
+       459   53   53 TYR CB    C  43.040 0.02 1
+       460   53   53 TYR CD1   C 133.480 0.02 1
+       461   53   53 TYR CD2   C 133.480 0.02 1
+       462   53   53 TYR CE1   C 118.590 0.02 1
+       463   53   53 TYR CE2   C 118.590 0.02 1
+       464   54   54 GLY H     H   9.020 0.02 1
+       465   54   54 GLY HA2   H   4.410 0.02 1
+       466   54   54 GLY HA3   H   4.330 0.02 1
+       467   54   54 GLY CA    C  46.320 0.02 1
+       468   55   55 ILE H     H   9.200 0.02 1
+       469   55   55 ILE HA    H   4.310 0.02 1
+       470   55   55 ILE HB    H   1.660 0.02 1
+       471   55   55 ILE HG12  H   1.050 0.02 2
+       472   55   55 ILE HG13  H   1.540 0.02 2
+       473   55   55 ILE HG2   H   0.880 0.02 1
+       474   55   55 ILE HD1   H   0.720 0.02 1
+       475   55   55 ILE CA    C  61.460 0.02 1
+       476   55   55 ILE CB    C  39.730 0.02 1
+       477   55   55 ILE CG1   C  28.370 0.02 1
+       478   55   55 ILE CG2   C  16.450 0.02 1
+       479   55   55 ILE CD1   C  15.540 0.02 1
+       480   56   56 LEU H     H   8.860 0.02 1
+       481   56   56 LEU HA    H   4.420 0.02 1
+       482   56   56 LEU HB2   H   1.480 0.02 2
+       483   56   56 LEU HB3   H   1.750 0.02 2
+       484   56   56 LEU HG    H   1.210 0.02 1
+       485   56   56 LEU HD1   H   0.290 0.02 2
+       486   56   56 LEU HD2   H   0.530 0.02 2
+       487   56   56 LEU CA    C  53.130 0.02 1
+       488   56   56 LEU CB    C  42.480 0.02 1
+       489   56   56 LEU CG    C  27.260 0.02 1
+       490   56   56 LEU CD1   C  21.120 0.02 2
+       491   56   56 LEU CD2   C  25.270 0.02 2
+       492   57   57 GLN H     H   7.940 0.02 1
+       493   57   57 GLN HA    H   3.380 0.02 1
+       494   57   57 GLN HB2   H   2.160 0.02 2
+       495   57   57 GLN HB3   H   2.230 0.02 2
+       496   57   57 GLN HG2   H   1.920 0.02 1
+       497   57   57 GLN CA    C  55.230 0.02 1
+       498   58   58 ILE H     H   7.670 0.02 1
+       499   58   58 ILE HA    H   4.020 0.02 1
+       500   58   58 ILE HB    H   1.860 0.02 1
+       501   58   58 ILE HG12  H   1.800 0.02 2
+       502   58   58 ILE HG2   H   1.080 0.02 1
+       503   58   58 ILE HD1   H   0.980 0.02 1
+       504   58   58 ILE CA    C  62.580 0.02 1
+       505   58   58 ILE CB    C  39.140 0.02 1
+       506   58   58 ILE CD1   C  13.530 0.02 1
+       507   58   58 ILE CG1   C  19.280 0.02 1
+       508   59   59 ASN H     H   8.470 0.02 1
+       509   59   59 ASN HA    H   5.660 0.02 1
+       510   59   59 ASN HB2   H   3.390 0.02 2
+       511   59   59 ASN HB3   H   3.080 0.02 2
+       512   59   59 ASN CA    C  56.130 0.02 1
+       513   59   59 ASN CB    C  43.920 0.02 1
+       514   60   60 SER H     H   9.190 0.02 1
+       515   60   60 SER HA    H   5.180 0.02 1
+       516   60   60 SER HB2   H   4.440 0.02 1
+       517   60   60 SER HB3   H   4.440 0.02 1
+       518   60   60 SER CA    C  60.870 0.02 1
+       519   60   60 SER CB    C  65.200 0.02 1
+       520   61   61 ARG H     H   8.780 0.02 1
+       521   61   61 ARG HA    H   4.110 0.02 1
+       522   61   61 ARG HB2   H   1.480 0.02 2
+       523   61   61 ARG HB3   H   1.700 0.02 2
+       524   61   61 ARG HG2   H   1.010 0.02 2
+       525   61   61 ARG HG3   H   0.700 0.02 2
+       526   61   61 ARG HD2   H   2.880 0.02 1
+       527   61   61 ARG HD3   H   2.880 0.02 1
+       528   61   61 ARG HE    H   6.780 0.02 1
+       529   61   61 ARG CA    C  58.300 0.02 1
+       530   61   61 ARG CB    C  29.470 0.02 1
+       531   61   61 ARG CG    C  27.080 0.02 1
+       532   61   61 ARG CD    C  42.820 0.02 1
+       533   62   62 TRP H     H   7.160 0.02 1
+       534   62   62 TRP HA    H   4.430 0.02 1
+       535   62   62 TRP HB2   H   1.820 0.02 1
+       536   62   62 TRP HB3   H   1.860 0.02 1
+       537   62   62 TRP HD1   H   7.110 0.02 1
+       538   62   62 TRP HE3   H   7.120 0.02 1
+       539   62   62 TRP HZ2   H   7.450 0.02 1
+       540   62   62 TRP HZ3   H   7.040 0.02 1
+       541   62   62 TRP HH2   H   7.210 0.02 1
+       542   62   62 TRP CA    C  57.420 0.02 1
+       543   62   62 TRP CB    C  31.010 0.02 1
+       544   62   62 TRP CD1   C 125.100 0.02 1
+       545   62   62 TRP CE3   C 119.880 0.02 1
+       546   62   62 TRP CZ2   C 114.160 0.02 1
+       547   62   62 TRP CZ3   C 121.230 0.02 1
+       548   62   62 TRP CH2   C 124.870 0.02 1
+       549   63   63 TRP H     H   7.440 0.02 1
+       550   63   63 TRP HA    H   5.000 0.02 1
+       551   63   63 TRP HB2   H   3.350 0.02 1
+       552   63   63 TRP HB3   H   3.450 0.02 1
+       553   63   63 TRP HD1   H   7.660 0.02 1
+       554   63   63 TRP HE1   H  10.210 0.02 1
+       555   63   63 TRP HE3   H   7.780 0.02 1
+       556   63   63 TRP HZ2   H   7.230 0.02 1
+       557   63   63 TRP HZ3   H   6.850 0.02 1
+       558   63   63 TRP CA    C  59.670 0.02 1
+       559   63   63 TRP CB    C  33.610 0.02 1
+       560   63   63 TRP CD1   C 128.550 0.02 1
+       561   63   63 TRP CE3   C 123.170 0.02 1
+       562   63   63 TRP CZ2   C 114.670 0.02 1
+       563   63   63 TRP CZ3   C 122.290 0.02 1
+       564   64   64 CYS H     H   7.610 0.02 1
+       565   64   64 CYS HA    H   5.840 0.02 1
+       566   64   64 CYS HB2   H   2.580 0.02 2
+       567   64   64 CYS HB3   H   3.080 0.02 2
+       568   64   64 CYS CA    C  53.100 0.02 1
+       569   64   64 CYS CB    C  46.110 0.02 1
+       570   65   65 ASN H     H   8.220 0.02 1
+       571   65   65 ASN HA    H   5.500 0.02 1
+       572   65   65 ASN HB2   H   2.480 0.02 2
+       573   65   65 ASN HB3   H   2.870 0.02 2
+       574   65   65 ASN CA    C  51.600 0.02 1
+       575   65   65 ASN CB    C  40.540 0.02 1
+       576   66   66 ASP H     H   9.530 0.02 1
+       577   66   66 ASP HA    H   5.000 0.02 1
+       578   66   66 ASP HB2   H   3.300 0.02 2
+       579   66   66 ASP HB3   H   2.260 0.02 2
+       580   66   66 ASP CA    C  51.600 0.02 1
+       581   66   66 ASP CB    C  41.030 0.02 1
+       582   67   67 GLY H     H   8.340 0.02 1
+       583   67   67 GLY HA2   H   4.160 0.02 2
+       584   67   67 GLY HA3   H   3.860 0.02 2
+       585   67   67 GLY CA    C  46.300 0.02 1
+       586   68   68 ARG H     H   8.060 0.02 1
+       587   68   68 ARG HA    H   4.760 0.02 1
+       588   68   68 ARG HB2   H   1.800 0.02 2
+       589   68   68 ARG HB3   H   1.870 0.02 2
+       590   68   68 ARG HG2   H   1.500 0.02 2
+       591   68   68 ARG HG3   H   1.560 0.02 2
+       592   68   68 ARG HD2   H   3.150 0.02 2
+       593   68   68 ARG HD3   H   3.200 0.02 2
+       594   68   68 ARG HE    H   7.040 0.02 1
+       595   68   68 ARG CA    C  55.360 0.02 1
+       596   68   68 ARG CB    C  31.530 0.02 1
+       597   68   68 ARG CG    C  26.480 0.02 1
+       598   68   68 ARG CD    C  43.640 0.02 1
+       599   69   69 THR H     H   8.150 0.02 1
+       600   69   69 THR HA    H   4.610 0.02 1
+       601   69   69 THR HB    H   4.200 0.02 1
+       602   69   69 THR HG2   H   0.920 0.02 1
+       603   69   69 THR CA    C  60.110 0.02 1
+       604   69   69 THR CB    C  70.090 0.02 1
+       605   69   69 THR CG2   C  19.850 0.02 1
+       606   70   70 PRO HA    H   4.330 0.02 1
+       607   70   70 PRO HB2   H   2.130 0.02 2
+       608   70   70 PRO HB3   H   2.300 0.02 2
+       609   70   70 PRO HG2   H   1.890 0.02 2
+       610   70   70 PRO HG3   H   1.980 0.02 2
+       611   70   70 PRO HD2   H   3.650 0.02 2
+       612   70   70 PRO HD3   H   4.020 0.02 2
+       613   70   70 PRO CA    C  63.310 0.02 1
+       614   70   70 PRO CB    C  31.650 0.02 1
+       615   70   70 PRO CG    C  27.350 0.02 1
+       616   70   70 PRO CD    C  51.300 0.02 1
+       617   71   71 GLY H     H   8.650 0.02 1
+       618   71   71 GLY HA2   H   3.830 0.02 2
+       619   71   71 GLY HA3   H   3.680 0.02 2
+       620   71   71 GLY CA    C  45.810 0.02 1
+       621   72   72 SER H     H   7.290 0.02 1
+       622   72   72 SER HA    H   4.550 0.02 1
+       623   72   72 SER HB2   H   3.770 0.02 2
+       624   72   72 SER HB3   H   4.240 0.02 2
+       625   72   72 SER CA    C  58.200 0.02 1
+       626   72   72 SER CB    C  64.000 0.02 1
+       627   73   73 ARG H     H   8.000 0.02 1
+       628   73   73 ARG HA    H   4.230 0.02 1
+       629   73   73 ARG HB2   H   1.670 0.02 2
+       630   73   73 ARG HB3   H   1.550 0.02 2
+       631   73   73 ARG HG2   H   1.840 0.02 2
+       632   73   73 ARG HG3   H   1.880 0.02 2
+       633   73   73 ARG HD2   H   2.930 0.02 1
+       634   73   73 ARG HD3   H   2.930 0.02 1
+       635   73   73 ARG HE    H   6.990 0.02 1
+       636   73   73 ARG CA    C  55.720 0.02 1
+       637   73   73 ARG CB    C  29.430 0.02 1
+       638   73   73 ARG CG    C  26.800 0.02 1
+       639   73   73 ARG CD    C  42.440 0.02 1
+       640   74   74 ASN H     H   8.080 0.02 1
+       641   74   74 ASN HA    H   3.750 0.02 1
+       642   74   74 ASN HB2   H   2.010 0.02 2
+       643   74   74 ASN HB3   H   3.110 0.02 2
+       644   74   74 ASN CA    C  52.440 0.02 1
+       645   74   74 ASN CB    C  37.450 0.02 1
+       646   75   75 LEU H     H   9.000 0.02 1
+       647   75   75 LEU HA    H   4.100 0.02 1
+       648   75   75 LEU HB2   H   2.120 0.02 2
+       649   75   75 LEU HB3   H   1.520 0.02 2
+       650   75   75 LEU HG    H   1.660 0.02 1
+       651   75   75 LEU HD1   H   0.520 0.02 2
+       652   75   75 LEU HD2   H   0.880 0.02 2
+       653   75   75 LEU CA    C  58.320 0.02 1
+       654   75   75 LEU CB    C  41.990 0.02 1
+       655   75   75 LEU CG    C  23.180 0.02 1
+       656   75   75 LEU CD1   C  24.820 0.02 2
+       657   76   76 CYS H     H   9.440 0.02 1
+       658   76   76 CYS HA    H   4.470 0.02 1
+       659   76   76 CYS HB2   H   3.680 0.02 1
+       660   76   76 CYS HB3   H   3.680 0.02 1
+       661   76   76 CYS CA    C  55.880 0.02 1
+       662   76   76 CYS CB    C  39.930 0.02 1
+       663   77   77 ASN H     H   8.040 0.02 1
+       664   77   77 ASN HA    H   4.230 0.02 1
+       665   77   77 ASN HB2   H   2.510 0.02 2
+       666   77   77 ASN HB3   H   3.190 0.02 2
+       667   77   77 ASN CA    C  53.600 0.02 1
+       668   77   77 ASN CB    C  37.060 0.02 1
+       669   78   78 ILE H     H   8.740 0.02 1
+       670   78   78 ILE HA    H   5.000 0.02 1
+       671   78   78 ILE HB    H   1.720 0.02 1
+       672   78   78 ILE HG12  H   1.070 0.02 2
+       673   78   78 ILE HG13  H   1.490 0.02 2
+       674   78   78 ILE HG2   H   0.890 0.02 1
+       675   78   78 ILE HD1   H   0.890 0.02 1
+       676   78   78 ILE CA    C  56.800 0.02 1
+       677   78   78 ILE CB    C  42.560 0.02 1
+       678   78   78 ILE CG1   C  26.470 0.02 1
+       679   78   78 ILE CG2   C  19.230 0.02 1
+       680   78   78 ILE CD1   C  14.430 0.02 1
+       681   79   79 PRO HA    H   5.190 0.02 1
+       682   79   79 PRO HB2   H   2.010 0.02 2
+       683   79   79 PRO HB3   H   2.360 0.02 2
+       684   79   79 PRO HG2   H   2.030 0.02 2
+       685   79   79 PRO HG3   H   2.130 0.02 2
+       686   79   79 PRO HD2   H   3.680 0.02 2
+       687   79   79 PRO HD3   H   3.860 0.02 2
+       688   79   79 PRO CA    C  61.110 0.02 1
+       689   79   79 PRO CB    C  31.330 0.02 1
+       690   79   79 PRO CG    C  27.480 0.02 1
+       691   79   79 PRO CD    C  50.900 0.02 1
+       692   80   80 CYS H     H   8.240 0.02 1
+       693   80   80 CYS HA    H   3.900 0.02 1
+       694   80   80 CYS HB2   H   1.330 0.02 2
+       695   80   80 CYS HB3   H   1.740 0.02 2
+       696   80   80 CYS CA    C  56.780 0.02 1
+       697   80   80 CYS CB    C  37.880 0.02 1
+       698   81   81 SER H     H   8.530 0.02 1
+       699   81   81 SER HA    H   3.810 0.02 1
+       700   81   81 SER HB2   H   3.880 0.02 2
+       701   81   81 SER HB3   H   3.920 0.02 2
+       702   81   81 SER CA    C  60.860 0.02 1
+       703   81   81 SER CB    C  61.670 0.02 1
+       704   82   82 ALA H     H   7.600 0.02 1
+       705   82   82 ALA HA    H   4.250 0.02 1
+       706   82   82 ALA HB    H   1.500 0.02 1
+       707   82   82 ALA CA    C  54.010 0.02 1
+       708   82   82 ALA CB    C  18.080 0.02 1
+       709   83   83 LEU H     H   7.840 0.02 1
+       710   83   83 LEU HA    H   4.250 0.02 1
+       711   83   83 LEU HB2   H   1.550 0.02 2
+       712   83   83 LEU HB3   H   2.100 0.02 2
+       713   83   83 LEU HG    H   1.670 0.02 1
+       714   83   83 LEU HD1   H   0.740 0.02 2
+       715   83   83 LEU HD2   H   1.040 0.02 2
+       716   83   83 LEU CA    C  54.480 0.02 1
+       717   83   83 LEU CB    C  40.380 0.02 1
+       718   83   83 LEU CG    C  27.050 0.02 1
+       719   83   83 LEU CD1   C  22.580 0.02 2
+       720   83   83 LEU CD2   C  27.400 0.02 2
+       721   84   84 LEU H     H   7.120 0.02 1
+       722   84   84 LEU HA    H   5.100 0.02 1
+       723   84   84 LEU HB2   H   1.680 0.02 2
+       724   84   84 LEU HB3   H   1.900 0.02 2
+       725   84   84 LEU HG    H   1.710 0.02 1
+       726   84   84 LEU HD1   H   1.010 0.02 2
+       727   84   84 LEU HD2   H   1.040 0.02 2
+       728   84   84 LEU CA    C  53.210 0.02 1
+       729   84   84 LEU CB    C  43.330 0.02 1
+       730   84   84 LEU CG    C  26.370 0.02 1
+       731   84   84 LEU CD1   C  23.380 0.02 2
+       732   84   84 LEU CD2   C  25.580 0.02 2
+       733   85   85 SER H     H   6.830 0.02 1
+       734   85   85 SER HA    H   4.500 0.02 1
+       735   85   85 SER HB2   H   3.880 0.02 2
+       736   85   85 SER HB3   H   4.150 0.02 2
+       737   85   85 SER CA    C  57.130 0.02 1
+       738   85   85 SER CB    C  64.220 0.02 1
+       739   86   86 SER H     H   8.440 0.02 1
+       740   86   86 SER HA    H   4.280 0.02 1
+       741   86   86 SER HB2   H   3.880 0.02 2
+       742   86   86 SER HB3   H   3.930 0.02 2
+       743   86   86 SER CA    C  60.640 0.02 1
+       744   86   86 SER CB    C  62.990 0.02 1
+       745   87   87 ASP H     H   8.130 0.02 1
+       746   87   87 ASP HA    H   4.930 0.02 1
+       747   87   87 ASP HB2   H   2.660 0.02 2
+       748   87   87 ASP HB3   H   2.940 0.02 2
+       749   87   87 ASP CA    C  52.670 0.02 1
+       750   87   87 ASP CB    C  41.570 0.02 1
+       751   88   88 ILE H     H   8.070 0.02 1
+       752   88   88 ILE HA    H   4.640 0.02 1
+       753   88   88 ILE HB    H   1.860 0.02 1
+       754   88   88 ILE HG12  H   0.430 0.02 2
+       755   88   88 ILE HG13  H   1.180 0.02 2
+       756   88   88 ILE HG2   H   0.790 0.02 1
+       757   88   88 ILE HD1   H   0.220 0.02 1
+       758   88   88 ILE CA    C  62.030 0.02 1
+       759   88   88 ILE CB    C  38.590 0.02 1
+       760   88   88 ILE CG1   C  24.390 0.02 1
+       761   88   88 ILE CG2   C  16.930 0.02 1
+       762   88   88 ILE CD1   C  15.070 0.02 1
+       763   89   89 THR H     H   8.390 0.02 1
+       764   89   89 THR HA    H   3.050 0.02 1
+       765   89   89 THR HB    H   4.060 0.02 1
+       766   89   89 THR HG2   H   1.150 0.02 1
+       767   89   89 THR CA    C  68.780 0.02 1
+       768   89   89 THR CB    C  68.120 0.02 1
+       769   89   89 THR CG2   C  21.110 0.02 1
+       770   90   90 ALA H     H   9.050 0.02 1
+       771   90   90 ALA HA    H   4.100 0.02 1
+       772   90   90 ALA HB    H   1.350 0.02 1
+       773   90   90 ALA CA    C  55.710 0.02 1
+       774   90   90 ALA CB    C  17.620 0.02 1
+       775   91   91 SER H     H   7.750 0.02 1
+       776   91   91 SER HA    H   4.100 0.02 1
+       777   91   91 SER HB2   H   3.500 0.02 2
+       778   91   91 SER HB3   H   4.010 0.02 2
+       779   91   91 SER CA    C  63.520 0.02 1
+       780   91   91 SER CB    C  63.220 0.02 1
+       781   92   92 VAL H     H   8.350 0.02 1
+       782   92   92 VAL HA    H   3.150 0.02 1
+       783   92   92 VAL HB    H   1.920 0.02 1
+       784   92   92 VAL HG1   H   0.510 0.02 1
+       785   92   92 VAL HG2   H   0.620 0.02 1
+       786   92   92 VAL CA    C  66.710 0.02 1
+       787   92   92 VAL CB    C  30.200 0.02 1
+       788   92   92 VAL CG1   C  22.380 0.02 1
+       789   92   92 VAL CG2   C  21.960 0.02 1
+       790   93   93 ASN H     H   8.630 0.02 1
+       791   93   93 ASN HA    H   4.280 0.02 1
+       792   93   93 ASN HB2   H   2.790 0.02 2
+       793   93   93 ASN HB3   H   2.890 0.02 2
+       794   93   93 ASN CA    C  55.850 0.02 1
+       795   93   93 ASN CB    C  36.900 0.02 1
+       796   94   94 CYS H     H   7.910 0.02 1
+       797   94   94 CYS HA    H   5.000 0.02 1
+       798   94   94 CYS HB2   H   2.720 0.02 1
+       799   94   94 CYS HB3   H   3.390 0.02 1
+       800   94   94 CYS CA    C  55.730 0.02 1
+       802   95   95 ALA H     H   8.660 0.02 1
+       803   95   95 ALA HA    H   4.110 0.02 1
+       804   95   95 ALA HB    H   1.530 0.02 1
+       805   95   95 ALA CA    C  55.520 0.02 1
+       806   95   95 ALA CB    C  18.180 0.02 1
+       807   96   96 LYS H     H   7.990 0.02 1
+       808   96   96 LYS HA    H   3.730 0.02 1
+       809   96   96 LYS HB2   H   1.700 0.02 1
+       810   96   96 LYS HG3   H   1.160 0.02 1
+       811   96   96 LYS HG2   H  -0.380 0.02 1
+       812   96   96 LYS HD3   H   1.280 0.02 1
+       813   96   96 LYS HD2   H   1.160 0.02 1
+       814   96   96 LYS HE3   H   2.150 0.02 1
+       815   96   96 LYS CA    C  58.100 0.02 1
+       816   96   96 LYS CB    C  32.300 0.02 1
+       817   96   96 LYS CG    C  25.680 0.02 1
+       818   96   96 LYS CD    C  29.890 0.02 1
+       819   96   96 LYS CE    C  41.630 0.02 1
+       820   97   97 LYS H     H   7.250 0.02 1
+       821   97   97 LYS HA    H   4.150 0.02 1
+       822   97   97 LYS HB2   H   2.110 0.02 1
+       823   97   97 LYS HB3   H   2.260 0.02 1
+       824   97   97 LYS HG2   H   1.540 0.02 1
+       825   97   97 LYS HG3   H   1.690 0.02 1
+       826   97   97 LYS HD2   H   1.830 0.02 1
+       827   97   97 LYS HD3   H   1.930 0.02 1
+       828   97   97 LYS CA    C  59.320 0.02 1
+       829   97   97 LYS CB    C  31.750 0.02 1
+       830   98   98 ILE H     H   7.970 0.02 1
+       831   98   98 ILE HA    H   2.820 0.02 1
+       832   98   98 ILE HB    H   1.520 0.02 1
+       833   98   98 ILE HG12  H  -2.020 0.02 2
+       834   98   98 ILE HG13  H   0.710 0.02 2
+       835   98   98 ILE HG2   H  -0.240 0.02 1
+       836   98   98 ILE HD1   H  -0.020 0.02 1
+       837   98   98 ILE CA    C  65.260 0.02 1
+       838   98   98 ILE CB    C  37.220 0.02 1
+       839   98   98 ILE CG1   C  25.860 0.02 1
+       840   98   98 ILE CG2   C  15.710 0.02 1
+       841   98   98 ILE CD1   C  14.250 0.02 1
+       842   99   99 VAL H     H   8.210 0.02 1
+       843   99   99 VAL HA    H   3.900 0.02 1
+       844   99   99 VAL HB    H   2.420 0.02 1
+       845   99   99 VAL HG1   H   1.190 0.02 2
+       846   99   99 VAL HG2   H   1.290 0.02 2
+       847   99   99 VAL CA    C  63.880 0.02 1
+       848   99   99 VAL CB    C  32.150 0.02 1
+       849   99   99 VAL CG1   C  23.900 0.02 1
+       850   99   99 VAL CG2   C  21.800 0.02 1
+       851  100  100 SER H     H   7.690 0.02 1
+       852  100  100 SER HA    H   4.450 0.02 1
+       853  100  100 SER HB2   H   4.110 0.02 2
+       854  100  100 SER HB3   H   4.200 0.02 2
+       855  100  100 SER CA    C  60.240 0.02 1
+       856  100  100 SER CB    C  63.520 0.02 1
+       857  101  101 ASP H     H   8.050 0.02 1
+       858  101  101 ASP HA    H   4.830 0.02 1
+       859  101  101 ASP HB2   H   3.110 0.02 1
+       860  101  101 ASP HB3   H   3.110 0.02 1
+       861  101  101 ASP CA    C  54.000 0.02 1
+       862  101  101 ASP CB    C  39.380 0.02 1
+       863  102  102 GLY H     H   8.090 0.02 1
+       864  102  102 GLY HA2   H   4.190 0.02 2
+       865  102  102 GLY HA3   H   4.000 0.02 2
+       866  102  102 GLY CA    C  45.780 0.02 1
+       867  103  103 ASN H     H   8.130 0.02 1
+       868  103  103 ASN HA    H   4.960 0.02 1
+       869  103  103 ASN HB2   H   2.830 0.02 2
+       870  103  103 ASN HB3   H   2.750 0.02 2
+       871  103  103 ASN CA    C  51.650 0.02 1
+       872  103  103 ASN CB    C  38.700 0.02 1
+       873  104  104 GLY H     H   8.170 0.02 1
+       874  104  104 GLY HA2   H   4.250 0.02 2
+       875  104  104 GLY HA3   H   4.060 0.02 2
+       876  104  104 GLY CA    C  46.510 0.02 1
+       877  105  105 MET H     H   7.020 0.02 1
+       878  105  105 MET HA    H   3.850 0.02 1
+       879  105  105 MET HB2   H  -0.990 0.02 2
+       880  105  105 MET HB3   H   0.450 0.02 2
+       881  105  105 MET HG2   H   0.040 0.02 2
+       882  105  105 MET HG3   H   0.540 0.02 2
+       883  105  105 MET HE    H  -0.020 0.02 1
+       884  105  105 MET CA    C  57.410 0.02 1
+       885  105  105 MET CB    C  29.440 0.02 1
+       886  105  105 MET CG    C  33.160 0.02 1
+       887  105  105 MET CE    C  15.390 0.02 1
+       888  106  106 ASN H     H   7.550 0.02 1
+       889  106  106 ASN HA    H   4.470 0.02 1
+       890  106  106 ASN HB2   H   2.780 0.02 2
+       891  106  106 ASN HB3   H   2.980 0.02 2
+       892  106  106 ASN CA    C  55.980 0.02 1
+       893  106  106 ASN CB    C  38.610 0.02 1
+       894  107  107 ALA H     H   6.830 0.02 1
+       895  107  107 ALA HA    H   3.870 0.02 1
+       896  107  107 ALA HB    H   0.680 0.02 1
+       897  107  107 ALA CA    C  53.900 0.02 1
+       898  107  107 ALA CB    C  18.130 0.02 1
+       899  108  108 TRP H     H   7.850 0.02 1
+       900  108  108 TRP HA    H   4.700 0.02 1
+       901  108  108 TRP HB2   H   3.250 0.02 2
+       902  108  108 TRP HB3   H   3.360 0.02 2
+       903  108  108 TRP HD1   H   7.100 0.02 1
+       904  108  108 TRP HE1   H   9.980 0.02 1
+       905  108  108 TRP HE3   H   7.360 0.02 1
+       906  108  108 TRP HZ2   H   6.940 0.02 1
+       907  108  108 TRP HZ3   H   6.520 0.02 1
+       908  108  108 TRP HH2   H   7.220 0.02 1
+       909  108  108 TRP CA    C  59.880 0.02 1
+       910  108  108 TRP CB    C  28.080 0.02 1
+       911  108  108 TRP CD1   C 124.900 0.02 1
+       912  108  108 TRP CE3   C 120.580 0.02 1
+       913  108  108 TRP CZ2   C 112.470 0.02 1
+       914  108  108 TRP CZ3   C 121.480 0.02 1
+       915  108  108 TRP CH2   C 123.400 0.02 1
+       916  109  109 VAL H     H   8.870 0.02 1
+       917  109  109 VAL HA    H   3.650 0.02 1
+       918  109  109 VAL HB    H   2.180 0.02 1
+       919  109  109 VAL HG1   H   1.040 0.02 2
+       920  109  109 VAL HG2   H   1.120 0.02 2
+       921  109  109 VAL CA    C  66.270 0.02 1
+       922  109  109 VAL CB    C  31.470 0.02 1
+       923  109  109 VAL CG1   C  20.590 0.02 2
+       924  109  109 VAL CG2   C  22.180 0.02 2
+       925  110  110 ALA H     H   8.000 0.02 1
+       926  110  110 ALA HA    H   4.270 0.02 1
+       927  110  110 ALA HB    H   1.350 0.02 1
+       928  110  110 ALA CA    C  54.820 0.02 1
+       929  110  110 ALA CB    C  18.800 0.02 1
+       930  111  111 TRP H     H   7.260 0.02 1
+       931  111  111 TRP HA    H   3.740 0.02 1
+       932  111  111 TRP HB2   H   2.800 0.02 2
+       933  111  111 TRP HB3   H   4.070 0.02 2
+       934  111  111 TRP HD1   H   7.040 0.02 1
+       935  111  111 TRP HE1   H  10.350 0.02 1
+       936  111  111 TRP HE3   H   7.280 0.02 1
+       937  111  111 TRP HZ2   H   7.510 0.02 1
+       938  111  111 TRP HZ3   H   7.050 0.02 1
+       939  111  111 TRP HH2   H   7.350 0.02 1
+       940  111  111 TRP CA    C  60.170 0.02 1
+       941  111  111 TRP CB    C  28.320 0.02 1
+       942  111  111 TRP CD1   C 125.730 0.02 1
+       943  111  111 TRP CE3   C 121.590 0.02 1
+       944  111  111 TRP CZ2   C 114.450 0.02 1
+       945  111  111 TRP CZ3   C 121.230 0.02 1
+       946  111  111 TRP CH2   C 124.820 0.02 1
+       947  112  112 ARG H     H   8.190 0.02 1
+       948  112  112 ARG HA    H   3.400 0.02 1
+       949  112  112 ARG HB2   H   2.040 0.02 2
+       950  112  112 ARG HB3   H   2.120 0.02 2
+       951  112  112 ARG HG2   H   1.840 0.02 2
+       952  112  112 ARG HG3   H   2.010 0.02 2
+       953  112  112 ARG HD2   H   3.370 0.02 2
+       954  112  112 ARG HD3   H   3.440 0.02 2
+       955  112  112 ARG HE    H   7.280 0.02 1
+       956  112  112 ARG CA    C  59.720 0.02 1
+       957  112  112 ARG CB    C  30.380 0.02 1
+       958  112  112 ARG CG    C  27.380 0.02 1
+       959  112  112 ARG CD    C  44.210 0.02 1
+       960  113  113 ASN H     H   7.940 0.02 1
+       961  113  113 ASN HA    H   4.550 0.02 1
+       962  113  113 ASN HB2   H   2.680 0.02 1
+       963  113  113 ASN HB3   H   2.680 0.02 1
+       964  113  113 ASN CA    C  54.580 0.02 1
+       965  113  113 ASN CB    C  39.150 0.02 1
+       966  114  114 ARG H     H   7.650 0.02 1
+       967  114  114 ARG HA    H   4.330 0.02 1
+       968  114  114 ARG HB2   H   0.660 0.02 2
+       969  114  114 ARG HB3   H   1.220 0.02 2
+       970  114  114 ARG HG2   H   1.010 0.02 2
+       971  114  114 ARG HG3   H   1.110 0.02 2
+       972  114  114 ARG HD2   H   2.620 0.02 2
+       973  114  114 ARG HD3   H   2.740 0.02 2
+       974  114  114 ARG HE    H   6.970 0.02 1
+       975  114  114 ARG CA    C  54.530 0.02 1
+       976  114  114 ARG CB    C  31.390 0.02 1
+       977  114  114 ARG CG    C  25.900 0.02 1
+       978  114  114 ARG CD    C  41.600 0.02 1
+       979  115  115 CYS H     H   7.330 0.02 1
+       980  115  115 CYS HA    H   4.550 0.02 1
+       981  115  115 CYS HB2   H   2.480 0.02 2
+       982  115  115 CYS HB3   H   2.630 0.02 2
+       983  115  115 CYS CA    C  60.810 0.02 1
+       984  115  115 CYS CB    C  45.320 0.02 1
+       985  116  116 LYS H     H   7.050 0.02 1
+       986  116  116 LYS HA    H   3.450 0.02 1
+       987  116  116 LYS HB2   H  -0.150 0.02 2
+       988  116  116 LYS HB3   H   1.230 0.02 2
+       989  116  116 LYS HG2   H   1.570 0.02 2
+       990  116  116 LYS HG3   H   1.690 0.02 2
+       991  116  116 LYS HD2   H   1.060 0.02 1
+       992  116  116 LYS HD3   H   1.060 0.02 1
+       993  116  116 LYS HE2   H   3.050 0.02 2
+       994  116  116 LYS HE3   H   3.110 0.02 2
+       995  116  116 LYS CA    C  58.120 0.02 1
+       996  116  116 LYS CB    C  31.530 0.02 1
+       997  116  116 LYS CG    C  24.000 0.02 1
+       998  116  116 LYS CD    C  29.420 0.02 1
+       999  116  116 LYS CE    C  42.110 0.02 1
+      1000  117  117 GLY H     H   8.660 0.02 1
+      1001  117  117 GLY HA2   H   4.140 0.02 2
+      1002  117  117 GLY HA3   H   3.830 0.02 2
+      1003  117  117 GLY CA    C  45.590 0.02 1
+      1004  118  118 THR H     H   7.640 0.02 1
+      1005  118  118 THR HA    H   4.760 0.02 1
+      1006  118  118 THR HB    H   4.310 0.02 1
+      1007  118  118 THR HG2   H   0.970 0.02 1
+      1008  118  118 THR CA    C  60.310 0.02 1
+      1009  118  118 THR CB    C  71.930 0.02 1
+      1010  118  118 THR CG2   C  20.620 0.02 1
+      1011  119  119 ASP H     H   8.600 0.02 1
+      1012  119  119 ASP HA    H   5.010 0.02 1
+      1013  119  119 ASP HB2   H   2.760 0.02 2
+      1014  119  119 ASP HB3   H   2.980 0.02 2
+      1015  119  119 ASP CA    C  52.680 0.02 1
+      1016  119  119 ASP CB    C  38.100 0.02 1
+      1017  120  120 VAL H     H   8.110 0.02 1
+      1018  120  120 VAL HA    H   4.370 0.02 1
+      1019  120  120 VAL HB    H   2.180 0.02 1
+      1020  120  120 VAL HG1   H   1.090 0.02 2
+      1021  120  120 VAL HG2   H   1.130 0.02 2
+      1022  120  120 VAL CA    C  64.160 0.02 1
+      1023  120  120 VAL CB    C  31.430 0.02 1
+      1024  120  120 VAL CG1   C  18.500 0.02 2
+      1025  120  120 VAL CG2   C  22.310 0.02 2
+      1026  121  121 GLN H     H   8.430 0.02 1
+      1027  121  121 GLN HA    H   4.350 0.02 1
+      1028  121  121 GLN HB2   H   2.190 0.02 2
+      1029  121  121 GLN HB3   H   2.270 0.02 2
+      1030  121  121 GLN HG2   H   2.500 0.02 2
+      1031  121  121 GLN HG3   H   2.610 0.02 2
+      1032  121  121 GLN CA    C  57.820 0.02 1
+      1033  121  121 GLN CB    C  27.920 0.02 1
+      1034  121  121 GLN CG    C  34.180 0.02 1
+      1035  122  122 ALA H     H   7.700 0.02 1
+      1036  122  122 ALA HA    H   3.840 0.02 1
+      1037  122  122 ALA HB    H   1.180 0.02 1
+      1038  122  122 ALA CA    C  54.890 0.02 1
+      1039  122  122 ALA CB    C  18.230 0.02 1
+      1040  123  123 TRP H     H   7.590 0.02 1
+      1041  123  123 TRP HA    H   4.140 0.02 1
+      1042  123  123 TRP HB2   H   3.410 0.02 2
+      1043  123  123 TRP HB3   H   3.530 0.02 2
+      1044  123  123 TRP HD1   H   7.550 0.02 1
+      1045  123  123 TRP HE1   H  10.730 0.02 1
+      1046  123  123 TRP HE3   H   7.530 0.02 1
+      1047  123  123 TRP HZ2   H   7.770 0.02 1
+      1048  123  123 TRP HZ3   H   7.150 0.02 1
+      1049  123  123 TRP HH2   H   7.100 0.02 1
+      1050  123  123 TRP CA    C  59.900 0.02 1
+      1051  123  123 TRP CB    C  28.760 0.02 1
+      1052  123  123 TRP CD1   C 126.850 0.02 1
+      1053  123  123 TRP CE3   C 119.090 0.02 1
+      1054  123  123 TRP CZ2   C 115.940 0.02 1
+      1055  123  123 TRP CZ3   C 121.550 0.02 1
+      1056  123  123 TRP CH2   C 125.090 0.02 1
+      1057  124  124 ILE H     H   7.550 0.02 1
+      1058  124  124 ILE HA    H   4.740 0.02 1
+      1059  124  124 ILE HB    H   2.230 0.02 1
+      1060  124  124 ILE HG12  H   1.250 0.02 2
+      1061  124  124 ILE HG13  H   1.470 0.02 2
+      1062  124  124 ILE HG2   H   0.850 0.02 1
+      1063  124  124 ILE HD1   H   0.960 0.02 1
+      1064  124  124 ILE CA    C  59.680 0.02 1
+      1065  124  124 ILE CB    C  38.370 0.02 1
+      1066  124  124 ILE CG1   C  26.830 0.02 1
+      1067  124  124 ILE CG2   C  19.180 0.02 1
+      1068  124  124 ILE CD1   C  14.380 0.02 1
+      1069  125  125 ARG H     H   7.320 0.02 1
+      1070  125  125 ARG HA    H   4.170 0.02 1
+      1071  125  125 ARG HB2   H   1.810 0.02 2
+      1072  125  125 ARG HB3   H   1.840 0.02 2
+      1073  125  125 ARG HG2   H   1.650 0.02 2
+      1074  125  125 ARG HG3   H   1.750 0.02 2
+      1075  125  125 ARG HD2   H   3.170 0.02 2
+      1076  125  125 ARG HD3   H   3.230 0.02 2
+      1077  125  125 ARG HE    H   7.120 0.02 1
+      1078  125  125 ARG CA    C  58.150 0.02 1
+      1079  125  125 ARG CB    C  30.200 0.02 1
+      1080  125  125 ARG CG    C  27.390 0.02 1
+      1081  125  125 ARG CD    C  43.340 0.02 1
+      1082  126  126 GLY H     H   9.120 0.02 1
+      1083  126  126 GLY HA2   H   4.320 0.02 2
+      1084  126  126 GLY HA3   H   3.760 0.02 2
+      1085  126  126 GLY CA    C  45.320 0.02 1
+      1086  127  127 CYS H     H   7.470 0.02 1
+      1087  127  127 CYS HA    H   4.930 0.02 1
+      1088  127  127 CYS HB2   H   2.650 0.02 2
+      1089  127  127 CYS HB3   H   3.090 0.02 2
+      1090  127  127 CYS CA    C  51.440 0.02 1
+      1091  127  127 CYS CB    C  34.750 0.02 1
+      1092  128  128 ARG H     H   8.840 0.02 1
+      1093  128  128 ARG HA    H   4.370 0.02 1
+      1094  128  128 ARG HB2   H   1.800 0.02 2
+      1095  128  128 ARG HB3   H   1.880 0.02 2
+      1096  128  128 ARG HG2   H   1.600 0.02 2
+      1097  128  128 ARG HG3   H   1.680 0.02 2
+      1098  128  128 ARG HD2   H   3.230 0.02 1
+      1099  128  128 ARG HD3   H   3.230 0.02 1
+      1100  128  128 ARG HE    H   7.120 0.02 1
+      1101  128  128 ARG CA    C  56.360 0.02 1
+      1102  128  128 ARG CB    C  28.810 0.02 1
+      1103  128  128 ARG CG    C  27.010 0.02 1
+      1104  128  128 ARG CD    C  43.320 0.02 1
+      1105  129  129 LEU H     H   7.910 0.02 1
+      1106  129  129 LEU HA    H   4.300 0.02 1
+      1107  129  129 LEU HB2   H   1.660 0.02 2
+      1108  129  129 LEU HB3   H   1.480 0.02 2
+      1109  129  129 LEU HG    H   1.440 0.02 1
+      1110  129  129 LEU HD1   H   0.740 0.02 2
+      1111  129  129 LEU HD2   H   0.860 0.02 2
+      1112  129  129 LEU CA    C  55.280 0.02 1
+      1113  129  129 LEU CB    C  43.600 0.02 1
+      1114  129  129 LEU CG    C  26.680 0.02 1
+      1115  129  129 LEU CD1   C  23.450 0.02 2
+      1116  129  129 LEU CD2   C  22.180 0.02 2
+
+   stop_
+
+save_
+
